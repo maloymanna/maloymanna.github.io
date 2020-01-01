@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bayes theorem on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/bayes-theorem/</link>
+    <description>Recent content in bayes theorem on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 03 Dec 2014 17:22:16 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/tags/bayes-theorem/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Brief Introduction to Statistics - Part 2 - Probability and Distributions</title>
+      <link>https://maloymanna.github.io/2014/12/03/a-brief-introduction-to-statistics-part-2-probability-and-distributions/</link>
+      <pubDate>Wed, 03 Dec 2014 17:22:16 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2014/12/03/a-brief-introduction-to-statistics-part-2-probability-and-distributions/</guid>
+      <description>Probability concepts form the foundation for statistics.
+A formal definition of probability:
+The probability of an outcome is the proportion of times the outcome would occur if we observed the random process an inﬁnite number of times.
+This is a corollary of the law of large numbers:
+As more observations are collected, the proportion of occurrences with a particular outcome converges to the probability of that outcome.
+Disjoint (mutually exclusive) events as events that cannot both happen at the same time.</description>
+    </item>
+    
+  </channel>
+</rss>

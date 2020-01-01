@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>agile on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/agile/</link>
+    <description>Recent content in agile on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 07 Mar 2019 07:33:07 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/tags/agile/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The 5 time thieves</title>
+      <link>https://maloymanna.github.io/pm/the-5-time-thieves/</link>
+      <pubDate>Thu, 07 Mar 2019 07:33:07 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/pm/the-5-time-thieves/</guid>
+      <description>I recently read this book &amp;ldquo;Making work visible&amp;rdquo; by Dominica Degrandis which explains how to facilitate work organization by making it visual. It also nearly explains some recurrent problems which corporations overlook while designing work processes - the time thieves. The 5 time thieves prevent getting work done efficiently and can be identified (and minimized) when work is surfaced visually.
+The 5 time thieves or categories of problems are:
+ Too much Work in Progress - this happens usually when demand exceeds the capacity of the team.</description>
+    </item>
+    
+    <item>
+      <title>6 reasons why agile projects fail</title>
+      <link>https://maloymanna.github.io/pm/6-reasons-why-agile-projects-fail/</link>
+      <pubDate>Sun, 16 Sep 2018 10:32:11 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/pm/6-reasons-why-agile-projects-fail/</guid>
+      <description>Agile projects come with their own challenges. While the tech industry has increasingly adopted agile, practical experience about agile methods is not always available. Certain consultancies and third parties have made roaring business out of the agile coaching usually solicited by corporations while embarking on agile transformations. In many cases, the corporations did not have a system of follow-up and in others the consultants did not help adapt the frameworks to the specific case at hand.</description>
+    </item>
+    
+    <item>
+      <title>Agile planning</title>
+      <link>https://maloymanna.github.io/pm/agile-planning/</link>
+      <pubDate>Sun, 11 Mar 2018 19:05:05 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/pm/agile-planning/</guid>
+      <description>Agile planning is different from predictive planning done in traditional project management. Often we come across posts by certain agile evangelists who claim that agile doesn&amp;rsquo;t need planning. To believe these claims would mean there would be endless iterations with a fully-funded product development team to get to a perfect end-state without concern for time or cost. This is utopian and untrue. Usually these claims are made by developers or people far removed from business.</description>
+    </item>
+    
+    <item>
+      <title>PMI standards</title>
+      <link>https://maloymanna.github.io/pm/pmi-standards/</link>
+      <pubDate>Sun, 24 Dec 2017 07:26:44 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/pm/pmi-standards/</guid>
+      <description>The Project Management Institute PMI is the premier standards and professional organization for project management. It works in collaboration with American National Standards Institute (ANSI) and the International Organization for Standardization (ISO) to develop and promote project management standards. Its certifications recognize knowledge and competency and the Project Management Professional (PMP &amp;reg; ) certification is widely considered as the gold standard. PMI has been criticised for being slow to adapt to changes e.</description>
+    </item>
+    
+    <item>
+      <title>Project to Product</title>
+      <link>https://maloymanna.github.io/pm/project-to-product/</link>
+      <pubDate>Mon, 17 Jul 2017 08:05:49 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/pm/project-to-product/</guid>
+      <description>With the increasing adoption of agile, there&amp;rsquo;s been a lot of talk about moving from the project-centric delivery to product-centric delivery model. Initially software/IT borrowed project management practices mainly from manufacturing / construction industries, and such projects generally used sequential, waterfall processes. The technology revolution and the pace of change in IT has made such approaches difficult to sustain and the software industry has been quick to adopt agile methods like scrum which are adapted to product-centric delivery instead of projects.</description>
+    </item>
+    
+    <item>
+      <title>An introduction to Scrum</title>
+      <link>https://maloymanna.github.io/pm/an-introduction-to-scrum/</link>
+      <pubDate>Thu, 05 Jan 2017 22:02:10 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/pm/an-introduction-to-scrum/</guid>
+      <description>Scrum is the most popular agile framework out there. It uses 1 to 4 week iterations called sprints to deliver products. Developed by Jeff Sutherland and Ken Schwaber, it has been used since the nineties, i.e. even before the 2001 agile manifesto was written. The word scrum is taken from rugby.
+Being a framework, scrum needs to be tailored to your situation. A scrum team is supposed to be cross-functional and self-organizing in order to minimize dependencies and wait times while improving collaboration.</description>
+    </item>
+    
+    <item>
+      <title>Agile project management</title>
+      <link>https://maloymanna.github.io/pm/agile-project-management/</link>
+      <pubDate>Sun, 29 May 2016 09:25:25 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/pm/agile-project-management/</guid>
+      <description>Agile is an approach to software development. Project management is the application of knowledge, skills and techniques to project activities to meet the project requirements. Agile is not a methodology. What does then &amp;ldquo;agile project management&amp;rdquo;  mean ?
+Simply put, agile project management can be defined as the application of agile methods and values to project management. While there are several agile methods (Scrum, Kanban, XP, FDD etc.), all of them share the same core values, inspired from the agile manifesto.</description>
+    </item>
+    
+    <item>
+      <title>Designing the future - Data Innovation Labs</title>
+      <link>https://maloymanna.github.io/2015/01/19/designing-the-future-data-innovation-labs/</link>
+      <pubDate>Mon, 19 Jan 2015 16:48:29 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2015/01/19/designing-the-future-data-innovation-labs/</guid>
+      <description>With the ongoing Big data revolution, and the impending Internet of Things revolution, there has been a renewed enthusiasm in &amp;ldquo;innovation&amp;rdquo; around data. Similar to the Labs concept started by Google (think Gmail Beta based on Ajax, circa 2004), more and more organizations, business communities, governments and countries are setting up Labs to foster innovation in data and analytics technologies. The idea behind these “data innovation labs” is to develop avant-garde data and analytics technologies and products in an agile fashion and move quickly from concept to production.</description>
+    </item>
+    
+    <item>
+      <title>Agile Development for BI</title>
+      <link>https://maloymanna.github.io/2008/04/07/agile-development-for-bi/</link>
+      <pubDate>Mon, 07 Apr 2008 05:43:39 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2008/04/07/agile-development-for-bi/</guid>
+      <description>How can you reduce development costs and improve software reliability and accuracy at the same time? How can you make IT work together with Business while architect-ing your BI applications? If these goals sound contradictory and difficult to achieve, then Agile development may well fit the bill. Indeed in numerous BI projects, one or the other flavor of Agile is used to attain these very goals.
+Defining Agile There are several Agile development methodologies available:</description>
+    </item>
+    
+  </channel>
+</rss>

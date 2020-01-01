@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>universe on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/universe/</link>
+    <description>Recent content in universe on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 19 Jul 2009 22:43:12 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/tags/universe/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BusinessObjects universe design best practices</title>
+      <link>https://maloymanna.github.io/2009/07/19/businessobjects-universe-design-best-practices/</link>
+      <pubDate>Sun, 19 Jul 2009 22:43:12 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2009/07/19/businessobjects-universe-design-best-practices/</guid>
+      <description>Having relocated from the Silicon Valley to Bangalore a year back, I’m now working in an MIS – strategic reporting role. In my role to evangelize the use of BI best practices and tools, one of the foremost is that of universe design. As a matter of fact, I’m currently being involved in formalizing a BI policy around the tools we use most – Oracle, Informatica and SAP Business Objects (along with migration from our legacy BO to the XI platform!</description>
+    </item>
+    
+    <item>
+      <title>It&#39;s all in the universe - handling chasm and fan traps</title>
+      <link>https://maloymanna.github.io/2008/05/02/its-all-in-the-universe-handling-chasm-and-fan-traps/</link>
+      <pubDate>Fri, 02 May 2008 05:10:00 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2008/05/02/its-all-in-the-universe-handling-chasm-and-fan-traps/</guid>
+      <description>Recently I worked on an assignment where the Business Objects universe was designed by a business analyst. Nothing wrong with that, as long as we get the correct results in reports or queries on the universe. But it was not to be. We encountered incorrect results primarily due to two reasons:
+ Mixing of grains in fact tables by not using proper contexts or the aggregate navigator
+ Unresolved chasm traps</description>
+    </item>
+    
+  </channel>
+</rss>

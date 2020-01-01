@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>storm on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/storm/</link>
+    <description>Recent content in storm on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 13 Apr 2014 18:12:16 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/tags/storm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Basics of Big Data – Part 2 - Hadoop</title>
+      <link>https://maloymanna.github.io/2014/04/13/basics-of-big-data-part-2-hadoop/</link>
+      <pubDate>Sun, 13 Apr 2014 18:12:16 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2014/04/13/basics-of-big-data-part-2-hadoop/</guid>
+      <description>As discussed in Part 1 of this series, Hadoop is the foremost among tools being currently used for deriving value out of Big Data. The process of gaining insights from data through Business Intelligence and analytics essentially remains the same. However, with the huge variety, volume and velocity (the 3Vs of Big Data), it’s become necessary to re-think of the data management infrastructure. Hadoop, originally designed to be used with the MapReduce algorithm to solve parallel processing constraints in distributed architectures (e.</description>
+    </item>
+    
+  </channel>
+</rss>

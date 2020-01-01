@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lean on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/lean/</link>
+    <description>Recent content in lean on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 19 Apr 2017 20:14:14 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/tags/lean/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Lean Startup Method</title>
+      <link>https://maloymanna.github.io/pm/the-lean-startup-method/</link>
+      <pubDate>Wed, 19 Apr 2017 20:14:14 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/pm/the-lean-startup-method/</guid>
+      <description>Eric Ries, a young American entrepreneur and ex-software engineer published &amp;ldquo;The Lean Startup&amp;rdquo; in 2011. The book is the collective wisdom of the valley and smart folks like Ries and Steve Blank about the purpose of a startup and the methods that help with it most efficiently. It&amp;rsquo;s because of the explosion of interest in the lean-startup methods that today concepts like &amp;ldquo;fail-fast&amp;rdquo;, &amp;ldquo;MVP&amp;rdquo;, &amp;ldquo;pivot&amp;rdquo; are commonplace. Coupled with lean-concepts and the experimentation afforded by agile methods, the lean-startup techniques improves the chances of success of a startup.</description>
+    </item>
+    
+    <item>
+      <title>3 types of waste - muda, mura, muri</title>
+      <link>https://maloymanna.github.io/pm/3-types-of-waste-muda-mura-muri/</link>
+      <pubDate>Tue, 23 Aug 2016 07:40:10 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/pm/3-types-of-waste-muda-mura-muri/</guid>
+      <description>Lean thinking is based on eliminating waste in order to improve efficiency. Lean project management relies on lean thinking concepts for the elimination of waste. Due to its inception in the quality and productivity improvement processes in Japanese manufacturing, especially the Toyota Production System, the three main categories of waste (3M) have Japanese names: muda, mura and muri .
+ Muda - any activity that consumes resources but creates no value for the customer</description>
+    </item>
+    
+    <item>
+      <title>5 principles of lean project management</title>
+      <link>https://maloymanna.github.io/pm/5-principles-of-lean-project-management/</link>
+      <pubDate>Tue, 02 Feb 2016 08:35:35 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/pm/5-principles-of-lean-project-management/</guid>
+      <description>The use of lean practices like Kanban boards has become really popular in project management, especially those using agile methods. But what exactly is Lean project management ?
+The application of lean manufacturing principles to project management can be roughly translated as lean project management. These principles were developed at Toyota, with the famous Toyota Production System employing kanban and the concepts of just-in-time (JIT) and &amp;ldquo;pull&amp;rdquo; to optimize flow and minimize inventory.</description>
+    </item>
+    
+  </channel>
+</rss>

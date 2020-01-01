@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>digital era on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/digital-era/</link>
+    <description>Recent content in digital era on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 19 Dec 2014 11:12:43 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/tags/digital-era/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BI in the digital era</title>
+      <link>https://maloymanna.github.io/2014/12/19/bi-in-the-digital-era/</link>
+      <pubDate>Fri, 19 Dec 2014 11:12:43 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2014/12/19/bi-in-the-digital-era/</guid>
+      <description>Sometime back I presented a webinar on BrightTalk. The slides for the talk have now been uploaded on Slideshare. The talk focused more on changes in digital technology disrupting businesses, the effect of Big Data, the FOMO (Fear of missing out) effect on big business - and what it meant for changes to the way we do business intelligence in the digital era.
+ Key themes:
+ Disruption in traditional IT with cloud computing Changing economics and changing business models Rise of Big Data Tech changes to manage Big Data - distributed computing Shift from &amp;ldquo;current-state&amp;rdquo; to &amp;ldquo;next-state&amp;rdquo; questions Introducing Data Science Challenges - regulatory, data privacy Dangers of data science - over-fitting, interpretation Managing big data projects Data Science MOOCs (massive open online courses), tools and resources</description>
+    </item>
+    
+  </channel>
+</rss>

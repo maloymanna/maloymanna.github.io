@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>introduction on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/introduction/</link>
+    <description>Recent content in introduction on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 20 May 2015 16:38:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An introduction to Data Science</title>
+      <link>https://maloymanna.github.io/2015/05/20/an-introduction-to-data-science/</link>
+      <pubDate>Wed, 20 May 2015 16:38:04 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2015/05/20/an-introduction-to-data-science/</guid>
+      <description>I presented a talk last week introducing Data Science and associated topics to some enthusiasts.
+Here&amp;rsquo;s a slide deck I created quickly with markdown using Swipe - a start-up building HTML5 presentation tools.
+The contents include:
+ Data scientist skills Data science: enablers and barriers Big data analytics Data science lifecycle Use cases Tools and technology Project approach Machine learning Skills and roles Learning resources  Here are the slides:</description>
+    </item>
+    
+    <item>
+      <title>Hello world!</title>
+      <link>https://maloymanna.github.io/2007/11/30/hello-world/</link>
+      <pubDate>Fri, 30 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2007/11/30/hello-world/</guid>
+      <description>This blog is going to have a series of posts about trends and recent happenings in the BI space, some theory on data warehousing and BI - classical as well as newer approaches. It will also feature some tutorials on some technologies and implementations I have worked with as well as useful links.
+~biguru</description>
+    </item>
+    
+  </channel>
+</rss>

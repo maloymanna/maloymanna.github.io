@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statistics on Maloy Manna</title>
+    <link>https://maloymanna.github.io/categories/statistics/</link>
+    <description>Recent content in Statistics on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 04 Jan 2015 14:22:02 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/categories/statistics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Brief Introduction to Statistics – Part 3 - Statistical Inference</title>
+      <link>https://maloymanna.github.io/2015/01/04/a-brief-introduction-to-statistics-part-3-statistical-inference/</link>
+      <pubDate>Sun, 04 Jan 2015 14:22:02 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2015/01/04/a-brief-introduction-to-statistics-part-3-statistical-inference/</guid>
+      <description>Statistical inference is concerned primarily with understanding the quality of parameter estimates.
+The sampling distribution represents the distribution of the point estimates based on samples of a ﬁxed size from a certain population. It is useful to think of a particular point estimate as being drawn from such a distribution. Understanding the concept of a sampling distribution is central to understanding statistical inference.
+A sample statistic is a point estimate for a population parameter, e.</description>
+    </item>
+    
+    <item>
+      <title>A Brief Introduction to Statistics - Part 2 - Probability and Distributions</title>
+      <link>https://maloymanna.github.io/2014/12/03/a-brief-introduction-to-statistics-part-2-probability-and-distributions/</link>
+      <pubDate>Wed, 03 Dec 2014 17:22:16 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2014/12/03/a-brief-introduction-to-statistics-part-2-probability-and-distributions/</guid>
+      <description>Probability concepts form the foundation for statistics.
+A formal definition of probability:
+The probability of an outcome is the proportion of times the outcome would occur if we observed the random process an inﬁnite number of times.
+This is a corollary of the law of large numbers:
+As more observations are collected, the proportion of occurrences with a particular outcome converges to the probability of that outcome.
+Disjoint (mutually exclusive) events as events that cannot both happen at the same time.</description>
+    </item>
+    
+    <item>
+      <title>A Brief Introduction to Statistics - Part 1</title>
+      <link>https://maloymanna.github.io/2014/10/28/a-brief-introduction-to-statistics-part-1/</link>
+      <pubDate>Tue, 28 Oct 2014 10:41:42 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2014/10/28/a-brief-introduction-to-statistics-part-1/</guid>
+      <description>What is Statistics?
+Collected observations are called data. Statistics is the study of how best to collect, analyze, and draw conclusions from data. Each observation in data is called a case. Characteristics of the case are called variables. With a matrix/table analogy, a case is a row while a variable is a column.
+Statistics - Correlation (Courtesy: xkcd.com)
+Types of variables:
+ Numerical - Can be discrete or continuous, and can take a wide range of numerical values.</description>
+    </item>
+    
+    <item>
+      <title>SPC – Using statistics to get insight from BI</title>
+      <link>https://maloymanna.github.io/2008/07/08/spc-using-statistics-to-get-insight-from-bi/</link>
+      <pubDate>Tue, 08 Jul 2008 13:46:21 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2008/07/08/spc-using-statistics-to-get-insight-from-bi/</guid>
+      <description>There is a well known adage that if you keep doing the same thing and expect different results, that is a sure sign of idiocy.
+In the BI world too, we come across several instances where people take it for granted that the ‘BI tool’ will magically generate insight and spur ‘intelligence’ rather than ‘idiocy’. Yet the very practices of reporting the same measures, or of creating reports for metrics just because they are now made available by the tool, without sparing any ‘intelligence’ into what will generate insight is a major cause of failures of BI.</description>
+    </item>
+    
+  </channel>
+</rss>

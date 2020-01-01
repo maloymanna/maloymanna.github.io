@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NoSQL on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/nosql/</link>
+    <description>Recent content in NoSQL on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 01 Oct 2014 08:25:31 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Big Data Basics - Part  4 : NoSQL and NewSQL explained</title>
+      <link>https://maloymanna.github.io/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/</link>
+      <pubDate>Wed, 01 Oct 2014 08:25:31 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/</guid>
+      <description>This is the fourth part of a series of posts on big data. Read the previous posts here: Part-1, Part-2 and Part-3.
+With the ongoing data explosion, and the improvement in technologies able to deal with it, businesses are turning to leverage this big data for mining insights to gain competitive advantage, reinvent business models and create new markets.
+A huge amount of this &amp;ldquo;big data&amp;rdquo; volumes comes from system logs, user generated content on social media like Twitter or Facebook, sensor data and the like.</description>
+    </item>
+    
+    <item>
+      <title>Basics of Big Data - Part 1</title>
+      <link>https://maloymanna.github.io/2013/08/21/basics-of-big-data-part-1/</link>
+      <pubDate>Wed, 21 Aug 2013 23:02:49 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2013/08/21/basics-of-big-data-part-1/</guid>
+      <description>You can’t miss all the buzz about Big Data! Over the past few years, the buzz around the cloud and Big Data shaping most of the future of computing, IT and analytics in particular has grown incessantly strong. As with most buzz words, which are then hijacked by marketing to suit their own products’ storylines, but which nonetheless manage to confuse users in business and staff in IT as well, Big Data means several things to several people.</description>
+    </item>
+    
+    <item>
+      <title>Thrive or Survive - the changing rules for databases</title>
+      <link>https://maloymanna.github.io/2008/05/07/thrive-or-survive-the-changing-rules-for-databases/</link>
+      <pubDate>Wed, 07 May 2008 09:59:04 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2008/05/07/thrive-or-survive-the-changing-rules-for-databases/</guid>
+      <description>Not since the late seventies, when Larry Ellison&amp;rsquo;s Relational Software Inc. (RSI) turned out the first commerically available RDBMS - Oracle, has there been such rapid changing of the rules (read disruption) in the database industry.
+With Web 2.0 pushing enterprise adoption, and the ensuing information explosion in the maze of audio, video, data and ever-growing data warehouses, it seems that the conventional relational database systems are growing tired. With estimates of unstructured data being anywhere between 80% to 95% of all business data, and the ever changing requirements imposed by Web 2.</description>
+    </item>
+    
+  </channel>
+</rss>

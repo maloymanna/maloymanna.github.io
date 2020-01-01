@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IaaS on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/iaas/</link>
+    <description>Recent content in IaaS on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 04 Dec 2014 18:25:38 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/tags/iaas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Predictability – Get everything as a service – from IaaS, PaaS and SaaS to XaaS</title>
+      <link>https://maloymanna.github.io/2014/12/04/predictability-get-everything-as-a-service-from-iaas-paas-and-saas-to-xaas/</link>
+      <pubDate>Thu, 04 Dec 2014 18:25:38 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2014/12/04/predictability-get-everything-as-a-service-from-iaas-paas-and-saas-to-xaas/</guid>
+      <description>The outsourcing model which led to the “on-demand” “as a service” model, has taken off with increasing adoption of cloud-computing and mobility. What started out with the SaaS – software as a service model, has now diversified into several other services.
+Indeed, cloud computing has come to rest on three of these as its core pillars:
+ SaaS: Software as a Service PaaS: Platform as a Service IaaS: Infrastructure as a Service  Differentiating SaaS, PaaS and IaaS:</description>
+    </item>
+    
+  </channel>
+</rss>

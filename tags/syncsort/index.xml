@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>syncsort on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/syncsort/</link>
+    <description>Recent content in syncsort on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 12 May 2014 12:55:24 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/tags/syncsort/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Basics of Big Data - Building a Hadoop data warehouse</title>
+      <link>https://maloymanna.github.io/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/</link>
+      <pubDate>Mon, 12 May 2014 12:55:24 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/</guid>
+      <description>This is the 3rd part of a series of posts on Big Data. Read Part-1 (What is Big Data) and Part-2 (Hadoop).
+Traditionally data warehouses have been built with relational databases as backbone. With the new challenges (3Vs) of Big Data, relational databases have been falling short of the requirements of handling
+ New data types (unstructured data) Extended analytic processing Throughput (TB/hour loading) with immediate query access  The industry has turned to Hadoop as a disruptive solution for these very challenges.</description>
+    </item>
+    
+  </channel>
+</rss>

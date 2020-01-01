@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>salesforce.com on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/salesforce.com/</link>
+    <description>Recent content in salesforce.com on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 14 Mar 2008 04:29:16 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/tags/salesforce.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SaaS BI - Software as a service model in Business Intelligence</title>
+      <link>https://maloymanna.github.io/2008/03/14/saas-bi-software-as-a-service-model-in-business-intelligence/</link>
+      <pubDate>Fri, 14 Mar 2008 04:29:16 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2008/03/14/saas-bi-software-as-a-service-model-in-business-intelligence/</guid>
+      <description>SaaS has taken off in a big way in the past few years. And BI has not been lagging behind. For leading vendors like BOBJ (an SAP company) or Cognos (an IBM company), it&amp;rsquo;s going to be close to 2 years now since they started their SaaS BI.
+What exactly are the advantages of SaaS over the traditional approach?
+Benefits are aplenty, from zero costs of purchasing hardware, hiring of key IT personnel like system administrators and DBAs, to minimal implementation and maintenance costs.</description>
+    </item>
+    
+  </channel>
+</rss>

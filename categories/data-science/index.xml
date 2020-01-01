@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data science on Maloy Manna</title>
+    <link>https://maloymanna.github.io/categories/data-science/</link>
+    <description>Recent content in Data science on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 24 Jun 2015 22:52:27 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What roles do you need in your data science team?</title>
+      <link>https://maloymanna.github.io/2015/06/24/what-roles-do-you-need-in-your-data-science-team/</link>
+      <pubDate>Wed, 24 Jun 2015 22:52:27 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2015/06/24/what-roles-do-you-need-in-your-data-science-team/</guid>
+      <description>Over the past few weeks, we&amp;rsquo;ve had several conversations in our data lab regarding data engineering problems and day to day problems we face with unsupervised data scientists who find it difficult to deploy their code into production.
+The opinions from business seemed to cluster around a tacit definition of data scientists as researchers, primarily from statistics or mathematics backgrounds, who are experienced in machine learning algorithms and often in some domain areas specific to our business, (e.</description>
+    </item>
+    
+    <item>
+      <title>An introduction to Data Science</title>
+      <link>https://maloymanna.github.io/2015/05/20/an-introduction-to-data-science/</link>
+      <pubDate>Wed, 20 May 2015 16:38:04 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2015/05/20/an-introduction-to-data-science/</guid>
+      <description>I presented a talk last week introducing Data Science and associated topics to some enthusiasts.
+Here&amp;rsquo;s a slide deck I created quickly with markdown using Swipe - a start-up building HTML5 presentation tools.
+The contents include:
+ Data scientist skills Data science: enablers and barriers Big data analytics Data science lifecycle Use cases Tools and technology Project approach Machine learning Skills and roles Learning resources  Here are the slides:</description>
+    </item>
+    
+    <item>
+      <title>A gentle introduction to Machine Learning</title>
+      <link>https://maloymanna.github.io/2015/02/04/a-gentle-introduction-to-machine-learning/</link>
+      <pubDate>Wed, 04 Feb 2015 23:26:36 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2015/02/04/a-gentle-introduction-to-machine-learning/</guid>
+      <description>Machine Learning is a big part of big data and data science. A subset of artificial intelligence - a branch of science notorious for requiring advanced knowledge of mathematics. In practice though, most data scientists don&amp;rsquo;t try to build a Chappie and there are simpler, practical ways to get started with machine learning.
+Machine learning in practice involves predictions based on data. Notable examples include Amazon&amp;rsquo;s product recommendations with the &amp;ldquo;customers also bought&amp;rdquo; scroll-list, or Gmail&amp;rsquo;s priority inbox or any email spam-filter feature.</description>
+    </item>
+    
+    <item>
+      <title>Designing the future - Data Innovation Labs</title>
+      <link>https://maloymanna.github.io/2015/01/19/designing-the-future-data-innovation-labs/</link>
+      <pubDate>Mon, 19 Jan 2015 16:48:29 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2015/01/19/designing-the-future-data-innovation-labs/</guid>
+      <description>With the ongoing Big data revolution, and the impending Internet of Things revolution, there has been a renewed enthusiasm in &amp;ldquo;innovation&amp;rdquo; around data. Similar to the Labs concept started by Google (think Gmail Beta based on Ajax, circa 2004), more and more organizations, business communities, governments and countries are setting up Labs to foster innovation in data and analytics technologies. The idea behind these “data innovation labs” is to develop avant-garde data and analytics technologies and products in an agile fashion and move quickly from concept to production.</description>
+    </item>
+    
+    <item>
+      <title>Set up a Hadoop Spark cluster in 10 minutes with Vagrant</title>
+      <link>https://maloymanna.github.io/2014/12/30/set-up-a-hadoop-spark-cluster-in-10-minutes-with-vagrant/</link>
+      <pubDate>Tue, 30 Dec 2014 22:36:53 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2014/12/30/set-up-a-hadoop-spark-cluster-in-10-minutes-with-vagrant/</guid>
+      <description>With each of the big 3 Hadoop vendors - Cloudera, Hortonworks and MapR each providing their own Hadoop sandbox virtual machines (VMs), trying out Hadoop today has become extremely easy. For a developer, it is extremely useful to download a get started with one of these VMs and try out Hadoop to practice data science right away.
+However, with the core Apache Hadoop, these vendors package their own software into their distributions, mostly for the orchestration and management, which can be a pain due to the multiple scattered open-source projects within the Hadoop ecosystem.</description>
+    </item>
+    
+    <item>
+      <title>The data science project lifecycle</title>
+      <link>https://maloymanna.github.io/2014/12/22/the-data-science-project-lifecycle/</link>
+      <pubDate>Mon, 22 Dec 2014 01:00:42 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2014/12/22/the-data-science-project-lifecycle/</guid>
+      <description>How does the typical data science project life-cycle look like?
+This post looks at practical aspects of implementing data science projects. It also assumes a certain level of maturity in big data (more on big data maturity models in the next post) and data science management within the organization. Therefore the life cycle presented here differs, sometimes significantly from purist definitions of &amp;lsquo;science&amp;rsquo; which emphasize the hypothesis-testing approach. In practice, the typical data science project life-cycle resembles more of an engineering view imposed due to constraints of resources (budget, data and skills availability) and time-to-market considerations.</description>
+    </item>
+    
+    <item>
+      <title>BI in the digital era</title>
+      <link>https://maloymanna.github.io/2014/12/19/bi-in-the-digital-era/</link>
+      <pubDate>Fri, 19 Dec 2014 11:12:43 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2014/12/19/bi-in-the-digital-era/</guid>
+      <description>Sometime back I presented a webinar on BrightTalk. The slides for the talk have now been uploaded on Slideshare. The talk focused more on changes in digital technology disrupting businesses, the effect of Big Data, the FOMO (Fear of missing out) effect on big business - and what it meant for changes to the way we do business intelligence in the digital era.
+ Key themes:
+ Disruption in traditional IT with cloud computing Changing economics and changing business models Rise of Big Data Tech changes to manage Big Data - distributed computing Shift from &amp;ldquo;current-state&amp;rdquo; to &amp;ldquo;next-state&amp;rdquo; questions Introducing Data Science Challenges - regulatory, data privacy Dangers of data science - over-fitting, interpretation Managing big data projects Data Science MOOCs (massive open online courses), tools and resources</description>
+    </item>
+    
+    <item>
+      <title>A Brief Introduction to Statistics - Part 1</title>
+      <link>https://maloymanna.github.io/2014/10/28/a-brief-introduction-to-statistics-part-1/</link>
+      <pubDate>Tue, 28 Oct 2014 10:41:42 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2014/10/28/a-brief-introduction-to-statistics-part-1/</guid>
+      <description>What is Statistics?
+Collected observations are called data. Statistics is the study of how best to collect, analyze, and draw conclusions from data. Each observation in data is called a case. Characteristics of the case are called variables. With a matrix/table analogy, a case is a row while a variable is a column.
+Statistics - Correlation (Courtesy: xkcd.com)
+Types of variables:
+ Numerical - Can be discrete or continuous, and can take a wide range of numerical values.</description>
+    </item>
+    
+    <item>
+      <title>SPC – Using statistics to get insight from BI</title>
+      <link>https://maloymanna.github.io/2008/07/08/spc-using-statistics-to-get-insight-from-bi/</link>
+      <pubDate>Tue, 08 Jul 2008 13:46:21 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2008/07/08/spc-using-statistics-to-get-insight-from-bi/</guid>
+      <description>There is a well known adage that if you keep doing the same thing and expect different results, that is a sure sign of idiocy.
+In the BI world too, we come across several instances where people take it for granted that the ‘BI tool’ will magically generate insight and spur ‘intelligence’ rather than ‘idiocy’. Yet the very practices of reporting the same measures, or of creating reports for metrics just because they are now made available by the tool, without sparing any ‘intelligence’ into what will generate insight is a major cause of failures of BI.</description>
+    </item>
+    
+  </channel>
+</rss>

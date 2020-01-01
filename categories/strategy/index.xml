@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Strategy on Maloy Manna</title>
+    <link>https://maloymanna.github.io/categories/strategy/</link>
+    <description>Recent content in Strategy on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 04 Dec 2014 18:25:38 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/categories/strategy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Predictability – Get everything as a service – from IaaS, PaaS and SaaS to XaaS</title>
+      <link>https://maloymanna.github.io/2014/12/04/predictability-get-everything-as-a-service-from-iaas-paas-and-saas-to-xaas/</link>
+      <pubDate>Thu, 04 Dec 2014 18:25:38 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2014/12/04/predictability-get-everything-as-a-service-from-iaas-paas-and-saas-to-xaas/</guid>
+      <description>The outsourcing model which led to the “on-demand” “as a service” model, has taken off with increasing adoption of cloud-computing and mobility. What started out with the SaaS – software as a service model, has now diversified into several other services.
+Indeed, cloud computing has come to rest on three of these as its core pillars:
+ SaaS: Software as a Service PaaS: Platform as a Service IaaS: Infrastructure as a Service  Differentiating SaaS, PaaS and IaaS:</description>
+    </item>
+    
+    <item>
+      <title>BI maturity models</title>
+      <link>https://maloymanna.github.io/2012/01/08/bi-maturity-models/</link>
+      <pubDate>Sun, 08 Jan 2012 20:20:04 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2012/01/08/bi-maturity-models/</guid>
+      <description>With most companies listing BI within their top agenda, and with the rising costs and confusion around proving the worth of BI and justifying its costs, it makes sense to try and understand the evolution of BI adoption and maturity in organizations. Knowing what is possible with BI and knowing the challenges and pitfalls allows organizations to plan their BI strategy and implementation.
+There are quite a few schools of thought and available literature on the lifecycle of BI implementation and maturity in organizations, defining the models.</description>
+    </item>
+    
+    <item>
+      <title>Review of the BT Summit – Cloud computing, SOA and BI tracks</title>
+      <link>https://maloymanna.github.io/2009/11/13/review-of-the-bt-summit-cloud-computing-soa-and-bi-tracks/</link>
+      <pubDate>Fri, 13 Nov 2009 08:12:30 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2009/11/13/review-of-the-bt-summit-cloud-computing-soa-and-bi-tracks/</guid>
+      <description>I attended the Business Technology Summit in Bangalore last week – 3rd and 4th November. There were 3 tracks on cloud computing, Service Oriented Architecture and Business Intelligence, and I chose a mix of sessions across each.
+Overall impression:The BT Summit was heavily focused on cloud computing with half of second day having a deep dive into Amazon’s EC2 cloud offering, and several keynotes. SOA and web services, REST and similar architectural sessions were interspersed but definitely not a first-class citizen.</description>
+    </item>
+    
+    <item>
+      <title>Agile Development for BI</title>
+      <link>https://maloymanna.github.io/2008/04/07/agile-development-for-bi/</link>
+      <pubDate>Mon, 07 Apr 2008 05:43:39 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2008/04/07/agile-development-for-bi/</guid>
+      <description>How can you reduce development costs and improve software reliability and accuracy at the same time? How can you make IT work together with Business while architect-ing your BI applications? If these goals sound contradictory and difficult to achieve, then Agile development may well fit the bill. Indeed in numerous BI projects, one or the other flavor of Agile is used to attain these very goals.
+Defining Agile There are several Agile development methodologies available:</description>
+    </item>
+    
+    <item>
+      <title>Acquisitions in BI - End of the best of breed?</title>
+      <link>https://maloymanna.github.io/2007/12/20/acquisitions-in-bi-end-of-the-best-of-breed/</link>
+      <pubDate>Thu, 20 Dec 2007 05:26:41 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2007/12/20/acquisitions-in-bi-end-of-the-best-of-breed/</guid>
+      <description>Last time I talked about the trends in the BI space. Let&amp;rsquo;s look into one of those trends - M&amp;amp;As and how it is shaping BI as we know it.
+A recent BusinessWeek article claimed the end of the best-of-breed approach to BI with the demise of the major pure-play BI vendors like BOBJ now owned by SAP thanks to a friendly takeover or Hyperion acquired by Oracle or the latest - IBM&amp;rsquo;s acquisition of Cognos.</description>
+    </item>
+    
+  </channel>
+</rss>

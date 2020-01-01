@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dimensional modeling on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/dimensional-modeling/</link>
+    <description>Recent content in dimensional modeling on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 10 Dec 2007 20:33:42 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/tags/dimensional-modeling/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Trends in Business Intelligence</title>
+      <link>https://maloymanna.github.io/2007/12/10/trends-in-business-intelligence/</link>
+      <pubDate>Mon, 10 Dec 2007 20:33:42 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2007/12/10/trends-in-business-intelligence/</guid>
+      <description>By definition Business Intelligence (BI) has been about making decisions based on information obtained from meaningful data. At one point of time we had terms like decision support systems (DSS) to define technology which has finally evolved into BI as we know it now. Or has it? Somewhere along the line, we became entangled in the technology aspect of it and with all the buzzwords of data warehousing, data mining, dimensional modeling, data marts, **CRM **and **SCM **it is not difficult to see why.</description>
+    </item>
+    
+  </channel>
+</rss>

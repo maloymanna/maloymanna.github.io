@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data science team on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/data-science-team/</link>
+    <description>Recent content in data science team on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 24 Jun 2015 22:52:27 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/tags/data-science-team/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What roles do you need in your data science team?</title>
+      <link>https://maloymanna.github.io/2015/06/24/what-roles-do-you-need-in-your-data-science-team/</link>
+      <pubDate>Wed, 24 Jun 2015 22:52:27 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2015/06/24/what-roles-do-you-need-in-your-data-science-team/</guid>
+      <description>Over the past few weeks, we&amp;rsquo;ve had several conversations in our data lab regarding data engineering problems and day to day problems we face with unsupervised data scientists who find it difficult to deploy their code into production.
+The opinions from business seemed to cluster around a tacit definition of data scientists as researchers, primarily from statistics or mathematics backgrounds, who are experienced in machine learning algorithms and often in some domain areas specific to our business, (e.</description>
+    </item>
+    
+  </channel>
+</rss>

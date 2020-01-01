@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Maloy Manna</title>
+    <link>https://maloymanna.github.io/categories/</link>
+    <description>Recent content in Categories on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 07 Mar 2019 07:33:07 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>project management</title>
+      <link>https://maloymanna.github.io/categories/project-management/</link>
+      <pubDate>Thu, 07 Mar 2019 07:33:07 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/categories/project-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devops</title>
+      <link>https://maloymanna.github.io/categories/devops/</link>
+      <pubDate>Thu, 03 Nov 2016 07:52:19 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/categories/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Big Data</title>
+      <link>https://maloymanna.github.io/categories/big-data/</link>
+      <pubDate>Wed, 24 Jun 2015 22:52:27 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/categories/big-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data science</title>
+      <link>https://maloymanna.github.io/categories/data-science/</link>
+      <pubDate>Wed, 24 Jun 2015 22:52:27 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/categories/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>https://maloymanna.github.io/categories/machine-learning/</link>
+      <pubDate>Wed, 20 May 2015 16:38:04 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/categories/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spark</title>
+      <link>https://maloymanna.github.io/categories/spark/</link>
+      <pubDate>Mon, 23 Mar 2015 12:03:35 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/categories/spark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistics</title>
+      <link>https://maloymanna.github.io/categories/statistics/</link>
+      <pubDate>Sun, 04 Jan 2015 14:22:02 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/categories/statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Strategy</title>
+      <link>https://maloymanna.github.io/categories/strategy/</link>
+      <pubDate>Thu, 04 Dec 2014 18:25:38 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/categories/strategy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SAP BusinessObjects</title>
+      <link>https://maloymanna.github.io/categories/sap-businessobjects/</link>
+      <pubDate>Fri, 20 May 2011 17:54:03 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/categories/sap-businessobjects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Trendspotting</title>
+      <link>https://maloymanna.github.io/categories/trendspotting/</link>
+      <pubDate>Wed, 07 May 2008 09:59:04 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/categories/trendspotting/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TDWI on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/tdwi/</link>
+    <description>Recent content in TDWI on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 08 Jan 2012 20:20:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/tags/tdwi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BI maturity models</title>
+      <link>https://maloymanna.github.io/2012/01/08/bi-maturity-models/</link>
+      <pubDate>Sun, 08 Jan 2012 20:20:04 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2012/01/08/bi-maturity-models/</guid>
+      <description>With most companies listing BI within their top agenda, and with the rising costs and confusion around proving the worth of BI and justifying its costs, it makes sense to try and understand the evolution of BI adoption and maturity in organizations. Knowing what is possible with BI and knowing the challenges and pitfalls allows organizations to plan their BI strategy and implementation.
+There are quite a few schools of thought and available literature on the lifecycle of BI implementation and maturity in organizations, defining the models.</description>
+    </item>
+    
+  </channel>
+</rss>

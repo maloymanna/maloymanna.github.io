@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trendspotting on Maloy Manna</title>
+    <link>https://maloymanna.github.io/categories/trendspotting/</link>
+    <description>Recent content in Trendspotting on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 07 May 2008 09:59:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/categories/trendspotting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Thrive or Survive - the changing rules for databases</title>
+      <link>https://maloymanna.github.io/2008/05/07/thrive-or-survive-the-changing-rules-for-databases/</link>
+      <pubDate>Wed, 07 May 2008 09:59:04 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2008/05/07/thrive-or-survive-the-changing-rules-for-databases/</guid>
+      <description>Not since the late seventies, when Larry Ellison&amp;rsquo;s Relational Software Inc. (RSI) turned out the first commerically available RDBMS - Oracle, has there been such rapid changing of the rules (read disruption) in the database industry.
+With Web 2.0 pushing enterprise adoption, and the ensuing information explosion in the maze of audio, video, data and ever-growing data warehouses, it seems that the conventional relational database systems are growing tired. With estimates of unstructured data being anywhere between 80% to 95% of all business data, and the ever changing requirements imposed by Web 2.</description>
+    </item>
+    
+    <item>
+      <title>Agile Development for BI</title>
+      <link>https://maloymanna.github.io/2008/04/07/agile-development-for-bi/</link>
+      <pubDate>Mon, 07 Apr 2008 05:43:39 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2008/04/07/agile-development-for-bi/</guid>
+      <description>How can you reduce development costs and improve software reliability and accuracy at the same time? How can you make IT work together with Business while architect-ing your BI applications? If these goals sound contradictory and difficult to achieve, then Agile development may well fit the bill. Indeed in numerous BI projects, one or the other flavor of Agile is used to attain these very goals.
+Defining Agile There are several Agile development methodologies available:</description>
+    </item>
+    
+    <item>
+      <title>SaaS BI - Software as a service model in Business Intelligence</title>
+      <link>https://maloymanna.github.io/2008/03/14/saas-bi-software-as-a-service-model-in-business-intelligence/</link>
+      <pubDate>Fri, 14 Mar 2008 04:29:16 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2008/03/14/saas-bi-software-as-a-service-model-in-business-intelligence/</guid>
+      <description>SaaS has taken off in a big way in the past few years. And BI has not been lagging behind. For leading vendors like BOBJ (an SAP company) or Cognos (an IBM company), it&amp;rsquo;s going to be close to 2 years now since they started their SaaS BI.
+What exactly are the advantages of SaaS over the traditional approach?
+Benefits are aplenty, from zero costs of purchasing hardware, hiring of key IT personnel like system administrators and DBAs, to minimal implementation and maintenance costs.</description>
+    </item>
+    
+    <item>
+      <title>Acquisitions in BI - End of the best of breed?</title>
+      <link>https://maloymanna.github.io/2007/12/20/acquisitions-in-bi-end-of-the-best-of-breed/</link>
+      <pubDate>Thu, 20 Dec 2007 05:26:41 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2007/12/20/acquisitions-in-bi-end-of-the-best-of-breed/</guid>
+      <description>Last time I talked about the trends in the BI space. Let&amp;rsquo;s look into one of those trends - M&amp;amp;As and how it is shaping BI as we know it.
+A recent BusinessWeek article claimed the end of the best-of-breed approach to BI with the demise of the major pure-play BI vendors like BOBJ now owned by SAP thanks to a friendly takeover or Hyperion acquired by Oracle or the latest - IBM&amp;rsquo;s acquisition of Cognos.</description>
+    </item>
+    
+  </channel>
+</rss>

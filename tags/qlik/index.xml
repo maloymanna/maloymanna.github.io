@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>qlik on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/qlik/</link>
+    <description>Recent content in qlik on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 20 Dec 2007 05:26:41 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/tags/qlik/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Acquisitions in BI - End of the best of breed?</title>
+      <link>https://maloymanna.github.io/2007/12/20/acquisitions-in-bi-end-of-the-best-of-breed/</link>
+      <pubDate>Thu, 20 Dec 2007 05:26:41 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2007/12/20/acquisitions-in-bi-end-of-the-best-of-breed/</guid>
+      <description>Last time I talked about the trends in the BI space. Let&amp;rsquo;s look into one of those trends - M&amp;amp;As and how it is shaping BI as we know it.
+A recent BusinessWeek article claimed the end of the best-of-breed approach to BI with the demise of the major pure-play BI vendors like BOBJ now owned by SAP thanks to a friendly takeover or Hyperion acquired by Oracle or the latest - IBM&amp;rsquo;s acquisition of Cognos.</description>
+    </item>
+    
+  </channel>
+</rss>

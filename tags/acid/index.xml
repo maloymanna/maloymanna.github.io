@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ACID on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/acid/</link>
+    <description>Recent content in ACID on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 01 Oct 2014 08:25:31 +0000</lastBuildDate>
+    
+	<atom:link href="https://maloymanna.github.io/tags/acid/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Big Data Basics - Part  4 : NoSQL and NewSQL explained</title>
+      <link>https://maloymanna.github.io/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/</link>
+      <pubDate>Wed, 01 Oct 2014 08:25:31 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/</guid>
+      <description>This is the fourth part of a series of posts on big data. Read the previous posts here: Part-1, Part-2 and Part-3.
+With the ongoing data explosion, and the improvement in technologies able to deal with it, businesses are turning to leverage this big data for mining insights to gain competitive advantage, reinvent business models and create new markets.
+A huge amount of this &amp;ldquo;big data&amp;rdquo; volumes comes from system logs, user generated content on social media like Twitter or Facebook, sensor data and the like.</description>
+    </item>
+    
+  </channel>
+</rss>
