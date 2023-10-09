@@ -30,7 +30,7 @@ The table below shows the growth of data and the new terminology that has been c
 <tr><th>Amount of data</th><th>Terminology</th><th>Storage</th><th>Real-world analogy</th></tr>
 <tr><td>10<sup>3</sup> bytes</td><td>Kilobytes (kB)</td><td>1.44 MB High-density floppy disk</td><td>Files, folders</td></tr>
 <tr><td>10<sup>6</sup> bytes</td><td>Megabytes (MB) </td><td>Disks, tape</td><td>Folders, cabinets</td></tr>
-<tr><td>10<sup>9 - 10<sup>12</sup> bytes</td><td>Gigabytes (GB) - Terabytes (TB)</td><td>Disk arrays</td><td>Library</td></tr>
+<tr><td>10<sup>9</sup> - 10<sup>12</sup> bytes</td><td>Gigabytes (GB) - Terabytes (TB)</td><td>Disk arrays</td><td>Library</td></tr>
 <tr><td>10<sup>15</sup> bytes</td><td>Petabytes (PB)</td><td>Cloud</td><td>...</td></tr>
 <tr><td>10<sup>18</sup> bytes</td><td>Exabytes (EB)</td><td>Cloud</td><td>...</td></tr>
 <tr><td>10<sup>21</sup> bytes</td><td>Zettabytes (ZB)</td><td>Cloud</td><td>...</td></tr>
