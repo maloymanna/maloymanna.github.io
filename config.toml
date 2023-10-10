@@ -9,6 +9,7 @@ ignoreFiles = ["\\.foo$", "\\.bak$", "\\.sh$"]
 paginate = 5
 buildFuture = "true"
 enableEmoji = "true"
+publishDir = "public"
 
 [permalinks]
   post = "/:year/:month/:day/:slug/"
