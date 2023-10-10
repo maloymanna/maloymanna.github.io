@@ -6,12 +6,8 @@
     <description>Recent content in Spark on Maloy Manna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 18 Nov 2015 11:37:49 +0000</lastBuildDate>
-    
-	<atom:link href="https://maloymanna.github.io/tags/spark/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>&amp;copy; 2007 - 2023. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 18 Nov 2015 11:37:49 +0000</lastBuildDate><atom:link href="https://maloymanna.github.io/tags/spark/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data processing with Spark in R &amp; Python</title>
       <link>https://maloymanna.github.io/2015/11/18/data-processing-with-spark-in-r-python/</link>
@@ -19,7 +15,8 @@
       
       <guid>https://maloymanna.github.io/2015/11/18/data-processing-with-spark-in-r-python/</guid>
       <description>I recently gave a talk on data processing with Apache Spark using R and Python. tl;dr - the slides and presentation can be accessed below (free registration):
-   As noted in my previous post, Spark has become the defacto standard for big data applications and has been adopted quickly by the industry. See Cloudera&amp;rsquo;s One Platform initiative blog post by CEO Mike Olson for their commitment to Spark.</description>
+As noted in my previous post, Spark has become the defacto standard for big data applications and has been adopted quickly by the industry. See Cloudera&amp;rsquo;s One Platform initiative blog post by CEO Mike Olson for their commitment to Spark.
+In data science R had seen rapid adoption, not only because it was open source and free compared to costly SAS, but also the huge number of statistical and graphical packages provided by R for data science.</description>
     </item>
     
     <item>
@@ -28,7 +25,7 @@
       <pubDate>Tue, 30 Dec 2014 22:36:53 +0000</pubDate>
       
       <guid>https://maloymanna.github.io/2014/12/30/set-up-a-hadoop-spark-cluster-in-10-minutes-with-vagrant/</guid>
-      <description>With each of the big 3 Hadoop vendors - Cloudera, Hortonworks and MapR each providing their own Hadoop sandbox virtual machines (VMs), trying out Hadoop today has become extremely easy. For a developer, it is extremely useful to download a get started with one of these VMs and try out Hadoop to practice data science right away.
+      <description>With each of the big 3 Hadoop vendors - Cloudera, Hortonworks and MapR each providing their own Hadoop sandboxvirtual machines (VMs), trying out Hadoop today has become extremely easy. For a developer, it is extremely useful to download a get started with one of these VMs and try out Hadoop to practice data science right away.
 However, with the core Apache Hadoop, these vendors package their own software into their distributions, mostly for the orchestration and management, which can be a pain due to the multiple scattered open-source projects within the Hadoop ecosystem.</description>
     </item>
     

@@ -6,12 +6,8 @@
     <description>Recent content in export on Maloy Manna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 27 Apr 2008 05:11:17 +0000</lastBuildDate>
-    
-	<atom:link href="https://maloymanna.github.io/tags/export/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>&amp;copy; 2007 - 2023. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 27 Apr 2008 05:11:17 +0000</lastBuildDate><atom:link href="https://maloymanna.github.io/tags/export/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Export data out of Xcelsius dashboards</title>
       <link>https://maloymanna.github.io/2008/04/27/export-data-out-of-your-xcelsius-dashboards/</link>

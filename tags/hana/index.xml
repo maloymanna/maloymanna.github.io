@@ -6,12 +6,8 @@
     <description>Recent content in HANA on Maloy Manna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 17 Sep 2010 13:34:11 +0000</lastBuildDate>
-    
-	<atom:link href="https://maloymanna.github.io/tags/hana/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>&amp;copy; 2007 - 2023. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 17 Sep 2010 13:34:11 +0000</lastBuildDate><atom:link href="https://maloymanna.github.io/tags/hana/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Analytics - out of the box: SAP Business Analytics</title>
       <link>https://maloymanna.github.io/2010/09/17/analytics-out-of-the-box-sap-business-analytics/</link>

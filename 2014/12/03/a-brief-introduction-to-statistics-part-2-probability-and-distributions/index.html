@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.90.0" />
 
   <title>A Brief Introduction to Statistics - Part 2 - Probability and Distributions &middot; Maloy Manna</title>
 
@@ -36,7 +36,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  
+    
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
@@ -216,7 +216,7 @@
 
   <div>
   <div class="small-print">
-    <small>&copy; 2007 - 2020. All rights reserved.</small>
+    <small>&copy; 2007 - 2023. All rights reserved.</small>
   </div>
   <div class="small-print">
     <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
@@ -285,114 +285,86 @@
 </div>
 
   <p>Probability concepts form the foundation for statistics.</p>
-
-<p><img src="/post/odds1.png?w=300" alt="Odds-Probability" /></p>
-
+<p><img src="/post/odds1.png?w=300" alt="Odds-Probability"></p>
 <p><strong>A formal definition of probability</strong>:</p>
-
 <p>The probability of an outcome is the proportion of times the outcome would
-occur if we observed the random process an inﬁnite number of times.<br />
-This is a corollary of the law of large numbers:<br />
+occur if we observed the random process an inﬁnite number of times.<br>
+This is a corollary of the law of large numbers:<br>
 As more observations are collected, the proportion of occurrences with a particular outcome converges to the probability of that outcome.</p>
-
-<p><strong>Disjoint</strong> (mutually exclusive) events as events that cannot both happen at the same time. i.e. If A and B are disjoint, <strong>P(A and B) = 0</strong><br />
-<strong>Complementary</strong> outcomes as mutually exclusive outcomes of the same random process whose probabilities add up to 1.<br />
+<p><strong>Disjoint</strong> (mutually exclusive) events as events that cannot both happen at the same time. i.e. If A and B are disjoint, <strong>P(A and B) = 0</strong><br>
+<strong>Complementary</strong> outcomes as mutually exclusive outcomes of the same random process whose probabilities add up to 1.<br>
 If A and B are complementary, <strong>P(A) + P(B) = 1</strong></p>
-
-<p>If A and B are <strong>independent</strong>, then having information on A does not tell us anything about B (<em>and vice versa</em>).<br />
-If A and B are <strong>disjoint</strong>, then knowing that A occurs tells us that B cannot occur (<em>and vice versa</em>).<br />
+<p>If A and B are <strong>independent</strong>, then having information on A does not tell us anything about B (<em>and vice versa</em>).<br>
+If A and B are <strong>disjoint</strong>, then knowing that A occurs tells us that B cannot occur (<em>and vice versa</em>).<br>
 Disjoint (mutually exclusive) events are always dependent since if one event occurs we know the other one cannot.</p>
-
 <p>A <strong>probability distribution</strong> is a list of the possible outcomes with corresponding probabilities that satisfies three rules:</p>
-
 <ol>
 <li>The outcomes listed must be disjoint.</li>
 <li>Each probability must be between 0 and 1.</li>
 <li>The probabilities must total 1.</li>
 </ol>
-
-<p>Using the <strong>general addition rule</strong>, the probability of union of events can be calculated.<br />
-If A and B are <em>not mutually exclusive</em>:<br />
+<p>Using the <strong>general addition rule</strong>, the probability of union of events can be calculated.<br>
+If A and B are <em>not mutually exclusive</em>:<br>
 <strong>P(A or B) = P(A) + P(B) − P(A and B)</strong></p>
-
-<p>If A and B are <em>mutually exclusive</em>:<br />
+<p>If A and B are <em>mutually exclusive</em>:<br>
 <strong>P(A or B) = P (A) + P (B)</strong>, since for mutually exclusive events <strong>P(A and B) = 0</strong></p>
-
-<p>If a probability is based on a single variable, it is a <strong>marginal probability</strong>.<br />
+<p>If a probability is based on a single variable, it is a <strong>marginal probability</strong>.<br>
 The probability of outcomes for two or more variables or processes is called a <strong>joint probability</strong>.</p>
-
 <p>The <strong>conditional probability</strong> of the outcome of interest A given condition B is
 computed as the following:
 <strong>P(A|B) = P(A and B) / P(B)</strong></p>
-
-<p>Using the multiplication rule, the probability of intersection of events can be calculated.<br />
-If A and B are independent,<strong>P(A and B) = P(A) × P(B)</strong><br />
-If A and B are dependent, <strong>P(A and B) = P(A|B) × P(B)</strong><br />
-The rule of complements also holds when an event and its complement are conditioned on the same information:<br />
-<strong>P(A|B) = 1 − P(A&rsquo; |B)</strong> where A&rsquo; is the complement of A</p>
-
+<p>Using the multiplication rule, the probability of intersection of events can be calculated.<br>
+If A and B are independent,<strong>P(A and B) = P(A) × P(B)</strong><br>
+If A and B are dependent, <strong>P(A and B) = P(A|B) × P(B)</strong><br>
+The rule of complements also holds when an event and its complement are conditioned on the same information:<br>
+<strong>P(A|B) = 1 − P(A' |B)</strong> where A' is the complement of A</p>
 <p><strong>Tree diagrams</strong> are a tool to organize outcomes and probabilities around the structure of the data. They are most useful when two or more processes occur in a sequence and each process is conditioned on its predecessors.</p>
-
-<p><font color ="blue"><strong>Bayes Theorem:</strong></font></p>
-
-<p>P(A1|B) = P(B|A1 )P(A1 ) / { P(B|A1 )P(A1 ) + P(B|A2 )P(A2 ) + · · · + P(B|Ak )P(Ak )} where A1, A2 , A3 , &hellip;, and Ak represent all possible outcomes of the ﬁrst variable and P(B) is the outcome of second variable.<br />
-Drawing a tree diagram makes it easier to understand how two variables are connected.<br />
+<p><!-- raw HTML omitted --><strong>Bayes Theorem:</strong><!-- raw HTML omitted --></p>
+<p>P(A1|B) = P(B|A1 )P(A1 ) / { P(B|A1 )P(A1 ) + P(B|A2 )P(A2 ) + · · · + P(B|Ak )P(Ak )} where A1, A2 , A3 , &hellip;, and Ak represent all possible outcomes of the ﬁrst variable and P(B) is the outcome of second variable.<br>
+Drawing a tree diagram makes it easier to understand how two variables are connected.<br>
 Use Bayes’ Theorem only when there are so many scenarios that drawing a tree diagram would be complex.</p>
-
-<p>The <strong>standardized (Z) score</strong> of a data point as the number of standard deviations it is away from the mean:<br />
+<p>The <strong>standardized (Z) score</strong> of a data point as the number of standard deviations it is away from the mean:<br>
 <strong>Z=(x−μ)/σ</strong> where μ=mean, and σ=standard deviation.</p>
-
-<p>If the tail (skew) is on the left (negative side), we have a negatively skewed distribution and a negative Z score of the median.<br />
+<p>If the tail (skew) is on the left (negative side), we have a negatively skewed distribution and a negative Z score of the median.<br>
 In a right skewed distribution the Z score of the median is positive.</p>
-
 <p>A random process or variable with a numerical outcome is called a <strong>random variable</strong>, denoted by a capital letter, e.g. X. The mean of the possible outcomes of X is called the <strong>expected value</strong>, denoted by E(X).</p>
-
-<p>The most common distribution is the normal curve or <strong>normal distribution</strong>.<br />
-Many variables are nearly normal, but none are exactly normal. Thus the normal distribution, while not perfect for any single problem, is very useful for a variety of problems.<br />
-The normal distribution with mean 0 and standard deviation 1 is called the standard normal distribution.<br />
+<p>The most common distribution is the normal curve or <strong>normal distribution</strong>.<br>
+Many variables are nearly normal, but none are exactly normal. Thus the normal distribution, while not perfect for any single problem, is very useful for a variety of problems.<br>
+The normal distribution with mean 0 and standard deviation 1 is called the standard normal distribution.<br>
 An often-used thumb rule is the <strong>68-95-99.5 rule</strong>, i.e. about 68%, 95%, and 99.7% of
 observations fall within 1, 2, and 3, standard deviations of the mean in the normal distribution, respectively.</p>
-
-<p>A Bernoulli random variable has exactly two possible outcomes, usually labeled success(1) and failure(0).<br />
+<p>A Bernoulli random variable has exactly two possible outcomes, usually labeled success(1) and failure(0).<br>
 If X is a random variable that takes value 1 with probability of success p and 0 with probability 1 − p, then X is a Bernoulli random variable with:</p>
-
 <ul>
-<li>mean µ = p<br /></li>
+<li>mean µ = p</li>
 <li>and standard deviation σ = sqrt(p(1 − p))</li>
 </ul>
-
 <p>The binomial distribution describes the probability of having exactly k
-successes in n independent Bernoulli trials with probability of a success p.<br />
-The number of possible scenarios for obtaining k successes in n trials is given by the choose function<br />
-<strong>(n choose k) = n!/(k!(n − k)!)</strong><br />
-The probability of observing <strong>exactly k successes in n independent trials</strong> is given by:<br />
-<strong>(n choose k) p<sup>k</sup> (1 − p)<sup>(n−k)</sup> = (n!/(k!(n − k)!)) p<sup>k</sup> (1-p)<sup>(n-k)</sup></strong></p>
-
-<p>Additionally, the mean, variance, and standard deviation of the number of observed successes are:<br />
-<strong>µ = np, σ<sup>2</sup> = np(1 − p), σ = sqrt(np(1-p))</strong></p>
-
+successes in n independent Bernoulli trials with probability of a success p.<br>
+The number of possible scenarios for obtaining k successes in n trials is given by the choose function<br>
+<strong>(n choose k) = n!/(k!(n − k)!)</strong><br>
+The probability of observing <strong>exactly k successes in n independent trials</strong> is given by:<br>
+<strong>(n choose k) p<!-- raw HTML omitted -->k<!-- raw HTML omitted --> (1 − p)<!-- raw HTML omitted -->(n−k)<!-- raw HTML omitted --> = (n!/(k!(n − k)!)) p<!-- raw HTML omitted -->k<!-- raw HTML omitted --> (1-p)<!-- raw HTML omitted -->(n-k)<!-- raw HTML omitted --></strong></p>
+<p>Additionally, the mean, variance, and standard deviation of the number of observed successes are:<br>
+<strong>µ = np, σ<!-- raw HTML omitted -->2<!-- raw HTML omitted --> = np(1 − p), σ = sqrt(np(1-p))</strong></p>
 <p>To check if a random variable is binomial, use the following four conditions:</p>
-
 <ol>
 <li>The trials are independent.</li>
 <li>The number of trials, n, is fixed.</li>
 <li>Each trial outcome can be classified as a success or failure.</li>
-<li>The probability of a success, p, is the same for each trial.<br /></li>
+<li>The probability of a success, p, is the same for each trial.</li>
 </ol>
-
-<p>The binomial formula is cumbersome when the sample size (n) is large, particularly when we consider a range of observations. In some cases we may use the normal distribution as an easier and faster way to estimate binomial probabilities.<br />
-A thumb rule to use in such cases is to check the conditions:<br />
-<strong>np ≥ 10 and n(1−p) ≥ 10</strong><br />
-The negative binomial distribution describes the probability of observing the k-th success on the n-th trial:<br />
-<strong>(n-1 choose k-1) p<sup>k</sup>(1-p)<sup>(n-k)</sup></strong><br />
+<p>The binomial formula is cumbersome when the sample size (n) is large, particularly when we consider a range of observations. In some cases we may use the normal distribution as an easier and faster way to estimate binomial probabilities.<br>
+A thumb rule to use in such cases is to check the conditions:<br>
+<strong>np ≥ 10 and n(1−p) ≥ 10</strong><br>
+The negative binomial distribution describes the probability of observing the k-th success on the n-th trial:<br>
+<strong>(n-1 choose k-1) p<!-- raw HTML omitted -->k<!-- raw HTML omitted -->(1-p)<!-- raw HTML omitted -->(n-k)<!-- raw HTML omitted --></strong><br>
 where p is the probability an individual trial is a success. All trials are assumed to be independent.</p>
-
-<p>The Poisson distribution is often useful for estimating the number of rare events in a large population over a unit of time. Suppose we are watching for rare events and the number of observed events follows a Poisson distribution with rate λ.<br />
-<strong>P(observe k rare events) = λ<sup>k</sup> e<sup>-λ</sup> / k!</strong><br />
-where k may take a value 0, 1, 2, and so on. e≈2.718, the base of natural logarithm.<br />
+<p>The Poisson distribution is often useful for estimating the number of rare events in a large population over a unit of time. Suppose we are watching for rare events and the number of observed events follows a Poisson distribution with rate λ.<br>
+<strong>P(observe k rare events) = λ<!-- raw HTML omitted -->k<!-- raw HTML omitted --> e<!-- raw HTML omitted -->-λ<!-- raw HTML omitted --> / k!</strong><br>
+where k may take a value 0, 1, 2, and so on. e≈2.718, the base of natural logarithm.<br>
 A random variable may follow a Poisson distribution if the event being considered is <strong>rare</strong>, the population is large, and the events occur independently of each other.</p>
-
-<p><img src="/post/probability.jpg?w=300" alt="ProbabilityStudies" /></p>
+<p><img src="/post/probability.jpg?w=300" alt="ProbabilityStudies"></p>
 
 
   
@@ -426,6 +398,26 @@ A random variable may follow a Poisson distribution if the event being considere
   </div>
 </div>
 
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'maloymanna';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
 </div>

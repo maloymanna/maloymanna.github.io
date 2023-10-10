@@ -6,12 +6,8 @@
     <description>Recent content in universe on Maloy Manna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 19 Jul 2009 22:43:12 +0000</lastBuildDate>
-    
-	<atom:link href="https://maloymanna.github.io/tags/universe/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>&amp;copy; 2007 - 2023. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 19 Jul 2009 22:43:12 +0000</lastBuildDate><atom:link href="https://maloymanna.github.io/tags/universe/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BusinessObjects universe design best practices</title>
       <link>https://maloymanna.github.io/2009/07/19/businessobjects-universe-design-best-practices/</link>
@@ -28,8 +24,8 @@
       
       <guid>https://maloymanna.github.io/2008/05/02/its-all-in-the-universe-handling-chasm-and-fan-traps/</guid>
       <description>Recently I worked on an assignment where the Business Objects universe was designed by a business analyst. Nothing wrong with that, as long as we get the correct results in reports or queries on the universe. But it was not to be. We encountered incorrect results primarily due to two reasons:
- Mixing of grains in fact tables by not using proper contexts or the aggregate navigator
- Unresolved chasm traps</description>
+  Mixing of grains in fact tables by not using proper contexts or the aggregate navigator
+  Unresolved chasm traps</description>
     </item>
     
   </channel>

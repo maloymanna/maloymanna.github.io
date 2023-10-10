@@ -6,12 +6,8 @@
     <description>Recent content in project management on Maloy Manna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 07 Mar 2019 07:33:07 +0000</lastBuildDate>
-    
-	<atom:link href="https://maloymanna.github.io/tags/project-management/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>&amp;copy; 2007 - 2023. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 07 Mar 2019 07:33:07 +0000</lastBuildDate><atom:link href="https://maloymanna.github.io/tags/project-management/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The 5 time thieves</title>
       <link>https://maloymanna.github.io/pm/the-5-time-thieves/</link>
@@ -20,7 +16,7 @@
       <guid>https://maloymanna.github.io/pm/the-5-time-thieves/</guid>
       <description>I recently read this book &amp;ldquo;Making work visible&amp;rdquo; by Dominica Degrandis which explains how to facilitate work organization by making it visual. It also nearly explains some recurrent problems which corporations overlook while designing work processes - the time thieves. The 5 time thieves prevent getting work done efficiently and can be identified (and minimized) when work is surfaced visually.
 The 5 time thieves or categories of problems are:
- Too much Work in Progress - this happens usually when demand exceeds the capacity of the team.</description>
+  Too much Work in Progress - this happens usually when demand exceeds the capacity of the team.</description>
     </item>
     
     <item>
@@ -86,7 +82,7 @@ DevOps is a philosophy which advocates close collaboration between development (
       
       <guid>https://maloymanna.github.io/pm/3-types-of-waste-muda-mura-muri/</guid>
       <description>Lean thinking is based on eliminating waste in order to improve efficiency. Lean project management relies on lean thinking concepts for the elimination of waste. Due to its inception in the quality and productivity improvement processes in Japanese manufacturing, especially the Toyota Production System, the three main categories of waste (3M) have Japanese names: muda, mura and muri .
- Muda - any activity that consumes resources but creates no value for the customer</description>
+  Muda - any activity that consumes resources but creates no value for the customer</description>
     </item>
     
     <item>
@@ -95,7 +91,7 @@ DevOps is a philosophy which advocates close collaboration between development (
       <pubDate>Sun, 29 May 2016 09:25:25 +0000</pubDate>
       
       <guid>https://maloymanna.github.io/pm/agile-project-management/</guid>
-      <description>Agile is an approach to software development. Project management is the application of knowledge, skills and techniques to project activities to meet the project requirements. Agile is not a methodology. What does then &amp;ldquo;agile project management&amp;rdquo;  mean ?
+      <description>Agile is an approach to software development. Project management is the application of knowledge, skills and techniques to project activities to meet the project requirements. Agile is not a methodology. What does then &amp;ldquo;agile project management&amp;rdquo; mean ?
 Simply put, agile project management can be defined as the application of agile methods and values to project management. While there are several agile methods (Scrum, Kanban, XP, FDD etc.), all of them share the same core values, inspired from the agile manifesto.</description>
     </item>
     
@@ -105,8 +101,8 @@ Simply put, agile project management can be defined as the application of agile 
       <pubDate>Tue, 02 Feb 2016 08:35:35 +0000</pubDate>
       
       <guid>https://maloymanna.github.io/pm/5-principles-of-lean-project-management/</guid>
-      <description>The use of lean practices like Kanban boards has become really popular in project management, especially those using agile methods. But what exactly is Lean project management ?
-The application of lean manufacturing principles to project management can be roughly translated as lean project management. These principles were developed at Toyota, with the famous Toyota Production System employing kanban and the concepts of just-in-time (JIT) and &amp;ldquo;pull&amp;rdquo; to optimize flow and minimize inventory.</description>
+      <description>The use of lean practices like Kanban boards has become really popular in project management, especially those using agile methods. But what exactly is Lean project management?
+The application of lean manufacturing principles to project management can be roughly translated as lean project management. These principles were developed at Toyota, with the famous Toyota Production System employing kanban and the concepts of just-in-time (JIT)and &amp;ldquo;pull&amp;rdquo; to optimize flow and minimize inventory.</description>
     </item>
     
   </channel>

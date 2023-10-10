@@ -6,11 +6,36 @@
     <description>Recent content in Big Data on Maloy Manna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 24 Jun 2015 22:52:27 +0000</lastBuildDate>
+    <copyright>&amp;copy; 2007 - 2023. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 14 Jul 2017 11:27:09 +0000</lastBuildDate><atom:link href="https://maloymanna.github.io/categories/big-data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>9 features of modern data architectures</title>
+      <link>https://maloymanna.github.io/2017/07/14/9-features-of-modern-data-architectures/</link>
+      <pubDate>Fri, 14 Jul 2017 11:27:09 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2017/07/14/9-features-of-modern-data-architectures/</guid>
+      <description>The last few years has seen a massive change in the data landscape. With the rise of big data, there&amp;rsquo;s been rapid innovation in the tools, skills and roles working on data systems. Data architectures have evolved beyond monolithic, centralized databases and unwieldy analytic applications to distributed, scalable architectures with simpler collaborative and interactive analytic tools. In this post, I look at the defining features of modern data architectures.
+Modern data architectures generally feature the following (though not all of these may be present in the same system):</description>
+    </item>
     
-	<atom:link href="https://maloymanna.github.io/categories/big-data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kafka - building real-time stream data pipelines</title>
+      <link>https://maloymanna.github.io/2017/05/01/kafka-building-real-time-stream-data-pipelines/</link>
+      <pubDate>Mon, 01 May 2017 14:11:27 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2017/05/01/kafka-building-real-time-stream-data-pipelines/</guid>
+      <description>Over the past few years, Kafka has become the most exciting new addition in the big data distributed architecture. Originally developed at LinkedIn, its founders Jay Kreps, Jun Rao and Neha Narkhede have launched a company Confluent to develop its open-core business model. The software at its core, Apache Kafka reinvents the database log to provide a highly scalable and fault tolerant, high performance distributed system, which serves as the data pipeline backbone for stream data processing.</description>
+    </item>
     
+    <item>
+      <title>Hadoop&#39;s small files problem</title>
+      <link>https://maloymanna.github.io/2016/02/16/hadoop-small-files-problem/</link>
+      <pubDate>Tue, 16 Feb 2016 08:09:12 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2016/02/16/hadoop-small-files-problem/</guid>
+      <description>Small files are a big problem in Hadoop.
+Hadoop is designed to manage big data and by design this means HDFS is designed to store very large files in a distributed cluster with streaming access to this data. For reference, a typical block in HDFS is 64 MB or 128 MB. Each small file (few MB or less) is stored in a block and multiple small files could be stored in blocks across different nodes of the distributed cluster.</description>
+    </item>
     
     <item>
       <title>What roles do you need in your data science team?</title>
@@ -51,7 +76,7 @@ So what exactly is Spark, and why has it generated such enthusiasm? Apache Spark
       <pubDate>Wed, 04 Feb 2015 23:26:36 +0000</pubDate>
       
       <guid>https://maloymanna.github.io/2015/02/04/a-gentle-introduction-to-machine-learning/</guid>
-      <description>Machine Learning is a big part of big data and data science. A subset of artificial intelligence - a branch of science notorious for requiring advanced knowledge of mathematics. In practice though, most data scientists don&amp;rsquo;t try to build a Chappie and there are simpler, practical ways to get started with machine learning.
+      <description>Machine Learningis a big part of big data and data science. A subset of artificial intelligence - a branch of science notorious for requiring advanced knowledge of mathematics. In practice though, most data scientists don&amp;rsquo;t try to build a Chappie and there are simpler, practical ways to get started with machine learning.
 Machine learning in practice involves predictions based on data. Notable examples include Amazon&amp;rsquo;s product recommendations with the &amp;ldquo;customers also bought&amp;rdquo; scroll-list, or Gmail&amp;rsquo;s priority inbox or any email spam-filter feature.</description>
     </item>
     
@@ -70,7 +95,7 @@ Machine learning in practice involves predictions based on data. Notable example
       <pubDate>Tue, 30 Dec 2014 22:36:53 +0000</pubDate>
       
       <guid>https://maloymanna.github.io/2014/12/30/set-up-a-hadoop-spark-cluster-in-10-minutes-with-vagrant/</guid>
-      <description>With each of the big 3 Hadoop vendors - Cloudera, Hortonworks and MapR each providing their own Hadoop sandbox virtual machines (VMs), trying out Hadoop today has become extremely easy. For a developer, it is extremely useful to download a get started with one of these VMs and try out Hadoop to practice data science right away.
+      <description>With each of the big 3 Hadoop vendors - Cloudera, Hortonworks and MapR each providing their own Hadoop sandboxvirtual machines (VMs), trying out Hadoop today has become extremely easy. For a developer, it is extremely useful to download a get started with one of these VMs and try out Hadoop to practice data science right away.
 However, with the core Apache Hadoop, these vendors package their own software into their distributions, mostly for the orchestration and management, which can be a pain due to the multiple scattered open-source projects within the Hadoop ecosystem.</description>
     </item>
     
@@ -92,7 +117,7 @@ This post looks at practical aspects of implementing data science projects. It a
       <guid>https://maloymanna.github.io/2014/12/19/bi-in-the-digital-era/</guid>
       <description>Sometime back I presented a webinar on BrightTalk. The slides for the talk have now been uploaded on Slideshare. The talk focused more on changes in digital technology disrupting businesses, the effect of Big Data, the FOMO (Fear of missing out) effect on big business - and what it meant for changes to the way we do business intelligence in the digital era.
  Key themes:
- Disruption in traditional IT with cloud computing Changing economics and changing business models Rise of Big Data Tech changes to manage Big Data - distributed computing Shift from &amp;ldquo;current-state&amp;rdquo; to &amp;ldquo;next-state&amp;rdquo; questions Introducing Data Science Challenges - regulatory, data privacy Dangers of data science - over-fitting, interpretation Managing big data projects Data Science MOOCs (massive open online courses), tools and resources</description>
+ Disruption in traditional IT with cloud computing Changing economics and changing business models Rise of Big Data Tech changes to manage Big Data - distributed computing Shift from &amp;ldquo;current-state&amp;rdquo; to &amp;ldquo;next-state&amp;rdquo; questions Introducing Data Science Challenges - regulatory, data privacy Dangers of data science - over-fitting, interpretation Managing big data projects Data Science MOOCs (massive open online courses), tools and resources  </description>
     </item>
     
     <item>
@@ -102,7 +127,7 @@ This post looks at practical aspects of implementing data science projects. It a
       
       <guid>https://maloymanna.github.io/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/</guid>
       <description>This is the fourth part of a series of posts on big data. Read the previous posts here: Part-1, Part-2 and Part-3.
-With the ongoing data explosion, and the improvement in technologies able to deal with it, businesses are turning to leverage this big data for mining insights to gain competitive advantage, reinvent business models and create new markets.
+With the ongoing data explosion, and the improvement in technologies able to deal with it, businesses are turning to leverage this big datafor mining insights to gain competitive advantage, reinvent business models and create new markets.
 A huge amount of this &amp;ldquo;big data&amp;rdquo; volumes comes from system logs, user generated content on social media like Twitter or Facebook, sensor data and the like.</description>
     </item>
     

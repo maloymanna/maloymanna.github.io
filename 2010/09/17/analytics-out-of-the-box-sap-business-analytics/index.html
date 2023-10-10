@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.90.0" />
 
   <title>Analytics - out of the box: SAP Business Analytics &middot; Maloy Manna</title>
 
@@ -36,7 +36,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  
+    
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
@@ -216,7 +216,7 @@
 
   <div>
   <div class="small-print">
-    <small>&copy; 2007 - 2020. All rights reserved.</small>
+    <small>&copy; 2007 - 2023. All rights reserved.</small>
   </div>
   <div class="small-print">
     <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
@@ -285,35 +285,20 @@
 </div>
 
   <p>SAP finally <a href="http://www.sap.com/about/newsroom/press.epx?pressid=13894">announced </a>on September 14, 2010 that it was getting onto the pre-packaged analytics bandwagon.  SAP announced ten applications in this first release for six industries (Consumer Products, Healthcare, Financial Services, Public Sector, Retail and Telecommunications) in its BusinessObjects  offering.</p>
-
 <p>Building on the <a href="http://www.sap.com/solutions/sapbusinessobjects/large/eim/rapidmarts/index.epx">rapid-marts</a> offering that the then BOBJ used to have and leveraging SAP’s industry and line of business expertise, these new applications are based on the SAP Business Objects XI platform – WebIntelligence, Crystal Reports and Dashboards (formerly Xcelsius). Bill McDermott, the joint CEO of SAP, described it as “<strong>complete and ready-to-go</strong>” and claimed the applications can be deployed in <em>as less as eight weeks</em>.</p>
-
 <p>You may remember the <a href="http://www.networkworld.com/news/2009/032709-analytics-versus.html">brouhaha created by SAS last year</a> , when it kicked off the controversy on Business Analytics being the future, rather than Business Intelligence. Going back even further, Oracle already had this in its Siebel Analytics pre-built analytic applications for various industries. Therefore, it would seem that SAP is already late in the game, but considering that neither Microsoft nor IBM have similar offerings, it may not be too bad for SAP. Better late than never…</p>
-
 <p><strong>Under the hood:</strong></p>
-
 <p>The pre-packaged analytic applications are based on the BusinessObjects XI platform – with the universe as the semantic layer or metadata model. It can be based on both SAP and non-SAP data, OLTP and data warehouse, relational and unstructured.  SAP would work with its partners HP and Teradata to optimize the analytic solutions on their hosting and data warehousing solutions.</p>
-
 <p>Business Analytics dashboards are <strong>Xcelsius flash files</strong> which can be used with web services/QAWS to deliver real-time analytics. It may also be possible to use these with<a href="http://www.sap.com/solutions/sapbusinessobjects/large/business-intelligence/search-navigation/explorer/explorer-accelerated/index.epx"> SAP Business Objects Explorer</a> (formerly Polestar) and/or SAP BW Accelerator or the SAP high-performance analytic appliance (<a href="http://h30507.www3.hp.com/t5/Reality-Check-Server-Insights/HANA-An-HP-and-SAP-collaborative-unique-end-to-end-technology/ba-p/81270">HANA</a>).</p>
-
 <p><strong>Business Analytics vs. Business Intelligence - Revisiting the controversy:</strong></p>
-
 <p>When SAS created this <a href="http://www.networkworld.com/news/2009/032709-analytics-versus.html">controversy last year</a>, an important point noted by many was the SAS home page titled:</p>
-
 <p><strong>SAS | Business Intelligence Software and Predictive Analytics</strong></p>
-
 <p>It’s important to see how the rebranding has reflected in a change to the SAS home page a year hence. It now reads:</p>
-
 <p><strong>SAS | Business Analytics and Business Intelligence Software</strong></p>
-
 <p>SAS Institute was always viewed as a niche vendor, operating in the pure-play <strong>statistical and predictive analytics</strong> space and this marketing was to re-brand SAS’ offerings to move it mainstream.  In effect, it signaled the market assessment by these major vendors, that in tough times, customers were seeking shorter lead times and demanding better tools which are <em>quick and easy to introduce and provide quicker return on investment</em>.  As we come around the downturn, with SAP still focusing on this segment, it is clear that traditional BI is clearly seen as <em>complex, costly and difficult to implement</em>.</p>
-
 <p><strong>Open questions:</strong></p>
-
 <p>There are several questions open at the moment, given that this is an initial launch. SAP plans to offer more applications over the next year-18 months in collaboration with customers and its partners.  The partners include Aster Group, Blueprint, Capgemini, Column5, CSC, Fusion Consulting, The Glenture Group, LSI Consulting and syskoplan and surely it would take quite a while for the ecosystem to develop.  It remains to be seen whether the prepackaged analytics catches on like Xcelsius dashboards did for BOBJ.</p>
-
 <p>It is not clear whether the prepackaged analytics would be positioned at the bigger enterprises or the SME segment only, as its success could cannibalize revenues from the flagship Enterprise XI suite.</p>
-
 <p>There are also questions around the scalability of the framework the analytic applications are built on. The extensibility APIs and reference architectures for partners to build their own add-ons and plugins / applications  of their own is not yet out (planned in 2011), so it’s not quite like the iPhone/iPad app store yet. It is also not clear how customizations to the applications would be supported or to what extent these could be customized.  The long awaited universe rewrite including data federation might be a part of plans if the analytic applications turn out to be truly backend-agnostic and do support future in-memory data structures (SAP’s acquisition of Sybase would indicate likely support for the Sybase ASE in-memory database). If this happens, it would be in line with <a href="http://twitter.com/mkrigsman/status/21599374900">earlier plans</a> to roll-out in-memory EPM and OLTP solutions.</p>
 
 
@@ -348,6 +333,26 @@
   </div>
 </div>
 
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'maloymanna';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
 </div>

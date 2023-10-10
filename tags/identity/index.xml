@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>identity on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/identity/</link>
+    <description>Recent content in identity on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2023. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 09 Apr 2023 08:15:22 +0000</lastBuildDate><atom:link href="https://maloymanna.github.io/tags/identity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Identity Basics 2 - Permissions, Scopes and Consent</title>
+      <link>https://maloymanna.github.io/2023/04/09/identity-basics-2-permissions-scopes-consent/</link>
+      <pubDate>Sun, 09 Apr 2023 08:15:22 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2023/04/09/identity-basics-2-permissions-scopes-consent/</guid>
+      <description>In my previous post, we saw how app registrations add identity configurations for applications on Azure AD. Just like a user, an application would also require access to resources like Microsoft Graph, which need authorization. The resource owner can grant(consent) or deny this authorization to the application. There are mainly 2 access scenarios:
+ Delegated access - access on behalf of a signed-in user. User is signed-into a client application, which access the resource on behalf of the user.</description>
+    </item>
+    
+    <item>
+      <title>Identity Basics 1 - Application Registrations</title>
+      <link>https://maloymanna.github.io/2023/03/18/identity-basics-1-app-registrations/</link>
+      <pubDate>Sat, 18 Mar 2023 17:04:19 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2023/03/18/identity-basics-1-app-registrations/</guid>
+      <description>For some time now, I&amp;rsquo;ve been working on security risk assessments of web applications. Modern identity management can be complex and often requires diving deep into the authentication flow and registration process to understand risk blocks in order to design appropriate controls and counter-measures. I hope to write a short series of posts to document the components and flows of this process, so that it can be my handy reference.</description>
+    </item>
+    
+    <item>
+      <title>Modern authentication fundamentals</title>
+      <link>https://maloymanna.github.io/2022/11/12/modern-authentication-fundamentals/</link>
+      <pubDate>Sat, 12 Nov 2022 07:05:09 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2022/11/12/modern-authentication-fundamentals/</guid>
+      <description>In my post on Identity and Access Management (IAM), I provided a very high-level view of how modern authentication works on the basis of a centralized Identity provider, like Azure Active Directory.
+In this post, let&amp;rsquo;s look at a Microsoft Azure video, where Azure AD Program manager Stuart Kwan presents the basics of modern claims-based authentication in a lucid and eloquent way. Clearly if a picture is worth a thousand words, a video is probably worth a million!</description>
+    </item>
+    
+    <item>
+      <title>Azure IAM fundamentals</title>
+      <link>https://maloymanna.github.io/2022/09/18/azure-iam-fundamentals/</link>
+      <pubDate>Sun, 18 Sep 2022 07:43:21 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2022/09/18/azure-iam-fundamentals/</guid>
+      <description>Identity and Access Management (IAM) is a framework of policies and technologies to ensure the right people or machines to access the right assets or resources.
+Identity:
+In this digital age, an identity can be either a human (user), a software component (application) or a hardware component (computer, mobile or IoT device). Just like any identity document in the real-world, identities serve is a way to authenticate and authorize access to assets and resources.</description>
+    </item>
+    
+  </channel>
+</rss>

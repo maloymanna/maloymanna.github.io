@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.90.0" />
 
   <title>Change the location Google Desktop Search indexes your data &middot; Maloy Manna</title>
 
@@ -36,7 +36,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  
+    
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
@@ -216,7 +216,7 @@
 
   <div>
   <div class="small-print">
-    <small>&copy; 2007 - 2020. All rights reserved.</small>
+    <small>&copy; 2007 - 2023. All rights reserved.</small>
   </div>
   <div class="small-print">
     <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
@@ -287,41 +287,39 @@
 </div>
 
   <p>Desktop search has become an important component of our everyday work.</p>
-
 <p>With the amount of <a href="http://blogs.zdnet.com/Gardner/?p=3091">information explosion</a>, it is only natural that users and enterprises move towards enabling desktop (and enterprise) search for users – subject of course to appropriate security and access controls. BI vendors have moved into this new business space that has opened up and seems to be one of the most promising. While Business Objects had announced support for the Google Search appliance and Google Desktop <a href="http://www1.sap.com/about/newsroom/businessobjects/20060515_006446.epx">back in 2006</a>, their most important announcement lately has been the launch of the <a href="http://www1.sap.com/solutions/sapbusinessobjects/large/intelligenceplatform/bi/search-navigation/explorer/explorer-non-accelerated/index.epx">Business Objects Explorer</a> (formerly known as Polestar) product. More about that in a later post…</p>
-
 <p><a href="http://desktop.google.com/">Google Desktop Search</a> is one of the most widely used desktop search appliances.  One would expect it to have an intelligent installer as well. Unfortunately, it doesn’t allow you to either choose the installation directory or the location for the search index. It installs in your system drive without providing any means to modify it from the Options setting. This can be quite annoying and frustrating if your system drive is not set up with a huge amount of space, as the Google Desktop search index will expand soon and hog a lot of space (up to 2 GB) on the system drive. I will show a tip here on how you can get around this issue by modifying the location of the Google Desktop search index to change it from the default system drive and without having to rebuild the index.</p>
-
 <ol>
 <li>Right click and exit Google Desktop.</li>
 </ol>
-
-<p><img src="/post/exit_google_desktop.png" alt="Exit_Google_Desktop" /></p>
-
-<ol>
+<p><img src="/post/exit_google_desktop.png" alt="Exit_Google_Desktop"></p>
+<ol start="2">
 <li>Open Windows Explorer and navigate to C:\Documents and Settings&lt;username&gt;Local Settings\Application Data\Google&lt;google desktop search&gt;</li>
 </ol>
-
-<p><img src="/post/navigate_to_google_desktop_search_folder.png" alt="Navigate_To_Google_Desktop_Search_Folder" /></p>
-
+<p><img src="/post/navigate_to_google_desktop_search_folder.png" alt="Navigate_To_Google_Desktop_Search_Folder"></p>
 <p>Note: If you’re unable to see “Local Settings” – (it’s a hidden folder) – change your folder options from Tools – View – Show hidden files and folders.</p>
-
-<ol>
-<li><p>Move the <google desktop search> folder to a different drive, e.g. D:\ Google Desktop&lt;google desktop search&gt;</p></li>
-
-<li><p>Open the Windows registry editor from Start – Run – typing regedit – Hit Enter.</p></li>
-
-<li><p>Navigate to HKEY_CURRENT_USER\Software\Google\Google Desktop.</p></li>
-
-<li><p>Select the “data_dir” key in right pane, double-click to change its value to the new location of the <google desktop search index></p></li>
+<ol start="3">
+<li>
+<p>Move the <!-- raw HTML omitted --> folder to a different drive, e.g. D:\ Google Desktop&lt;google desktop search&gt;</p>
+</li>
+<li>
+<p>Open the Windows registry editor from Start – Run – typing regedit – Hit Enter.</p>
+</li>
+<li>
+<p>Navigate to HKEY_CURRENT_USER\Software\Google\Google Desktop.</p>
+</li>
+<li>
+<p>Select the “data_dir” key in right pane, double-click to change its value to the new location of the <!-- raw HTML omitted --></p>
+</li>
 </ol>
-
-<p><img src="/post/modify_registry_google_desktop_data_dr.png" alt="Modify_Registry_Google_Desktop_data_dr" /></p>
-
-<ol>
-<li><p>Exit the registry editor.</p></li>
-
-<li><p>Restart Google Desktop Search.</p></li>
+<p><img src="/post/modify_registry_google_desktop_data_dr.png" alt="Modify_Registry_Google_Desktop_data_dr"></p>
+<ol start="7">
+<li>
+<p>Exit the registry editor.</p>
+</li>
+<li>
+<p>Restart Google Desktop Search.</p>
+</li>
 </ol>
 
 
@@ -356,6 +354,26 @@
   </div>
 </div>
 
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'maloymanna';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
 </div>

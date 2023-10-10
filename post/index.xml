@@ -6,11 +6,98 @@
     <description>Recent content in Posts on Maloy Manna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 18 Nov 2015 11:37:49 +0000</lastBuildDate>
+    <copyright>&amp;copy; 2007 - 2023. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 09 Apr 2023 08:15:22 +0000</lastBuildDate><atom:link href="https://maloymanna.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Identity Basics 2 - Permissions, Scopes and Consent</title>
+      <link>https://maloymanna.github.io/2023/04/09/identity-basics-2-permissions-scopes-consent/</link>
+      <pubDate>Sun, 09 Apr 2023 08:15:22 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2023/04/09/identity-basics-2-permissions-scopes-consent/</guid>
+      <description>In my previous post, we saw how app registrations add identity configurations for applications on Azure AD. Just like a user, an application would also require access to resources like Microsoft Graph, which need authorization. The resource owner can grant(consent) or deny this authorization to the application. There are mainly 2 access scenarios:
+ Delegated access - access on behalf of a signed-in user. User is signed-into a client application, which access the resource on behalf of the user.</description>
+    </item>
     
-	<atom:link href="https://maloymanna.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Identity Basics 1 - Application Registrations</title>
+      <link>https://maloymanna.github.io/2023/03/18/identity-basics-1-app-registrations/</link>
+      <pubDate>Sat, 18 Mar 2023 17:04:19 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2023/03/18/identity-basics-1-app-registrations/</guid>
+      <description>For some time now, I&amp;rsquo;ve been working on security risk assessments of web applications. Modern identity management can be complex and often requires diving deep into the authentication flow and registration process to understand risk blocks in order to design appropriate controls and counter-measures. I hope to write a short series of posts to document the components and flows of this process, so that it can be my handy reference.</description>
+    </item>
     
+    <item>
+      <title>Modern authentication fundamentals</title>
+      <link>https://maloymanna.github.io/2022/11/12/modern-authentication-fundamentals/</link>
+      <pubDate>Sat, 12 Nov 2022 07:05:09 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2022/11/12/modern-authentication-fundamentals/</guid>
+      <description>In my post on Identity and Access Management (IAM), I provided a very high-level view of how modern authentication works on the basis of a centralized Identity provider, like Azure Active Directory.
+In this post, let&amp;rsquo;s look at a Microsoft Azure video, where Azure AD Program manager Stuart Kwan presents the basics of modern claims-based authentication in a lucid and eloquent way. Clearly if a picture is worth a thousand words, a video is probably worth a million!</description>
+    </item>
+    
+    <item>
+      <title>Azure Security - Service endpoint vs Private endpoint</title>
+      <link>https://maloymanna.github.io/2022/10/02/azure-security-service-endpoint-vs-private-endpoint/</link>
+      <pubDate>Sun, 02 Oct 2022 11:26:19 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2022/10/02/azure-security-service-endpoint-vs-private-endpoint/</guid>
+      <description>Endpoints are a critical aspect of securing your resources in the cloud. When using Azure PaaS services, it is important to understand the differences between two types of endpoint available in Azure: service endpoint and private endpoint.
+Service endpoint:
+A service endpoint is a way of extending your virtual network’s private address space to Azure services over the Azure backbone network. When a service endpoint is enabled, traffic between your virtual network and the Azure service of your choice stays on the Azure backbone network, rather than going over the public internet.</description>
+    </item>
+    
+    <item>
+      <title>Azure IAM fundamentals</title>
+      <link>https://maloymanna.github.io/2022/09/18/azure-iam-fundamentals/</link>
+      <pubDate>Sun, 18 Sep 2022 07:43:21 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2022/09/18/azure-iam-fundamentals/</guid>
+      <description>Identity and Access Management (IAM) is a framework of policies and technologies to ensure the right people or machines to access the right assets or resources.
+Identity:
+In this digital age, an identity can be either a human (user), a software component (application) or a hardware component (computer, mobile or IoT device). Just like any identity document in the real-world, identities serve is a way to authenticate and authorize access to assets and resources.</description>
+    </item>
+    
+    <item>
+      <title>Azure Control plane and Data plane</title>
+      <link>https://maloymanna.github.io/2022/08/24/azure-control-plane-data-plane/</link>
+      <pubDate>Wed, 24 Aug 2022 21:30:11 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2022/08/24/azure-control-plane-data-plane/</guid>
+      <description>Azure operations can be divided into 2 categories:
+  Control plane (or Management plane) - used to manage resources in azure subscriptions, e.g. creation of a virtual machine or a storage account All requests for control plane operations are sent to the Azure Resource Manager URL. For Azure global, the url is: https://management.azure.com
+  Data plane - used to manage capabilties exposed by instances of resource types e.g. using remote desktop protocol (RDP) to interact with a virtual machine, or reading/writing data in a storage account.</description>
+    </item>
+    
+    <item>
+      <title>9 features of modern data architectures</title>
+      <link>https://maloymanna.github.io/2017/07/14/9-features-of-modern-data-architectures/</link>
+      <pubDate>Fri, 14 Jul 2017 11:27:09 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2017/07/14/9-features-of-modern-data-architectures/</guid>
+      <description>The last few years has seen a massive change in the data landscape. With the rise of big data, there&amp;rsquo;s been rapid innovation in the tools, skills and roles working on data systems. Data architectures have evolved beyond monolithic, centralized databases and unwieldy analytic applications to distributed, scalable architectures with simpler collaborative and interactive analytic tools. In this post, I look at the defining features of modern data architectures.
+Modern data architectures generally feature the following (though not all of these may be present in the same system):</description>
+    </item>
+    
+    <item>
+      <title>Kafka - building real-time stream data pipelines</title>
+      <link>https://maloymanna.github.io/2017/05/01/kafka-building-real-time-stream-data-pipelines/</link>
+      <pubDate>Mon, 01 May 2017 14:11:27 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2017/05/01/kafka-building-real-time-stream-data-pipelines/</guid>
+      <description>Over the past few years, Kafka has become the most exciting new addition in the big data distributed architecture. Originally developed at LinkedIn, its founders Jay Kreps, Jun Rao and Neha Narkhede have launched a company Confluent to develop its open-core business model. The software at its core, Apache Kafka reinvents the database log to provide a highly scalable and fault tolerant, high performance distributed system, which serves as the data pipeline backbone for stream data processing.</description>
+    </item>
+    
+    <item>
+      <title>Hadoop&#39;s small files problem</title>
+      <link>https://maloymanna.github.io/2016/02/16/hadoop-small-files-problem/</link>
+      <pubDate>Tue, 16 Feb 2016 08:09:12 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2016/02/16/hadoop-small-files-problem/</guid>
+      <description>Small files are a big problem in Hadoop.
+Hadoop is designed to manage big data and by design this means HDFS is designed to store very large files in a distributed cluster with streaming access to this data. For reference, a typical block in HDFS is 64 MB or 128 MB. Each small file (few MB or less) is stored in a block and multiple small files could be stored in blocks across different nodes of the distributed cluster.</description>
+    </item>
     
     <item>
       <title>Data processing with Spark in R &amp; Python</title>
@@ -19,7 +106,8 @@
       
       <guid>https://maloymanna.github.io/2015/11/18/data-processing-with-spark-in-r-python/</guid>
       <description>I recently gave a talk on data processing with Apache Spark using R and Python. tl;dr - the slides and presentation can be accessed below (free registration):
-   As noted in my previous post, Spark has become the defacto standard for big data applications and has been adopted quickly by the industry. See Cloudera&amp;rsquo;s One Platform initiative blog post by CEO Mike Olson for their commitment to Spark.</description>
+As noted in my previous post, Spark has become the defacto standard for big data applications and has been adopted quickly by the industry. See Cloudera&amp;rsquo;s One Platform initiative blog post by CEO Mike Olson for their commitment to Spark.
+In data science R had seen rapid adoption, not only because it was open source and free compared to costly SAS, but also the huge number of statistical and graphical packages provided by R for data science.</description>
     </item>
     
     <item>
@@ -61,7 +149,7 @@ So what exactly is Spark, and why has it generated such enthusiasm? Apache Spark
       <pubDate>Wed, 04 Feb 2015 23:26:36 +0000</pubDate>
       
       <guid>https://maloymanna.github.io/2015/02/04/a-gentle-introduction-to-machine-learning/</guid>
-      <description>Machine Learning is a big part of big data and data science. A subset of artificial intelligence - a branch of science notorious for requiring advanced knowledge of mathematics. In practice though, most data scientists don&amp;rsquo;t try to build a Chappie and there are simpler, practical ways to get started with machine learning.
+      <description>Machine Learningis a big part of big data and data science. A subset of artificial intelligence - a branch of science notorious for requiring advanced knowledge of mathematics. In practice though, most data scientists don&amp;rsquo;t try to build a Chappie and there are simpler, practical ways to get started with machine learning.
 Machine learning in practice involves predictions based on data. Notable examples include Amazon&amp;rsquo;s product recommendations with the &amp;ldquo;customers also bought&amp;rdquo; scroll-list, or Gmail&amp;rsquo;s priority inbox or any email spam-filter feature.</description>
     </item>
     
@@ -91,7 +179,7 @@ A sample statistic is a point estimate for a population parameter, e.</descripti
       <pubDate>Tue, 30 Dec 2014 22:36:53 +0000</pubDate>
       
       <guid>https://maloymanna.github.io/2014/12/30/set-up-a-hadoop-spark-cluster-in-10-minutes-with-vagrant/</guid>
-      <description>With each of the big 3 Hadoop vendors - Cloudera, Hortonworks and MapR each providing their own Hadoop sandbox virtual machines (VMs), trying out Hadoop today has become extremely easy. For a developer, it is extremely useful to download a get started with one of these VMs and try out Hadoop to practice data science right away.
+      <description>With each of the big 3 Hadoop vendors - Cloudera, Hortonworks and MapR each providing their own Hadoop sandboxvirtual machines (VMs), trying out Hadoop today has become extremely easy. For a developer, it is extremely useful to download a get started with one of these VMs and try out Hadoop to practice data science right away.
 However, with the core Apache Hadoop, these vendors package their own software into their distributions, mostly for the orchestration and management, which can be a pain due to the multiple scattered open-source projects within the Hadoop ecosystem.</description>
     </item>
     
@@ -113,7 +201,7 @@ This post looks at practical aspects of implementing data science projects. It a
       <guid>https://maloymanna.github.io/2014/12/19/bi-in-the-digital-era/</guid>
       <description>Sometime back I presented a webinar on BrightTalk. The slides for the talk have now been uploaded on Slideshare. The talk focused more on changes in digital technology disrupting businesses, the effect of Big Data, the FOMO (Fear of missing out) effect on big business - and what it meant for changes to the way we do business intelligence in the digital era.
  Key themes:
- Disruption in traditional IT with cloud computing Changing economics and changing business models Rise of Big Data Tech changes to manage Big Data - distributed computing Shift from &amp;ldquo;current-state&amp;rdquo; to &amp;ldquo;next-state&amp;rdquo; questions Introducing Data Science Challenges - regulatory, data privacy Dangers of data science - over-fitting, interpretation Managing big data projects Data Science MOOCs (massive open online courses), tools and resources</description>
+ Disruption in traditional IT with cloud computing Changing economics and changing business models Rise of Big Data Tech changes to manage Big Data - distributed computing Shift from &amp;ldquo;current-state&amp;rdquo; to &amp;ldquo;next-state&amp;rdquo; questions Introducing Data Science Challenges - regulatory, data privacy Dangers of data science - over-fitting, interpretation Managing big data projects Data Science MOOCs (massive open online courses), tools and resources  </description>
     </item>
     
     <item>
@@ -163,7 +251,7 @@ Once you&amp;rsquo;ve downloaded and installed it (your smartphone Anti-Virus sh
 Collected observations are called data. Statistics is the study of how best to collect, analyze, and draw conclusions from data. Each observation in data is called a case. Characteristics of the case are called variables. With a matrix/table analogy, a case is a row while a variable is a column.
 Statistics - Correlation (Courtesy: xkcd.com)
 Types of variables:
- Numerical - Can be discrete or continuous, and can take a wide range of numerical values.</description>
+  Numerical - Can be discrete or continuous, and can take a wide range of numerical values.</description>
     </item>
     
     <item>
@@ -173,7 +261,7 @@ Types of variables:
       
       <guid>https://maloymanna.github.io/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/</guid>
       <description>This is the fourth part of a series of posts on big data. Read the previous posts here: Part-1, Part-2 and Part-3.
-With the ongoing data explosion, and the improvement in technologies able to deal with it, businesses are turning to leverage this big data for mining insights to gain competitive advantage, reinvent business models and create new markets.
+With the ongoing data explosion, and the improvement in technologies able to deal with it, businesses are turning to leverage this big datafor mining insights to gain competitive advantage, reinvent business models and create new markets.
 A huge amount of this &amp;ldquo;big data&amp;rdquo; volumes comes from system logs, user generated content on social media like Twitter or Facebook, sensor data and the like.</description>
     </item>
     
@@ -242,7 +330,7 @@ Building on the rapid-marts offering that the then BOBJ used to have and leverag
       
       <guid>https://maloymanna.github.io/2009/11/13/review-of-the-bt-summit-cloud-computing-soa-and-bi-tracks/</guid>
       <description>I attended the Business Technology Summit in Bangalore last week – 3rd and 4th November. There were 3 tracks on cloud computing, Service Oriented Architecture and Business Intelligence, and I chose a mix of sessions across each.
-Overall impression:The BT Summit was heavily focused on cloud computing with half of second day having a deep dive into Amazon’s EC2 cloud offering, and several keynotes. SOA and web services, REST and similar architectural sessions were interspersed but definitely not a first-class citizen.</description>
+**Overall impression:**The BT Summit was heavily focused on cloud computing with half of second day having a deep dive into Amazon’s EC2 cloud offering, and several keynotes. SOA and web services, REST and similar architectural sessions were interspersed but definitely not a first-class citizen.</description>
     </item>
     
     <item>
@@ -263,10 +351,7 @@ The timeline:
       
       <guid>https://maloymanna.github.io/2009/08/28/developing-a-business-objects-security-model-bo-xi-3-1/</guid>
       <description>While developing a Business Objects security model, you need to focus on the different types of security:
- Functional Security - this would govern access to specific application features, e.g. editing reports, drilling down, ability to schedule reports etc.
- Data Security - this governs access to specific data - rows or columns or cells as per authorization
- Infrastructure Security - governs physical and electronic access to systems
-  The infrastructure security is the first to be designed.</description>
+ Functional Security - this would govern access to specific application features, e.g. editing reports, drilling down, ability to schedule reports etc. Data Security - this governs access to specific data - rows or columns or cells as per authorization Infrastructure Security - governs physical and electronic access to systems  The infrastructure security is the first to be designed.</description>
     </item>
     
     <item>
@@ -315,8 +400,8 @@ With Web 2.0 pushing enterprise adoption, and the ensuing information explosion 
       
       <guid>https://maloymanna.github.io/2008/05/02/its-all-in-the-universe-handling-chasm-and-fan-traps/</guid>
       <description>Recently I worked on an assignment where the Business Objects universe was designed by a business analyst. Nothing wrong with that, as long as we get the correct results in reports or queries on the universe. But it was not to be. We encountered incorrect results primarily due to two reasons:
- Mixing of grains in fact tables by not using proper contexts or the aggregate navigator
- Unresolved chasm traps</description>
+  Mixing of grains in fact tables by not using proper contexts or the aggregate navigator
+  Unresolved chasm traps</description>
     </item>
     
     <item>
@@ -356,8 +441,8 @@ Taking its place would be SAP Strategy Management (a product biguru is SAP certi
       
       <guid>https://maloymanna.github.io/2008/03/20/whats-new-in-xcelsius-2008-top-10-features/</guid>
       <description>Business Objects has just released the updated Xcelsius 2008 after a long beta program. What are the top new features of this exciting data visualization and dashboard tool? Let&amp;rsquo;s find out the top 10:
- Copy-Paste- Productivity is bound to increase through collaborative development now as it is possible to copy-paste components between XLF files.
- Filtered Rows - Selector components like List box and combo-box now include a new option in the insert-options list.</description>
+  Copy-Paste- Productivity is bound to increase through collaborative development now as it is possible to copy-paste components between XLF files.
+  Filtered Rows - Selector components like List box and combo-box now include a new option in the insert-options list.</description>
     </item>
     
     <item>

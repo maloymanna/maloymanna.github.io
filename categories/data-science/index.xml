@@ -6,12 +6,8 @@
     <description>Recent content in Data science on Maloy Manna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 24 Jun 2015 22:52:27 +0000</lastBuildDate>
-    
-	<atom:link href="https://maloymanna.github.io/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>&amp;copy; 2007 - 2023. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 24 Jun 2015 22:52:27 +0000</lastBuildDate><atom:link href="https://maloymanna.github.io/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What roles do you need in your data science team?</title>
       <link>https://maloymanna.github.io/2015/06/24/what-roles-do-you-need-in-your-data-science-team/</link>
@@ -40,7 +36,7 @@ The contents include:
       <pubDate>Wed, 04 Feb 2015 23:26:36 +0000</pubDate>
       
       <guid>https://maloymanna.github.io/2015/02/04/a-gentle-introduction-to-machine-learning/</guid>
-      <description>Machine Learning is a big part of big data and data science. A subset of artificial intelligence - a branch of science notorious for requiring advanced knowledge of mathematics. In practice though, most data scientists don&amp;rsquo;t try to build a Chappie and there are simpler, practical ways to get started with machine learning.
+      <description>Machine Learningis a big part of big data and data science. A subset of artificial intelligence - a branch of science notorious for requiring advanced knowledge of mathematics. In practice though, most data scientists don&amp;rsquo;t try to build a Chappie and there are simpler, practical ways to get started with machine learning.
 Machine learning in practice involves predictions based on data. Notable examples include Amazon&amp;rsquo;s product recommendations with the &amp;ldquo;customers also bought&amp;rdquo; scroll-list, or Gmail&amp;rsquo;s priority inbox or any email spam-filter feature.</description>
     </item>
     
@@ -59,7 +55,7 @@ Machine learning in practice involves predictions based on data. Notable example
       <pubDate>Tue, 30 Dec 2014 22:36:53 +0000</pubDate>
       
       <guid>https://maloymanna.github.io/2014/12/30/set-up-a-hadoop-spark-cluster-in-10-minutes-with-vagrant/</guid>
-      <description>With each of the big 3 Hadoop vendors - Cloudera, Hortonworks and MapR each providing their own Hadoop sandbox virtual machines (VMs), trying out Hadoop today has become extremely easy. For a developer, it is extremely useful to download a get started with one of these VMs and try out Hadoop to practice data science right away.
+      <description>With each of the big 3 Hadoop vendors - Cloudera, Hortonworks and MapR each providing their own Hadoop sandboxvirtual machines (VMs), trying out Hadoop today has become extremely easy. For a developer, it is extremely useful to download a get started with one of these VMs and try out Hadoop to practice data science right away.
 However, with the core Apache Hadoop, these vendors package their own software into their distributions, mostly for the orchestration and management, which can be a pain due to the multiple scattered open-source projects within the Hadoop ecosystem.</description>
     </item>
     
@@ -81,7 +77,7 @@ This post looks at practical aspects of implementing data science projects. It a
       <guid>https://maloymanna.github.io/2014/12/19/bi-in-the-digital-era/</guid>
       <description>Sometime back I presented a webinar on BrightTalk. The slides for the talk have now been uploaded on Slideshare. The talk focused more on changes in digital technology disrupting businesses, the effect of Big Data, the FOMO (Fear of missing out) effect on big business - and what it meant for changes to the way we do business intelligence in the digital era.
  Key themes:
- Disruption in traditional IT with cloud computing Changing economics and changing business models Rise of Big Data Tech changes to manage Big Data - distributed computing Shift from &amp;ldquo;current-state&amp;rdquo; to &amp;ldquo;next-state&amp;rdquo; questions Introducing Data Science Challenges - regulatory, data privacy Dangers of data science - over-fitting, interpretation Managing big data projects Data Science MOOCs (massive open online courses), tools and resources</description>
+ Disruption in traditional IT with cloud computing Changing economics and changing business models Rise of Big Data Tech changes to manage Big Data - distributed computing Shift from &amp;ldquo;current-state&amp;rdquo; to &amp;ldquo;next-state&amp;rdquo; questions Introducing Data Science Challenges - regulatory, data privacy Dangers of data science - over-fitting, interpretation Managing big data projects Data Science MOOCs (massive open online courses), tools and resources  </description>
     </item>
     
     <item>
@@ -94,7 +90,7 @@ This post looks at practical aspects of implementing data science projects. It a
 Collected observations are called data. Statistics is the study of how best to collect, analyze, and draw conclusions from data. Each observation in data is called a case. Characteristics of the case are called variables. With a matrix/table analogy, a case is a row while a variable is a column.
 Statistics - Correlation (Courtesy: xkcd.com)
 Types of variables:
- Numerical - Can be discrete or continuous, and can take a wide range of numerical values.</description>
+  Numerical - Can be discrete or continuous, and can take a wide range of numerical values.</description>
     </item>
     
     <item>

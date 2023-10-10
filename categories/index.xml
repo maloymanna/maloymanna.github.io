@@ -6,11 +6,61 @@
     <description>Recent content in Categories on Maloy Manna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 07 Mar 2019 07:33:07 +0000</lastBuildDate>
+    <copyright>&amp;copy; 2007 - 2023. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 09 Apr 2023 08:15:22 +0000</lastBuildDate><atom:link href="https://maloymanna.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>application</title>
+      <link>https://maloymanna.github.io/categories/application/</link>
+      <pubDate>Sun, 09 Apr 2023 08:15:22 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/categories/application/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://maloymanna.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure</title>
+      <link>https://maloymanna.github.io/categories/azure/</link>
+      <pubDate>Sun, 09 Apr 2023 08:15:22 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/categories/azure/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Security</title>
+      <link>https://maloymanna.github.io/categories/security/</link>
+      <pubDate>Sun, 09 Apr 2023 08:15:22 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/categories/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>identity</title>
+      <link>https://maloymanna.github.io/categories/identity/</link>
+      <pubDate>Sat, 12 Nov 2022 07:05:09 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/categories/identity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Endpoint</title>
+      <link>https://maloymanna.github.io/categories/endpoint/</link>
+      <pubDate>Sun, 02 Oct 2022 11:26:19 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/categories/endpoint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>operations</title>
+      <link>https://maloymanna.github.io/categories/operations/</link>
+      <pubDate>Wed, 24 Aug 2022 21:30:11 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/categories/operations/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>project management</title>
@@ -22,20 +72,29 @@
     </item>
     
     <item>
-      <title>devops</title>
-      <link>https://maloymanna.github.io/categories/devops/</link>
-      <pubDate>Thu, 03 Nov 2016 07:52:19 +0000</pubDate>
+      <title>architecture</title>
+      <link>https://maloymanna.github.io/categories/architecture/</link>
+      <pubDate>Fri, 14 Jul 2017 11:27:09 +0000</pubDate>
       
-      <guid>https://maloymanna.github.io/categories/devops/</guid>
+      <guid>https://maloymanna.github.io/categories/architecture/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Big Data</title>
       <link>https://maloymanna.github.io/categories/big-data/</link>
-      <pubDate>Wed, 24 Jun 2015 22:52:27 +0000</pubDate>
+      <pubDate>Fri, 14 Jul 2017 11:27:09 +0000</pubDate>
       
       <guid>https://maloymanna.github.io/categories/big-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devops</title>
+      <link>https://maloymanna.github.io/categories/devops/</link>
+      <pubDate>Thu, 03 Nov 2016 07:52:19 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/categories/devops/</guid>
       <description></description>
     </item>
     

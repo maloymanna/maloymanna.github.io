@@ -6,12 +6,8 @@
     <description>Recent content in parallel programming on Maloy Manna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 21 Aug 2013 23:02:49 +0000</lastBuildDate>
-    
-	<atom:link href="https://maloymanna.github.io/tags/parallel-programming/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>&amp;copy; 2007 - 2023. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 21 Aug 2013 23:02:49 +0000</lastBuildDate><atom:link href="https://maloymanna.github.io/tags/parallel-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Basics of Big Data - Part 1</title>
       <link>https://maloymanna.github.io/2013/08/21/basics-of-big-data-part-1/</link>

@@ -6,12 +6,8 @@
     <description>Recent content in BOBJ on Maloy Manna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 20 May 2011 17:54:03 +0000</lastBuildDate>
-    
-	<atom:link href="https://maloymanna.github.io/tags/bobj/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>&amp;copy; 2007 - 2023. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 20 May 2011 17:54:03 +0000</lastBuildDate><atom:link href="https://maloymanna.github.io/tags/bobj/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What’s new in SAP BusinessObjects Enterprise BI 4.0 platform or BOXI 4.0 aka Aurora?</title>
       <link>https://maloymanna.github.io/2011/05/20/whats-new-in-sap-businessobjects-enterprise-bi-4-0-platform-or-boxi-4-0-aka-aurora/</link>
@@ -49,10 +45,7 @@ The timeline:
       
       <guid>https://maloymanna.github.io/2009/08/28/developing-a-business-objects-security-model-bo-xi-3-1/</guid>
       <description>While developing a Business Objects security model, you need to focus on the different types of security:
- Functional Security - this would govern access to specific application features, e.g. editing reports, drilling down, ability to schedule reports etc.
- Data Security - this governs access to specific data - rows or columns or cells as per authorization
- Infrastructure Security - governs physical and electronic access to systems
-  The infrastructure security is the first to be designed.</description>
+ Functional Security - this would govern access to specific application features, e.g. editing reports, drilling down, ability to schedule reports etc. Data Security - this governs access to specific data - rows or columns or cells as per authorization Infrastructure Security - governs physical and electronic access to systems  The infrastructure security is the first to be designed.</description>
     </item>
     
     <item>

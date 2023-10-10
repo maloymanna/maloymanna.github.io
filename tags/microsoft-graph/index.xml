@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microsoft-Graph on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/microsoft-graph/</link>
+    <description>Recent content in Microsoft-Graph on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2023. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 09 Apr 2023 08:15:22 +0000</lastBuildDate><atom:link href="https://maloymanna.github.io/tags/microsoft-graph/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Identity Basics 2 - Permissions, Scopes and Consent</title>
+      <link>https://maloymanna.github.io/2023/04/09/identity-basics-2-permissions-scopes-consent/</link>
+      <pubDate>Sun, 09 Apr 2023 08:15:22 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2023/04/09/identity-basics-2-permissions-scopes-consent/</guid>
+      <description>In my previous post, we saw how app registrations add identity configurations for applications on Azure AD. Just like a user, an application would also require access to resources like Microsoft Graph, which need authorization. The resource owner can grant(consent) or deny this authorization to the application. There are mainly 2 access scenarios:
+ Delegated access - access on behalf of a signed-in user. User is signed-into a client application, which access the resource on behalf of the user.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.90.0" />
 
   <title>A gentle introduction to Machine Learning &middot; Maloy Manna</title>
 
@@ -36,7 +36,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  
+    
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
@@ -216,7 +216,7 @@
 
   <div>
   <div class="small-print">
-    <small>&copy; 2007 - 2020. All rights reserved.</small>
+    <small>&copy; 2007 - 2023. All rights reserved.</small>
   </div>
   <div class="small-print">
     <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
@@ -286,39 +286,24 @@
 
 </div>
 
-  <p><font color="blue">Machine Learning</font> is a big part of big data and data science. A subset of artificial intelligence - a branch of science notorious for requiring advanced knowledge of mathematics. In practice though, most data scientists don&rsquo;t try to build a <a href="http://youtu.be/l6bmTNadhJE">Chappie</a>  and there are simpler, practical ways to get started with machine learning.</p>
-
-<p><img src="/post/selection_002.png?w=300" alt="Gmail Priority Inbox" /></p>
-
+  <p><!-- raw HTML omitted -->Machine Learning<!-- raw HTML omitted --> is a big part of big data and data science. A subset of artificial intelligence - a branch of science notorious for requiring advanced knowledge of mathematics. In practice though, most data scientists don&rsquo;t try to build a <a href="http://youtu.be/l6bmTNadhJE">Chappie</a>  and there are simpler, practical ways to get started with machine learning.</p>
+<p><img src="/post/selection_002.png?w=300" alt="Gmail Priority Inbox"></p>
 <p>Machine learning in practice involves predictions based on data. Notable examples include Amazon&rsquo;s product recommendations with the &ldquo;customers also bought&rdquo; scroll-list, or Gmail&rsquo;s priority inbox or any email spam-filter feature. How do these work? For Amazon, clicks by the user is used to learn and predict user behavior and propensity (likelihood) to buy certain items. The items the user is most likely to buy are then displayed on the recommendation system. Gmail&rsquo;s system learns from the messages which the user reads and/replies to and prioritizes them.</p>
-
-<p><img src="/post/selection_001.png?w=300" alt="Amazon Recommendations" /></p>
-
+<p><img src="/post/selection_001.png?w=300" alt="Amazon Recommendations"></p>
 <p>In both cases, there are some predictions made based on certain example usage of the data. Thus in essence, machine learning is about predictions based on models, which themselves are created based on examples.</p>
-
 <p>More specifically, a machine learning model is a set of explanations of the relationships between the input data and the output predictions. These relationships are discovered from examples of input-output pairs. In machine learning terminology, the input data is also called features and the predictions are called output. Once a model has been created, it can be used on new inputs to predict outputs.</p>
-
-<p>Machine learning models therefore &ldquo;<strong>learn</strong>&rdquo; to predict from examples. This learning is also known as &ldquo;<strong>training</strong>&rdquo; the model, and the associated good quality data-set is called &ldquo;<strong>training </strong><strong>data-set</strong>&rdquo;. The stage where the model is used on new inputs is known as &ldquo;<strong>testing</strong>&rdquo; the model, and the data-set associated with it is called &ldquo;<strong>test data-set</strong>&rdquo;.
+<p>Machine learning models therefore &ldquo;<strong>learn</strong>&rdquo; to predict from examples. This learning is also known as &ldquo;<strong>training</strong>&rdquo; the model, and the associated good quality data-set is called &ldquo;**training **<strong>data-set</strong>&rdquo;. The stage where the model is used on new inputs is known as &ldquo;<strong>testing</strong>&rdquo; the model, and the data-set associated with it is called &ldquo;<strong>test data-set</strong>&rdquo;.
 There are different ways to perform this learning, with different types of algorithms to build models and perform predictions. Most common among these are Classification and Regression techniques. The Gmail spam-filter is an example of Classification technique. Given a set of emails marked as spam or not-spam, it learns the characteristics of emails and is then able to process future email messages to mark them as spam or not. Classification deals with prediction of which class ordinal data fits in, while regression deals with prediction of continuous numeric data. Example of regression is a best-fit line drawn through some data points for generalization. Both classification and regression are examples of <strong>supervised learning</strong>, as the algorithm is told to predict a label or target value.</p>
-
 <p>The opposite of this is <strong>unsupervised learning</strong> - where there&rsquo;s no label or target value given for the data. An example of this could be clustering - a task of grouping a items so that objects in the same group or cluster are more similar (in some sense or another) to each other than to those in other groups (clusters).</p>
-
-<p><img src="/post/ml-techniques.png?w=300" alt="Machine Learning Techniques" /></p>
-
+<p><img src="/post/ml-techniques.png?w=300" alt="Machine Learning Techniques"></p>
 <p>With so many choices, how do you choose the right algorithm? Without considering nuances of the data, a rule of thumb is to look at the objective of the prediction:</p>
-
 <ul>
 <li><strong>If the prediction is to forecast a target value, we use supervised learning, else use unsupervised learning or density estimation algorithms.</strong></li>
 </ul>
-
 <p>It is important to note though, that this is not unbreakable, rather usage of algorithms is rather fuzzy. This is quite common in machine learning, where most problems are not deterministic in nature, and often a bunch of different algorithms are tried out to see how they perform. There are also ensemble models like <a href="http://en.wikipedia.org/wiki/Gradient_boosting">Gradient Boosting</a> - a regression technique which  uses an ensemble of weak prediction models, typically decision trees to get an improved prediction model. An interesting tool based on symbolic regression, which infers the model from the data is <a href="http://www.nutonian.com/products/eureqa/">Nutonian Eureqa</a>, also dubbed as the robotic data scientist.</p>
-
 <p>Many algorithms are different, but the steps to use one are similar:</p>
-
 <p><strong>Collect data &gt; Prepare data &gt; Analyze input data &gt; Clean data/verify data quality &gt; Train the algorithm &gt; Test the algorithm &gt; Iterate/Deploy</strong>. (See also my earlier post on the <a href="https://biguru.wordpress.com/2014/12/22/the-data-science-project-lifecycle/">data science project lifecycle</a>)</p>
-
-<p>As with many other aspects (data wrangling) of data science, both R and Python are very popular languages for using machine learning techniques. There are also start-ups like <a href="http://bigml.com/features">BigML</a> providing <font color="blue">MLaaS or Machine Learning as a Service</font>.</p>
-
+<p>As with many other aspects (data wrangling) of data science, both R and Python are very popular languages for using machine learning techniques. There are also start-ups like <a href="http://bigml.com/features">BigML</a> providing <!-- raw HTML omitted -->MLaaS or Machine Learning as a Service<!-- raw HTML omitted -->.</p>
 <p>In conclusion of this post, a few points to remember: <strong>garbage in - garbage out</strong>:- data quality matters as much if not more than algorithms, quantity of data or complexity of algorithm are not substitutes for quality, and of course as with all predictions, machine learning can be <a href="http://fivethirtyeight.com/datalab/how-meteorologists-botched-the-blizzard-of-2015/">wrong</a> as well.</p>
 
 
@@ -353,6 +338,26 @@ There are different ways to perform this learning, with different types of algor
   </div>
 </div>
 
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'maloymanna';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
 </div>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>identity on Maloy Manna</title>
+    <link>https://maloymanna.github.io/categories/identity/</link>
+    <description>Recent content in identity on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2023. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 12 Nov 2022 07:05:09 +0000</lastBuildDate><atom:link href="https://maloymanna.github.io/categories/identity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Modern authentication fundamentals</title>
+      <link>https://maloymanna.github.io/2022/11/12/modern-authentication-fundamentals/</link>
+      <pubDate>Sat, 12 Nov 2022 07:05:09 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2022/11/12/modern-authentication-fundamentals/</guid>
+      <description>In my post on Identity and Access Management (IAM), I provided a very high-level view of how modern authentication works on the basis of a centralized Identity provider, like Azure Active Directory.
+In this post, let&amp;rsquo;s look at a Microsoft Azure video, where Azure AD Program manager Stuart Kwan presents the basics of modern claims-based authentication in a lucid and eloquent way. Clearly if a picture is worth a thousand words, a video is probably worth a million!</description>
+    </item>
+    
+    <item>
+      <title>Azure IAM fundamentals</title>
+      <link>https://maloymanna.github.io/2022/09/18/azure-iam-fundamentals/</link>
+      <pubDate>Sun, 18 Sep 2022 07:43:21 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2022/09/18/azure-iam-fundamentals/</guid>
+      <description>Identity and Access Management (IAM) is a framework of policies and technologies to ensure the right people or machines to access the right assets or resources.
+Identity:
+In this digital age, an identity can be either a human (user), a software component (application) or a hardware component (computer, mobile or IoT device). Just like any identity document in the real-world, identities serve is a way to authenticate and authorize access to assets and resources.</description>
+    </item>
+    
+  </channel>
+</rss>

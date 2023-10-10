@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>application on Maloy Manna</title>
+    <link>https://maloymanna.github.io/categories/application/</link>
+    <description>Recent content in application on Maloy Manna</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2023. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 09 Apr 2023 08:15:22 +0000</lastBuildDate><atom:link href="https://maloymanna.github.io/categories/application/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Identity Basics 2 - Permissions, Scopes and Consent</title>
+      <link>https://maloymanna.github.io/2023/04/09/identity-basics-2-permissions-scopes-consent/</link>
+      <pubDate>Sun, 09 Apr 2023 08:15:22 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2023/04/09/identity-basics-2-permissions-scopes-consent/</guid>
+      <description>In my previous post, we saw how app registrations add identity configurations for applications on Azure AD. Just like a user, an application would also require access to resources like Microsoft Graph, which need authorization. The resource owner can grant(consent) or deny this authorization to the application. There are mainly 2 access scenarios:
+ Delegated access - access on behalf of a signed-in user. User is signed-into a client application, which access the resource on behalf of the user.</description>
+    </item>
+    
+    <item>
+      <title>Identity Basics 1 - Application Registrations</title>
+      <link>https://maloymanna.github.io/2023/03/18/identity-basics-1-app-registrations/</link>
+      <pubDate>Sat, 18 Mar 2023 17:04:19 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/2023/03/18/identity-basics-1-app-registrations/</guid>
+      <description>For some time now, I&amp;rsquo;ve been working on security risk assessments of web applications. Modern identity management can be complex and often requires diving deep into the authentication flow and registration process to understand risk blocks in order to design appropriate controls and counter-measures. I hope to write a short series of posts to document the components and flows of this process, so that it can be my handy reference.</description>
+    </item>
+    
+  </channel>
+</rss>

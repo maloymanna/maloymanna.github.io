@@ -6,12 +6,8 @@
     <description>Recent content in business objects on Maloy Manna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 20 May 2011 17:54:03 +0000</lastBuildDate>
-    
-	<atom:link href="https://maloymanna.github.io/tags/business-objects/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>&amp;copy; 2007 - 2023. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 20 May 2011 17:54:03 +0000</lastBuildDate><atom:link href="https://maloymanna.github.io/tags/business-objects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What’s new in SAP BusinessObjects Enterprise BI 4.0 platform or BOXI 4.0 aka Aurora?</title>
       <link>https://maloymanna.github.io/2011/05/20/whats-new-in-sap-businessobjects-enterprise-bi-4-0-platform-or-boxi-4-0-aka-aurora/</link>
@@ -39,10 +35,7 @@ The timeline:
       
       <guid>https://maloymanna.github.io/2009/08/28/developing-a-business-objects-security-model-bo-xi-3-1/</guid>
       <description>While developing a Business Objects security model, you need to focus on the different types of security:
- Functional Security - this would govern access to specific application features, e.g. editing reports, drilling down, ability to schedule reports etc.
- Data Security - this governs access to specific data - rows or columns or cells as per authorization
- Infrastructure Security - governs physical and electronic access to systems
-  The infrastructure security is the first to be designed.</description>
+ Functional Security - this would govern access to specific application features, e.g. editing reports, drilling down, ability to schedule reports etc. Data Security - this governs access to specific data - rows or columns or cells as per authorization Infrastructure Security - governs physical and electronic access to systems  The infrastructure security is the first to be designed.</description>
     </item>
     
     <item>
@@ -61,8 +54,8 @@ The timeline:
       
       <guid>https://maloymanna.github.io/2008/05/02/its-all-in-the-universe-handling-chasm-and-fan-traps/</guid>
       <description>Recently I worked on an assignment where the Business Objects universe was designed by a business analyst. Nothing wrong with that, as long as we get the correct results in reports or queries on the universe. But it was not to be. We encountered incorrect results primarily due to two reasons:
- Mixing of grains in fact tables by not using proper contexts or the aggregate navigator
- Unresolved chasm traps</description>
+  Mixing of grains in fact tables by not using proper contexts or the aggregate navigator
+  Unresolved chasm traps</description>
     </item>
     
     <item>
@@ -92,8 +85,8 @@ Taking its place would be SAP Strategy Management (a product biguru is SAP certi
       
       <guid>https://maloymanna.github.io/2008/03/20/whats-new-in-xcelsius-2008-top-10-features/</guid>
       <description>Business Objects has just released the updated Xcelsius 2008 after a long beta program. What are the top new features of this exciting data visualization and dashboard tool? Let&amp;rsquo;s find out the top 10:
- Copy-Paste- Productivity is bound to increase through collaborative development now as it is possible to copy-paste components between XLF files.
- Filtered Rows - Selector components like List box and combo-box now include a new option in the insert-options list.</description>
+  Copy-Paste- Productivity is bound to increase through collaborative development now as it is possible to copy-paste components between XLF files.
+  Filtered Rows - Selector components like List box and combo-box now include a new option in the insert-options list.</description>
     </item>
     
     <item>

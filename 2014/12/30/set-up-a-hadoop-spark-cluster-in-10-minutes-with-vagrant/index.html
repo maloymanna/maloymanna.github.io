@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.90.0" />
 
   <title>Set up a Hadoop Spark cluster in 10 minutes with Vagrant &middot; Maloy Manna</title>
 
@@ -36,7 +36,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  
+    
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
@@ -216,7 +216,7 @@
 
   <div>
   <div class="small-print">
-    <small>&copy; 2007 - 2020. All rights reserved.</small>
+    <small>&copy; 2007 - 2023. All rights reserved.</small>
   </div>
   <div class="small-print">
     <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
@@ -288,17 +288,12 @@
 
 </div>
 
-  <p>With each of the big 3 Hadoop vendors - <strong>Cloudera</strong>, <strong>Hortonworks</strong> and <strong>MapR</strong> each providing their own Hadoop <font color="blue">sandbox</font> <strong>virtual machines</strong> (VMs), trying out Hadoop today has become extremely easy. For a developer, it is extremely useful to download a get started with one of these VMs and try out Hadoop to practice data science right away.</p>
-
-<p><img src="/post/vagrant-hadoop-spark-cluster.png?w=300" alt="Vagrant Hadoop Spark Cluster" /></p>
-
+  <p>With each of the big 3 Hadoop vendors - <strong>Cloudera</strong>, <strong>Hortonworks</strong> and <strong>MapR</strong> each providing their own Hadoop <!-- raw HTML omitted -->sandbox<!-- raw HTML omitted --> <strong>virtual machines</strong> (VMs), trying out Hadoop today has become extremely easy. For a developer, it is extremely useful to download a get started with one of these VMs and try out Hadoop to practice data science right away.</p>
+<p><img src="/post/vagrant-hadoop-spark-cluster.png?w=300" alt="Vagrant Hadoop Spark Cluster"></p>
 <p>However, with the core <a href="hadoop.apache.org/">Apache Hadoop</a>, these vendors package their own software into their distributions, mostly for the orchestration and management, which can be a pain due to the multiple scattered open-source projects within the Hadoop ecosystem. e.g. Hortonworks includes the open-source <strong>Ambari</strong> while Cloudera includes its own <strong>Cloudera Manager</strong> for orchestrating Hadoop installations and managing multi-node clusters.</p>
-
-<p>Moreover, most of these distributions require today a <strong>64-bit machine</strong> and sometimes a <strong>high-amount of memory</strong> (for a laptop). e.g. running Cloudera Manager with a full-blown Cloudera Hadoop Distribution (CDH) 5.x requires at least <strong><a href="http://www.cloudera.com/content/cloudera/en/documentation/cloudera-manager/v5-1-x/Cloudera-Manager-Quick-Start/Cloudera-Manager-Quick-Start-Guide.html">10GB RAM</a></strong>.<br />
+<p>Moreover, most of these distributions require today a <strong>64-bit machine</strong> and sometimes a <strong>high-amount of memory</strong> (for a laptop). e.g. running Cloudera Manager with a full-blown Cloudera Hadoop Distribution (CDH) 5.x requires at least <strong><a href="http://www.cloudera.com/content/cloudera/en/documentation/cloudera-manager/v5-1-x/Cloudera-Manager-Quick-Start/Cloudera-Manager-Quick-Start-Guide.html">10GB RAM</a></strong>.<br>
 For a developer with a laptop, <em>RAM is always at a premium</em>, hence it may seem easier to try out the vanilla Apache Hadoop downloads for installations. The documentation for Hadoop for installing a single-node cluster, and even a multi-node cluster is much improved nowadays, but with the hassles of downloading the distributions and setting up SSH, it can easily take up a long-time to effectively set up a useful multi-node cluster. The overhead of setting up and running multiple VMs can also be a challenge. The vanilla distributions also require separate installations for UI (Cloudera Hue being a nice one) and job tracking (Oozie) or orchestration (Ambari). Unfortunately Ambari works only with select versions of HDP (Hortonwork&rsquo;s distribution of Hadoop), and configuring Oozie with disparate versions of Hadoop, Java and other libraries can be a real pain.</p>
-
 <p>One of the solutions to this problem is to use a container-based approach to installation. Hadoop clusters can be setup with LXC (Linux containers) approach, e.g. with the very popular <a href="http://blog.sequenceiq.com/blog/2014/06/19/multinode-hadoop-cluster-on-docker/"><strong>Docker</strong></a>. There are also other approaches with using <a href="https://github.com/viirya/puppet-hadoop"><strong>Puppet</strong></a>, <a href="https://github.com/analytically/hadoop-ansible"><strong>Ansible</strong></a>, <a href="http://www.rpark.com/2013/02/using-chef-to-build-out-hadoop-cluster.html"><strong>Chef</strong></a> and <a href="https://github.com/accumulo/hadoop-salt"><strong>Salt</strong></a> which allow easy installations. One of the simpler approaches that I tried apart from vanilla Hadoop is using <a href="https://www.vagrantup.com/">Vagrant</a>. Indeed setting up VMs with Vagrant is a breeze, and with a vagrant script (written in Ruby), setting up a multi-node cluster is very quick. In fact you can get started with a Hadoop and Spark multi-node cluster in less than 10 minutes.</p>
-
 <p>Check out the <a href="https://github.com/dnafrance/vagrant-hadoop-spark-cluster">project on Github</a> - it&rsquo;s adapted from Jee Vang&rsquo;s excellent Vagrant project to allow for 32-bit machines,  speed-up with pre-downloads of Hadoop, Spark and Java, and includes an updated Readme with script change locations detailed.</p>
 
 
@@ -333,6 +328,26 @@ For a developer with a laptop, <em>RAM is always at a premium</em>, hence it may
   </div>
 </div>
 
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'maloymanna';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
 </div>

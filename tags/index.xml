@@ -6,11 +6,142 @@
     <description>Recent content in Tags on Maloy Manna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 07 Mar 2019 07:33:07 +0000</lastBuildDate>
+    <copyright>&amp;copy; 2007 - 2023. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 09 Apr 2023 08:15:22 +0000</lastBuildDate><atom:link href="https://maloymanna.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>azure</title>
+      <link>https://maloymanna.github.io/tags/azure/</link>
+      <pubDate>Sun, 09 Apr 2023 08:15:22 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/azure/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://maloymanna.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>identity</title>
+      <link>https://maloymanna.github.io/tags/identity/</link>
+      <pubDate>Sun, 09 Apr 2023 08:15:22 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/identity/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Microsoft-Graph</title>
+      <link>https://maloymanna.github.io/tags/microsoft-graph/</link>
+      <pubDate>Sun, 09 Apr 2023 08:15:22 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/microsoft-graph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>permissions-scopes-consent</title>
+      <link>https://maloymanna.github.io/tags/permissions-scopes-consent/</link>
+      <pubDate>Sun, 09 Apr 2023 08:15:22 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/permissions-scopes-consent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://maloymanna.github.io/tags/security/</link>
+      <pubDate>Sun, 09 Apr 2023 08:15:22 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>app-registration</title>
+      <link>https://maloymanna.github.io/tags/app-registration/</link>
+      <pubDate>Sat, 18 Mar 2023 17:04:19 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/app-registration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>credentials</title>
+      <link>https://maloymanna.github.io/tags/credentials/</link>
+      <pubDate>Sat, 18 Mar 2023 17:04:19 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/credentials/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>authentication</title>
+      <link>https://maloymanna.github.io/tags/authentication/</link>
+      <pubDate>Sat, 12 Nov 2022 07:05:09 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/authentication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>claims</title>
+      <link>https://maloymanna.github.io/tags/claims/</link>
+      <pubDate>Sat, 12 Nov 2022 07:05:09 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/claims/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>private endpoint</title>
+      <link>https://maloymanna.github.io/tags/private-endpoint/</link>
+      <pubDate>Sun, 02 Oct 2022 11:26:19 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/private-endpoint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>service endpoint</title>
+      <link>https://maloymanna.github.io/tags/service-endpoint/</link>
+      <pubDate>Sun, 02 Oct 2022 11:26:19 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/service-endpoint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>access</title>
+      <link>https://maloymanna.github.io/tags/access/</link>
+      <pubDate>Sun, 18 Sep 2022 07:43:21 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/access/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>control</title>
+      <link>https://maloymanna.github.io/tags/control/</link>
+      <pubDate>Wed, 24 Aug 2022 21:30:11 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/control/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data</title>
+      <link>https://maloymanna.github.io/tags/data/</link>
+      <pubDate>Wed, 24 Aug 2022 21:30:11 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plane</title>
+      <link>https://maloymanna.github.io/tags/plane/</link>
+      <pubDate>Wed, 24 Aug 2022 21:30:11 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/plane/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>agile</title>
@@ -72,6 +203,51 @@
       <pubDate>Mon, 17 Jul 2017 08:05:49 +0000</pubDate>
       
       <guid>https://maloymanna.github.io/tags/product/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>architecture</title>
+      <link>https://maloymanna.github.io/tags/architecture/</link>
+      <pubDate>Fri, 14 Jul 2017 11:27:09 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>big data</title>
+      <link>https://maloymanna.github.io/tags/big-data/</link>
+      <pubDate>Fri, 14 Jul 2017 11:27:09 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/big-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hadoop</title>
+      <link>https://maloymanna.github.io/tags/hadoop/</link>
+      <pubDate>Fri, 14 Jul 2017 11:27:09 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/hadoop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>streaming</title>
+      <link>https://maloymanna.github.io/tags/streaming/</link>
+      <pubDate>Fri, 14 Jul 2017 11:27:09 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/streaming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kafka</title>
+      <link>https://maloymanna.github.io/tags/kafka/</link>
+      <pubDate>Mon, 01 May 2017 14:11:27 +0000</pubDate>
+      
+      <guid>https://maloymanna.github.io/tags/kafka/</guid>
       <description></description>
     </item>
     
@@ -148,29 +324,11 @@
     </item>
     
     <item>
-      <title>big data</title>
-      <link>https://maloymanna.github.io/tags/big-data/</link>
-      <pubDate>Wed, 18 Nov 2015 11:37:49 +0000</pubDate>
-      
-      <guid>https://maloymanna.github.io/tags/big-data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data science</title>
+      <title>data science</title>
       <link>https://maloymanna.github.io/tags/data-science/</link>
       <pubDate>Wed, 18 Nov 2015 11:37:49 +0000</pubDate>
       
       <guid>https://maloymanna.github.io/tags/data-science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hadoop</title>
-      <link>https://maloymanna.github.io/tags/hadoop/</link>
-      <pubDate>Wed, 18 Nov 2015 11:37:49 +0000</pubDate>
-      
-      <guid>https://maloymanna.github.io/tags/hadoop/</guid>
       <description></description>
     </item>
     

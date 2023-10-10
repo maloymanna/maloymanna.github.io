@@ -6,12 +6,8 @@
     <description>Recent content in parquet on Maloy Manna</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2007 - 2020. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 12 May 2014 12:55:24 +0000</lastBuildDate>
-    
-	<atom:link href="https://maloymanna.github.io/tags/parquet/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>&amp;copy; 2007 - 2023. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 12 May 2014 12:55:24 +0000</lastBuildDate><atom:link href="https://maloymanna.github.io/tags/parquet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Basics of Big Data - Building a Hadoop data warehouse</title>
       <link>https://maloymanna.github.io/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/</link>
