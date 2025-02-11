@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science on Maloy Manna</title>
+    <link>https://maloymanna.github.io/categories/data-science/</link>
+    <description>Recent content in Data Science on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 28 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Data Mesh Approach</title>
+      <link>https://maloymanna.github.io/2024/06/28/the-data-mesh-approach/</link>
+      <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2024/06/28/the-data-mesh-approach/</guid>
+      <description>&lt;p&gt;With rapid advance in the technology world, it makes sense sometimes to rethink our objective and outline the roadmap instead of just following the new and shiny. &lt;span style=&#34;color: blue;&#34;&gt;Data Mesh&lt;/span&gt; might seem a relatively new concept, however what its creator Zhamak Dehghani has done is spell out in words the approach required to reach the strategic goal of being a data-driven organization.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/data-mesh.png&#34; alt=&#34;Data Mesh domain product notation&#34;&gt;&lt;br&gt;&#xA;Figure: Data Mesh domain product notation, adapted from Zhamak Dehghani&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What roles do you need in your data science team?</title>
+      <link>https://maloymanna.github.io/2015/06/24/what-roles-do-you-need-in-your-data-science-team/</link>
+      <pubDate>Wed, 24 Jun 2015 22:52:27 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2015/06/24/what-roles-do-you-need-in-your-data-science-team/</guid>
+      <description>&lt;p&gt;Over the past few weeks, we&amp;rsquo;ve had several conversations in our data lab regarding data engineering problems and day to day problems we face with unsupervised data scientists who find it difficult to deploy their code into production.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/datascience3.jpg?w=300&#34; alt=&#34;Data scientist&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The opinions from business seemed to cluster around a tacit definition of data scientists as researchers, primarily from statistics or mathematics backgrounds, who are experienced in machine learning algorithms and often in some domain areas specific to our business, (e.g. actuaries in insurance), but not necessarily having skills of writing production-ready code.&#xA;The key driver behind the somewhat opposing strain of thought came from the developers and data engineers who often quoted Cloudera&amp;rsquo;s Director of Data Science - &lt;a href=&#34;https://twitter.com/josh_wills&#34;&gt;Josh Wills&lt;/a&gt; - famous for his &amp;ldquo;definition of a data scientist tweet&amp;rdquo;:&#xA;&amp;ldquo;Data Scientist (n.): Person who is better at statistics than any software engineer and better at software engineering than any statistician.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>An introduction to Data Science</title>
+      <link>https://maloymanna.github.io/2015/05/20/an-introduction-to-data-science/</link>
+      <pubDate>Wed, 20 May 2015 16:38:04 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2015/05/20/an-introduction-to-data-science/</guid>
+      <description>&lt;p&gt;I presented a talk last week introducing Data Science and associated topics to some enthusiasts.&lt;br&gt;&#xA;Here&amp;rsquo;s a slide deck I created quickly with markdown using Swipe - a start-up building HTML5 presentation tools.&lt;br&gt;&#xA;The contents include:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Data scientist skills&lt;/li&gt;&#xA;&lt;li&gt;Data science: enablers and barriers&lt;/li&gt;&#xA;&lt;li&gt;Big data analytics&lt;/li&gt;&#xA;&lt;li&gt;Data science lifecycle&lt;/li&gt;&#xA;&lt;li&gt;Use cases&lt;/li&gt;&#xA;&lt;li&gt;Tools and technology&lt;/li&gt;&#xA;&lt;li&gt;Project approach&lt;/li&gt;&#xA;&lt;li&gt;Machine learning&lt;/li&gt;&#xA;&lt;li&gt;Skills and roles&lt;/li&gt;&#xA;&lt;li&gt;Learning resources&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Here are the slides:&lt;/p&gt;&#xA;&#xA;    &lt;figure class=&#34;swipe&#34;&gt;&lt;iframe src=&#34;https://www.swipe.to/embed/2675ch&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;style&gt;figure.swipe{display:block;position:relative;padding-bottom:56.25%;height:0;overflow:hidden;}figure.swipe iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;}&lt;/style&gt;</description>
+    </item>
+    <item>
+      <title>A gentle introduction to Machine Learning</title>
+      <link>https://maloymanna.github.io/2015/02/04/a-gentle-introduction-to-machine-learning/</link>
+      <pubDate>Wed, 04 Feb 2015 23:26:36 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2015/02/04/a-gentle-introduction-to-machine-learning/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;color: blue;&#34;&gt;Machine Learning&lt;/span&gt; is a big part of big data and data science. A subset of artificial intelligence - a branch of science notorious for requiring advanced knowledge of mathematics. In practice though, most data scientists don&amp;rsquo;t try to build a &lt;a href=&#34;http://youtu.be/l6bmTNadhJE&#34;&gt;Chappie&lt;/a&gt;  and there are simpler, practical ways to get started with machine learning.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/selection_002.png?w=300&#34; alt=&#34;Gmail Priority Inbox&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Machine learning in practice involves predictions based on data. Notable examples include Amazon&amp;rsquo;s product recommendations with the &amp;ldquo;customers also bought&amp;rdquo; scroll-list, or Gmail&amp;rsquo;s priority inbox or any email spam-filter feature. How do these work? For Amazon, clicks by the user is used to learn and predict user behavior and propensity (likelihood) to buy certain items. The items the user is most likely to buy are then displayed on the recommendation system. Gmail&amp;rsquo;s system learns from the messages which the user reads and/replies to and prioritizes them.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Designing the future - Data Innovation Labs</title>
+      <link>https://maloymanna.github.io/2015/01/19/designing-the-future-data-innovation-labs/</link>
+      <pubDate>Mon, 19 Jan 2015 16:48:29 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2015/01/19/designing-the-future-data-innovation-labs/</guid>
+      <description>&lt;p&gt;With the ongoing Big data revolution, and the impending Internet of Things revolution, there has been a renewed enthusiasm in &amp;ldquo;innovation&amp;rdquo; around data.  Similar to the Labs concept started by Google (think Gmail Beta based on Ajax, circa 2004), more and more organizations, business communities, governments and countries are setting up Labs to foster innovation in data and analytics technologies. The idea behind these “data innovation labs” is to develop avant-garde data and analytics technologies and products in an agile fashion and move quickly from concept to production. Given the traditional bureaucratic setup in large organizations and governments, these Labs stand a better chance of fostering a culture of innovation, due to their being autonomous entities and their startup-mode culture leveraging agile methodologies.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Set up a Hadoop Spark cluster in 10 minutes with Vagrant</title>
+      <link>https://maloymanna.github.io/2014/12/30/set-up-a-hadoop-spark-cluster-in-10-minutes-with-vagrant/</link>
+      <pubDate>Tue, 30 Dec 2014 22:36:53 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2014/12/30/set-up-a-hadoop-spark-cluster-in-10-minutes-with-vagrant/</guid>
+      <description>&lt;p&gt;With each of the big 3 Hadoop vendors - &lt;strong&gt;Cloudera&lt;/strong&gt;, &lt;strong&gt;Hortonworks&lt;/strong&gt; and &lt;strong&gt;MapR&lt;/strong&gt; each providing their own Hadoop &lt;span style=&#34;color: blue;&#34;&gt;sandbox&lt;/span&gt; &lt;strong&gt;virtual machines&lt;/strong&gt; (VMs), trying out Hadoop today has become extremely easy. For a developer, it is extremely useful to download a get started with one of these VMs and try out Hadoop to practice data science right away.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/vagrant-hadoop-spark-cluster.png?w=300&#34; alt=&#34;Vagrant Hadoop Spark Cluster&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;However, with the core &lt;a href=&#34;hadoop.apache.org/&#34;&gt;Apache Hadoop&lt;/a&gt;, these vendors package their own software into their distributions, mostly for the orchestration and management, which can be a pain due to the multiple scattered open-source projects within the Hadoop ecosystem. e.g. Hortonworks includes the open-source &lt;strong&gt;Ambari&lt;/strong&gt; while Cloudera includes its own &lt;strong&gt;Cloudera Manager&lt;/strong&gt; for orchestrating Hadoop installations and managing multi-node clusters.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The data science project lifecycle</title>
+      <link>https://maloymanna.github.io/2014/12/22/the-data-science-project-lifecycle/</link>
+      <pubDate>Mon, 22 Dec 2014 01:00:42 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2014/12/22/the-data-science-project-lifecycle/</guid>
+      <description>&lt;p&gt;How does the typical data science project life-cycle look like?&lt;/p&gt;&#xA;&lt;p&gt;This post looks at practical aspects of implementing data science projects. It also assumes a certain level of maturity in big data (more on big data maturity models in the next post) and data science management within the organization. Therefore the life cycle presented here differs, sometimes significantly from purist definitions of &amp;lsquo;science&amp;rsquo; which emphasize the hypothesis-testing approach. In practice, the typical data science project life-cycle resembles more of an engineering view imposed due to constraints of resources (budget, data and skills availability) and time-to-market considerations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>BI in the digital era</title>
+      <link>https://maloymanna.github.io/2014/12/19/bi-in-the-digital-era/</link>
+      <pubDate>Fri, 19 Dec 2014 11:12:43 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2014/12/19/bi-in-the-digital-era/</guid>
+      <description>&lt;p&gt;Sometime back I presented a webinar on BrightTalk. The slides for the talk have now been uploaded on &lt;a href=&#34;http://www.slideshare.net/itsmaloy/bi-in-the-digital-era&#34;&gt;Slideshare&lt;/a&gt;. The talk focused more on changes in digital technology disrupting businesses, the effect of Big Data, the FOMO (Fear of missing out) effect on big business - and what it meant for changes to the way we do business intelligence in the digital era.&lt;/p&gt;&#xA;&lt;div class=&#34;slideshare-embed&#34;&gt;&#xA;    &lt;iframe src=&#34;https://www.slideshare.net/slideshow/embed_code/key/5lk8abamQrtcTf&#34; &#xA;            width=&#34;595&#34; &#xA;            height=&#34;485&#34; &#xA;            frameborder=&#34;0&#34; &#xA;            marginwidth=&#34;0&#34; &#xA;            marginheight=&#34;0&#34; &#xA;            scrolling=&#34;no&#34; &#xA;            style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; &#xA;            allowfullscreen&gt;&#xA;    &lt;/iframe&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key themes:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Brief Introduction to Statistics - Part 1</title>
+      <link>https://maloymanna.github.io/2014/10/28/a-brief-introduction-to-statistics-part-1/</link>
+      <pubDate>Tue, 28 Oct 2014 10:41:42 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2014/10/28/a-brief-introduction-to-statistics-part-1/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;What is Statistics?&lt;/strong&gt;&lt;br&gt;&#xA;Collected observations are called &lt;strong&gt;data&lt;/strong&gt;. &lt;strong&gt;Statistics&lt;/strong&gt; is the study of &lt;em&gt;how best to collect, analyze, and draw conclusions from data&lt;/em&gt;. Each observation in data is called a &lt;strong&gt;case&lt;/strong&gt;. Characteristics of the case are called &lt;strong&gt;variables&lt;/strong&gt;. With a matrix/table analogy, a case is a row while a variable is a column.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/correlation.jpg?w=300&#34; alt=&#34;Statistics - Correlation&#34;&gt;&lt;br&gt;&#xA;Statistics - Correlation (Courtesy: xkcd.com)&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Types of variables:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Numerical&lt;/strong&gt; - Can be &lt;strong&gt;discrete&lt;/strong&gt; or &lt;strong&gt;continuous&lt;/strong&gt;, and can take a wide range of numerical values.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SPC – Using statistics to get insight from BI</title>
+      <link>https://maloymanna.github.io/2008/07/08/spc--using-statistics-to-get-insight-from-bi/</link>
+      <pubDate>Tue, 08 Jul 2008 13:46:21 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2008/07/08/spc--using-statistics-to-get-insight-from-bi/</guid>
+      <description>&lt;p&gt;There is a well known adage that if you keep doing the same thing and expect different results, that is a sure sign of idiocy.&lt;/p&gt;&#xA;&lt;p&gt;In the BI world too, we come across several instances where people take it for granted that the &lt;em&gt;‘BI tool’&lt;/em&gt; will magically generate insight and spur &lt;em&gt;‘intelligence’&lt;/em&gt; rather than &lt;em&gt;‘idiocy’&lt;/em&gt;. Yet the very practices of reporting the same measures, or of creating reports for metrics just because they are now made available by the tool, without sparing any &lt;em&gt;‘intelligence’&lt;/em&gt; into what will generate insight is a major cause  of failures of BI.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Big-Data on Maloy Manna</title>
+    <link>https://maloymanna.github.io/categories/big-data/</link>
+    <description>Recent content in Big-Data on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 28 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/categories/big-data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Data Mesh Approach</title>
+      <link>https://maloymanna.github.io/2024/06/28/the-data-mesh-approach/</link>
+      <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2024/06/28/the-data-mesh-approach/</guid>
+      <description>&lt;p&gt;With rapid advance in the technology world, it makes sense sometimes to rethink our objective and outline the roadmap instead of just following the new and shiny. &lt;span style=&#34;color: blue;&#34;&gt;Data Mesh&lt;/span&gt; might seem a relatively new concept, however what its creator Zhamak Dehghani has done is spell out in words the approach required to reach the strategic goal of being a data-driven organization.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/data-mesh.png&#34; alt=&#34;Data Mesh domain product notation&#34;&gt;&lt;br&gt;&#xA;Figure: Data Mesh domain product notation, adapted from Zhamak Dehghani&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Delta Lake and the Lakehouse Architecture</title>
+      <link>https://maloymanna.github.io/2024/05/19/delta-lake-and-the-lakehouse-architecture/</link>
+      <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2024/05/19/delta-lake-and-the-lakehouse-architecture/</guid>
+      <description>&lt;p&gt;The technology world often sees upheavals when disparate concepts are put together to achieve different objectives, creating something which is much &lt;em&gt;more than the sum of its parts&lt;/em&gt;. &lt;span style=&#34;color: blue;&#34;&gt;Delta Lake&lt;/span&gt; is one such concept, which has melded log and ACID, bringing transaction and atomicity concepts into the ETL-analytics-big.data field, creating a revolution of sorts.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;The problem(s):&lt;/strong&gt;&lt;br&gt;&#xA;Since traditional data warehousing, the design and modeling of analytics systems relied on &lt;strong&gt;denormalized&lt;/strong&gt; tables, as analytics systems were considered separate from transactional systems. This started to change with the move to the cloud and availability of more real-time data. With the advent of big data technology like HDFS/Hadoop, additional constraints on updates and storage of relational datasets were added due to performance costs. The difficulty was particularly acute for cloud customers who faced additional latency compared to on-premises HDFS/Hadoop users.&#xA;GDPR compliance meant deleting or correcting customer data required massive table-wide updates for a few records, with increased probability of data corruption and consistency issues in case of crashed updates.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>9 features of modern data architectures</title>
+      <link>https://maloymanna.github.io/2017/07/14/9-features-of-modern-data-architectures/</link>
+      <pubDate>Fri, 14 Jul 2017 11:27:09 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2017/07/14/9-features-of-modern-data-architectures/</guid>
+      <description>&lt;p&gt;The last few years has seen a massive change in the data landscape. With the rise of big data, there&amp;rsquo;s been rapid innovation in the tools, skills and roles working on data systems. Data architectures have evolved beyond monolithic, centralized databases and unwieldy analytic applications to distributed, scalable architectures with simpler collaborative and interactive analytic tools. In this post, I look at the defining features of modern data architectures.&lt;/p&gt;&#xA;&lt;p&gt;Modern data architectures generally feature the following (though not all of these may be present in the same system):&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kafka - building real-time stream data pipelines</title>
+      <link>https://maloymanna.github.io/2017/05/01/kafka-building-real-time-stream-data-pipelines/</link>
+      <pubDate>Mon, 01 May 2017 14:11:27 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2017/05/01/kafka-building-real-time-stream-data-pipelines/</guid>
+      <description>&lt;p&gt;Over the past few years, Kafka has become the most exciting new addition in the big data distributed architecture. Originally developed at LinkedIn, its founders Jay Kreps, Jun Rao and Neha Narkhede have launched a company Confluent to develop its open-core business model. The software at its core, Apache Kafka reinvents the database log to provide a highly scalable and fault tolerant, high performance distributed system, which serves as the data pipeline backbone for stream data processing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hadoop&#39;s small files problem</title>
+      <link>https://maloymanna.github.io/2016/02/16/hadoop-small-files-problem/</link>
+      <pubDate>Tue, 16 Feb 2016 08:09:12 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2016/02/16/hadoop-small-files-problem/</guid>
+      <description>&lt;p&gt;Small files are a big problem in Hadoop.&lt;/p&gt;&#xA;&lt;p&gt;Hadoop is designed to manage big data and by design this means HDFS is designed to store very large files in a distributed cluster with streaming access to this data. For reference, a typical block in HDFS is 64 MB or 128 MB. Each small file (few MB or less) is stored in a block and multiple small files could be stored in blocks across different nodes of the distributed cluster.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What roles do you need in your data science team?</title>
+      <link>https://maloymanna.github.io/2015/06/24/what-roles-do-you-need-in-your-data-science-team/</link>
+      <pubDate>Wed, 24 Jun 2015 22:52:27 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2015/06/24/what-roles-do-you-need-in-your-data-science-team/</guid>
+      <description>&lt;p&gt;Over the past few weeks, we&amp;rsquo;ve had several conversations in our data lab regarding data engineering problems and day to day problems we face with unsupervised data scientists who find it difficult to deploy their code into production.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/datascience3.jpg?w=300&#34; alt=&#34;Data scientist&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The opinions from business seemed to cluster around a tacit definition of data scientists as researchers, primarily from statistics or mathematics backgrounds, who are experienced in machine learning algorithms and often in some domain areas specific to our business, (e.g. actuaries in insurance), but not necessarily having skills of writing production-ready code.&#xA;The key driver behind the somewhat opposing strain of thought came from the developers and data engineers who often quoted Cloudera&amp;rsquo;s Director of Data Science - &lt;a href=&#34;https://twitter.com/josh_wills&#34;&gt;Josh Wills&lt;/a&gt; - famous for his &amp;ldquo;definition of a data scientist tweet&amp;rdquo;:&#xA;&amp;ldquo;Data Scientist (n.): Person who is better at statistics than any software engineer and better at software engineering than any statistician.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>An introduction to Data Science</title>
+      <link>https://maloymanna.github.io/2015/05/20/an-introduction-to-data-science/</link>
+      <pubDate>Wed, 20 May 2015 16:38:04 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2015/05/20/an-introduction-to-data-science/</guid>
+      <description>&lt;p&gt;I presented a talk last week introducing Data Science and associated topics to some enthusiasts.&lt;br&gt;&#xA;Here&amp;rsquo;s a slide deck I created quickly with markdown using Swipe - a start-up building HTML5 presentation tools.&lt;br&gt;&#xA;The contents include:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Data scientist skills&lt;/li&gt;&#xA;&lt;li&gt;Data science: enablers and barriers&lt;/li&gt;&#xA;&lt;li&gt;Big data analytics&lt;/li&gt;&#xA;&lt;li&gt;Data science lifecycle&lt;/li&gt;&#xA;&lt;li&gt;Use cases&lt;/li&gt;&#xA;&lt;li&gt;Tools and technology&lt;/li&gt;&#xA;&lt;li&gt;Project approach&lt;/li&gt;&#xA;&lt;li&gt;Machine learning&lt;/li&gt;&#xA;&lt;li&gt;Skills and roles&lt;/li&gt;&#xA;&lt;li&gt;Learning resources&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Here are the slides:&lt;/p&gt;&#xA;&#xA;    &lt;figure class=&#34;swipe&#34;&gt;&lt;iframe src=&#34;https://www.swipe.to/embed/2675ch&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/figure&gt;&lt;style&gt;figure.swipe{display:block;position:relative;padding-bottom:56.25%;height:0;overflow:hidden;}figure.swipe iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;}&lt;/style&gt;</description>
+    </item>
+    <item>
+      <title>Why Spark is the big data platform of the future</title>
+      <link>https://maloymanna.github.io/2015/03/23/spark-big-data-platform-future/</link>
+      <pubDate>Mon, 23 Mar 2015 12:03:35 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2015/03/23/spark-big-data-platform-future/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Apache Spark&lt;/strong&gt; has created a lot of buzz recently. In fact, beyond the buzz, Apache Spark has seen phenomenal adoption and has been marked out as the successor to Hadoop MapReduce.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/apache-spark.jpg?w=300&#34; alt=&#34;Apache Spark&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Google Trends confirms the &lt;strong&gt;hockey stick like growth&lt;/strong&gt; in interest in Apache Spark.  All leading Hadoop vendors, including Cloudera, now include Apache Spark in their Hadoop distribution.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/googletrends.jpg?w=300&#34; alt=&#34;GoogleTrends - Apache Spark&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;So what exactly is Spark, and why has it generated such enthusiasm? Apache Spark is an open-source big data processing framework designed for speed and ease of use.  Spark is well-known for its in-memory performance, but that has also given rise to misconceptions about its on-disk abilities. Spark is in fact a general execution engine - which has a greatly improved performance both in-memory as well as on-disk, when compared with older frameworks like MapReduce. With its advanced &lt;strong&gt;DAG&lt;/strong&gt; (directed acyclic graph) execution engine, Spark can run programs up to &lt;strong&gt;100x faster than MapReduce in memory, or 10x faster on-disk.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A gentle introduction to Machine Learning</title>
+      <link>https://maloymanna.github.io/2015/02/04/a-gentle-introduction-to-machine-learning/</link>
+      <pubDate>Wed, 04 Feb 2015 23:26:36 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2015/02/04/a-gentle-introduction-to-machine-learning/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;color: blue;&#34;&gt;Machine Learning&lt;/span&gt; is a big part of big data and data science. A subset of artificial intelligence - a branch of science notorious for requiring advanced knowledge of mathematics. In practice though, most data scientists don&amp;rsquo;t try to build a &lt;a href=&#34;http://youtu.be/l6bmTNadhJE&#34;&gt;Chappie&lt;/a&gt;  and there are simpler, practical ways to get started with machine learning.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/selection_002.png?w=300&#34; alt=&#34;Gmail Priority Inbox&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Machine learning in practice involves predictions based on data. Notable examples include Amazon&amp;rsquo;s product recommendations with the &amp;ldquo;customers also bought&amp;rdquo; scroll-list, or Gmail&amp;rsquo;s priority inbox or any email spam-filter feature. How do these work? For Amazon, clicks by the user is used to learn and predict user behavior and propensity (likelihood) to buy certain items. The items the user is most likely to buy are then displayed on the recommendation system. Gmail&amp;rsquo;s system learns from the messages which the user reads and/replies to and prioritizes them.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Designing the future - Data Innovation Labs</title>
+      <link>https://maloymanna.github.io/2015/01/19/designing-the-future-data-innovation-labs/</link>
+      <pubDate>Mon, 19 Jan 2015 16:48:29 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2015/01/19/designing-the-future-data-innovation-labs/</guid>
+      <description>&lt;p&gt;With the ongoing Big data revolution, and the impending Internet of Things revolution, there has been a renewed enthusiasm in &amp;ldquo;innovation&amp;rdquo; around data.  Similar to the Labs concept started by Google (think Gmail Beta based on Ajax, circa 2004), more and more organizations, business communities, governments and countries are setting up Labs to foster innovation in data and analytics technologies. The idea behind these “data innovation labs” is to develop avant-garde data and analytics technologies and products in an agile fashion and move quickly from concept to production. Given the traditional bureaucratic setup in large organizations and governments, these Labs stand a better chance of fostering a culture of innovation, due to their being autonomous entities and their startup-mode culture leveraging agile methodologies.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Set up a Hadoop Spark cluster in 10 minutes with Vagrant</title>
+      <link>https://maloymanna.github.io/2014/12/30/set-up-a-hadoop-spark-cluster-in-10-minutes-with-vagrant/</link>
+      <pubDate>Tue, 30 Dec 2014 22:36:53 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2014/12/30/set-up-a-hadoop-spark-cluster-in-10-minutes-with-vagrant/</guid>
+      <description>&lt;p&gt;With each of the big 3 Hadoop vendors - &lt;strong&gt;Cloudera&lt;/strong&gt;, &lt;strong&gt;Hortonworks&lt;/strong&gt; and &lt;strong&gt;MapR&lt;/strong&gt; each providing their own Hadoop &lt;span style=&#34;color: blue;&#34;&gt;sandbox&lt;/span&gt; &lt;strong&gt;virtual machines&lt;/strong&gt; (VMs), trying out Hadoop today has become extremely easy. For a developer, it is extremely useful to download a get started with one of these VMs and try out Hadoop to practice data science right away.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/vagrant-hadoop-spark-cluster.png?w=300&#34; alt=&#34;Vagrant Hadoop Spark Cluster&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;However, with the core &lt;a href=&#34;hadoop.apache.org/&#34;&gt;Apache Hadoop&lt;/a&gt;, these vendors package their own software into their distributions, mostly for the orchestration and management, which can be a pain due to the multiple scattered open-source projects within the Hadoop ecosystem. e.g. Hortonworks includes the open-source &lt;strong&gt;Ambari&lt;/strong&gt; while Cloudera includes its own &lt;strong&gt;Cloudera Manager&lt;/strong&gt; for orchestrating Hadoop installations and managing multi-node clusters.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The data science project lifecycle</title>
+      <link>https://maloymanna.github.io/2014/12/22/the-data-science-project-lifecycle/</link>
+      <pubDate>Mon, 22 Dec 2014 01:00:42 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2014/12/22/the-data-science-project-lifecycle/</guid>
+      <description>&lt;p&gt;How does the typical data science project life-cycle look like?&lt;/p&gt;&#xA;&lt;p&gt;This post looks at practical aspects of implementing data science projects. It also assumes a certain level of maturity in big data (more on big data maturity models in the next post) and data science management within the organization. Therefore the life cycle presented here differs, sometimes significantly from purist definitions of &amp;lsquo;science&amp;rsquo; which emphasize the hypothesis-testing approach. In practice, the typical data science project life-cycle resembles more of an engineering view imposed due to constraints of resources (budget, data and skills availability) and time-to-market considerations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>BI in the digital era</title>
+      <link>https://maloymanna.github.io/2014/12/19/bi-in-the-digital-era/</link>
+      <pubDate>Fri, 19 Dec 2014 11:12:43 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2014/12/19/bi-in-the-digital-era/</guid>
+      <description>&lt;p&gt;Sometime back I presented a webinar on BrightTalk. The slides for the talk have now been uploaded on &lt;a href=&#34;http://www.slideshare.net/itsmaloy/bi-in-the-digital-era&#34;&gt;Slideshare&lt;/a&gt;. The talk focused more on changes in digital technology disrupting businesses, the effect of Big Data, the FOMO (Fear of missing out) effect on big business - and what it meant for changes to the way we do business intelligence in the digital era.&lt;/p&gt;&#xA;&lt;div class=&#34;slideshare-embed&#34;&gt;&#xA;    &lt;iframe src=&#34;https://www.slideshare.net/slideshow/embed_code/key/5lk8abamQrtcTf&#34; &#xA;            width=&#34;595&#34; &#xA;            height=&#34;485&#34; &#xA;            frameborder=&#34;0&#34; &#xA;            marginwidth=&#34;0&#34; &#xA;            marginheight=&#34;0&#34; &#xA;            scrolling=&#34;no&#34; &#xA;            style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; &#xA;            allowfullscreen&gt;&#xA;    &lt;/iframe&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key themes:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Big Data Basics - Part  4 : NoSQL and NewSQL explained</title>
+      <link>https://maloymanna.github.io/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/</link>
+      <pubDate>Wed, 01 Oct 2014 08:25:31 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/nosql.png?w=300&#34; alt=&#34;Big Data Basics: NoSQL and NewSQL&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This is the fourth part of a series of posts on big data. Read the previous posts here: &lt;a href=&#34;http://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/&#34;&gt;Part-1&lt;/a&gt;, &lt;a href=&#34;http://biguru.wordpress.com/2014/04/13/basics-of-big-data-part-2-hadoop/&#34;&gt;Part-2&lt;/a&gt; and &lt;a href=&#34;http://biguru.wordpress.com/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/&#34;&gt;Part-3&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;With the ongoing data explosion, and the improvement in technologies able to deal with it, businesses are turning to leverage this &lt;span style=&#34;color: blue;&#34;&gt;big data&lt;/span&gt; for mining insights to gain competitive advantage, reinvent business models and create new markets.&lt;/p&gt;&#xA;&lt;p&gt;A huge amount of this &amp;ldquo;&lt;strong&gt;big data&lt;/strong&gt;&amp;rdquo; volumes comes from system logs, user generated content on social media like Twitter or Facebook, sensor data and the like. All of these types of data are what we call &amp;ldquo;unstructured&amp;rdquo;. Businesses which do not leverage the vast amount of unstructured data available to them, risk losing out valuable insights from such data types.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Basics of Big Data - Building a Hadoop data warehouse</title>
+      <link>https://maloymanna.github.io/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/</link>
+      <pubDate>Mon, 12 May 2014 12:55:24 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/</guid>
+      <description>&lt;p&gt;This is the 3rd part of a series of posts on Big Data. Read &lt;a href=&#34;http://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/&#34;&gt;Part-1&lt;/a&gt; (What is Big Data) and &lt;a href=&#34;http://biguru.wordpress.com/2014/04/13/basics-of-big-data-part-2-hadoop/&#34;&gt;Part-2 (Hadoop)&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Traditionally data warehouses have been built with relational databases as backbone. With the new challenges (&lt;a href=&#34;http://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/&#34;&gt;3Vs&lt;/a&gt;) of Big Data, relational databases have been falling short of the requirements of handling&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;New data types (unstructured data)&lt;/li&gt;&#xA;&lt;li&gt;Extended analytic processing&lt;/li&gt;&#xA;&lt;li&gt;Throughput (TB/hour loading) with immediate query access&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The industry has turned to Hadoop as a disruptive solution for these very challenges.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Basics of Big Data – Part 2 - Hadoop</title>
+      <link>https://maloymanna.github.io/2014/04/13/basics-of-big-data-part-2-hadoop/</link>
+      <pubDate>Sun, 13 Apr 2014 18:12:16 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2014/04/13/basics-of-big-data-part-2-hadoop/</guid>
+      <description>&lt;p&gt;As discussed in &lt;a href=&#34;http://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/&#34;&gt;Part 1&lt;/a&gt; of this series, &lt;strong&gt;&lt;em&gt;Hadoop&lt;/em&gt;&lt;/strong&gt; is the foremost among tools being currently used for deriving value out of Big Data. The process of gaining insights from data through Business Intelligence and analytics essentially remains the same. However, with the huge variety, volume and velocity (the 3Vs of Big Data), it’s become necessary to re-think of the data management infrastructure. Hadoop, originally designed to be used with the MapReduce algorithm to solve parallel processing constraints in distributed architectures (e.g. web indexing) of web giants like Yahoo or Google, has become the de-facto standard for Big Data (large-scale data-intensive) analytics platforms.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Basics of Big Data - Part 1</title>
+      <link>https://maloymanna.github.io/2013/08/21/basics-of-big-data-part-1/</link>
+      <pubDate>Wed, 21 Aug 2013 23:02:49 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2013/08/21/basics-of-big-data-part-1/</guid>
+      <description>&lt;p&gt;You can’t miss all the buzz about &lt;strong&gt;Big Data&lt;/strong&gt;! Over the past few years, the buzz around the cloud and &lt;strong&gt;Big Data&lt;/strong&gt; shaping most of the future of computing, IT and analytics in particular has grown incessantly strong. As with most buzz words, which are then hijacked by marketing to suit their own products’ storylines, but which nonetheless manage to confuse users in business and staff in IT as well, &lt;strong&gt;Big Data&lt;/strong&gt; means several things to several people.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Thrive or Survive - the changing rules for databases</title>
+      <link>https://maloymanna.github.io/2008/05/07/thrive-or-survive-the-changing-rules-for-databases/</link>
+      <pubDate>Wed, 07 May 2008 09:59:04 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2008/05/07/thrive-or-survive-the-changing-rules-for-databases/</guid>
+      <description>&lt;p&gt;Not since the late seventies, when Larry Ellison&amp;rsquo;s Relational Software Inc. (RSI) turned out the &lt;a href=&#34;http://www.oracle.com/timeline/index.html&#34;&gt;first commerically available RDBMS&lt;/a&gt; - Oracle, has there been such rapid changing of the rules (read disruption) in the database industry.&lt;br&gt;&#xA;With &lt;em&gt;&lt;strong&gt;Web 2.0&lt;/strong&gt;&lt;/em&gt; pushing enterprise adoption, and the ensuing &lt;em&gt;information explosion&lt;/em&gt; in the maze of audio, video, data and ever-growing data warehouses, it seems that the conventional relational database systems are growing tired. With estimates of &lt;em&gt;&lt;strong&gt;unstructured data&lt;/strong&gt;&lt;/em&gt; being anywhere between 80% to 95% of all business data, and the ever changing requirements imposed by Web 2.0 - storage of &lt;em&gt;pictures&lt;/em&gt;, &lt;em&gt;audio&lt;/em&gt; and &lt;em&gt;video&lt;/em&gt;, the demands being made on conventional RDBMS technology are monstrous. With the load window available being fixed due to availability and uptime requirements, the ever increasing data to be loaded into data warehouses, the bulking-up of the data due to usage of &lt;em&gt;XML&lt;/em&gt; based formats, conflicting requirements of &lt;em&gt;SQL&lt;/em&gt; and &lt;em&gt;XQuery&lt;/em&gt;, the database is also being challenged by the demands of business intelligence.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

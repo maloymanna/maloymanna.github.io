@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.141.0">
+
+  <title>Predictability – Get everything as a service – from IaaS, PaaS and SaaS to XaaS &middot; Maloy Manna</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+    
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://maloymanna.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  <a class="pure-menu-heading brand" href="/">
+  <img src="/img/logo.png" width="140px">
+</a>
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Tech Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-folder fa-fw'></i>Categories</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/pm/"><i class='fa fa-list fa-fw'></i>Agile PM posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talks/"><i class='fa fa-comments fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone-square fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/itsmaloy" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/maloy" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/maloymanna" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2007 - 2025. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Predictability – Get everything as a service – from IaaS, PaaS and SaaS to XaaS</h1>
+</div>
+<div class="content">
+  
+</div>
+
+<div class="content">
+
+  <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/12/04</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/strategy">Strategy</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/aws">AWS</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/cloud">cloud</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/iaas">IaaS</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/paas">PaaS</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/saas">SaaS</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>The outsourcing model which led to the <strong>“on-demand” “as a service”</strong> model, has taken off with increasing adoption of cloud-computing and mobility. What started out with the SaaS – software as a service model, has now diversified into several other services.</p>
+<p>Indeed, cloud computing has come to rest on three of these as its core pillars:</p>
+<ul>
+<li>SaaS: Software as a Service</li>
+<li>PaaS: Platform as a Service</li>
+<li>IaaS: Infrastructure as a Service</li>
+</ul>
+<p><strong>Differentiating SaaS, PaaS and IaaS:</strong></p>
+<p><strong>SaaS</strong>:  Access to software applications, usually for a specific business function, delivered online, with a pricing model which is usually cheaper than on-premises licensing. One of the earliest SaaS examples is Salesforce.com’s CRM applications. Today SaaS has extended into several business functions including office productivity with Microsoft’s Office365, accounting and tax from Intuit or project management with Asana or Basecamp, while expanding into with enterprise ERP with SAP or Oracle.</p>
+<p>The benefits of SaaS include flexible pricing plans, usually with a pay-as-you-go model and removal of the need for purchasing additional hardware or additional expenses for installations, upgrades and maintenance.</p>
+<p><strong>PaaS</strong>:  Providing a computing platform as a service is essentially what constitutes PaaS.</p>
+<p>The consumer is freed from having to purchase and maintain its own hardware and software stacks. The provider facilitates the deployment of applications, the develop-test-release cycle thus enabling IT in the consumer’s organization to develop its own applications for the final customer. Given its nature, PaaS providers necessarily make choices in the mix of underlying networking, storage, servers, operating systems, middleware and expose these as packages. Flexibility is provided with customizable options for choosing components of the application stack.</p>
+<p>For the application development team (consumer), all the complexity of deployment, load balancing, backups, auto-scaling etc. are managed transparently by the PaaS vendor, and the consumer can focus on building the applications/code on top of the platform.</p>
+<p>Example: Think of Windows Azure Websites as a PaaS which provides choices for source control (Git/Github/Codeplex/TFS etc.) and web development stacks on .NET/Java/PHP/Python/Node.js etc.  Others include Google App Engine, Pivotal CF, Heroku etc. While Amazon is not usually considered a PaaS vendor (mostly IaaS), it does have some PaaS offerings, e.g. AWS Elastic Beanstalk (free PaaS) for building web applications in java/.NET/Python/Ruby/Docker/Node.js etc.</p>
+<p><strong>IaaS</strong>:  Providing the underlying infrastructure – including networking, for computing systems, typically over the web using virtualization technologies, is Infrastructure as a service. In the IaaS mode, providers typically manage the networking, storage, servers and virtualization, while consumers have the flexibility to manage the operating system, middleware, application stacks and data.</p>
+<p>The foremost example of IaaS provider is Amazon Web Services EC2 (Elastic Cloud Compute). With continued expansion in cloud computing, there are now several other competitors e.g. RackSpace, Microsoft Azure (which includes both IaaS and PaaS) , Google Compute Engine and more. Given its nature, the targeted customer base for IaaS providers is business more than consumers, so it remains mostly a B2B offer.</p>
+<p><img src="/post/xaas.jpg?w=300" alt="Differentiating SaaS, PaaS and IaaS"></p>
+<p><strong>Predictability</strong></p>
+<p>There’s no question that cloud computing and mobile have accelerated the adoption of the <strong>“as a service”</strong> model. While initially targeted at small and medium businesses, which looked to outsource these functions to prevent sunk costs, the <strong>“XaaS”</strong> model has rapidly moved into the enterprise space due to a rethink of the approach to total cost of ownership and the move to simpler, predictable expenses.</p>
+<p>Today, having a cloud computing strategy is essential not only to the CIO, but the CFO as well, because of the transparency and predictable cost structures inherent in the <strong>“XaaS”</strong> models, compared to the opaque and complex financial models of old.</p>
+<p>Historically, on-premise resources like servers, networking equipment, data centers used to be capital costs. Earlier, projects (if there were projects at all) in enterprises would propose benefits based on forecast usage, licensing, upgrade, ,maintenance and support costs. Quick obsolescence of technology meant upgrades for core platforms would be major project exercises in themselves. Finding out a reliably accurate total cost of ownership or even the cost per user would be a challenge. Enterprises sought large outsourcing deals with IT infrastructure and support providers like IBM, Fujitsu, HCL etc. to essentially arrive at predictable costs for the near future (several years according to the duration of the contracts).</p>
+<p>Essentially the <strong>“XaaS”</strong> model has driven this market to develop core competence in IT delivery through the rise of IaaS/PaaS and SaaS service providers. Not only small and medium businesses can outsource their back-office and IT requirements to cloud providers, but large businesses/enterprises can also take advantage of the <strong>“XaaS”</strong> model to get ongoing predictable costs.</p>
+<p>Today there are value-add cloud services enabled by these cloud-providers, which combine expertise of talent pools of skilled resources with <strong>“XaaS”</strong> offers to provide bundled services for business functions aimed at both the business and the consumer. Zoho, JustEat Asana, BackOps, WorkDay are all examples of business services in the digital age which provide predictability.</p>
+<p><strong>Everything as a Service</strong></p>
+<p>Cloud computing and rapid evolution of Web2.0 technologies in the digital age has led to a host of start-ups. Typically these start-ups require a range of services from payroll, HT, IT, finance, marketing and so on. Today the <strong>“as-a-service”</strong> model has thrown up start-ups focusing on providing these services using the cloud to support other start-ups and small and medium businesses.</p>
+<p>The <strong>“XaaS”</strong> ecosystem is not only confined to the digital world. Several brick-and-mortar services and business models are being changed and challenged by this digital world. Think of Uber, BlaBlaCar or Lyft providing taxi or rideshare services, Airbnb providing vacation rentals, Kayak or Google Flights providing travel information, HealthTap or IoraHealth providing telemedicine services or YC and Red Tree Labs providing startup-as-a-service.</p>
+<p><strong>On-premises</strong></p>
+<p>Concerns remain with adoption of the cloud computing model. Ranging from security, availability, re-architecting applications for the cloud to lack of adequate support, dependence on network, high costs of storage, bandwidth and data transfer, most of these except data transfer costs are also applicable on-premise. The key underlying concern across these is in fact the loss of control and the fear of redundancy.</p>
+<p>For most regular usage in small and medium businesses as also enterprise requirements of <strong>“Fast IT”</strong>, public cloud computing provides a better alternative.  There’s no lengthy procurement process, and consumers can get started immediately.  Public cloud services also provide well designed and up-to-date service catalogs with smaller usage units compared to in-house IT.</p>
+<p>However, in several cases, where legitimate concerns around security and sensitivity of data requires additional oversight and control, private clouds with in-premise infrastructure can be better solutions.</p>
+<p><strong>Conclusion</strong></p>
+<p>It’s well known that private clouds prove cheaper than public clouds in most cases, not the least being the cost of data transfer (uploads to cloud). However newer and open source technologies like ownCloud, openstack and cloud orchestration services like Cloudify continue to reduce the barriers and costs for private and on-premise clouds.</p>
+<p>Cloud computing provides economies of scale whether they’re public or private, and provide extreme flexibility in the case of public clouds. The key reason for adopting the “everything as a service” model however is the predictability it can offer on the costs of such services, with key metrics like cost per user, total cost of ownership and the level of accuracy for forecasts.</p>
+<p>With continued cloud computing, mobile and the advent of big data bolstered by cheaper bandwidth, it’s more likely to see the move towards everything as a service in the foreseeable future.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://maloymanna.github.io/2014/12/03/a-brief-introduction-to-statistics-part-2-probability-and-distributions/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://maloymanna.github.io/2014/12/03/a-brief-introduction-to-statistics-part-2-probability-and-distributions/">A Brief Introduction to Statistics - Part 2 - Probability and Distributions</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://maloymanna.github.io/2014/12/19/bi-in-the-digital-era/">BI in the digital era</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://maloymanna.github.io/2014/12/19/bi-in-the-digital-era/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'maloymanna';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://maloymanna.github.io/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

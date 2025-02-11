@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mongodb on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/mongodb/</link>
+    <description>Recent content in Mongodb on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 01 Oct 2014 08:25:31 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Big Data Basics - Part  4 : NoSQL and NewSQL explained</title>
+      <link>https://maloymanna.github.io/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/</link>
+      <pubDate>Wed, 01 Oct 2014 08:25:31 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/nosql.png?w=300&#34; alt=&#34;Big Data Basics: NoSQL and NewSQL&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This is the fourth part of a series of posts on big data. Read the previous posts here: &lt;a href=&#34;http://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/&#34;&gt;Part-1&lt;/a&gt;, &lt;a href=&#34;http://biguru.wordpress.com/2014/04/13/basics-of-big-data-part-2-hadoop/&#34;&gt;Part-2&lt;/a&gt; and &lt;a href=&#34;http://biguru.wordpress.com/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/&#34;&gt;Part-3&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;With the ongoing data explosion, and the improvement in technologies able to deal with it, businesses are turning to leverage this &lt;span style=&#34;color: blue;&#34;&gt;big data&lt;/span&gt; for mining insights to gain competitive advantage, reinvent business models and create new markets.&lt;/p&gt;&#xA;&lt;p&gt;A huge amount of this &amp;ldquo;&lt;strong&gt;big data&lt;/strong&gt;&amp;rdquo; volumes comes from system logs, user generated content on social media like Twitter or Facebook, sensor data and the like. All of these types of data are what we call &amp;ldquo;unstructured&amp;rdquo;. Businesses which do not leverage the vast amount of unstructured data available to them, risk losing out valuable insights from such data types.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

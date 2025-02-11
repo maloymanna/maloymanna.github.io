@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Planning on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/planning/</link>
+    <description>Recent content in Planning on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 11 Mar 2018 19:05:05 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/planning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agile planning</title>
+      <link>https://maloymanna.github.io/pm/agile-planning/</link>
+      <pubDate>Sun, 11 Mar 2018 19:05:05 +0000</pubDate>
+      <guid>https://maloymanna.github.io/pm/agile-planning/</guid>
+      <description>&lt;p&gt;Agile planning is different from predictive planning done in traditional project management. Often we come across posts by certain agile evangelists who claim that agile doesn&amp;rsquo;t need planning. To believe these claims would mean there would be endless iterations with a fully-funded product development team to get to a perfect end-state without concern for time or cost. This is utopian and untrue. Usually these claims are made by developers or people far removed from business. No business runs without planning or without any estimates of how much a product/service would cost. &lt;span style=&#34;color: blue;&#34;&gt;Agile projects also plan.&lt;/span&gt; &lt;em&gt;The difference is in the planning&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

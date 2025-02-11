@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Plane on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/plane/</link>
+    <description>Recent content in Plane on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 24 Aug 2022 21:30:11 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/plane/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Control plane and Data plane</title>
+      <link>https://maloymanna.github.io/2022/08/24/azure-control-plane-data-plane/</link>
+      <pubDate>Wed, 24 Aug 2022 21:30:11 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2022/08/24/azure-control-plane-data-plane/</guid>
+      <description>&lt;p&gt;Azure operations can be divided into 2 categories:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Control plane (or Management plane)&lt;/strong&gt; - used to manage resources in azure subscriptions, e.g. creation of a virtual machine or a storage account&#xA;All requests for control plane operations are sent to the Azure Resource Manager URL. For Azure global, the url is: &lt;a href=&#34;https://management.azure.com&#34;&gt;https://management.azure.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Data plane&lt;/strong&gt; - used to manage capabilties exposed by instances of resource types e.g. using remote desktop protocol (RDP) to interact with a virtual machine, or reading/writing data in a storage account.&#xA;Requests for data plane operations are sent to an endpoint specific to the instance of the resource type e.g. &lt;a href=&#34;https://myname.blob.core.windows.net&#34;&gt;https://myname.blob.core.windows.net&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

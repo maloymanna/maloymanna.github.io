@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data-Mesh on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/data-mesh/</link>
+    <description>Recent content in Data-Mesh on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 28 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/data-mesh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Data Mesh Approach</title>
+      <link>https://maloymanna.github.io/2024/06/28/the-data-mesh-approach/</link>
+      <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2024/06/28/the-data-mesh-approach/</guid>
+      <description>&lt;p&gt;With rapid advance in the technology world, it makes sense sometimes to rethink our objective and outline the roadmap instead of just following the new and shiny. &lt;span style=&#34;color: blue;&#34;&gt;Data Mesh&lt;/span&gt; might seem a relatively new concept, however what its creator Zhamak Dehghani has done is spell out in words the approach required to reach the strategic goal of being a data-driven organization.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/data-mesh.png&#34; alt=&#34;Data Mesh domain product notation&#34;&gt;&lt;br&gt;&#xA;Figure: Data Mesh domain product notation, adapted from Zhamak Dehghani&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

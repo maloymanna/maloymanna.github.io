@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Information Explosion on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/information-explosion/</link>
+    <description>Recent content in Information Explosion on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 26 Jul 2009 11:15:03 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/information-explosion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Change the location Google Desktop Search indexes your data</title>
+      <link>https://maloymanna.github.io/2009/07/26/change-the-location-google-desktop-search-indexes-your-data/</link>
+      <pubDate>Sun, 26 Jul 2009 11:15:03 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2009/07/26/change-the-location-google-desktop-search-indexes-your-data/</guid>
+      <description>&lt;p&gt;Desktop search has become an important component of our everyday work.&lt;/p&gt;&#xA;&lt;p&gt;With the amount of &lt;a href=&#34;http://blogs.zdnet.com/Gardner/?p=3091&#34;&gt;information explosion&lt;/a&gt;, it is only natural that users and enterprises move towards enabling desktop (and enterprise) search for users – subject of course to appropriate security and access controls. BI vendors have moved into this new business space that has opened up and seems to be one of the most promising. While Business Objects had announced support for the Google Search appliance and Google Desktop &lt;a href=&#34;http://www1.sap.com/about/newsroom/businessobjects/20060515_006446.epx&#34;&gt;back in 2006&lt;/a&gt;, their most important announcement lately has been the launch of the &lt;a href=&#34;http://www1.sap.com/solutions/sapbusinessobjects/large/intelligenceplatform/bi/search-navigation/explorer/explorer-non-accelerated/index.epx&#34;&gt;Business Objects Explorer&lt;/a&gt; (formerly known as Polestar) product. More about that in a later post…&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

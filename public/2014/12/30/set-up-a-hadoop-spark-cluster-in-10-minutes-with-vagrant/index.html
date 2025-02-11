@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.141.0">
+
+  <title>Set up a Hadoop Spark cluster in 10 minutes with Vagrant &middot; Maloy Manna</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+    
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://maloymanna.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  <a class="pure-menu-heading brand" href="/">
+  <img src="/img/logo.png" width="140px">
+</a>
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Tech Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-folder fa-fw'></i>Categories</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/pm/"><i class='fa fa-list fa-fw'></i>Agile PM posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talks/"><i class='fa fa-comments fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone-square fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/itsmaloy" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/maloy" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/maloymanna" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2007 - 2025. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Set up a Hadoop Spark cluster in 10 minutes with Vagrant</h1>
+</div>
+<div class="content">
+  
+</div>
+
+<div class="content">
+
+  <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/12/30</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/data-science">Data science</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/cluster">cluster</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hadoop">Hadoop</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/install">install</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/multi-node">multi-node</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/spark">Spark</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/vagrant">vagrant</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>With each of the big 3 Hadoop vendors - <strong>Cloudera</strong>, <strong>Hortonworks</strong> and <strong>MapR</strong> each providing their own Hadoop <span style="color: blue;">sandbox</span> <strong>virtual machines</strong> (VMs), trying out Hadoop today has become extremely easy. For a developer, it is extremely useful to download a get started with one of these VMs and try out Hadoop to practice data science right away.</p>
+<p><img src="/post/vagrant-hadoop-spark-cluster.png?w=300" alt="Vagrant Hadoop Spark Cluster"></p>
+<p>However, with the core <a href="hadoop.apache.org/">Apache Hadoop</a>, these vendors package their own software into their distributions, mostly for the orchestration and management, which can be a pain due to the multiple scattered open-source projects within the Hadoop ecosystem. e.g. Hortonworks includes the open-source <strong>Ambari</strong> while Cloudera includes its own <strong>Cloudera Manager</strong> for orchestrating Hadoop installations and managing multi-node clusters.</p>
+<p>Moreover, most of these distributions require today a <strong>64-bit machine</strong> and sometimes a <strong>high-amount of memory</strong> (for a laptop). e.g. running Cloudera Manager with a full-blown Cloudera Hadoop Distribution (CDH) 5.x requires at least <strong><a href="http://www.cloudera.com/content/cloudera/en/documentation/cloudera-manager/v5-1-x/Cloudera-Manager-Quick-Start/Cloudera-Manager-Quick-Start-Guide.html">10GB RAM</a></strong>.<br>
+For a developer with a laptop, <em>RAM is always at a premium</em>, hence it may seem easier to try out the vanilla Apache Hadoop downloads for installations. The documentation for Hadoop for installing a single-node cluster, and even a multi-node cluster is much improved nowadays, but with the hassles of downloading the distributions and setting up SSH, it can easily take up a long-time to effectively set up a useful multi-node cluster. The overhead of setting up and running multiple VMs can also be a challenge. The vanilla distributions also require separate installations for UI (Cloudera Hue being a nice one) and job tracking (Oozie) or orchestration (Ambari). Unfortunately Ambari works only with select versions of HDP (Hortonwork&rsquo;s distribution of Hadoop), and configuring Oozie with disparate versions of Hadoop, Java and other libraries can be a real pain.</p>
+<p>One of the solutions to this problem is to use a container-based approach to installation. Hadoop clusters can be setup with LXC (Linux containers) approach, e.g. with the very popular <a href="http://blog.sequenceiq.com/blog/2014/06/19/multinode-hadoop-cluster-on-docker/"><strong>Docker</strong></a>. There are also other approaches with using <a href="https://github.com/viirya/puppet-hadoop"><strong>Puppet</strong></a>, <a href="https://github.com/analytically/hadoop-ansible"><strong>Ansible</strong></a>, <a href="http://www.rpark.com/2013/02/using-chef-to-build-out-hadoop-cluster.html"><strong>Chef</strong></a> and <a href="https://github.com/accumulo/hadoop-salt"><strong>Salt</strong></a> which allow easy installations. One of the simpler approaches that I tried apart from vanilla Hadoop is using <a href="https://www.vagrantup.com/">Vagrant</a>. Indeed setting up VMs with Vagrant is a breeze, and with a vagrant script (written in Ruby), setting up a multi-node cluster is very quick. In fact you can get started with a Hadoop and Spark multi-node cluster in less than 10 minutes.</p>
+<p>Check out the <a href="https://github.com/dnafrance/vagrant-hadoop-spark-cluster">project on Github</a> - it&rsquo;s adapted from Jee Vang&rsquo;s excellent Vagrant project to allow for 32-bit machines,  speed-up with pre-downloads of Hadoop, Spark and Java, and includes an updated Readme with script change locations detailed.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://maloymanna.github.io/2014/12/22/the-data-science-project-lifecycle/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://maloymanna.github.io/2014/12/22/the-data-science-project-lifecycle/">The data science project lifecycle</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://maloymanna.github.io/2015/01/04/a-brief-introduction-to-statistics-part-3-statistical-inference/">A Brief Introduction to Statistics – Part 3 - Statistical Inference</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://maloymanna.github.io/2015/01/04/a-brief-introduction-to-statistics-part-3-statistical-inference/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'maloymanna';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://maloymanna.github.io/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

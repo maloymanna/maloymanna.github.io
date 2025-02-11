@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.141.0">
+
+  <title>Delta Lake and the Lakehouse Architecture &middot; Maloy Manna</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+    
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://maloymanna.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  <a class="pure-menu-heading brand" href="/">
+  <img src="/img/logo.png" width="140px">
+</a>
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Tech Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-folder fa-fw'></i>Categories</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/pm/"><i class='fa fa-list fa-fw'></i>Agile PM posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talks/"><i class='fa fa-comments fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone-square fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/itsmaloy" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/maloy" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/maloymanna" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2007 - 2025. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Delta Lake and the Lakehouse Architecture</h1>
+</div>
+<div class="content">
+  
+</div>
+
+<div class="content">
+
+  <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2024/05/19</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">big-data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/architecture">architecture</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/delta-lake">delta-lake</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/lakehouse">lakehouse</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/databricks">databricks</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>The technology world often sees upheavals when disparate concepts are put together to achieve different objectives, creating something which is much <em>more than the sum of its parts</em>. <span style="color: blue;">Delta Lake</span> is one such concept, which has melded log and ACID, bringing transaction and atomicity concepts into the ETL-analytics-big.data field, creating a revolution of sorts.</p>
+<p><strong>The problem(s):</strong><br>
+Since traditional data warehousing, the design and modeling of analytics systems relied on <strong>denormalized</strong> tables, as analytics systems were considered separate from transactional systems. This started to change with the move to the cloud and availability of more real-time data. With the advent of big data technology like HDFS/Hadoop, additional constraints on updates and storage of relational datasets were added due to performance costs. The difficulty was particularly acute for cloud customers who faced additional latency compared to on-premises HDFS/Hadoop users.
+GDPR compliance meant deleting or correcting customer data required massive table-wide updates for a few records, with increased probability of data corruption and consistency issues in case of crashed updates.</p>
+<p>There were a few common ways to work around these problems:</p>
+<ul>
+<li>Partitioning relational data based on fields like dates, and using columnar data formats like Parquet or ORC and,</li>
+<li>Using Apache Spark SQL, Presto or Hive for queries to apply an SQL abstraction on the underlying datasets.
+However these quickly became complicated to maintain in case of complex updates and led to its own performance issues.</li>
+</ul>
+<p><strong>Databricks develops the Delta Lake</strong><br>
+The solution came in the form of the Delta Lake, an innovation from Databricks, which started offering it to its customers from 2017 and finally open sourced in 2019.<br>
+The <span style="color: blue;">Delta Lake</span> is an ACID table storage layer on top of cloud object stores or the data lake. It adds ACID transactions and schema enforcement capabilities to data lakes.</p>
+<ul>
+<li>The innovation was to maintain information about which objects are part of a Delta table in an ACID manner, using a write-ahead log, which itself is stored in the cloud data lake.</li>
+<li>Each transaction is recorded as a new entry in the log, including metadata about the operation(CRUD) and the version of the data. For performance, the logs is compressed periodically into checkpoints.  This design eliminates the need to maintain a separate metastore.</li>
+<li>Delta lake supports the highest isolation level: <strong><code>serializable</code></strong> so that concurrently executing transactions appear to be serially executing.</li>
+</ul>
+<p><img src="/post/delta-lake-txn-log.png" alt="Delta Lake table layout for the transaction log and data files"><br>
+(Image adapted from Denny Lee)</p>
+<p><strong>Key features</strong></p>
+<ul>
+<li>Updates and Deletes - support for upserts (update + insert) and deletes.The <code>delta log</code> is crucial to support atomic ACID transactions.</li>
+<li>Optimistic concurrency control - used to managed concurrent writes. Similar to an RDBMS, this supports maintaining isolation</li>
+<li>Time travel - Use of versioned Parquet files allows data versioning and enables <code>time travel</code> or querying point-in-time snapshots and perform rollbacks.</li>
+<li>Schema enforcement and evolution - allows reading old Parquet files without rewriting them if a table&rsquo;s schema changes.</li>
+<li>File-skipping - Delta Lake stores file-level metadata information: the min/max values of each column for each file in the table. This allows a powerful optimization called <code>file skipping</code> which can make some queries run 100 times faster!</li>
+</ul>
+<p><strong>The Lakehouse</strong>
+These features of the Delta Lake have popularized the concept of the <code>lakehouse</code>, something with combines some of the best features of data lakes and data warehouses.
+In essence, the Delta Lake sits in between data lakes and data warehouses.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Parameter</th>
+          <th>Data warehouse</th>
+          <th>Lakehouse</th>
+          <th>Data Lake</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Type of data</td>
+          <td>Structured data only</td>
+          <td>Both structured and unstructured data</td>
+          <td>Both structured and unstructured data</td>
+      </tr>
+      <tr>
+          <td>Storage</td>
+          <td>RDBMS, usually rows</td>
+          <td>Parquet, columns</td>
+          <td>Various formats: HDFS/Avro/Parquet</td>
+      </tr>
+      <tr>
+          <td>Schema enforcement</td>
+          <td>Strict schema-on-write</td>
+          <td>Schema-on-read, optional schema-on-write</td>
+          <td>Schema-on-read</td>
+      </tr>
+      <tr>
+          <td>Scalability</td>
+          <td>Complex partitioning</td>
+          <td>Can scale horizontally</td>
+          <td>Can scale horizontally</td>
+      </tr>
+      <tr>
+          <td>Concurrency</td>
+          <td>Not optimized for updates</td>
+          <td>Supports concurrent writes and ACID transactions</td>
+          <td>No transaction support, possible non-repeatable reads</td>
+      </tr>
+      <tr>
+          <td>ETL and CDC</td>
+          <td>Complex ETL and CDC</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>SCD<sup>*</sup></td>
+          <td>Supported</td>
+          <td>Supported e.g. with upserts</td>
+          <td>Not supported natively</td>
+      </tr>
+  </tbody>
+</table>
+<p>In the lakehouse architecture, data is ingested into the data lake using a schema-on-read approach. However, the Lakehouse also allows schema enforcement (schema-on-write) through ACID transactions and seamless schema evolution. This combination of schema-on-read and schema-on-write allows for a flexible and iterative approach to data exploration and analysis.</p>
+<p><strong>Streaming data</strong>
+Delta Lake provides a unified table format that can be used for both batch and streaming data processing.<br>
+Apache Kafka is often used to manage streaming pipelines or aggregate data in real-time, which could add management complexity and duplicate data. Delta Lake supports <code>exactly-once</code> streaming writes and could in many cases obviate the need for specialized real-time data processing systems.</p>
+<p><strong>Delta lakes and the Lakehouse architecture</strong> bridge the gap between data lakes and data warehouses with their best-of-both-worlds features. With increasing cloud adoption, startups like Dremio as well as all major cloud providers offer lakehouse-like services:</p>
+<ul>
+<li>Amazon: <code>AWS Redshift Spectrum</code></li>
+<li>Microsoft: <code>Azure Synapse + ADLS</code></li>
+<li>Google: <code>GCP BigQuery + BigLake</code></li>
+</ul>
+<p>Open-source lakehouse spawns include Apache Iceberg and Apache Hudi.<br>
+Integration and orchestration platforms like <code>Apache Airflow</code> and <code>Apache Nifi</code> also offer enhanced capabilities within the lakehouse.</p>
+<p>While originally developed by Databricks, <span style="color: blue;"> Delta Lake</span> is now an open-source project of <strong>the Linux Foundation</strong>, with multiple contributors like Amazon, Talend, Microsoft, ByteDance or Alibaba.</p>
+<p><sup>*</sup>SCD: Slowly changing dimension</p>
+<p>References:</p>
+<ol>
+<li><a href="https://doi.org/10.14778/3415478.3415560">Armbrust et al. Delta Lake: High-Performance ACID Table Storage over Cloud Object Stores</a> | <a href="https://www.databricks.com/wp-content/uploads/2020/08/p975-armbrust.pdf">Paper:</a></li>
+<li><a href="https://www.databricks.com/company/newsroom/press-releases/databricks-open-sources-delta-lake-for-data-lake-reliability">Databricks open sources Delta Lake</a></li>
+<li><a href="https://delta-io.github.io/delta-rs/how-delta-lake-works/delta-lake-file-skipping/">Delta Lake file skipping</a></li>
+<li><a href="https://dennyglee.com/2023/11/26/understanding-the-delta-lake-transaction-log-at-the-file-level/">Understanding the Delta Lake transaction log at the file level</a></li>
+</ol>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://maloymanna.github.io/2023/04/09/identity-basics-2-permissions-scopes-consent/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://maloymanna.github.io/2023/04/09/identity-basics-2-permissions-scopes-consent/">Identity Basics 2 - Permissions, Scopes and Consent</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://maloymanna.github.io/2024/06/28/the-data-mesh-approach/">The Data Mesh Approach</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://maloymanna.github.io/2024/06/28/the-data-mesh-approach/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'maloymanna';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://maloymanna.github.io/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

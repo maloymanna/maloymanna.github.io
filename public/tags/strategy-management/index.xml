@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Strategy Management on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/strategy-management/</link>
+    <description>Recent content in Strategy Management on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 29 Mar 2008 04:11:43 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/strategy-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SAP drops Business Objects Performance Management</title>
+      <link>https://maloymanna.github.io/2008/03/29/sap-drops-business-objects-performance-management/</link>
+      <pubDate>Sat, 29 Mar 2008 04:11:43 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2008/03/29/sap-drops-business-objects-performance-management/</guid>
+      <description>&lt;p&gt;In what seems to be a &lt;a href=&#34;http://www.infoworld.com/article/08/03/28/SAP-retires-overlapping-BI-products_1.html&#34;&gt;speedy decision&lt;/a&gt; to clean up an overlapping product line, following its acquisition of Business Objects (&lt;a href=&#34;http://finance.google.com/finance?q=NASDAQ%3ABOBJ&#34;&gt;BOBJ&lt;/a&gt;), &lt;a href=&#34;http://sap.com&#34;&gt;SAP&lt;/a&gt; has decided to retire the &lt;a href=&#34;http://www.businessobjects.com/product/epm/&#34;&gt;Business Objects Performance Management&lt;/a&gt; product.&lt;/p&gt;&#xA;&lt;p&gt;Taking its place would be &lt;a href=&#34;http://www.sap.com/demos/demplayv2/demoPlayMaster.html?demos/Strategy_Management_US/Strategy_Management_US_config.xml&#34;&gt;SAP Strategy Management&lt;/a&gt; (a product &lt;a href=&#34;http://biguru.wordpress.com/about/&#34;&gt;biguru&lt;/a&gt; is SAP certified). &lt;strong&gt;SAP Strategy Management&lt;/strong&gt; is the new name for what used to be Pilot Software&amp;rsquo;s flagship product &lt;a href=&#34;http://www.sap.com/usa/company/press/pilotsoftware/index.epx&#34;&gt;PilotWorks&lt;/a&gt; product, which SAP acquired in February 2007. No doubt about the fact that PilotWorks Server which is based on a powerful OLAP engine, and has an extremely user-friendly GUI on top of it, is a few notches above the clunky Performance Manager of &lt;a href=&#34;http://finance.google.com/finance?q=NASDAQ%3ABOBJ&#34;&gt;BOBJ&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

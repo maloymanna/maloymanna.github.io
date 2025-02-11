@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Boxi on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/boxi/</link>
+    <description>Recent content in Boxi on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 20 May 2011 17:54:03 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/boxi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What’s new in SAP BusinessObjects Enterprise BI 4.0 platform or BOXI 4.0 aka Aurora?</title>
+      <link>https://maloymanna.github.io/2011/05/20/whats-new-in-sap-businessobjects-enterprise-bi-4-0-platform-or-boxi-4-0-aka-aurora/</link>
+      <pubDate>Fri, 20 May 2011 17:54:03 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2011/05/20/whats-new-in-sap-businessobjects-enterprise-bi-4-0-platform-or-boxi-4-0-aka-aurora/</guid>
+      <description>&lt;p&gt;SAP BI 4.0 release (codenamed &lt;strong&gt;&lt;em&gt;Aurora&lt;/em&gt;&lt;/strong&gt;) has been the first major release of the BI platform since SAP acquired BusinessObjects. In this release, the semantic layer (universe layer for the uninitiated) has been re-worked completely to expose all business data under a single umbrella. The self-service BI portal (aka Infoview) has been revamped with a new AJAX based design and providing quicker and easier access to content. Publishing and distribution of BI content to mass audience has been made easier. There are also improvements to the lifecycle management (LCM tool) and platform administration (CMC, CCM) from a single console. This is in a nutshell are the changes that Aurora or SAP BO 4.0 bring, allowing BI content to be delivered across different channels ranging from the browser (BI Launch Pad, SharePoint, SAP NetWeaver Portal, Java Portal) to desktop (widgets), MS-Office and mobile.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Evolution of the BO XI platform - from XI R2 to XI 3.1 SP2</title>
+      <link>https://maloymanna.github.io/2009/09/15/evolution-of-the-bo-xi-platform-from-xi-r2-to-xi-3-1-sp2/</link>
+      <pubDate>Tue, 15 Sep 2009 02:00:46 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2009/09/15/evolution-of-the-bo-xi-platform-from-xi-r2-to-xi-3-1-sp2/</guid>
+      <description>&lt;p&gt;With BO XI 3.1 SP2 out in July this year, it is probably time to make a trip down the years to find out how the XI platform has evolved and matured.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;The timeline:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;XI R2 SP2 - service pack release in March 2007 with productivity pack - QaaWS and LiveOffice connectors&lt;/li&gt;&#xA;&lt;li&gt;XI 3.0 - new major release in February 2008 - the first release after SAP acquired BOBJ in October 2007&lt;/li&gt;&#xA;&lt;li&gt;XI 3.1 - upgrade release in September 2008&lt;/li&gt;&#xA;&lt;li&gt;XI 3.1 SP2 - service pack release on 24 July 2009 - with enhanced SAP integration&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Where were we with XI R2:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Developing a Business Objects security model - BO XI 3.1</title>
+      <link>https://maloymanna.github.io/2009/08/28/developing-a-business-objects-security-model-bo-xi-3-1/</link>
+      <pubDate>Fri, 28 Aug 2009 15:14:43 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2009/08/28/developing-a-business-objects-security-model-bo-xi-3-1/</guid>
+      <description>&lt;p&gt;While developing a Business Objects security model, you need to focus on the different types of security:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Functional Security&lt;/strong&gt; - this would govern access to specific application features, e.g. editing reports, drilling down, ability to schedule reports etc.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Data Security&lt;/strong&gt; - this governs access to specific data - rows or columns or cells as per authorization&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Infrastructure Security&lt;/strong&gt; - governs physical and electronic access to systems&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The infrastructure security is the first to be designed. This typically happens when the architecture is being drawn up. It is important to get as much early visibility into the various ways the system is likely to be used, not only in the present but also in the foreseeable future, so that adjustments and capacity for future planning can be done to the extent possible. This also helps in deciding on the type of data security that would be required initially, though this can change over time.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

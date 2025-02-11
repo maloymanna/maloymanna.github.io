@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.141.0">
+
+  <title>Why Spark is the big data platform of the future &middot; Maloy Manna</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+    
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://maloymanna.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  <a class="pure-menu-heading brand" href="/">
+  <img src="/img/logo.png" width="140px">
+</a>
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Tech Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-folder fa-fw'></i>Categories</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/pm/"><i class='fa fa-list fa-fw'></i>Agile PM posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talks/"><i class='fa fa-comments fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone-square fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/itsmaloy" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/maloy" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/maloymanna" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2007 - 2025. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Why Spark is the big data platform of the future</h1>
+</div>
+<div class="content">
+  
+</div>
+
+<div class="content">
+
+  <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/03/23</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/spark">Spark</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/apache-spark">Apache Spark</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hadoop">Hadoop</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/mllib">MLLib</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/rdd">RDD</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/scala">scala</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p><strong>Apache Spark</strong> has created a lot of buzz recently. In fact, beyond the buzz, Apache Spark has seen phenomenal adoption and has been marked out as the successor to Hadoop MapReduce.</p>
+<p><img src="/post/apache-spark.jpg?w=300" alt="Apache Spark"></p>
+<p>Google Trends confirms the <strong>hockey stick like growth</strong> in interest in Apache Spark.  All leading Hadoop vendors, including Cloudera, now include Apache Spark in their Hadoop distribution.</p>
+<p><img src="/post/googletrends.jpg?w=300" alt="GoogleTrends - Apache Spark"></p>
+<p>So what exactly is Spark, and why has it generated such enthusiasm? Apache Spark is an open-source big data processing framework designed for speed and ease of use.  Spark is well-known for its in-memory performance, but that has also given rise to misconceptions about its on-disk abilities. Spark is in fact a general execution engine - which has a greatly improved performance both in-memory as well as on-disk, when compared with older frameworks like MapReduce. With its advanced <strong>DAG</strong> (directed acyclic graph) execution engine, Spark can run programs up to <strong>100x faster than MapReduce in memory, or 10x faster on-disk.</strong></p>
+<p><strong>Why is Spark faster than MapReduce?</strong></p>
+<ul>
+<li>A key step during MapReduce operations is the synchronization or  &ldquo;<strong>shuffle</strong>&rdquo; step, intermediate between the &ldquo;map&rdquo;-step and the &ldquo;reduce&rdquo;-step. Apache Spark implements a <a href="https://issues.apache.org/jira/browse/SPARK-2045">sort-based shuffle design</a>, which improves performance.</li>
+<li>Apache Spark also includes a DAG (directed-acyclic graph) which allow developers to execute DAGs all at once, not step by step. This eliminates the costly synchronization required by MapReduce. Note that DAGs are also used by <a href="https://storm.apache.org/">Storm </a>and <a href="http://tez.apache.org/">Tez</a></li>
+<li>Spark supports in-memory data sharing across DAGs, so different jobs can work with the same data at a very high speed.</li>
+</ul>
+<p>It&rsquo;s important to remember that Hadoop is a decade-old technology, developed at a time when memory was still relatively expensive, and therefore took the design approach of persistence to disk as a way of maintaining state between execution steps. On the other hand, Spark was developed at UC Berkeley AMPLab in 2009 and then it was open-sourced in 2010 - when memory had become much cheaper. Therefore, Spark stores data in memory and transparently persists it to disk if needed, thereby achieving better performance. The core concept of Spark is this programming abstraction over data storage - called <strong>RDDs</strong> (<strong>Resilient Distributed Dataset</strong>).<br>
+Under the hood, Spark automatically distributes the data contained in RDDs across the cluster and parallelizes the operations performed on them.</p>
+<p><img src="/post/wc-spark.jpg?w=300" alt="Word-count code in Spark"></p>
+<p>The end result is that, on an average - the lines of code required to develop a distributed data processing program is much less in Spark, when compared with MapReduce. See more details on why Spark is the <a href="https://databricks.com/blog/2014/10/10/spark-petabyte-sort.html">fastest open-source engine for sorting a petabyte</a>. Clearly, faster execution has been one of the key reasons for the uptake of Spark, but Spark also provides further advantages. Similar to YARN, the upgrade of the Hadoop framework over the MapReduce-only version, Spark allows a wide range of workloads from batch to interactive and streaming. It reduces the burden of maintaining separate tools as in Hadoop - and provides APIs in Scala, Java, Python and SQL.  Spark can run over a variety of cluster-managers, including Hadoop YARN, Apache Mesos, and Spark&rsquo;s own standalone scheduler.</p>
+<p><strong>Spark components</strong></p>
+<p><img src="/post/spark-components.jpg?w=300" alt="Spark-components"></p>
+<p><strong>Spark Core</strong> - provides basic functionality of Apache Spark, including RDDs and APIs to manipulate them.</p>
+<p><strong>Spark SQL</strong> - A new component which replaces the older Shark (SQL on Spark) project, this package provides better integration with Spark Core, it allows querying data through SQL and HiveQL and supports many data sources from Hive tables, Parquet and JSON. Spark SQL also allows developers to intermix SQL queries with the code for data manipulations with RDDs in Python, Java, and Scala. It also provides fast SQL connectivity to BI tools like Tableau or QlikView.</p>
+<p><img src="/post/spark-sql.jpg?w=300" alt="SparkSQL"></p>
+<p><strong>Spark Streaming</strong> - based on micro-batching, this component enables processing of real-time streaming data. It uses DStreams, which are series of RDDs, to process real-time data. The Spark Streaming API is very similar to the Spark Core RDD APIs, making it easy for developers to reuse and adapt code for batch to interactive or real-time applications.</p>
+<p><strong>MLlib</strong> - provides a library of machine learning algorithms including classification, regression, clustering, and collaborative filtering, as well as model evaluation and data import.</p>
+<p><strong>GraphX</strong> - provides an API for graphs and graph-parallel computations and operators for manipulating graphs and a library of graph algorithms.</p>
+<p>The <a href="http://amplab-extras.github.io/SparkR-pkg/"><strong>SparkR</strong></a> project aims to provide a light-weight front-end to use Apache Spark from R. Work is on to <a href="https://issues.apache.org/jira/browse/SPARK-5654">integrate SparkR into Spark</a>.</p>
+<p>Recently, Spark has introduced a dataframe library with R/Pandas syntax for use across all of the Spark language APIs and an ML pipeline API which also integrates with data frames. Spark adoption is increasing manifold, boosted by increased third-part vendor support.</p>
+<p><strong>Databricks</strong> - the company spun out of <strong>AMPLab</strong> by the creators of Apache Spark, now provides Spark as a service on the cloud - with its own Databricks Cloud - which is in private beta. The Databricks cloud is designed to support data science in the lab as well as in the factory - by creating polyglot notebooks (mix of Scala/Java/Python/SQL possible) and building production pipelines for ETL and analytics jobs. <a href="http://www.tableau.com/about/blog/2014/10/tableau-spark-sql-big-data-just-got-even-more-supercharged-33799">Tableau</a> and <a href="http://blog.memsql.com/memsql-spark-connector/">MemSQL</a> have provided Spark connectors, <a href="https://www.altiscale.com/altiscale/press-releases/hadoop-spark/">Altiscale now provides Spark in the cloud</a> and machine learning vendors like Nube are building products like <a href="http://nubetech.co/">Reifier</a> to perform entity resolution and de-duplication using Spark. <a href="http://www.clearstorydata.com/2014/07/clearstory-spark-data-exploration-freedom/">ClearStory Data</a> provides Spark-based data processing and analytics. There is also a fledgling community of packages for Apache Spark.</p>
+<p>Big data and data science projects are complex with an increasing diverse toolset which require massive integration efforts. Greater flexibility than that provided by MapReduce, capability to support a variety of workloads and a simpler, more unified ecosystem of tools which work out of the box on a general execution engine (Apache Spark) thus provide better simplicity than the complex zoo of Hadoop MapReduce projects. Together with SparkSQL and <a href="https://databricks.com/blog/2015/02/17/introducing-dataframes-in-spark-for-large-scale-data-science.html">dataframes</a> library, Spark democratizes access to distributed data processing beyond MapReduce programmers extending it to other developers and business analysts. Over and above, considering the fast performance of Spark, it is no wonder that Apache Spark continues to gain traction and looks all set to be the default framework for Big data processing in the near future. More info:</p>
+<ul>
+<li><a href="http://databricks.com/blog/2014/11/05/spark-officially-sets-a-new-record-in-large-scale-sorting.html">Spark record for fastest sort of a petabyte </a></li>
+<li><a href="https://spark.apache.org/docs/latest/sql-programming-guide.html#dataframes">Dataframes in SparkSQL</a></li>
+</ul>
+<p>Read the series on Big Data: <a href="https://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/">Part-1 : Basics</a>, <a href="https://biguru.wordpress.com/2014/04/13/basics-of-big-data-part-2-hadoop/">Part-2 : Hadoop</a>, <a href="https://biguru.wordpress.com/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/">Part-3 : Hadoop data warehouse</a> and <a href="https://biguru.wordpress.com/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/">Part-4 : NoSQL</a></p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://maloymanna.github.io/2015/02/04/a-gentle-introduction-to-machine-learning/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://maloymanna.github.io/2015/02/04/a-gentle-introduction-to-machine-learning/">A gentle introduction to Machine Learning</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://maloymanna.github.io/2015/05/20/an-introduction-to-data-science/">An introduction to Data Science</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://maloymanna.github.io/2015/05/20/an-introduction-to-data-science/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'maloymanna';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://maloymanna.github.io/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

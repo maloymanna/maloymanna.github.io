@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sentry on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/sentry/</link>
+    <description>Recent content in Sentry on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 13 Apr 2014 18:12:16 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/sentry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basics of Big Data – Part 2 - Hadoop</title>
+      <link>https://maloymanna.github.io/2014/04/13/basics-of-big-data-part-2-hadoop/</link>
+      <pubDate>Sun, 13 Apr 2014 18:12:16 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2014/04/13/basics-of-big-data-part-2-hadoop/</guid>
+      <description>&lt;p&gt;As discussed in &lt;a href=&#34;http://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/&#34;&gt;Part 1&lt;/a&gt; of this series, &lt;strong&gt;&lt;em&gt;Hadoop&lt;/em&gt;&lt;/strong&gt; is the foremost among tools being currently used for deriving value out of Big Data. The process of gaining insights from data through Business Intelligence and analytics essentially remains the same. However, with the huge variety, volume and velocity (the 3Vs of Big Data), it’s become necessary to re-think of the data management infrastructure. Hadoop, originally designed to be used with the MapReduce algorithm to solve parallel processing constraints in distributed architectures (e.g. web indexing) of web giants like Yahoo or Google, has become the de-facto standard for Big Data (large-scale data-intensive) analytics platforms.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

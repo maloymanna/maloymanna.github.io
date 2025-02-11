@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.141.0">
+
+  <title>A Brief Introduction to Statistics – Part 3 - Statistical Inference &middot; Maloy Manna</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+    
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://maloymanna.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  <a class="pure-menu-heading brand" href="/">
+  <img src="/img/logo.png" width="140px">
+</a>
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Tech Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-folder fa-fw'></i>Categories</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/pm/"><i class='fa fa-list fa-fw'></i>Agile PM posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talks/"><i class='fa fa-comments fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone-square fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/itsmaloy" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/maloy" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/maloymanna" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2007 - 2025. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>A Brief Introduction to Statistics – Part 3 - Statistical Inference</h1>
+</div>
+<div class="content">
+  
+</div>
+
+<div class="content">
+
+  <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/01/04</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/statistics">Statistics</a>
+    
+  </div>
+  
+  
+
+  
+
+</div>
+
+  <p><strong>Statistical inference</strong> is concerned primarily with understanding the quality of parameter estimates.</p>
+<p><img src="/post/introduction-to-statistical-inference.jpg?w=300" alt="Statistical Inference"></p>
+<p>The sampling distribution represents the distribution of the point estimates based on <strong><em><code>samples of a ﬁxed size</code></em></strong> from a certain population. It is useful to think of a particular <strong><code>point estimate</code></strong> as being drawn from such a distribution. Understanding the concept of a sampling distribution is central to understanding statistical inference.</p>
+<p>A <strong><code>sample statistic</code></strong> is a point estimate for a population parameter, e.g. the sample mean is used to estimate the population mean. <em><span style="color: blue;">Note that point estimate and sample statistic are synonymous.</span></em> Recognize that point estimates (such as the sample mean) will vary from one sample to another, and define this variability as sampling variability (sometimes also called sampling variation).</p>
+<p>The standard deviation associated with an estimate is called the <strong><code>standard error</code></strong>.<br>
+It describes the typical error or uncertainty associated with the estimate. Given <strong><code>n</code></strong> independent observations from a population with standard deviation <strong><code>σ</code></strong>, the standard error of the sample mean is equal to:<br>
+<strong><code>SE= σ/sqrt(n)</code></strong><br>
+Note that when the population standard deviation <code>σ</code> is not known (almost always), the standard error <code>SE</code> can be estimated using the <em>sample standard deviation s</em>, so that <strong><code>SE= s/sqrt(n)</code></strong><br>
+A reliable method to ensure sample observations are independent is to conduct a simple random sample consisting of <strong>less than 10%</strong> of the population.</p>
+<p><strong>Difference between standard deviation and standard error</strong><br>
+Standard deviation measures the variability in the data, while standard error measures the variability in point estimates from different samples of the same size and from the same population, i.e. measures the sampling variability. When the sample size (n) increases we would expect the sampling variability to decrease.</p>
+<p><img src="/post/the_95_ci_for_mu.gif?w=300" alt="Confidence Intervals"></p>
+<p>A plausible range of values for the population parameter is called a <strong>conﬁdence interval</strong>.<br>
+95% confidence interval means, if we took many samples and built a conﬁdence interval from each sample,then <em>about 95% of those intervals would contain the actual mean, <code>µ</code></em>.</p>
+<p><strong>Confidence level</strong> is the percentage of random samples which yield confidence intervals that capture the true population parameter.<br>
+If the point estimate follows the normal model with standard error <code>SE</code>, then a conﬁdence interval for the population parameter is:<br>
+<strong>point estimate ± <code>z* SE</code></strong><br>
+where <code>z*</code> corresponds to the conﬁdence level selected.<br>
+In a conﬁdence interval, *<em><code>z* SE*</code></em> is called the <strong>margin of error</strong> (corresponds to half the width of the confidence interval).</p>
+<p><strong>Central Limit Theorem</strong><br>
+If a sample consists of at least 30 independent observations and the data are not strongly skewed, then the distribution of the sample mean is well approximated by a normal model.
+Conditions for <img src="http://upload.wikimedia.org/math/8/4/7/84790e2b15a305120bc3fbeb4a4eeb4f.png" alt="\bar{x}"> being nearly normal and SE being accurate:</p>
+<ol>
+<li>The sample observations are independent.</li>
+<li>The sample size is large: <code>n ≥ 30</code> is a good rule of thumb.</li>
+<li>The distribution of sample observations is not strongly skewed.</li>
+</ol>
+<p>The larger the sample size (n), the less important the shape of the distribution becomes, i.e. when n is very large the sampling distribution will be nearly normal regardless of the shape of the population distribution.</p>
+<p><strong>Hypothesis Testing Framework</strong></p>
+<ul>
+<li>The null hypothesis <strong>(H<sup>0</sup>)</strong> often represents either a skeptical perspective or a claim to be tested.</li>
+<li>The alternative hypothesis <strong>(H<sup>A</sup>)</strong> represents an alternative claim under consideration and is often represented by a range of possible parameter values.</li>
+</ul>
+<p><strong>Double negatives:</strong><br>
+In many statistical explanations, we use double negatives. For instance, we might say that the null hypothesis is not implausible or we failed to reject the null hypothesis. Double negatives are used to communicate that while we are not rejecting a position, we are also not saying it is correct.</p>
+<ul>
+<li>Always construct hypotheses about population parameters (e.g. population mean, μ) and not the sample statistics (e.g. sample mean, x&rsquo;).<br>
+Note that the population parameter is unknown while the sample statistic is measured using the observed data and hence there is no point in hypothesizing about it.</li>
+<li>Define the null value as: the value the parameter is set to equal in the null hypothesis.<br>
+Note that the alternative hypothesis might be one-sided (μ the null value) or two-sided (<code>μ≠</code> the null value), and the choice depends on the research question.</li>
+</ul>
+<p><strong>p-value:</strong><br>
+A conditional probability to quantify the strength of the evidence against the null hypothesis and in favor of the alternative.</p>
+<ul>
+<li>The p-value is the probability of <em>observing data at least as favorable to the alternative hypothesis</em> as our current data set, if the null hypothesis is true.<br>
+<strong>p-value = P(observed or more extreme sample statistic | (H<sup>0</sup>) true)</strong></li>
+<li>The p-value quantiﬁes how strongly the data favors H<sup>A</sup> over H<sup>0</sup> .</li>
+<li>A small p-value (usually less than <strong>signiﬁcance level <code>α &lt; 0.05</code></strong>) corresponds to suﬃcient evidence to reject H<sup>0</sup> in favor of H<sup>A</sup>.</li>
+<li>Note that we can never “accept” the null hypothesis since the hypothesis testing framework does not allow us to confirm it.</li>
+</ul>
+<p><strong>Errors:</strong></p>
+<p>The conclusion of a hypothesis test might be erroneous regardless of the decision we make.<br>
+A <strong>Type 1 error</strong> is rejecting the null hypothesis when the null hypothesis is actually true.<br>
+A <strong>Type 2 error</strong> is failing to reject the null hypothesis when the alternative hypothesis is actually true.<br>
+Probability of making a Type 1 error is equivalent to the significance level α. Use a smaller α if Type 1 error is relatively riskier. Use a larger α if Type 2 error is relatively riskier.</p>
+<p>The <span style="color: blue;">Central Limit Theorem</span> states that when the sample size is small, the normal approximation may not be very good. However, as the sample size becomes large, the normal approximation improves.</p>
+<p><strong>When to retreat</strong><br>
+Statistical tools rely on conditions. When the conditions are not met, these tools are unreliable and drawing conclusions from them is treacherous. These conditions come in two forms:</p>
+<ol>
+<li>The individual observations must be independent.</li>
+<li>Other conditions focus on sample size and skew.</li>
+</ol>
+<p>Veriﬁcation of conditions for statistical tools is always necessary. We need to learn / devise new methods that are appropriate for the data, if conditions are not satisfied. It&rsquo;s also important to remember that inference tools won&rsquo;t be helpful when considering data that include unknown biases, such as <em><span style="color: blue;">convenience samples</span></em>.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://maloymanna.github.io/2014/12/30/set-up-a-hadoop-spark-cluster-in-10-minutes-with-vagrant/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://maloymanna.github.io/2014/12/30/set-up-a-hadoop-spark-cluster-in-10-minutes-with-vagrant/">Set up a Hadoop Spark cluster in 10 minutes with Vagrant</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://maloymanna.github.io/2015/01/19/designing-the-future-data-innovation-labs/">Designing the future - Data Innovation Labs</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://maloymanna.github.io/2015/01/19/designing-the-future-data-innovation-labs/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'maloymanna';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://maloymanna.github.io/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.141.0">
+
+  <title>BI maturity models &middot; Maloy Manna</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+    
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://maloymanna.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  <a class="pure-menu-heading brand" href="/">
+  <img src="/img/logo.png" width="140px">
+</a>
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Tech Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-folder fa-fw'></i>Categories</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/pm/"><i class='fa fa-list fa-fw'></i>Agile PM posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talks/"><i class='fa fa-comments fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone-square fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/itsmaloy" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/maloy" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/maloymanna" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2007 - 2025. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>BI maturity models</h1>
+</div>
+<div class="content">
+  
+</div>
+
+<div class="content">
+
+  <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2012/01/08</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/strategy">Strategy</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/bi-maturity-model">BI maturity model</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/gartner">gartner</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/lobi">LOBI</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/tdwi">TDWI</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>With most companies listing BI within their top agenda, and with the rising costs and confusion around proving the worth of BI and justifying its costs, it makes sense to try and understand the evolution of BI adoption and maturity in organizations. Knowing what is possible with BI and knowing the challenges and pitfalls allows organizations to plan their BI strategy and implementation.</p>
+<p>There are quite a few schools of thought and available literature on the lifecycle of BI implementation and maturity in organizations, defining the models. Most are proprietary models provided by consultancies, which are primarily based on technical point of view or applies the knowledge management function to BI, following the <strong>Ladder of Business Intelligence (LOBI) model</strong>.</p>
+<p><strong>LOBI</strong> includes 6 levels of maturity moving up the knowledge management value chain from <em>Facts &gt; Data &gt; Information &gt; Knowledge &gt; Understanding &gt; Enabled Intuition</em>.</p>
+<p>There are several other models in the public domain e.g.</p>
+<ul>
+<li>
+<p><strong>Business Information maturity model</strong></p>
+</li>
+<li>
+<p><strong>AMR research’s BI/Performance management maturity model</strong></p>
+</li>
+<li>
+<p><strong>Business Intelligence development model</strong></p>
+</li>
+<li>
+<p><strong>Business Intelligence maturity hierarchy</strong></p>
+</li>
+<li>
+<p><strong>Infrastructure optimization maturity model</strong></p>
+</li>
+</ul>
+<p>I’ll not go into the details of the models above but discuss the three of the more popular and well documented models available.</p>
+<p><strong>1. The TDWI BI Maturity Model</strong></p>
+<p><em>The Data Warehousing Institute (TDWI)</em> is a premier body in the field of BI and eponymous Data warehousing and proposes a six stage BI maturity model. The underlying assumption being that BI implementation in organizations typically evolves from a low-value cost centre operation to a high value strategic utility to provide competitive advantage.</p>
+<p><img src="/post/tdwibimm.png" alt=""></p>
+<ul>
+<li>
+<p><strong>Stage 1: Prenatal</strong> - Executive perception is that of a cost-center, which primarily churns out static reports for management operational reporting. It is also the stage which costs the most.</p>
+</li>
+<li>
+<p><strong>Stage 2: Infant</strong> - The BI function’s role is to inform executives, with several reports leading to <em>“<strong>spreadmarts</strong>”</em> .</p>
+<p>A &lsquo;<em><strong>Gulf</strong></em>&rsquo; separates Stage 2 and Stage 3.</p>
+</li>
+<li>
+<p><strong>Stage 3: Child</strong> - The BI function’s role is perceived to empower workers, and this is the first evolution into an analytical system where OLAP and ad-hoc reports are used off data marts.</p>
+</li>
+<li>
+<p><strong>Stage 4: Teenager</strong> - The BI function has evolved into a performance monitoring system by now, using Dashboards and Scorecards, supported by data warehouses.</p>
+<p>A &lsquo;<em><strong>Chasm</strong></em>&rsquo; separates Stage 4 and Stage 5.</p>
+</li>
+<li>
+<p><strong>Stage 5: Adult</strong> - This is where the ROI from the BI function shoots up, with predictive analytics answering what-if questions making the BI a strategic utility. The TDWI thinks that organizations’ BI architecture has evolved to have enterprise DW by now, with BI becoming a ‘Drive the Business’ function.</p>
+</li>
+<li>
+<p><strong>Stage 6: Sage</strong> - The BI function at this stage has the highest ROI and decreasing costs based off Analytic Services (SOA) with pervasive BI (e.g. embedded BI) making it ‘Drive the market’</p>
+</li>
+</ul>
+<p><strong>2. The HP Business Intelligence Maturity Model</strong></p>
+<p>It has 5 stages based on the evolution of Business enablement, Information technology and program management.</p>
+<ul>
+<li><strong>Stage 1 – Operation</strong> (Running the business) – involves ad-hoc solutions focused at project activities alone</li>
+<li><strong>Stage 2 – Improvement</strong> (Measuring and monitoring the business)– involved localized solutions with project management</li>
+<li><strong>Stage 3 – Alignment</strong> – includes shared resources with program management and governance integrating performance management and BI programs</li>
+<li><strong>Stage 4 – Empowerment</strong> – includes enterprise operationalization with portfolio management focusing on organization innovation and people productivity through knowledge management</li>
+<li><strong>Stage 5 – Transformation</strong> (Change the business) – involves enterprise services tracked by service management creating strategic agility and differentiation</li>
+</ul>
+<p><strong>3. Gartner BI Maturity Model</strong></p>
+<p><em>Gartner</em>, the IT research and advisory group’s BI maturity model is based on 3 key areas of assessment – people, processes and metrics. It has 5 maturity levels:</p>
+<ul>
+<li><strong>Level 1 – Unaware</strong> – Spreadsheet and information anarchy, one-off report requests</li>
+<li><strong>Level 2 – Tactical</strong> – Usage limited to few executives with data inconsistency and stovepipe systems</li>
+<li><strong>Level 3- Focused</strong> – Specific ser if users realize value, with focus on specific business need and BI competency centre (BICC) in place</li>
+<li><strong>Level 4 – Strategic</strong> – Business objectives drive the BI and performance management systems with well defined and enforced governance policies and standards</li>
+<li><strong>Level 5 – Pervasive</strong> – Use of BI is extended to suppliers and customers, information is trusted (holy grail of single version of truth) with analytics embedded in business processes</li>
+</ul>
+<p><strong>Barriers to BI adoption and maturity</strong></p>
+<p>The 3 models discussed above do a good job of explaining the continuum of maturity levels, which makes it difficult to identify explicit stages, however the common theme across these are:</p>
+<ol>
+<li>Each model has at least 5 stages of maturity – this is more than a simple 1-2-3. This indicates the path of BI evolution is longer and more complex than most think while jumping onto the BI bandwagon</li>
+<li>Each model starts with operational / one-off reporting and culminates in pervasive BI where BI is embedded in business processes and provides actionable insight for strategic advantage</li>
+<li>The models do not focus on technology alone and hinge on the involvement of people and process as well. Moving from one-off reporting to driving the enterprise involves big changes in organization culture and business processes and not just implementing the latest BI tool off the market.</li>
+</ol>
+<p>The main barriers to BI adoption and demonstrating its worth as a strategic tool lies in its <em><strong>complexity</strong></em>. BI is a broad area encompassing both technical and non-technical aspects like people and process; therefore the models can only provide a prescriptive framework which needs to be adapted by each organization. It is important to understand that various departments of an organization can be at varying levels of maturity and not every organization follows the same trajectory of evolution or has to go through each stage.</p>
+<p>It is however noteworthy that for organizations trying to move from basic levels (e.g. TDWI Level 2 –Infant stage) to higher levels (e.g. TDWI Level 5 – Adult stage) may find it very difficult to leapfrog levels. In fact regressing stages is also possible due to changes like mergers and acquisitions of organizations at different levels of maturity where differences across people, processes and technology may be difficult to reconcile or could be delayed.   The TDWI model recognizes these difficulties as:</p>
+<ul>
+<li>
+<p><strong>The Gulf</strong> – between level 2 (infant) and level 3(child) - mainly due to differences in executive perception, data quality issues and spreadmart anarchy</p>
+</li>
+<li>
+<p><strong>The Chasm</strong> – between level 4(teenager) and level 5(adult) – mainly due to differences in executive perception, spreadmarts, architectural inflexibility or lock-ins</p>
+</li>
+</ul>
+<p>It is important to take lessons from the BI maturity models and develop a <strong>BI strategy</strong> while planning to implement BI, rather than as a bolt-on which can provide instant ROI. The strategy needs to focus on quick wins at inception to build buy-ins and get executive sponsorship which is critical to the funding of the BI program and would help overcome organizational barriers in people and processes, and then should build on its success with incremental gains and asking the right questions. We’ll look at developing a BI strategy in a subsequent post.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://maloymanna.github.io/2011/05/20/whats-new-in-sap-businessobjects-enterprise-bi-4-0-platform-or-boxi-4-0-aka-aurora/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://maloymanna.github.io/2011/05/20/whats-new-in-sap-businessobjects-enterprise-bi-4-0-platform-or-boxi-4-0-aka-aurora/">What’s new in SAP BusinessObjects Enterprise BI 4.0 platform or BOXI 4.0 aka Aurora?</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://maloymanna.github.io/2013/08/21/basics-of-big-data-part-1/">Basics of Big Data - Part 1</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://maloymanna.github.io/2013/08/21/basics-of-big-data-part-1/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'maloymanna';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://maloymanna.github.io/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xcelsius on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/xcelsius/</link>
+    <description>Recent content in Xcelsius on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 17 Sep 2010 13:34:11 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/xcelsius/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analytics - out of the box: SAP Business Analytics</title>
+      <link>https://maloymanna.github.io/2010/09/17/analytics-out-of-the-box-sap-business-analytics/</link>
+      <pubDate>Fri, 17 Sep 2010 13:34:11 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2010/09/17/analytics-out-of-the-box-sap-business-analytics/</guid>
+      <description>&lt;p&gt;SAP finally &lt;a href=&#34;http://www.sap.com/about/newsroom/press.epx?pressid=13894&#34;&gt;announced &lt;/a&gt;on September 14, 2010 that it was getting onto the pre-packaged analytics bandwagon.  SAP announced ten applications in this first release for six industries (Consumer Products, Healthcare, Financial Services, Public Sector, Retail and Telecommunications) in its BusinessObjects  offering.&lt;/p&gt;&#xA;&lt;p&gt;Building on the &lt;a href=&#34;http://www.sap.com/solutions/sapbusinessobjects/large/eim/rapidmarts/index.epx&#34;&gt;rapid-marts&lt;/a&gt; offering that the then BOBJ used to have and leveraging SAP’s industry and line of business expertise, these new applications are based on the SAP Business Objects XI platform – WebIntelligence, Crystal Reports and Dashboards (formerly Xcelsius). Bill McDermott, the joint CEO of SAP, described it as “&lt;strong&gt;complete and ready-to-go&lt;/strong&gt;” and claimed the applications can be deployed in &lt;em&gt;as less as eight weeks&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Export data out of Xcelsius dashboards</title>
+      <link>https://maloymanna.github.io/2008/04/27/export-data-out-of-your-xcelsius-dashboards/</link>
+      <pubDate>Sun, 27 Apr 2008 05:11:17 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2008/04/27/export-data-out-of-your-xcelsius-dashboards/</guid>
+      <description>&lt;p&gt;Accessing data in Xcelsius is pretty easy. You can have static data loaded from Excel, or dynamic data loaded through Web Services, Excel XML Maps, QaaWS (Query as a Web Service), Crystal Reports, Web Intelligence Reports or queries using Live Office.&lt;/p&gt;&#xA;&lt;p&gt;There are however only a few ways to export data from Xcelsius. Either we could use Flash variables or use the XML Data Button to export data out of the compiled .swf file.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What&#39;s new in Xcelsius 2008 - Top 10 features</title>
+      <link>https://maloymanna.github.io/2008/03/20/whats-new-in-xcelsius-2008-top-10-features/</link>
+      <pubDate>Thu, 20 Mar 2008 05:36:18 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2008/03/20/whats-new-in-xcelsius-2008-top-10-features/</guid>
+      <description>&lt;p&gt;Business Objects has just released the updated &lt;a href=&#34;http://www.businessobjects.com/product/catalog/xcelsius/default.asp&#34;&gt;Xcelsius 2008&lt;/a&gt; after a long &lt;a href=&#34;http://www.businessobjects.com/campaigns/xcelsius/contest/&#34;&gt;beta program&lt;/a&gt;. What are the top new features of this exciting data visualization and dashboard tool? Let&amp;rsquo;s find out the top 10:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Copy-Paste&lt;/strong&gt;- Productivity is bound to increase through collaborative development now as it is possible to copy-paste components between XLF files.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Filtered Rows&lt;/strong&gt; - Selector components like List box and combo-box now include a new option in the insert-options list. This is the &amp;ldquo;Filtered rows&amp;rdquo; option, automatically removing duplicates. In the previous version, this worked only with the Filter component.t&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NoSQL on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/nosql/</link>
+    <description>Recent content in NoSQL on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 01 Oct 2014 08:25:31 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Big Data Basics - Part  4 : NoSQL and NewSQL explained</title>
+      <link>https://maloymanna.github.io/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/</link>
+      <pubDate>Wed, 01 Oct 2014 08:25:31 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/nosql.png?w=300&#34; alt=&#34;Big Data Basics: NoSQL and NewSQL&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This is the fourth part of a series of posts on big data. Read the previous posts here: &lt;a href=&#34;http://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/&#34;&gt;Part-1&lt;/a&gt;, &lt;a href=&#34;http://biguru.wordpress.com/2014/04/13/basics-of-big-data-part-2-hadoop/&#34;&gt;Part-2&lt;/a&gt; and &lt;a href=&#34;http://biguru.wordpress.com/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/&#34;&gt;Part-3&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;With the ongoing data explosion, and the improvement in technologies able to deal with it, businesses are turning to leverage this &lt;span style=&#34;color: blue;&#34;&gt;big data&lt;/span&gt; for mining insights to gain competitive advantage, reinvent business models and create new markets.&lt;/p&gt;&#xA;&lt;p&gt;A huge amount of this &amp;ldquo;&lt;strong&gt;big data&lt;/strong&gt;&amp;rdquo; volumes comes from system logs, user generated content on social media like Twitter or Facebook, sensor data and the like. All of these types of data are what we call &amp;ldquo;unstructured&amp;rdquo;. Businesses which do not leverage the vast amount of unstructured data available to them, risk losing out valuable insights from such data types.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Basics of Big Data - Part 1</title>
+      <link>https://maloymanna.github.io/2013/08/21/basics-of-big-data-part-1/</link>
+      <pubDate>Wed, 21 Aug 2013 23:02:49 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2013/08/21/basics-of-big-data-part-1/</guid>
+      <description>&lt;p&gt;You can’t miss all the buzz about &lt;strong&gt;Big Data&lt;/strong&gt;! Over the past few years, the buzz around the cloud and &lt;strong&gt;Big Data&lt;/strong&gt; shaping most of the future of computing, IT and analytics in particular has grown incessantly strong. As with most buzz words, which are then hijacked by marketing to suit their own products’ storylines, but which nonetheless manage to confuse users in business and staff in IT as well, &lt;strong&gt;Big Data&lt;/strong&gt; means several things to several people.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Thrive or Survive - the changing rules for databases</title>
+      <link>https://maloymanna.github.io/2008/05/07/thrive-or-survive-the-changing-rules-for-databases/</link>
+      <pubDate>Wed, 07 May 2008 09:59:04 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2008/05/07/thrive-or-survive-the-changing-rules-for-databases/</guid>
+      <description>&lt;p&gt;Not since the late seventies, when Larry Ellison&amp;rsquo;s Relational Software Inc. (RSI) turned out the &lt;a href=&#34;http://www.oracle.com/timeline/index.html&#34;&gt;first commerically available RDBMS&lt;/a&gt; - Oracle, has there been such rapid changing of the rules (read disruption) in the database industry.&lt;br&gt;&#xA;With &lt;em&gt;&lt;strong&gt;Web 2.0&lt;/strong&gt;&lt;/em&gt; pushing enterprise adoption, and the ensuing &lt;em&gt;information explosion&lt;/em&gt; in the maze of audio, video, data and ever-growing data warehouses, it seems that the conventional relational database systems are growing tired. With estimates of &lt;em&gt;&lt;strong&gt;unstructured data&lt;/strong&gt;&lt;/em&gt; being anywhere between 80% to 95% of all business data, and the ever changing requirements imposed by Web 2.0 - storage of &lt;em&gt;pictures&lt;/em&gt;, &lt;em&gt;audio&lt;/em&gt; and &lt;em&gt;video&lt;/em&gt;, the demands being made on conventional RDBMS technology are monstrous. With the load window available being fixed due to availability and uptime requirements, the ever increasing data to be loaded into data warehouses, the bulking-up of the data due to usage of &lt;em&gt;XML&lt;/em&gt; based formats, conflicting requirements of &lt;em&gt;SQL&lt;/em&gt; and &lt;em&gt;XQuery&lt;/em&gt;, the database is also being challenged by the demands of business intelligence.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

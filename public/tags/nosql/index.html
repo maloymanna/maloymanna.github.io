@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.141.0">
+
+  <title>NoSQL &middot; Maloy Manna</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+    
+  <link rel="alternate" type="application/rss+xml" title="Maloy Manna"
+    href='/tags/nosql/index.xml' />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://maloymanna.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  <a class="pure-menu-heading brand" href="/">
+  <img src="/img/logo.png" width="140px">
+</a>
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Tech Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-folder fa-fw'></i>Categories</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/pm/"><i class='fa fa-list fa-fw'></i>Agile PM posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talks/"><i class='fa fa-comments fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone-square fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href='/tags/nosql/index.xml'><i
+          class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/itsmaloy" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/maloy" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/maloymanna" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2007 - 2025. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>NoSQL</h1>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/">Big Data Basics - Part  4 : NoSQL and NewSQL explained</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/01</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/acid">ACID</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/key-value">key-value</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/mongodb">mongodb</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/nosql">NoSQL</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/sharding">sharding</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p><img src="/post/nosql.png?w=300" alt="Big Data Basics: NoSQL and NewSQL"></p>
+<p>This is the fourth part of a series of posts on big data. Read the previous posts here: <a href="http://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/">Part-1</a>, <a href="http://biguru.wordpress.com/2014/04/13/basics-of-big-data-part-2-hadoop/">Part-2</a> and <a href="http://biguru.wordpress.com/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/">Part-3</a>.</p>
+<p>With the ongoing data explosion, and the improvement in technologies able to deal with it, businesses are turning to leverage this <span style="color: blue;">big data</span> for mining insights to gain competitive advantage, reinvent business models and create new markets.</p>
+<p>A huge amount of this &ldquo;<strong>big data</strong>&rdquo; volumes comes from system logs, user generated content on social media like Twitter or Facebook, sensor data and the like. All of these types of data are what we call &ldquo;unstructured&rdquo;. Businesses which do not leverage the vast amount of unstructured data available to them, risk losing out valuable insights from such data types.</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2013/08/21/basics-of-big-data-part-1/">Basics of Big Data - Part 1</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/21</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/big-data">big data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/data-scientist">data scientist</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hadoop">Hadoop</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/nosql">NoSQL</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/parallel-programming">parallel programming</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>You can’t miss all the buzz about <strong>Big Data</strong>! Over the past few years, the buzz around the cloud and <strong>Big Data</strong> shaping most of the future of computing, IT and analytics in particular has grown incessantly strong. As with most buzz words, which are then hijacked by marketing to suit their own products’ storylines, but which nonetheless manage to confuse users in business and staff in IT as well, <strong>Big Data</strong> means several things to several people.</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2013/08/21/basics-of-big-data-part-1/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2008/05/07/thrive-or-survive-the-changing-rules-for-databases/">Thrive or Survive - the changing rules for databases</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/05/07</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/trendspotting">Trendspotting</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/aws">AWS</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/cloud-computing">cloud computing</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/nosql">NoSQL</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/sql">sql</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/vertica">Vertica</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>Not since the late seventies, when Larry Ellison&rsquo;s Relational Software Inc. (RSI) turned out the <a href="http://www.oracle.com/timeline/index.html">first commerically available RDBMS</a> - Oracle, has there been such rapid changing of the rules (read disruption) in the database industry.<br>
+With <em><strong>Web 2.0</strong></em> pushing enterprise adoption, and the ensuing <em>information explosion</em> in the maze of audio, video, data and ever-growing data warehouses, it seems that the conventional relational database systems are growing tired. With estimates of <em><strong>unstructured data</strong></em> being anywhere between 80% to 95% of all business data, and the ever changing requirements imposed by Web 2.0 - storage of <em>pictures</em>, <em>audio</em> and <em>video</em>, the demands being made on conventional RDBMS technology are monstrous. With the load window available being fixed due to availability and uptime requirements, the ever increasing data to be loaded into data warehouses, the bulking-up of the data due to usage of <em>XML</em> based formats, conflicting requirements of <em>SQL</em> and <em>XQuery</em>, the database is also being challenged by the demands of business intelligence.</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2008/05/07/thrive-or-survive-the-changing-rules-for-databases/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+</div>
+
+</div>
+</div>
+<script src="https://maloymanna.github.io/js/ui.js"></script>
+
+
+
+
+</body>
+</html>

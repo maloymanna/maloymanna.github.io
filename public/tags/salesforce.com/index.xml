@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Salesforce.com on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/salesforce.com/</link>
+    <description>Recent content in Salesforce.com on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 14 Mar 2008 04:29:16 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/salesforce.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SaaS BI - Software as a service model in Business Intelligence</title>
+      <link>https://maloymanna.github.io/2008/03/14/saas-bi-software-as-a-service-model-in-business-intelligence/</link>
+      <pubDate>Fri, 14 Mar 2008 04:29:16 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2008/03/14/saas-bi-software-as-a-service-model-in-business-intelligence/</guid>
+      <description>&lt;p&gt;SaaS has taken off in a big way in the past few years. And BI has not been lagging behind. For leading vendors like &lt;a href=&#34;http://www.businessobjects.com/&#34;&gt;BOBJ&lt;/a&gt; (an SAP company) or &lt;a href=&#34;http://www.cognos.com/&#34;&gt;Cognos&lt;/a&gt; (an IBM company), it&amp;rsquo;s going to be close to 2 years now since they started their SaaS BI.&lt;/p&gt;&#xA;&lt;p&gt;What exactly are the advantages of SaaS over the traditional approach?&lt;/p&gt;&#xA;&lt;p&gt;Benefits are aplenty, from zero costs of purchasing hardware, hiring of key IT personnel like system administrators and DBAs, to minimal implementation and maintenance costs. With CRM being made affordable to SME (small and medium-sized enterprises) by &lt;a href=&#34;http://www.salesforce.com&#34;&gt;salesforce.com&lt;/a&gt; (note the huge success of its &lt;strong&gt;AppExchange&lt;/strong&gt;), and the fact that large enterprise adoption of BI was complete, meant that the only scope for future growth in BI would come from upgrades of platforms (analogous to Microsoft&amp;rsquo;s Windows operating system - think of BOBJ upgrading from 6.5 to XI) or from expansion in the SME space with better offerings.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

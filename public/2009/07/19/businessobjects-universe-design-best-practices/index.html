@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.141.0">
+
+  <title>BusinessObjects universe design best practices &middot; Maloy Manna</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+    
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://maloymanna.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  <a class="pure-menu-heading brand" href="/">
+  <img src="/img/logo.png" width="140px">
+</a>
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Tech Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-folder fa-fw'></i>Categories</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/pm/"><i class='fa fa-list fa-fw'></i>Agile PM posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talks/"><i class='fa fa-comments fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone-square fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/itsmaloy" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/maloy" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/maloymanna" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2007 - 2025. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>BusinessObjects universe design best practices</h1>
+</div>
+<div class="content">
+  
+</div>
+
+<div class="content">
+
+  <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/07/19</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/sap-businessobjects">SAP BusinessObjects</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/best-practice">best practice</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/business-objects">business objects</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/design">design</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/sap">SAP</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/universe">universe</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>Having relocated from the Silicon Valley to Bangalore a year back, I’m now working in an MIS – strategic reporting role. In my role to evangelize the use of BI best practices and tools, one of the foremost is that of universe design.  As a matter of fact, I’m currently being involved in formalizing a BI policy around the tools we use most – Oracle, Informatica and SAP Business Objects (along with migration from our legacy BO to the XI platform!) – so a lot of my current work is related to best practices, design guidelines and preparing unit test checklists for my team of developers.</p>
+<p>So here goes my list of universe design best practices. Being the cornerstone of the Business Objects semantic layer, the universe design becomes one of the most important (next only to the data warehouse design if there is one, and foremost if there is none) aspects of getting the right data out there in time for analysis and decision making.</p>
+<p>The best practices are grouped by the reporting area they belong to.</p>
+<p><strong>Universe design: object creation</strong></p>
+<ul>
+<li>
+<p>Object and class naming should be in business terms – so that it makes sense to the end-user. This also reduces development overhead since reports can use descriptions out-of-the-universe, instead of editing headers or creating report level variables.</p>
+</li>
+<li>
+<p>All objects should have help text or usage information – corollary from above.</p>
+</li>
+<li>
+<p>Object formatting should preferably be done at the universe level.</p>
+</li>
+<li>
+<p>Pre-build condition objects in the universe rather than forcing users to build conditions for reports.</p>
+</li>
+<li>
+<p>Build logic into objects - translate code, common calculations etc rather than forcing users to do it in report variables.</p>
+</li>
+<li>
+<p>Avoid using WHERE clauses in the object definitions; use CASE statement instead. In most cases, using WHERE clause will return incorrect results when similar objects are included in the result set, due to combined restrictions imposed by the multiple WHERE clauses.</p>
+</li>
+<li>
+<p>Use aggregation in all measure objects - to push the aggregation to the database wherever the performance bottleneck is likely to be BO server and the database performance is optimal. Generally the database is much more powerful at doing aggregation calculations, and this also reduces the volume of data to be transported over the network.</p>
+</li>
+<li>
+<p>All measure objects should include aggregation functions for projection. When this is not included, BO will not automatically roll-up the data in the report, which could result in incorrect data and analysis.  Note that in the 3.0 version of Designer, a new feature - Database Delegated projection function is available to take care of these anomalies while doing &ldquo;averages&rdquo; for instance.</p>
+</li>
+<li>
+<p>Use Custom LOVs or cascading prompts to display LOVs where hierarchies and numerous values are involved.</p>
+</li>
+<li>
+<p>Use relative date objects for scheduling e.g. Today, Yesterday, Previous Month etc. Create a separate class to contain these reporting objects – this helps in improving maintainability.</p>
+</li>
+<li>
+<p>Use dynamic HTML in objects where required to avoid users having to build it in report variables – end users wouldn’t like to code hyperlinks themselves, but would love to have an object which when clicked can lead them to Google Maps for example.</p>
+</li>
+<li>
+<p>Use contexts in universes having multiple fact tables – this helps in getting your measures (built from multiple fact tables) right.</p>
+</li>
+<li>
+<p>Use derived tables to define measures dependent on multiple fact tables.</p>
+</li>
+<li>
+<p>Use derived tables to reduce complexity of queries to be written by users or in place of views or procedures. A note of caution here: Use derived tables sparingly. If you have access to the database or DBA and can get views or tables created for the same purpose, go with it rather than using derived tables. This is not only to push the logic and work closer to the database, but also to take care of the performance and maintainability aspects. Exceptions to this include cases where your derived table may include a prompt which would restrict the number of rows returned and thus improve performance over a conventional view.</p>
+</li>
+<li>
+<p>Reuse code with @Variable. Reuse interactive objects with @Where (if you use them at all).</p>
+</li>
+<li>
+<p>Use @Prompt syntax for conditions and interactive objects where input values are likely to change or absence of prompt would lead to inaccurate values or unacceptable query response times. Also make sure regularly used conditions e.g. current year / latest date should not have prompts to avoid annoying users.</p>
+</li>
+<li>
+<p>&ldquo;To limit the number of objects created to avoid user confusion, build interactive objects with @Prompt syntax followed by additional OR clause to include &ldquo;&ldquo;All&rdquo;&rdquo; condition.</p>
+<pre tabindex="0"><code>E.g. &#39;ALL&#39; IN @Prompt(&#39;Enter Value or ALL&#39;,&#39;A&#39;, &#39;Class\Object&#39;,multi,)
+
+​OR
+
+​Table.Column IN @Prompt(&#39;Enter Value or ALL&#39;,&#39;A&#39;, &#39;Class\Object&#39;,multi,)&#34;
+</code></pre></li>
+</ul>
+<p><strong>Universe design: resolving join and performance problems</strong></p>
+<ul>
+<li>
+<p>To resolve a chasm trap, define a context for each table at the &ldquo;many&rdquo; end of the joins.</p>
+</li>
+<li>
+<p>To resolve a fan trap, create an alias table for the table producing the multiplied aggregation. Create a 1:1 join between the original and the alias tables. Modify the select statement to use the columns from the alias table instead of the original table.</p>
+</li>
+<li>
+<p>Use of contexts should be evaluated w.r.t. use of aliases for resolving join issues, to take care of maintainability of code.</p>
+</li>
+<li>
+<p>Integrity checks on the universe structure, parsing of objects, joins, contexts, detecting loops etc is mandatory. If you wish to use Business Objects to help you detect fan traps or chasm traps - you must set the cardinality on the joins. Do not rely on BO to suggest the cardinality - this is often erroneous, based on the records sample that BO fetches for each table.</p>
+</li>
+<li>
+<p>Uncheck the &ldquo;Multiple sql statements for each measure&rdquo; option in universe parameters, if this is not required for resolving any join problems. This option should be checked if the measures being retrieved in the same query involve different tables. &ldquo;Prevent Cartesian product&rdquo; should be checked, as should there be limits placed on the number of records returned and the time for the sql connection - to prevent runaway queries which can bring the database down to its knees and cause an outage for all users.</p>
+</li>
+</ul>
+<p><strong>Universe design: optimization / miscellaneous</strong></p>
+<ul>
+<li>
+<p>Use shortcut joins wherever possible to reduce number of tables used in a query</p>
+</li>
+<li>
+<p>Use aggregate tables /materialized views with aggregate awareness set up to improve query performance</p>
+</li>
+<li>
+<p>Use keys instead of labels where possible to take care of index awareness benefits of performance and uniqueness</p>
+</li>
+<li>
+<p>Use the JOIN_BY_SQL parameter to shift process from BO server to database wherever the bottleneck for performance is the BO server and the database performance is optimal.</p>
+</li>
+<li>
+<p>Update the .prm files to enable access to custom SQL functions and improve help text</p>
+</li>
+<li>
+<p>Do not use derived tables instead of aggregate tables.</p>
+</li>
+<li>
+<p>Turn off LOVs for all dimension and detail objects that are redundant or not required. This prevents performance problems when users inadvertently click on the &ldquo;Values&rdquo; and the query sets to return all the IDs or other irrelevant data.</p>
+</li>
+<li>
+<p>Consider using linked universes with a master kernel universe to ensure consistent dimensions across multiple universes</p>
+</li>
+</ul>
+<p>This list is certainly not an exhaustive one - but a work-in-progress. I&rsquo;d update it as and when I compile more; meanwhile if you feel anything has been left out, drop in a line.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://maloymanna.github.io/2008/07/08/spc--using-statistics-to-get-insight-from-bi/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://maloymanna.github.io/2008/07/08/spc--using-statistics-to-get-insight-from-bi/">SPC – Using statistics to get insight from BI</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://maloymanna.github.io/2009/07/26/change-the-location-google-desktop-search-indexes-your-data/">Change the location Google Desktop Search indexes your data</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://maloymanna.github.io/2009/07/26/change-the-location-google-desktop-search-indexes-your-data/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'maloymanna';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://maloymanna.github.io/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

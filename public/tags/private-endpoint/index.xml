@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Private Endpoint on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/private-endpoint/</link>
+    <description>Recent content in Private Endpoint on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 02 Oct 2022 11:26:19 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/private-endpoint/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Security - Service endpoint vs Private endpoint</title>
+      <link>https://maloymanna.github.io/2022/10/02/azure-security-service-endpoint-vs-private-endpoint/</link>
+      <pubDate>Sun, 02 Oct 2022 11:26:19 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2022/10/02/azure-security-service-endpoint-vs-private-endpoint/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;color: blue;&#34;&gt;Endpoints &lt;/span&gt; are a critical aspect of securing your resources in the cloud. When using Azure PaaS services, it is important to understand the differences between two types of endpoint available in Azure: service endpoint and private endpoint.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Service endpoint:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;A &lt;strong&gt;service endpoint&lt;/strong&gt; is a way of extending your virtual network’s private address space to Azure services over the Azure backbone network. When a service endpoint is enabled, traffic between your virtual network and the Azure service of your choice stays on the Azure backbone network, rather than going over the public internet. This provides better security and performance for your resources.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

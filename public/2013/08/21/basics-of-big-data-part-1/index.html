@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.141.0">
+
+  <title>Basics of Big Data - Part 1 &middot; Maloy Manna</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+    
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://maloymanna.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  <a class="pure-menu-heading brand" href="/">
+  <img src="/img/logo.png" width="140px">
+</a>
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Tech Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-folder fa-fw'></i>Categories</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/pm/"><i class='fa fa-list fa-fw'></i>Agile PM posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talks/"><i class='fa fa-comments fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone-square fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/itsmaloy" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/maloy" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/maloymanna" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2007 - 2025. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Basics of Big Data - Part 1</h1>
+</div>
+<div class="content">
+  
+</div>
+
+<div class="content">
+
+  <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/21</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/big-data">big data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/data-scientist">data scientist</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hadoop">Hadoop</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/nosql">NoSQL</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/parallel-programming">parallel programming</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>You can’t miss all the buzz about <strong>Big Data</strong>! Over the past few years, the buzz around the cloud and <strong>Big Data</strong> shaping most of the future of computing, IT and analytics in particular has grown incessantly strong. As with most buzz words, which are then hijacked by marketing to suit their own products’ storylines, but which nonetheless manage to confuse users in business and staff in IT as well, <strong>Big Data</strong> means several things to several people.</p>
+<p>So what exactly is <strong>Big Data</strong>?</p>
+<p><strong>Big Data</strong> refers to the enormously large datasets that are challenging to store, search, share and analyze with conventional data storage and processing systems. While these challenges remain, our ability to generate such large datasets have grown exponentially over the past few years. With the march of the digital age, and the growing popularity of social networking, the amount of data generated today is growing enormously. Not only within public domains like Google, Facebook, Youtube and Twitter but also within organizations, the amount of data being generated with more powerful servers, softwares and applications far exceeds our capacity to effectively analyze and make sense of this data.</p>
+<p>The table below shows the growth of data and the new terminology that has been coined to address the growth of data volumes.</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Amount of data</strong></th>
+          <th><strong>Terminology</strong></th>
+          <th><strong>Storage</strong></th>
+          <th><strong>Real-world analogy</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>103 bytes</td>
+          <td>Kilobytes (kB)</td>
+          <td>1.44 MB High-density floppy disk</td>
+          <td>Files, folders</td>
+      </tr>
+      <tr>
+          <td>106 bytes</td>
+          <td>Megabytes (MB)</td>
+          <td>Disks, tape</td>
+          <td>Folders, cabinets</td>
+      </tr>
+      <tr>
+          <td>109 - 1012 bytes</td>
+          <td>Gigabytes (GB) - Terabytes (TB)</td>
+          <td>Disk arrays</td>
+          <td>Library</td>
+      </tr>
+      <tr>
+          <td>1015 bytes</td>
+          <td>Petabytes (PB)</td>
+          <td>Cloud</td>
+          <td>&hellip;</td>
+      </tr>
+      <tr>
+          <td>1018 bytes</td>
+          <td>Exabytes (EB)</td>
+          <td>Cloud</td>
+          <td>&hellip;</td>
+      </tr>
+      <tr>
+          <td>1021 bytes</td>
+          <td>Zettabytes (ZB)</td>
+          <td>Cloud</td>
+          <td>&hellip;</td>
+      </tr>
+      <tr>
+          <td>1024 bytes</td>
+          <td>Yottabytes (YB)</td>
+          <td>Cloud</td>
+          <td>&hellip;</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Volume, Velocity, Variety &amp; Value</strong></p>
+<p>The 3Vs of Big Data - <strong>volume</strong>, <strong>velocity</strong> and <strong>variety</strong> have been popularized by Gartner&rsquo;s analysis. Gartner defines Big Data as <em>“high volume, velocity, and variety information assets that demand cost-effective, innovative forms of information process for enhanced insight and decision making.”</em> What it essentially means is <strong>Big Data</strong> beyond the high volumes, moves too fast and is not always structured according to conventional database architectures. For example, multimedia content uploaded on YouTube or comments on Twitter or Facebook, coupled with the velocity at which it is generated and churned makes it obvious that this data is not in a structured format for conventional data processing. To analyze and gain insights from this data, rather derive <strong>“value”</strong>, would require a wholly different approach.</p>
+<p><strong>Old wine in new bottle? Data mining and Big Data Analytics</strong></p>
+<p>A modeling approach is required to derive value out of <strong>Big Data</strong>. A hypothesis is proposed, statistical models are created and validated or updated using data. It is interesting to note that this approach bears substantial resemblance or even overlap with <strong>“data  mining”</strong>. For those unfamiliar with the term, the more obscure and geeky part of business intelligence and information management, <strong>“data mining”</strong>  is the process of discovering patterns in large datasets, usually in data warehouses, involving several or all of methods and tools of statistics, databases, machine learning and artificial intelligence. This <em>hypothesis-model-validate and refine approach</em> for deriving value out of <strong>Big Data</strong>, could be manual with help from data analysts or specialists (data scientists), but could also be <strong>“machine-based”</strong> depending on <em>adaptive machine-learning</em>. It is important to understand due to the velocity of the data, the algorithm for deriving value could be short-lived and actions based on the insights may need to be implemented rather quickly.</p>
+<p><strong>As an illustration</strong>, consider minor changes done by Google in its algorithms to serve ads in its search results, collection of a large dataset based on usage for a limited period (maybe a few hours) and analyzing it to understand user response to specific <strong>Adwords</strong> across dimensions like <em>demographics</em>, <em>geolocation</em>, events, timing etc. can provide Google valuable insights on how to tweak its algorithms to serve advertising and generate the maximum revenue out of it.</p>
+<p><strong>The rise of the “Data Scientist”</strong></p>
+<p>While the most popular data mining example remains the myth about <strong>Walmart’s</strong> correlation of <a href="http://www.dssresources.com/newsletters/66.php">beer purchases with diapers</a>, there are celebrated stories about statisticians at other retailers like <strong>Target</strong> using data mining to <a href="http://www.nytimes.com/2012/02/19/magazine/shopping-habits.html?pagewanted=1&amp;_r=1&amp;hp">understand users’ buying patterns</a> helping focus marketing efforts on target customers.<br>
+Organizations now understand that there is hidden value in the <strong>Big Data</strong> haystack which can be leveraged for competitive advantage.</p>
+<p>With the amount of adaptive machine learning and automation, it used to be <a href="http://www.wired.com/science/discoveries/magazine/16-07/pb_theory">argued even a few years ago whether theory and modeling by analysts would be needed at all</a> and whether the sheer volume of <strong>Big Data</strong> was sufficient to measure and predict patterns. However, it has slowly been understood that due to the breadth and depth of data to be examined, and to ensure correlation between the business context and the data being analyzed, there needs to be a key role played by humans in making sense of <strong>Big Data</strong>.</p>
+<p>Though not exclusively tied to <strong>Big Data</strong> projects, the <em>data scientist</em> role is the new role envisaged for analyzing data across multiple sources and delivering insights related to business problems. In essence, a <em>data scientist</em> is a marriage of 2 roles: the <strong>business analyst</strong> and the <strong>data mining statistician</strong>. A <em>data scientist</em> typically has similar backgrounds as a data analyst, being trained in statistics, mathematics, modeling and analytics as well as having strong business acumen and communication skills to convey highly technical analyses in business terms to both business and IT leadership. The <strong>data scientist</strong> has been variously cited as being an <a href="http://www.thefinancialist.com/the-rise-of-the-awesome-nerd/">awesome nerd</a> to having the <a href="http://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century/">sexiest job in the 21st century</a>.</p>
+<p><strong>The tools for Big Data analytics</strong></p>
+<p>As with any new technology and hype cycles, enterprises are careful and calibrate their involvement in joining the <strong>Big Data</strong> bandwagon. It is no wonder that organizations which generate most of the Big Data in public domain e.g. social networks like <strong>Facebook</strong> or <strong>Google</strong>, also make the most use of analytics to derive value from <strong>Big Data</strong>. e.g. Google used <strong>Big Data</strong> to identify its famous hiring puzzles and <a href="http://mobile.nytimes.com/2013/06/20/business/in-head-hunting-big-data-may-not-be-such-a-big-deal.html">brain-teasers were useless</a>.  </p>
+<p>Facebook currently collects 320TB data each day working with <strong>Hadoop</strong> and <strong>Hive</strong> and is adding on a relational data warehouse of around 250PB. In fact, a lot of the open source tools and technologies in use today have been developed by these organizations. These include _Hadoop _which is an open-source _Apache _project, allowing storage of enormous datasets across distributed clusters of servers and running distributed analysis applications on the clusters. It utilizes the <strong>MapReduce</strong> <em>parallel processing programming model</em>, originally developed by Google to process large datasets on a cluster or distributed clusters.</p>
+<p>I will explore details of <em>Hadoop, Hive, HDFS, NoSQL, Spark, Impala</em> and other technologies related to <strong>Big Data</strong> in the second part of this post. I will also explore the unique challenges of <strong>Big Data</strong> architecture including rapid use, rapid interpretation, lack of schema to sync across tools and other data, data quality and governance and integrating <strong>Big Data analytics</strong> into the enterprise architecture.</p>
+<p>Read the series on Big Data: <a href="https://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/">Part-1 : Basics</a>, <a href="https://biguru.wordpress.com/2014/04/13/basics-of-big-data-part-2-hadoop/">Part-2 : Hadoop</a>, <a href="https://biguru.wordpress.com/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/">Part-3 : Hadoop data warehouse</a> and <a href="https://biguru.wordpress.com/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/">Part-4 : NoSQL</a></p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://maloymanna.github.io/2012/01/08/bi-maturity-models/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://maloymanna.github.io/2012/01/08/bi-maturity-models/">BI maturity models</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://maloymanna.github.io/2014/04/13/basics-of-big-data-part-2-hadoop/">Basics of Big Data – Part 2 - Hadoop</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://maloymanna.github.io/2014/04/13/basics-of-big-data-part-2-hadoop/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'maloymanna';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://maloymanna.github.io/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

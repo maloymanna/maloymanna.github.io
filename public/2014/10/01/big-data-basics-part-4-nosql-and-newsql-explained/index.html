@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.141.0">
+
+  <title>Big Data Basics - Part  4 : NoSQL and NewSQL explained &middot; Maloy Manna</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+    
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://maloymanna.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  <a class="pure-menu-heading brand" href="/">
+  <img src="/img/logo.png" width="140px">
+</a>
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Tech Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-folder fa-fw'></i>Categories</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/pm/"><i class='fa fa-list fa-fw'></i>Agile PM posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talks/"><i class='fa fa-comments fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone-square fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/itsmaloy" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/maloy" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/maloymanna" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2007 - 2025. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Big Data Basics - Part  4 : NoSQL and NewSQL explained</h1>
+</div>
+<div class="content">
+  
+</div>
+
+<div class="content">
+
+  <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/01</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/acid">ACID</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/key-value">key-value</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/mongodb">mongodb</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/nosql">NoSQL</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/sharding">sharding</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p><img src="/post/nosql.png?w=300" alt="Big Data Basics: NoSQL and NewSQL"></p>
+<p>This is the fourth part of a series of posts on big data. Read the previous posts here: <a href="http://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/">Part-1</a>, <a href="http://biguru.wordpress.com/2014/04/13/basics-of-big-data-part-2-hadoop/">Part-2</a> and <a href="http://biguru.wordpress.com/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/">Part-3</a>.</p>
+<p>With the ongoing data explosion, and the improvement in technologies able to deal with it, businesses are turning to leverage this <span style="color: blue;">big data</span> for mining insights to gain competitive advantage, reinvent business models and create new markets.</p>
+<p>A huge amount of this &ldquo;<strong>big data</strong>&rdquo; volumes comes from system logs, user generated content on social media like Twitter or Facebook, sensor data and the like. All of these types of data are what we call &ldquo;unstructured&rdquo;. Businesses which do not leverage the vast amount of unstructured data available to them, risk losing out valuable insights from such data types.</p>
+<p>Traditional data storage systems - primarily relational databases are not designed from the ground up to handle unstructured data. While you can store unstructured data as objects (blob, text, images etc.) in several leading databases, these do not lend themselves to fast and easy retrieval of information or mining of information e.g. by using structured query language (SQL).
+What is required in such cases, are a new type of databases, which are flexible enough to manage such new data types, not only for storage but also for retrieval of information. Responding to such demand, the past few years have seen the proliferation of a new class of databases which are capable of handling both structured and unstructured data and are not constrained by schema requirements of SQL.</p>
+<p>It is this class of databases which are referred to as NoSQL or NewSQL, with the retronym &ldquo;<strong>Not-only SQL</strong>&rdquo;.</p>
+<p>NewSQL are similar to NoSQL, except that they support ACID (Atomicity, Consistency, Isolation, Durability) properties similar to relational databases, which may not be supported uniformly by all NoSQL databases. Some examples of NoSQL systems are: HBase, MongoDB, Cassandra, Couchbase and Riak. Some NewSQL systems are: VoltDB, NuoDB and SAP HANA.</p>
+<p><strong>NoSQL</strong> : Term coined in 1998 by Carlo Strozzi for his relational database without SQL interface.</p>
+<p><strong>The shift from relational databases - why NoSQL and NewSQL?</strong></p>
+<p>What is the motivation behind these new database systems - NoSQL and NewSQL? Why do we need to even consider shifting away from relational database systems? After all, RDBMSes have a proven track record in being able to be used for a variety of applications, supporting concurrent users and transactions as well as analytic workloads on data marts and data warehouses.</p>
+<p>Well, there&rsquo;s nothing wrong <em>per se</em> with relational database systems. However, like any other system, they have their limits of usefulness and performance and there may be different systems which are better for certain use cases or workloads.  Note the following limitations of RDBMSes:</p>
+<ul>
+<li>
+<p>Most relational databases use  a table-row-column storage with normalization for transactional systems (remember the star-schema or denormalization designs of data marts and data warehouses were workarounds for the query retrieval performance issues with multi-joins in relational DB implementations).</p>
+</li>
+<li>
+<p><strong>CRUD</strong> (Create, Read, Update, Delete) operations in transactional relational systems lead to loss of  version history (similar to <strong>SCD</strong>-slowly changing dimension-  modeling for data warehouses), which may not be desired in a big-data age, due to plummeting storage costs.</p>
+</li>
+<li>
+<p><strong>SMP</strong> (<strong>symmetric multi-processing</strong>)  shared-everything architectures of relational systems don&rsquo;t scale out, rather scale-up (vertically).</p>
+</li>
+</ul>
+<p>Over the past decade, we&rsquo;ve seen the rise in rich interactive web applications  (think Google, Facebook, Twitter, Amazon etc.) with massive scale in terms of the number of concurrent users, the data collected and processed and the amount of semi-structured or unstructured data managed.<br>
+In the data warehousing space as well, as more and more data started getting collected, organizations started to hit the limits of the traditional <strong>SMP</strong> (symmetric multi-processing) database architecture.</p>
+<p>&ldquo;<strong>Sharding</strong>&rdquo; a database, or partitioning it across several server instances is possible with SQL systems, but is complex. Led by Google, Facebook, LinkedIn and Amazon, there started a search for alternative technologies and systems which could scale rapidly for massively interactive internet applications, as well as shift to an <strong>MPP</strong> (massively parallel-processing) paradigm for data warehousing.<br>
+This led to open source NoSQL projects which were soon followed by commercial companies invested in NoSQL technology.  NoSQL databases usually support &ldquo;<strong>auto-sharding</strong>&rdquo;, i.e. they natively and automatically spread data across several distributed servers.</p>
+<p>Initial NoSQL systems sacrificed <strong>ACID<sup>+</sup></strong> concepts  as a trade-off for scalability.  Several key-value NoSQL databases used the &ldquo;<strong>eventual-consistency</strong>&rdquo; <strong>BASE<sup>°</sup></strong> model to achieve high-availability. However with advances in technology like in-memory and increasing adoption of shared-nothing architectures, these systems have improved greatly to support ACID concepts, and now offer SQL as one of their main interfaces. These are now being called as NewSQL systems.</p>
+<p><em><span style="color: blue;"><sup>+</sup>ACID concepts - key pillars of relational databases and a must for transactions.<br>  
+A- Atomicity, C - Consistency, I- Isolation, D- Durability<br><br>
+<sup>°</sup>BASE : Basically Available, Soft-state, Eventual consistency</span></em></p>
+<p><strong>NoSQL data models</strong></p>
+<p>With a relational database system, you must define a schema before you can load data into your database. Any record added needs to adhere strictly to this schema with fixed columns and data types.  Changing schemas has proved to be difficult with most commercially available relational database systems (mostly through implementation though), and this is especially a problem when dealing with a partitioned database spread across many machines (sharding). Projects where requirements are fast evolving, need an agile iterative approach, and the rigid schemas of relational systems become a bottleneck in such cases.</p>
+<p><img src="/post/nosqldatamodel.png?w=300" alt="NoSQL Data Model"></p>
+<p>NoSQL databases have different data models and allow insertion of data without a predefined schema, thereby making it easier to manage evolving data capture and management needs, as well as rapid iterative approaches. The data models used by most NoSQL databases can be categorized as:</p>
+<ul>
+<li>
+<p><strong>Key-value store</strong> - one of the simplest and most efficient models. Every item in the database is stored as an attribute (key) with its value. Inefficiencies arise in cases where part of the value needs to be queried or updated. Examples: Riak, Voldemort, Amazon SimpleDB.</p>
+</li>
+<li>
+<p><strong>Column-family database / wide-column stores</strong> - similar to key-value stores, except the keys point to multiple columns instead of rows, arranged by column family. Examples: Cassandra, HBase</p>
+</li>
+<li>
+<p><strong>Document store</strong> - pair each key with a complex data structure (usually in JSON or XML format) known as a document. These are essentially nested key-value stores, with keys being associated with nested values. Documents may contain key-value pairs, key-array pairs or even nested documents. Examples: MongoDB, CouchDB</p>
+</li>
+<li>
+<p><strong>Graph database</strong> - these use a flexible graph model to store information about networks, useful for social connections. Examples: Neo4J, InfoGrid</p>
+</li>
+</ul>
+<p>The key reasons for the trend to move away from relational systems to the NoSQL and NewSQL systems are therefore:</p>
+<ol>
+<li>Ability to scale dynamically to support more users and data</li>
+<li>Improved performance for highly responsive internet applications</li>
+<li>Flexible data models to allow storage and query of semi-structured and unstructured data</li>
+</ol>
+<p><strong>The best of both worlds - NewSQL</strong></p>
+<p>Most NoSQL systems initially did not offer any SQL interfaces, rather object-oriented APIs. However, most new systems now are increasingly supporting ACID concepts and hence transactions, as well as provide SQL interfaces. The recent proliferation of SQL-on-Hadoop product offerings in the big-data space is a case in point. These new systems with transaction support and SQL interfaces are labeled <strong>NewSQL <sup>++</sup></strong> systems.</p>
+<p><em><span style="color: blue;"><sup>++</sup> NewSQL - term coined by 451 Group analyst Matthew Aslett in a 2011 research paper </span></em></p>
+<p>While NoSQL systems have been recognized to be better than relational databases for scalability and performance, and have simplified automated sharding of databases, there appear to be higher costs and significant development and refactoring efforts are required for NoSQL systems when compared to SQL systems. Moreover in a NewSQL system - transaction support (consistency) and usability of SQL systems can be combined with the high availability and scalability of NoSQL systems. This provides the best of both worlds. One of the significant NewSQL systems is <strong>F1</strong> - <em>a system built by Google to support it&rsquo;s ad business - Adwords</em>, and described in the whitepaper titled<a href="http://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/en/us/pubs/archive/41344.pdf"> F1: A Distributed SQL Database that scales</a>.</p>
+<p>There are no uniform architectures of NewSQL systems, but common features are:</p>
+<ul>
+<li>Support for relational data model (tables-rows-columns). Most support additional NoSQL models like JSON documents.</li>
+<li>Provide SQL as a primary interface to these systems</li>
+<li>Transaction support (Consistency in ACID)</li>
+</ul>
+<p>Several NewSQL systems use <strong>in-memory technology</strong> and have been designed from the ground-up with a distributed architecture. Some use a middleware layer to provide automated sharding. The strong consistency comes at the cost of higher latency for writes, which is offset by in-memory technology as well as use of newer storage options like solid-state devices (SSD/Flash storage). NewSQL systems promise to provide the  scalability, availability, transparent sharding, and cost beneﬁts of NoSQL systems with the usability, familiarity, and transactional guarantees expected from RDBMSes.</p>
+<p>Finally - a tongue-in-cheek look at the NoSQL boom from <a href="http://geek-and-poke.com/">Geek&amp;Poke</a> &#x1f604;</p>
+<p><img src="/post/nosqlcartoon.png?w=300" alt="Geek&amp;Poke NoSQL cartoon"></p>
+<p>Read the series on Big Data: <a href="https://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/">Part-1 : Basics</a>, <a href="https://biguru.wordpress.com/2014/04/13/basics-of-big-data-part-2-hadoop/">Part-2 : Hadoop</a>, <a href="https://biguru.wordpress.com/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/">Part-3 : Hadoop data warehouse</a> and <a href="https://biguru.wordpress.com/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/">Part-4 : NoSQL</a></p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://maloymanna.github.io/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://maloymanna.github.io/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/">Basics of Big Data - Building a Hadoop data warehouse</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://maloymanna.github.io/2014/10/28/a-brief-introduction-to-statistics-part-1/">A Brief Introduction to Statistics - Part 1</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://maloymanna.github.io/2014/10/28/a-brief-introduction-to-statistics-part-1/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'maloymanna';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://maloymanna.github.io/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

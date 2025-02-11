@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.141.0">
+
+  <title>Basics of Big Data – Part 2 - Hadoop &middot; Maloy Manna</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+    
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://maloymanna.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  <a class="pure-menu-heading brand" href="/">
+  <img src="/img/logo.png" width="140px">
+</a>
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Tech Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-folder fa-fw'></i>Categories</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/pm/"><i class='fa fa-list fa-fw'></i>Agile PM posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talks/"><i class='fa fa-comments fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone-square fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/itsmaloy" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/maloy" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/maloymanna" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2007 - 2025. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Basics of Big Data – Part 2 - Hadoop</h1>
+</div>
+<div class="content">
+  
+</div>
+
+<div class="content">
+
+  <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/04/13</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/ambari">ambari</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/big-data">big data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/cloudera">Cloudera</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hadapt">hadapt</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hadoop">Hadoop</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hbase">Hbase</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hdfs">HDFS</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hive">Hive</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hortonworks">Hortonworks</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hue">Hue</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/impala">Impala</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/kerberos">kerberos</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/knox">knox</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/mapr">MapR</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/mapreduce">mapreduce</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/oozie">oozie</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/pig">pig</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/sentry">sentry</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/spark">Spark</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/stinger">stinger</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/storm">storm</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/zookeeper">zookeeper</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>As discussed in <a href="http://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/">Part 1</a> of this series, <strong><em>Hadoop</em></strong> is the foremost among tools being currently used for deriving value out of Big Data. The process of gaining insights from data through Business Intelligence and analytics essentially remains the same. However, with the huge variety, volume and velocity (the 3Vs of Big Data), it’s become necessary to re-think of the data management infrastructure. Hadoop, originally designed to be used with the MapReduce algorithm to solve parallel processing constraints in distributed architectures (e.g. web indexing) of web giants like Yahoo or Google, has become the de-facto standard for Big Data (large-scale data-intensive) analytics platforms.</p>
+<p><strong>What is Hadoop?</strong></p>
+<p>Think of Hadoop as an <em>operating system for Big Data</em>. It is essentially a flexible and available architecture for large scale computation and data processing on a network of commodity hardware.</p>
+<p>Conceptually, the key components of the Java-based Hadoop framework are a file store and a distributed processing system:</p>
+<p><strong>1. Hadoop Distributed File System (HDFS)</strong>: provides reliable (fault-tolerant), scalable, low-cost storage<br>
+<strong>2. MapReduce:</strong> Batch-oriented, distributed (parallel) data processing system with resource management and scheduling<br>
+As of October 2013, the 2.x GA release of Apache Hadoop also included an enhancement - a key third component:<br>
+<strong>3. YARN:</strong> a general purpose resource management system for Hadoop to allow MapReduce and other data processing services</p>
+<p><strong>Hadoop architecture stack</strong></p>
+<p>Open-source Hadoop is an <a href="http://hadoop.apache.org/">Apache project</a>. There are however commercial distributions of Hadoop (similar to UNIX distros) most notably from Cloudera, Hortonworks, MapR, IBM, Amazon etc. The Hadoop ecosystem has several projects in development, seeking to enhance the Hadoop framework to make it more suited to performing Big Data tasks including ETL and analytics.</p>
+<p><strong>The key components of the Hadoop distribution:</strong></p>
+<p><strong>1. Distributed file system and storage</strong> - HDFS<br>
+<span style="color: blue;">HDFS</span> - a Java based file system providing scalable and reliable data storage, designed to span large clusters of commodity servers</p>
+<p><strong>2. Data integration</strong> - Flume, Sqoop<br>
+<span style="color: blue;">Flume</span> - service for integrating large amounts of streaming data (e.g. logs) into HDFS<br>
+<span style="color: blue;">Sqoop</span> - tool for transferring bulk data between Hadoop and structured databases e.g. RDBMSes</p>
+<p><strong>3. Data access</strong> - HBase, Hive, Pig, Impala (CDH version for interactive SQL query), Storm, MapReduce jobs in Java/Python etc.<br>
+<span style="color: blue;">HBase</span> - a non-relational (NoSQL) columnar database running on top of HDFS.<br>
+<span style="color: blue;">Hive</span> - a data warehouse infrastructure built on Hadoop, providing a mechanism to project structure onto the data  and query it using SQL like language - HiveQL<br>
+<span style="color: blue;">Pig</span> - allows writing complex MapReduce jobs using a scripting language - PigLatin<br>
+<span style="color: blue;">Impala</span> - SQL query engine running natively in Hadoop, allows querying data in HDFS and HBase. It is part of Cloudera’s CDH distribution.<br>
+<span style="color: blue;">Storm</span> - provides real-time data processing capabilities to Hadoop which is traditionally batch oriented (based on MapReduce).</p>
+<p><strong>4. Operations</strong>- Oozie, Ambari, ZooKeeper<br>
+<span style="color: blue;">Oozie</span> - Java web application used to schedule Hadoop jobs<br>
+<span style="color: blue;">Ambari</span> - Framework and tools to provision, manage and monitor Hadoop clusters<br>
+<span style="color: blue;">ZooKeeper</span> - provides operational services for Hadoop - e.g. distributed configuration service, named registry, synchronization service etc.</p>
+<p><strong>5. Resource management</strong> - YARN<br>
+<span style="color: blue;">YARN</span> - separates the resource management and processing components in Hadoop 2.x which used to be done in MapReduce packages in Hadoop 1.x</p>
+<p>A schematic of Cloudera’s Hadoop distribution (CDH) is shown below:</p>
+<p><img src="/post/cdh.png?w=300" alt="CDH"></p>
+<p><strong>Why Hadoop?</strong></p>
+<p>Hadoop has gained immense traction in a very short amount of time and is proving useful in a range of applications, including deriving insights from Big Data analytics.</p>
+<p>The key advantages of Hadoop as a data processing platform are:</p>
+<ol>
+<li>
+<p><strong>Scalability and availability</strong> - Due to its ability to store and distribute extremely large datasets across hundreds of inexpensive servers operating in parallel, Hadoop offers extreme scalability. With high-availability HDFS feature in Hadoop 2.0 providing redundant namenodes for standby and failover, Hadoop now also provides high availability</p>
+</li>
+<li>
+<p><strong>Cost-effectiveness</strong> - Due to its design incorporating fault-tolerance and scale-out architecture, Hadoop clusters can be built with relatively inexpensive commodity hardware instead of costly blade servers, thereby providing great savings for storage and computing abilities on a per TB basis.</p>
+</li>
+<li>
+<p><strong>Resilience</strong> - With built-in fault tolerance, e.g. multiple copies of data replicated on cluster nodes, and with high availability HDFS in version 2.0, Hadoop provides cost-effective resilience to faults and data loss.</p>
+</li>
+<li>
+<p><strong>Flexibility and performance</strong> - Ability to access and store various types of data - both structured and unstructured, with no constraints of schema-on-write, along with the emergence of new ways of accessing and processing data - e.g. <span style="color: blue;">Storm</span> for real-time/streaming data, SQL-like tools including <span style="color: blue;">Impala, Hadapt, Stinger</span> etc.</p>
+</li>
+</ol>
+<p>Due to these key advantages, Hadoop lends itself to several data processing use cases. Key use cases are:</p>
+<ol>
+<li>Data store / Enterprise data warehouse (EDW) - cost-effective storage for all of an organization’s ever expanding data</li>
+<li>Active archive - allowing cost-effective querying on historical data from archival systems</li>
+<li>Transformation - executing data transformations (T step of ETL/ELT) for improved throughput and performance</li>
+<li>Exploration - allows fast exploration and quicker insights from new questions and use cases, taking advantage of Hadoop’s schema-on-read model instead of schema-on-write models of traditional relational databases</li>
+<li>Real-time applications - usage of flexible add-ons like Storm to provide dynamic data mashups</li>
+<li>Machine learning, data mining, predictive modeling and advanced statistics</li>
+</ol>
+<p>The early adopters of Hadoop are the web giants like Facebook, Yahoo, Google, LinkedIn, Twitter etc.</p>
+<p><strong>Facebook</strong> uses Hadoop - Hive and HBase for data warehousing (over 300 PB in aggregate and over 600 TB daily data inflows) and real-time application, serving up dynamic pages customized for each of its over 1.2 billion users.</p>
+<p><strong>Yahoo</strong> uses Hadoop and Pig for data processing and analytics, web search, email antispam and ad serving with more than 100,000 CPUs in over 40,000 servers running Hadoop with 170 PB of storage .</p>
+<p><strong>Google</strong> had used MapReduce to create its web index from crawl data and also uses Hadoop clusters on its cloud platform with Google Compute Engine (GCE).</p>
+<p><strong>LinkedIn</strong> uses Hadoop for data storage and analytics driving personalized recommendations like “People you may know” and ad targeting.</p>
+<p><strong>Twitter</strong> uses Hadoop - Pig and HBase for data visualization, social graph analysis and machine learning.</p>
+<p><strong>Limitations of Hadoop</strong></p>
+<p>While Hadoop is the most well-known Big Data solution, it is just one of the components in the Big Data landscape. While in theory, Hadoop is infinitely scalable and resilient and allows a great deal of flexibility in storing structured and unstructured data, in practice, there are several considerations to be taken care of while architecting Hadoop clusters due to the inherent limitations of Hadoop.</p>
+<p><strong>1. Workloads</strong>- Hadoop is suitable for various types of workloads, however mixed workloads or situations where the workload may vary widely or is not known ahead, makes it difficult to optimize the Hadoop architecture.</p>
+<p><strong>2. Integration</strong> - Hadoop should not be a stand-alone solution, else it will quickly become a data silo unconnected with the rest of the data management infrastructure. The Hadoop strategy needs to fit into the overall data management and processing framework of the organization to allow for growth and maintenance while not sacrificing on flexibility and agility</p>
+<p><strong>3. Security</strong>- In the enterprise, security is a big deal. While Hadoop was originally built without a security model, the Hadoop ecosystem is evolving with various projects for security, including Kerberos authentication, the Sentry offering from Cloudera, Project Rhino from Intel, Apache Knox as reverse proxy (with contribution from Hortonworks) or using Apache Accumulo for cell-level security;  however most are complex to setup and there is still no reference standard across deployments.</p>
+<p><strong>4. Complexity</strong>- the complexity of Hadoop as a Big Data platform lies in its evolving ecosystem of newer technologies, with most data warehousing and analytics specialists skilled in traditional relational databases, SQL and techniques which are difficult to use on Hadoop due to the lack of tools (e.g. still evolving SQL access) and the need for additional skills including data mining or advanced statistical techniques.</p>
+<p><strong>5. Availability</strong>- Up until the 2.0 release, Hadoop with single-master nodes in HDFS and MapReduce was subject to single point of failure.</p>
+<p><strong>6. Inefficiency</strong>- HDFS is inefficient for handling small files thereby making analysis on smaller datasets extremely inefficient. This is especially painful while designing models or finding patterns on smaller datasets. MapReduce is also a batch-oriented architecture not suitable for real-time access, but this is being addressed with tools like Storm. Tools like Impala provide interactive SQL-like querying on HDFS, which helps in improving quick adhoc analysis on smaller datasets.</p>
+<p><strong>7. Processing framework</strong> - Not all data processing problems or analytic questions can be designed with the MapReduce framework. Hadoop is therefore ill suited for such problems which cannot be expressed as problems with Map and Reduce steps and need other data processing paradigms. There are improvements being developed with Storm for real-time access or Spark for improving the data analytics performance with in-memory distributed computing to get around these issues.</p>
+<p>In the next parts of this series, I will explore topics of building a Hadoop data warehouse, big data analytics with tools like R as well as other Big Data solutions, Hadoop enhancements  and alternatives to Hadoop.</p>
+<p>Read the series on Big Data: <a href="https://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/">Part-1 : Basics</a>, <a href="https://biguru.wordpress.com/2014/04/13/basics-of-big-data-part-2-hadoop/">Part-2 : Hadoop</a>, <a href="https://biguru.wordpress.com/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/">Part-3 : Hadoop data warehouse</a> and <a href="https://biguru.wordpress.com/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/">Part-4 : NoSQL</a></p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://maloymanna.github.io/2013/08/21/basics-of-big-data-part-1/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://maloymanna.github.io/2013/08/21/basics-of-big-data-part-1/">Basics of Big Data - Part 1</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://maloymanna.github.io/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/">Basics of Big Data - Building a Hadoop data warehouse</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://maloymanna.github.io/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'maloymanna';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://maloymanna.github.io/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

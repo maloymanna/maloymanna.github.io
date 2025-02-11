@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Databricks on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/databricks/</link>
+    <description>Recent content in Databricks on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 19 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/databricks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Delta Lake and the Lakehouse Architecture</title>
+      <link>https://maloymanna.github.io/2024/05/19/delta-lake-and-the-lakehouse-architecture/</link>
+      <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2024/05/19/delta-lake-and-the-lakehouse-architecture/</guid>
+      <description>&lt;p&gt;The technology world often sees upheavals when disparate concepts are put together to achieve different objectives, creating something which is much &lt;em&gt;more than the sum of its parts&lt;/em&gt;. &lt;span style=&#34;color: blue;&#34;&gt;Delta Lake&lt;/span&gt; is one such concept, which has melded log and ACID, bringing transaction and atomicity concepts into the ETL-analytics-big.data field, creating a revolution of sorts.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;The problem(s):&lt;/strong&gt;&lt;br&gt;&#xA;Since traditional data warehousing, the design and modeling of analytics systems relied on &lt;strong&gt;denormalized&lt;/strong&gt; tables, as analytics systems were considered separate from transactional systems. This started to change with the move to the cloud and availability of more real-time data. With the advent of big data technology like HDFS/Hadoop, additional constraints on updates and storage of relational datasets were added due to performance costs. The difficulty was particularly acute for cloud customers who faced additional latency compared to on-premises HDFS/Hadoop users.&#xA;GDPR compliance meant deleting or correcting customer data required massive table-wide updates for a few records, with increased probability of data corruption and consistency issues in case of crashed updates.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

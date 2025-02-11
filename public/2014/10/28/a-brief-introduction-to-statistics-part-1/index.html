@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.141.0">
+
+  <title>A Brief Introduction to Statistics - Part 1 &middot; Maloy Manna</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+    
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://maloymanna.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  <a class="pure-menu-heading brand" href="/">
+  <img src="/img/logo.png" width="140px">
+</a>
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Tech Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-folder fa-fw'></i>Categories</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/pm/"><i class='fa fa-list fa-fw'></i>Agile PM posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talks/"><i class='fa fa-comments fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone-square fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/itsmaloy" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/maloy" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/maloymanna" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2007 - 2025. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>A Brief Introduction to Statistics - Part 1</h1>
+</div>
+<div class="content">
+  
+</div>
+
+<div class="content">
+
+  <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/28</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/data-science">Data science</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/statistics">Statistics</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/alternative-model">alternative model</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/box-plot">box plot</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/categorical">categorical</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/explanatory-variable">explanatory variable</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/histograms">histograms</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hypothesis-test">hypothesis test</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/independence-model">independence model</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/numerical">numerical</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/response-variable">response variable</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/sampling">sampling</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/statistical-inference">statistical inference</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/statistics">statistics</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/types-of-variables">types of variables</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p><strong>What is Statistics?</strong><br>
+Collected observations are called <strong>data</strong>. <strong>Statistics</strong> is the study of <em>how best to collect, analyze, and draw conclusions from data</em>. Each observation in data is called a <strong>case</strong>. Characteristics of the case are called <strong>variables</strong>. With a matrix/table analogy, a case is a row while a variable is a column.</p>
+<p><img src="/post/correlation.jpg?w=300" alt="Statistics - Correlation"><br>
+Statistics - Correlation (Courtesy: xkcd.com)</p>
+<p><strong>Types of variables:</strong></p>
+<ul>
+<li>
+<p><strong>Numerical</strong> - Can be <strong>discrete</strong> or <strong>continuous</strong>, and can take a wide range of numerical values.</p>
+</li>
+<li>
+<p><strong>Categorical</strong> - Specific or limited range of values, usually called <strong>levels</strong>. Variables with natural ordering of levels are called <strong>ordinal</strong> categorical variables.</p>
+</li>
+<li>
+<p>A pair of variables are either related in some way (<strong>associated</strong>) or not (<strong>independent</strong>). No pair of variables is both associated and independent.</p>
+</li>
+<li>
+<p>Data collected in haphazard fashion are called <strong>anecdotal evidence</strong>. Such evidence may be true and veriﬁable, but it may only represent extraordinary cases.</p>
+</li>
+</ul>
+<p><strong>There are two main types of scientific data collection:</strong></p>
+<ol>
+<li><strong>Observational studies</strong> - collection of data without interfering with how the data has arisen. Can provide evidence of a naturally occurring association between variables, but by themselves, cannot show a causal connection</li>
+<li><strong>Experiments</strong> - randomized experiments, usually with an <em>explanatory variable</em> and a <em>response variable</em> are performed, often with a <strong>control group</strong>.
+In general, <em>correlation does not imply causation</em>, and causation can only be inferred from a randomized experiment.</li>
+</ol>
+<p><strong>Types of sampling:</strong></p>
+<ul>
+<li><strong>Simple random sampling</strong>: Each subject in the population is equally likely to be selected.</li>
+<li><strong>Stratified samplin</strong>g: The population is first divided into homogeneous strata (subjects within each stratum are similar, but different across strata) followed by random sampling from within each stratum.</li>
+<li><strong>Cluster sampling</strong>: The population is first divided into groups or clusters (subjects within each cluster are non-homogeneous, but clusters are similar to each other). Next a few clusters are randomly sampled followed by random sampling from within each cluster.</li>
+</ul>
+<p><strong>Randomized experiments are generally built on four principles:</strong></p>
+<ol>
+<li><strong>Controlling</strong> - control any differences between groups for confounding variables which are known and can be accounted for.</li>
+<li><strong>Randomization</strong> - randomize population into groups to account for variables that cannot be controlled.</li>
+<li><strong>Replication</strong> - collect sufficiently large sample or replicate entire study to improve estimation.</li>
+<li><strong>Blocking</strong> - advanced technique of grouping population based on variable known/suspected to influence response, followed by randomizing cases within the group.</li>
+</ol>
+<p><strong>Reducing bias in experiments -</strong></p>
+<p>Randomized experiments are the gold standard for data collection, but they do not ensure an unbiased perspective into the cause and eﬀect relationships in all cases. <strong>Blinding</strong> can help in overcoming <em>placebo effect</em> in human studies.</p>
+<p>Distributions of a numerical variable are described by <span style="color: blue;">shape, center and spread</span>. The three most commonly used measures of center and spread are:</p>
+<p><strong>center</strong>:</p>
+<ul>
+<li>mean (the arithmetic average),</li>
+<li>median (the midpoint),</li>
+<li>mode (the most frequent observation)</li>
+</ul>
+<p><strong>spread</strong>:</p>
+<ul>
+<li>standard deviation (variability around the mean),</li>
+<li>range (max-min),</li>
+<li>interquartile range IQR (middle 50% of the distribution)</li>
+</ul>
+<p>An <strong>outlier</strong> is an observation that appears extreme relative to the rest of the data.<br>
+A <strong>robust statistic</strong> (e.g. median, IQR) is a statistic that is not heavily affected by skewness and extreme outliers.</p>
+<p><strong>Comparing categorical data:</strong><br>
+A table that summarizes data for two categorical variables in this way is called a <strong>contingency table</strong>.<br>
+A table for a single variable is called a <strong>frequency table</strong>.<br>
+A bar plot is a common way to display a single categorical variable.<br>
+A segmented bar plot is a graphical display of contingency table information.<br>
+A mosaic plot is a graphical display of contingency table information that is similar to a bar plot for one variable or a segmented bar plot when using two variables.<br>
+While pie charts are well known, they are not typically as useful as other charts in a data analysis.</p>
+<p><strong>Comparing numerical data:</strong><br>
+The side-by-side box plot is a traditional tool for comparing across groups.<br>
+Another useful plotting method uses hollow histograms to compare numerical data across groups.</p>
+<p><strong>Hypothesis test:</strong></p>
+<p><strong><span style="color: blue;">H0 Independence model</span></strong> - Explanatory variable has no eﬀect on response variable, and we observed a diﬀerence that would only happen rarely.</p>
+<p><strong><span style="color: blue;">HA Alternative model</span></strong> - Explanatory variable has an eﬀect on response variable, and what we observed was actually due to explanatory variable effect on the response variable explaining the difference.</p>
+<p>Based on the simulations, we have two options:</p>
+<ol>
+<li>We conclude that the study results do not provide strong evidence against the independence model.</li>
+<li>We conclude the evidence is suﬃciently strong to reject H0 and assert the alternative hypothesis.</li>
+</ol>
+<p>When we conduct formal studies, usually we reject the notion that we just happened to observe a rare event. So in such a case, we reject the independence model in favor of the alternative.</p>
+<p><strong>Statistical Inference:</strong></p>
+<p>One ﬁeld of statistics, <em>statistical inference</em>, is built on evaluating whether such differences are <em><span style="color: blue;">due to chance</span></em>. In statistical inference, statisticians evaluate which model is most reasonable given the data. Errors do occur, just like rare events, and we might choose the wrong model. While we do not always choose correctly, statistical inference gives us tools to control and evaluate how often these errors occur.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://maloymanna.github.io/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://maloymanna.github.io/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/">Big Data Basics - Part  4 : NoSQL and NewSQL explained</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://maloymanna.github.io/2014/11/05/now-on-amazon-download-the-biguru-blog-app/">Now on Amazon - download the BIguru blog  app!</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://maloymanna.github.io/2014/11/05/now-on-amazon-download-the-biguru-blog-app/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'maloymanna';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://maloymanna.github.io/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

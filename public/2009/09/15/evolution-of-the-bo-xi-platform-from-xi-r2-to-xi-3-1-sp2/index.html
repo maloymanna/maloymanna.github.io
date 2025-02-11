@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.141.0">
+
+  <title>Evolution of the BO XI platform - from XI R2 to XI 3.1 SP2 &middot; Maloy Manna</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+    
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://maloymanna.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  <a class="pure-menu-heading brand" href="/">
+  <img src="/img/logo.png" width="140px">
+</a>
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Tech Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-folder fa-fw'></i>Categories</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/pm/"><i class='fa fa-list fa-fw'></i>Agile PM posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talks/"><i class='fa fa-comments fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone-square fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/itsmaloy" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/maloy" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/maloymanna" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2007 - 2025. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Evolution of the BO XI platform - from XI R2 to XI 3.1 SP2</h1>
+</div>
+<div class="content">
+  
+</div>
+
+<div class="content">
+
+  <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/09/15</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/sap-businessobjects">SAP BusinessObjects</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/bobj">BOBJ</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/boxi">boxi</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/business-objects">business objects</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/sap">SAP</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>With BO XI 3.1 SP2 out in July this year, it is probably time to make a trip down the years to find out how the XI platform has evolved and matured.</p>
+<p><strong>The timeline:</strong></p>
+<ul>
+<li>XI R2 SP2 - service pack release in March 2007 with productivity pack - QaaWS and LiveOffice connectors</li>
+<li>XI 3.0 - new major release in February 2008 - the first release after SAP acquired BOBJ in October 2007</li>
+<li>XI 3.1 - upgrade release in September 2008</li>
+<li>XI 3.1 SP2 - service pack release on 24 July 2009 - with enhanced SAP integration</li>
+</ul>
+<p><strong>Where were we with XI R2:</strong></p>
+<ul>
+<li>Change to Crystal service-oriented platform (Crystal 10 architecture)</li>
+<li>Ability to plug Crystal Reports, Web Intelligence, Desktop Intelligence, OLAP Intelligence, Dashboard Manager, Performance Manager directly into the framework</li>
+<li>Single repository, security, system management, publishing, portal</li>
+<li>Infoview (Replaced old BO Infoview and Crystal ePortfolio)</li>
+<li>Central Management Console (CMC)</li>
+<li>Import Wizard (upgrades from BO 5, 6, XI, Crystal 8.5, 9, 10)</li>
+<li>Desktop Intelligence (new name for BO full client + ability to query and display Unicode data)</li>
+<li>Publishing, Encyclopedia, Discussions, OLAP Intelligence, Performance Management</li>
+<li>Changes to Data Integrator, Composer, Metadata Manager</li>
+</ul>
+<p><strong>XI 3.0 (Titan)</strong></p>
+<ul>
+<li>All administration moved to the Central Management Console - CMC – with new GUI</li>
+<li>Bulk action support in CMC</li>
+<li>Central Configuration Manager - CCM is still there (to manage multiple nodes) with 2 entries : Tomcat &amp; SIA</li>
+<li>Server Intelligence Agent (SIA) - handles service dependencies</li>
+<li>Server Intelligence in CMC – clone server deployments</li>
+<li>Repository Federation – replicate repository on other BO cluster</li>
+<li>Repository Diagnostic Tool (Infostore vs FileStore – repair inconsistencies between CMS database entries and files in FRS)</li>
+<li>Improved Import Wizard</li>
+<li>Web Intelligence Rich Client (offline viewing of WebI reports, no session timeout)</li>
+<li>Data change tracking in Web Intelligence</li>
+<li>Designer – “Database delegated” projection on measures</li>
+<li>Universe based on stored procedures</li>
+<li>Prompt syntax extension (persistent/primary_key undocumented features, finally!)</li>
+<li>Personal data provider – combine data from Excel, text, csv and get into a single report</li>
+<li>Smart cubes – support for non-additive measures (percentages, ratios) and RDBMS analytical functions</li>
+<li>Multi language support – dimensions, measures, prompts automatically localized to report viewer’s language</li>
+<li>Native Web Intelligence printing (without PDF)</li>
+<li>Enbed image in Web Intelligence report</li>
+<li>Hyperlinks dialog box makes links easy to create – syntax generated by WebIntelligence (remember opendocument()?)</li>
+</ul>
+<p><strong>What&rsquo;s new in XI 3.1</strong></p>
+<ul>
+<li>Support for multi-forest Active Directory authentication</li>
+<li>IP v6 support</li>
+<li>Lifecycle Management Tool (LCMBIAR files, replace Import Wizard)</li>
+<li>Saving Web Intelligence documents as CSV (data-only files) – new sheets for every 65K rows of data</li>
+<li>Web Intelligence Autosave</li>
+<li><code>“Begin_SQL”</code> SQL prefix variable</li>
+<li>Prompt syntax extension (support for key-value pairs!)</li>
+<li>Business Objects Voyager enhancements</li>
+<li>Live Office enhancements</li>
+<li>WebIntelligence - Automatic loading of cached LOVs, interactive drag-drop, report filter bar, cancel refresh-on-open</li>
+</ul>
+<p><strong>What&rsquo;s new in XI 3.1 SP2</strong></p>
+<ul>
+<li>WebIntelligence Input controls</li>
+<li><a href="http://www.sdn.sap.com/irj/scn/weblogs?blog=/pub/wlg/13566">OLAP universe based access to SAP BW using MDX</a></li>
+<li>BI services - expose WebIntelligence document components as web services</li>
+<li>Query on Query</li>
+<li>Fold-unfold UI improvements</li>
+<li>New SDKs - <a href="https://www.sdn.sap.com/irj/scn/weblogs?blog=/pub/wlg/15320">WebI Calculation Extension Points, Custom Data Provider plugin, Interactive viewing extension and integration points</a></li>
+<li>New universe SQL parameter SMART_AGGREGATE allows using most detailed aggregate tables</li>
+<li><code>@Prompt</code> editor in universe Designer</li>
+<li><em>Backward compatibility is broken. Web Intelligence documents created using BO XI 3.1 SP2 cannot be opened in BO XI 3.1</em></li>
+</ul>
+<p>In one of my next posts, I&rsquo;ll cover selected new features in detail.</p>
+<p>-Maloy</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://maloymanna.github.io/2009/08/28/developing-a-business-objects-security-model-bo-xi-3-1/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://maloymanna.github.io/2009/08/28/developing-a-business-objects-security-model-bo-xi-3-1/">Developing a Business Objects security model - BO XI 3.1</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://maloymanna.github.io/2009/11/13/review-of-the-bt-summit--cloud-computing-soa-and-bi-tracks/">Review of the BT Summit – Cloud computing, SOA and BI tracks</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://maloymanna.github.io/2009/11/13/review-of-the-bt-summit--cloud-computing-soa-and-bi-tracks/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'maloymanna';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://maloymanna.github.io/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

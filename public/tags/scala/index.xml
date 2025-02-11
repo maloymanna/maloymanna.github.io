@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scala on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/scala/</link>
+    <description>Recent content in Scala on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 23 Mar 2015 12:03:35 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/scala/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Spark is the big data platform of the future</title>
+      <link>https://maloymanna.github.io/2015/03/23/spark-big-data-platform-future/</link>
+      <pubDate>Mon, 23 Mar 2015 12:03:35 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2015/03/23/spark-big-data-platform-future/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Apache Spark&lt;/strong&gt; has created a lot of buzz recently. In fact, beyond the buzz, Apache Spark has seen phenomenal adoption and has been marked out as the successor to Hadoop MapReduce.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/apache-spark.jpg?w=300&#34; alt=&#34;Apache Spark&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Google Trends confirms the &lt;strong&gt;hockey stick like growth&lt;/strong&gt; in interest in Apache Spark.  All leading Hadoop vendors, including Cloudera, now include Apache Spark in their Hadoop distribution.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/googletrends.jpg?w=300&#34; alt=&#34;GoogleTrends - Apache Spark&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;So what exactly is Spark, and why has it generated such enthusiasm? Apache Spark is an open-source big data processing framework designed for speed and ease of use.  Spark is well-known for its in-memory performance, but that has also given rise to misconceptions about its on-disk abilities. Spark is in fact a general execution engine - which has a greatly improved performance both in-memory as well as on-disk, when compared with older frameworks like MapReduce. With its advanced &lt;strong&gt;DAG&lt;/strong&gt; (directed acyclic graph) execution engine, Spark can run programs up to &lt;strong&gt;100x faster than MapReduce in memory, or 10x faster on-disk.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

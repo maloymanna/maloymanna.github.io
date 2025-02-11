@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.141.0">
+
+  <title>Big-Data &middot; Maloy Manna</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+    
+  <link rel="alternate" type="application/rss+xml" title="Maloy Manna"
+    href='/categories/big-data/index.xml' />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://maloymanna.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  <a class="pure-menu-heading brand" href="/">
+  <img src="/img/logo.png" width="140px">
+</a>
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Tech Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-folder fa-fw'></i>Categories</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/pm/"><i class='fa fa-list fa-fw'></i>Agile PM posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talks/"><i class='fa fa-comments fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone-square fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href='/categories/big-data/index.xml'><i
+          class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/itsmaloy" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/maloy" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/maloymanna" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2007 - 2025. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Big-Data</h1>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2024/06/28/the-data-mesh-approach/">The Data Mesh Approach</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2024/06/28</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">big-data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/data-science">data science</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/machine-learning">machine learning</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/ai">ai</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/architecture">architecture</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/data-mesh">data-mesh</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>With rapid advance in the technology world, it makes sense sometimes to rethink our objective and outline the roadmap instead of just following the new and shiny. <span style="color: blue;">Data Mesh</span> might seem a relatively new concept, however what its creator Zhamak Dehghani has done is spell out in words the approach required to reach the strategic goal of being a data-driven organization.</p>
+<p><img src="/post/data-mesh.png" alt="Data Mesh domain product notation"><br>
+Figure: Data Mesh domain product notation, adapted from Zhamak Dehghani</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2024/06/28/the-data-mesh-approach/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2024/05/19/delta-lake-and-the-lakehouse-architecture/">Delta Lake and the Lakehouse Architecture</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2024/05/19</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">big-data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/architecture">architecture</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/delta-lake">delta-lake</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/lakehouse">lakehouse</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/databricks">databricks</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>The technology world often sees upheavals when disparate concepts are put together to achieve different objectives, creating something which is much <em>more than the sum of its parts</em>. <span style="color: blue;">Delta Lake</span> is one such concept, which has melded log and ACID, bringing transaction and atomicity concepts into the ETL-analytics-big.data field, creating a revolution of sorts.</p>
+<p><strong>The problem(s):</strong><br>
+Since traditional data warehousing, the design and modeling of analytics systems relied on <strong>denormalized</strong> tables, as analytics systems were considered separate from transactional systems. This started to change with the move to the cloud and availability of more real-time data. With the advent of big data technology like HDFS/Hadoop, additional constraints on updates and storage of relational datasets were added due to performance costs. The difficulty was particularly acute for cloud customers who faced additional latency compared to on-premises HDFS/Hadoop users.
+GDPR compliance meant deleting or correcting customer data required massive table-wide updates for a few records, with increased probability of data corruption and consistency issues in case of crashed updates.</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2024/05/19/delta-lake-and-the-lakehouse-architecture/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2017/07/14/9-features-of-modern-data-architectures/">9 features of modern data architectures</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/07/14</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/architecture">architecture</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/big-data">Big Data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/architecture">architecture</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hadoop">Hadoop</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/streaming">streaming</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>The last few years has seen a massive change in the data landscape. With the rise of big data, there&rsquo;s been rapid innovation in the tools, skills and roles working on data systems. Data architectures have evolved beyond monolithic, centralized databases and unwieldy analytic applications to distributed, scalable architectures with simpler collaborative and interactive analytic tools. In this post, I look at the defining features of modern data architectures.</p>
+<p>Modern data architectures generally feature the following (though not all of these may be present in the same system):</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2017/07/14/9-features-of-modern-data-architectures/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2017/05/01/kafka-building-real-time-stream-data-pipelines/">Kafka - building real-time stream data pipelines</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/05/01</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/architecture">architecture</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/big-data">Big Data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/architecture">architecture</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/kafka">Kafka</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/streaming">streaming</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>Over the past few years, Kafka has become the most exciting new addition in the big data distributed architecture. Originally developed at LinkedIn, its founders Jay Kreps, Jun Rao and Neha Narkhede have launched a company Confluent to develop its open-core business model. The software at its core, Apache Kafka reinvents the database log to provide a highly scalable and fault tolerant, high performance distributed system, which serves as the data pipeline backbone for stream data processing.</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2017/05/01/kafka-building-real-time-stream-data-pipelines/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2016/02/16/hadoop-small-files-problem/">Hadoop&#39;s small files problem</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2016/02/16</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/architecture">architecture</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/big-data">Big Data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/architecture">architecture</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hadoop">Hadoop</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>Small files are a big problem in Hadoop.</p>
+<p>Hadoop is designed to manage big data and by design this means HDFS is designed to store very large files in a distributed cluster with streaming access to this data. For reference, a typical block in HDFS is 64 MB or 128 MB. Each small file (few MB or less) is stored in a block and multiple small files could be stored in blocks across different nodes of the distributed cluster.</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2016/02/16/hadoop-small-files-problem/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2015/06/24/what-roles-do-you-need-in-your-data-science-team/">What roles do you need in your data science team?</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/06/24</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/data-science">Data science</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/data-engineer">data engineer</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/data-science-team">data science team</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/data-scientist">data scientist</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/product-manager">product manager</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>Over the past few weeks, we&rsquo;ve had several conversations in our data lab regarding data engineering problems and day to day problems we face with unsupervised data scientists who find it difficult to deploy their code into production.</p>
+<p><img src="/post/datascience3.jpg?w=300" alt="Data scientist"></p>
+<p>The opinions from business seemed to cluster around a tacit definition of data scientists as researchers, primarily from statistics or mathematics backgrounds, who are experienced in machine learning algorithms and often in some domain areas specific to our business, (e.g. actuaries in insurance), but not necessarily having skills of writing production-ready code.
+The key driver behind the somewhat opposing strain of thought came from the developers and data engineers who often quoted Cloudera&rsquo;s Director of Data Science - <a href="https://twitter.com/josh_wills">Josh Wills</a> - famous for his &ldquo;definition of a data scientist tweet&rdquo;:
+&ldquo;Data Scientist (n.): Person who is better at statistics than any software engineer and better at software engineering than any statistician.&rdquo;</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2015/06/24/what-roles-do-you-need-in-your-data-science-team/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2015/05/20/an-introduction-to-data-science/">An introduction to Data Science</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/05/20</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/data-science">Data science</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/machine-learning">Machine Learning</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/big-data">big data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/data-science">data science</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/introduction">introduction</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/machine-learning">machine learning</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>I presented a talk last week introducing Data Science and associated topics to some enthusiasts.<br>
+Here&rsquo;s a slide deck I created quickly with markdown using Swipe - a start-up building HTML5 presentation tools.<br>
+The contents include:</p>
+<ul>
+<li>Data scientist skills</li>
+<li>Data science: enablers and barriers</li>
+<li>Big data analytics</li>
+<li>Data science lifecycle</li>
+<li>Use cases</li>
+<li>Tools and technology</li>
+<li>Project approach</li>
+<li>Machine learning</li>
+<li>Skills and roles</li>
+<li>Learning resources</li>
+</ul>
+<p>Here are the slides:</p>
+
+    <figure class="swipe"><iframe src="https://www.swipe.to/embed/2675ch" allowfullscreen></iframe></figure><style>figure.swipe{display:block;position:relative;padding-bottom:56.25%;height:0;overflow:hidden;}figure.swipe iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;}</style>
+  </p>
+
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2015/03/23/spark-big-data-platform-future/">Why Spark is the big data platform of the future</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/03/23</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/spark">Spark</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/apache-spark">Apache Spark</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hadoop">Hadoop</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/mllib">MLLib</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/rdd">RDD</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/scala">scala</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p><strong>Apache Spark</strong> has created a lot of buzz recently. In fact, beyond the buzz, Apache Spark has seen phenomenal adoption and has been marked out as the successor to Hadoop MapReduce.</p>
+<p><img src="/post/apache-spark.jpg?w=300" alt="Apache Spark"></p>
+<p>Google Trends confirms the <strong>hockey stick like growth</strong> in interest in Apache Spark.  All leading Hadoop vendors, including Cloudera, now include Apache Spark in their Hadoop distribution.</p>
+<p><img src="/post/googletrends.jpg?w=300" alt="GoogleTrends - Apache Spark"></p>
+<p>So what exactly is Spark, and why has it generated such enthusiasm? Apache Spark is an open-source big data processing framework designed for speed and ease of use.  Spark is well-known for its in-memory performance, but that has also given rise to misconceptions about its on-disk abilities. Spark is in fact a general execution engine - which has a greatly improved performance both in-memory as well as on-disk, when compared with older frameworks like MapReduce. With its advanced <strong>DAG</strong> (directed acyclic graph) execution engine, Spark can run programs up to <strong>100x faster than MapReduce in memory, or 10x faster on-disk.</strong></p>
+  </p>
+
+  
+  <footer>
+    <a href="/2015/03/23/spark-big-data-platform-future/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2015/02/04/a-gentle-introduction-to-machine-learning/">A gentle introduction to Machine Learning</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/02/04</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/data-science">Data science</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/machine-learning">Machine Learning</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/classification">classification</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/machine-learning">machine learning</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/regression">regression</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/supervised-learning">supervised learning</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p><span style="color: blue;">Machine Learning</span> is a big part of big data and data science. A subset of artificial intelligence - a branch of science notorious for requiring advanced knowledge of mathematics. In practice though, most data scientists don&rsquo;t try to build a <a href="http://youtu.be/l6bmTNadhJE">Chappie</a>  and there are simpler, practical ways to get started with machine learning.</p>
+<p><img src="/post/selection_002.png?w=300" alt="Gmail Priority Inbox"></p>
+<p>Machine learning in practice involves predictions based on data. Notable examples include Amazon&rsquo;s product recommendations with the &ldquo;customers also bought&rdquo; scroll-list, or Gmail&rsquo;s priority inbox or any email spam-filter feature. How do these work? For Amazon, clicks by the user is used to learn and predict user behavior and propensity (likelihood) to buy certain items. The items the user is most likely to buy are then displayed on the recommendation system. Gmail&rsquo;s system learns from the messages which the user reads and/replies to and prioritizes them.</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2015/02/04/a-gentle-introduction-to-machine-learning/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2015/01/19/designing-the-future-data-innovation-labs/">Designing the future - Data Innovation Labs</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/01/19</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/data-science">Data science</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/agile">Agile</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/data-innovation-lab">data innovation lab</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/innovation">innovation</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/lab">lab</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>With the ongoing Big data revolution, and the impending Internet of Things revolution, there has been a renewed enthusiasm in &ldquo;innovation&rdquo; around data.  Similar to the Labs concept started by Google (think Gmail Beta based on Ajax, circa 2004), more and more organizations, business communities, governments and countries are setting up Labs to foster innovation in data and analytics technologies. The idea behind these “data innovation labs” is to develop avant-garde data and analytics technologies and products in an agile fashion and move quickly from concept to production. Given the traditional bureaucratic setup in large organizations and governments, these Labs stand a better chance of fostering a culture of innovation, due to their being autonomous entities and their startup-mode culture leveraging agile methodologies.</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2015/01/19/designing-the-future-data-innovation-labs/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2014/12/30/set-up-a-hadoop-spark-cluster-in-10-minutes-with-vagrant/">Set up a Hadoop Spark cluster in 10 minutes with Vagrant</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/12/30</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/data-science">Data science</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/cluster">cluster</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hadoop">Hadoop</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/install">install</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/multi-node">multi-node</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/spark">Spark</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/vagrant">vagrant</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>With each of the big 3 Hadoop vendors - <strong>Cloudera</strong>, <strong>Hortonworks</strong> and <strong>MapR</strong> each providing their own Hadoop <span style="color: blue;">sandbox</span> <strong>virtual machines</strong> (VMs), trying out Hadoop today has become extremely easy. For a developer, it is extremely useful to download a get started with one of these VMs and try out Hadoop to practice data science right away.</p>
+<p><img src="/post/vagrant-hadoop-spark-cluster.png?w=300" alt="Vagrant Hadoop Spark Cluster"></p>
+<p>However, with the core <a href="hadoop.apache.org/">Apache Hadoop</a>, these vendors package their own software into their distributions, mostly for the orchestration and management, which can be a pain due to the multiple scattered open-source projects within the Hadoop ecosystem. e.g. Hortonworks includes the open-source <strong>Ambari</strong> while Cloudera includes its own <strong>Cloudera Manager</strong> for orchestrating Hadoop installations and managing multi-node clusters.</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2014/12/30/set-up-a-hadoop-spark-cluster-in-10-minutes-with-vagrant/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2014/12/22/the-data-science-project-lifecycle/">The data science project lifecycle</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/12/22</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/data-science">Data science</a>
+    
+  </div>
+  
+  
+
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>How does the typical data science project life-cycle look like?</p>
+<p>This post looks at practical aspects of implementing data science projects. It also assumes a certain level of maturity in big data (more on big data maturity models in the next post) and data science management within the organization. Therefore the life cycle presented here differs, sometimes significantly from purist definitions of &lsquo;science&rsquo; which emphasize the hypothesis-testing approach. In practice, the typical data science project life-cycle resembles more of an engineering view imposed due to constraints of resources (budget, data and skills availability) and time-to-market considerations.</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2014/12/22/the-data-science-project-lifecycle/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2014/12/19/bi-in-the-digital-era/">BI in the digital era</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/12/19</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/data-science">Data science</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/big-data">big data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/business-intelligence">business intelligence</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/digital-era">digital era</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>Sometime back I presented a webinar on BrightTalk. The slides for the talk have now been uploaded on <a href="http://www.slideshare.net/itsmaloy/bi-in-the-digital-era">Slideshare</a>. The talk focused more on changes in digital technology disrupting businesses, the effect of Big Data, the FOMO (Fear of missing out) effect on big business - and what it meant for changes to the way we do business intelligence in the digital era.</p>
+<div class="slideshare-embed">
+    <iframe src="https://www.slideshare.net/slideshow/embed_code/key/5lk8abamQrtcTf" 
+            width="595" 
+            height="485" 
+            frameborder="0" 
+            marginwidth="0" 
+            marginheight="0" 
+            scrolling="no" 
+            style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" 
+            allowfullscreen>
+    </iframe>
+</div>
+<p><strong>Key themes:</strong></p>
+  </p>
+
+  
+  <footer>
+    <a href="/2014/12/19/bi-in-the-digital-era/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/">Big Data Basics - Part  4 : NoSQL and NewSQL explained</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/01</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/acid">ACID</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/key-value">key-value</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/mongodb">mongodb</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/nosql">NoSQL</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/sharding">sharding</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p><img src="/post/nosql.png?w=300" alt="Big Data Basics: NoSQL and NewSQL"></p>
+<p>This is the fourth part of a series of posts on big data. Read the previous posts here: <a href="http://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/">Part-1</a>, <a href="http://biguru.wordpress.com/2014/04/13/basics-of-big-data-part-2-hadoop/">Part-2</a> and <a href="http://biguru.wordpress.com/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/">Part-3</a>.</p>
+<p>With the ongoing data explosion, and the improvement in technologies able to deal with it, businesses are turning to leverage this <span style="color: blue;">big data</span> for mining insights to gain competitive advantage, reinvent business models and create new markets.</p>
+<p>A huge amount of this &ldquo;<strong>big data</strong>&rdquo; volumes comes from system logs, user generated content on social media like Twitter or Facebook, sensor data and the like. All of these types of data are what we call &ldquo;unstructured&rdquo;. Businesses which do not leverage the vast amount of unstructured data available to them, risk losing out valuable insights from such data types.</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/">Basics of Big Data - Building a Hadoop data warehouse</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/05/12</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/big-data">big data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/big-data-analytics">big data analytics</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/cloudera">Cloudera</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/data-mining">data mining</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/data-warehouse">data warehouse</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/data-warehousing">data warehousing</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/etl">ETL</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hadoop">Hadoop</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hdfs">HDFS</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hive">Hive</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hortonworks">Hortonworks</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/impala">Impala</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/parquet">parquet</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/r">R</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/schema-on-read">schema-on-read</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/schema-on-write">schema-on-write</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/syncsort">syncsort</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/yarn">yarn</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>This is the 3rd part of a series of posts on Big Data. Read <a href="http://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/">Part-1</a> (What is Big Data) and <a href="http://biguru.wordpress.com/2014/04/13/basics-of-big-data-part-2-hadoop/">Part-2 (Hadoop)</a>.</p>
+<p>Traditionally data warehouses have been built with relational databases as backbone. With the new challenges (<a href="http://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/">3Vs</a>) of Big Data, relational databases have been falling short of the requirements of handling</p>
+<ul>
+<li>New data types (unstructured data)</li>
+<li>Extended analytic processing</li>
+<li>Throughput (TB/hour loading) with immediate query access</li>
+</ul>
+<p>The industry has turned to Hadoop as a disruptive solution for these very challenges.</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2014/04/13/basics-of-big-data-part-2-hadoop/">Basics of Big Data – Part 2 - Hadoop</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/04/13</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/ambari">ambari</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/big-data">big data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/cloudera">Cloudera</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hadapt">hadapt</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hadoop">Hadoop</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hbase">Hbase</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hdfs">HDFS</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hive">Hive</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hortonworks">Hortonworks</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hue">Hue</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/impala">Impala</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/kerberos">kerberos</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/knox">knox</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/mapr">MapR</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/mapreduce">mapreduce</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/oozie">oozie</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/pig">pig</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/sentry">sentry</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/spark">Spark</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/stinger">stinger</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/storm">storm</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/zookeeper">zookeeper</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>As discussed in <a href="http://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/">Part 1</a> of this series, <strong><em>Hadoop</em></strong> is the foremost among tools being currently used for deriving value out of Big Data. The process of gaining insights from data through Business Intelligence and analytics essentially remains the same. However, with the huge variety, volume and velocity (the 3Vs of Big Data), it’s become necessary to re-think of the data management infrastructure. Hadoop, originally designed to be used with the MapReduce algorithm to solve parallel processing constraints in distributed architectures (e.g. web indexing) of web giants like Yahoo or Google, has become the de-facto standard for Big Data (large-scale data-intensive) analytics platforms.</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2014/04/13/basics-of-big-data-part-2-hadoop/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2013/08/21/basics-of-big-data-part-1/">Basics of Big Data - Part 1</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2013/08/21</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/big-data">big data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/data-scientist">data scientist</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hadoop">Hadoop</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/nosql">NoSQL</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/parallel-programming">parallel programming</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>You can’t miss all the buzz about <strong>Big Data</strong>! Over the past few years, the buzz around the cloud and <strong>Big Data</strong> shaping most of the future of computing, IT and analytics in particular has grown incessantly strong. As with most buzz words, which are then hijacked by marketing to suit their own products’ storylines, but which nonetheless manage to confuse users in business and staff in IT as well, <strong>Big Data</strong> means several things to several people.</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2013/08/21/basics-of-big-data-part-1/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2008/05/07/thrive-or-survive-the-changing-rules-for-databases/">Thrive or Survive - the changing rules for databases</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/05/07</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/big-data">Big Data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/trendspotting">Trendspotting</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/aws">AWS</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/cloud-computing">cloud computing</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/nosql">NoSQL</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/sql">sql</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/vertica">Vertica</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>Not since the late seventies, when Larry Ellison&rsquo;s Relational Software Inc. (RSI) turned out the <a href="http://www.oracle.com/timeline/index.html">first commerically available RDBMS</a> - Oracle, has there been such rapid changing of the rules (read disruption) in the database industry.<br>
+With <em><strong>Web 2.0</strong></em> pushing enterprise adoption, and the ensuing <em>information explosion</em> in the maze of audio, video, data and ever-growing data warehouses, it seems that the conventional relational database systems are growing tired. With estimates of <em><strong>unstructured data</strong></em> being anywhere between 80% to 95% of all business data, and the ever changing requirements imposed by Web 2.0 - storage of <em>pictures</em>, <em>audio</em> and <em>video</em>, the demands being made on conventional RDBMS technology are monstrous. With the load window available being fixed due to availability and uptime requirements, the ever increasing data to be loaded into data warehouses, the bulking-up of the data due to usage of <em>XML</em> based formats, conflicting requirements of <em>SQL</em> and <em>XQuery</em>, the database is also being challenged by the demands of business intelligence.</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2008/05/07/thrive-or-survive-the-changing-rules-for-databases/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+</div>
+
+</div>
+</div>
+<script src="https://maloymanna.github.io/js/ui.js"></script>
+
+
+
+
+</body>
+</html>

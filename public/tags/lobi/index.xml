@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LOBI on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/lobi/</link>
+    <description>Recent content in LOBI on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 08 Jan 2012 20:20:04 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/lobi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BI maturity models</title>
+      <link>https://maloymanna.github.io/2012/01/08/bi-maturity-models/</link>
+      <pubDate>Sun, 08 Jan 2012 20:20:04 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2012/01/08/bi-maturity-models/</guid>
+      <description>&lt;p&gt;With most companies listing BI within their top agenda, and with the rising costs and confusion around proving the worth of BI and justifying its costs, it makes sense to try and understand the evolution of BI adoption and maturity in organizations. Knowing what is possible with BI and knowing the challenges and pitfalls allows organizations to plan their BI strategy and implementation.&lt;/p&gt;&#xA;&lt;p&gt;There are quite a few schools of thought and available literature on the lifecycle of BI implementation and maturity in organizations, defining the models. Most are proprietary models provided by consultancies, which are primarily based on technical point of view or applies the knowledge management function to BI, following the &lt;strong&gt;Ladder of Business Intelligence (LOBI) model&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

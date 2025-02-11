@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Architecture on Maloy Manna</title>
+    <link>https://maloymanna.github.io/categories/architecture/</link>
+    <description>Recent content in Architecture on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 28 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/categories/architecture/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Data Mesh Approach</title>
+      <link>https://maloymanna.github.io/2024/06/28/the-data-mesh-approach/</link>
+      <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2024/06/28/the-data-mesh-approach/</guid>
+      <description>&lt;p&gt;With rapid advance in the technology world, it makes sense sometimes to rethink our objective and outline the roadmap instead of just following the new and shiny. &lt;span style=&#34;color: blue;&#34;&gt;Data Mesh&lt;/span&gt; might seem a relatively new concept, however what its creator Zhamak Dehghani has done is spell out in words the approach required to reach the strategic goal of being a data-driven organization.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/data-mesh.png&#34; alt=&#34;Data Mesh domain product notation&#34;&gt;&lt;br&gt;&#xA;Figure: Data Mesh domain product notation, adapted from Zhamak Dehghani&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Delta Lake and the Lakehouse Architecture</title>
+      <link>https://maloymanna.github.io/2024/05/19/delta-lake-and-the-lakehouse-architecture/</link>
+      <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2024/05/19/delta-lake-and-the-lakehouse-architecture/</guid>
+      <description>&lt;p&gt;The technology world often sees upheavals when disparate concepts are put together to achieve different objectives, creating something which is much &lt;em&gt;more than the sum of its parts&lt;/em&gt;. &lt;span style=&#34;color: blue;&#34;&gt;Delta Lake&lt;/span&gt; is one such concept, which has melded log and ACID, bringing transaction and atomicity concepts into the ETL-analytics-big.data field, creating a revolution of sorts.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;The problem(s):&lt;/strong&gt;&lt;br&gt;&#xA;Since traditional data warehousing, the design and modeling of analytics systems relied on &lt;strong&gt;denormalized&lt;/strong&gt; tables, as analytics systems were considered separate from transactional systems. This started to change with the move to the cloud and availability of more real-time data. With the advent of big data technology like HDFS/Hadoop, additional constraints on updates and storage of relational datasets were added due to performance costs. The difficulty was particularly acute for cloud customers who faced additional latency compared to on-premises HDFS/Hadoop users.&#xA;GDPR compliance meant deleting or correcting customer data required massive table-wide updates for a few records, with increased probability of data corruption and consistency issues in case of crashed updates.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Power BI Security - Under the hood</title>
+      <link>https://maloymanna.github.io/2018/07/08/power-bi-security-under-the-hood/</link>
+      <pubDate>Sun, 08 Jul 2018 07:21:12 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2018/07/08/power-bi-security-under-the-hood/</guid>
+      <description>&lt;p&gt;Microsoft has been instrumental in pushing the envelope on managed self-service BI with it&amp;rsquo;s Power BI SaaS platform.&lt;br&gt;&#xA;I wrote about this back in &lt;a href=&#34;https://maloymanna.github.io/2009/11/13/review-of-the-bt-summit-cloud-computing-soa-and-bi-tracks/&#34;&gt;2009&lt;/a&gt; [1], when Microsoft was working on Project Gemini (later PowerPivot) used SQL Server Analysis Services as an in-memory engine, with data compression to really bring BI to the masses, so to speak.&lt;br&gt;&#xA;Since then, Microsoft&amp;rsquo;s vision of self-service BI evolved from providing Excel plug-ins viz. PowerPivot, Data Explorer (later renamed PowerQuery) and sharing bulky Excel files on SharePoint (with Power View [2]) to a manageable managed-self-service BI with the launch of Power BI in 2015.&lt;br&gt;&#xA;Today, Power BI is powered by Azure, and deployed as a SaaS across datacenters in Microsoft regions across the world.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>9 features of modern data architectures</title>
+      <link>https://maloymanna.github.io/2017/07/14/9-features-of-modern-data-architectures/</link>
+      <pubDate>Fri, 14 Jul 2017 11:27:09 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2017/07/14/9-features-of-modern-data-architectures/</guid>
+      <description>&lt;p&gt;The last few years has seen a massive change in the data landscape. With the rise of big data, there&amp;rsquo;s been rapid innovation in the tools, skills and roles working on data systems. Data architectures have evolved beyond monolithic, centralized databases and unwieldy analytic applications to distributed, scalable architectures with simpler collaborative and interactive analytic tools. In this post, I look at the defining features of modern data architectures.&lt;/p&gt;&#xA;&lt;p&gt;Modern data architectures generally feature the following (though not all of these may be present in the same system):&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kafka - building real-time stream data pipelines</title>
+      <link>https://maloymanna.github.io/2017/05/01/kafka-building-real-time-stream-data-pipelines/</link>
+      <pubDate>Mon, 01 May 2017 14:11:27 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2017/05/01/kafka-building-real-time-stream-data-pipelines/</guid>
+      <description>&lt;p&gt;Over the past few years, Kafka has become the most exciting new addition in the big data distributed architecture. Originally developed at LinkedIn, its founders Jay Kreps, Jun Rao and Neha Narkhede have launched a company Confluent to develop its open-core business model. The software at its core, Apache Kafka reinvents the database log to provide a highly scalable and fault tolerant, high performance distributed system, which serves as the data pipeline backbone for stream data processing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hadoop&#39;s small files problem</title>
+      <link>https://maloymanna.github.io/2016/02/16/hadoop-small-files-problem/</link>
+      <pubDate>Tue, 16 Feb 2016 08:09:12 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2016/02/16/hadoop-small-files-problem/</guid>
+      <description>&lt;p&gt;Small files are a big problem in Hadoop.&lt;/p&gt;&#xA;&lt;p&gt;Hadoop is designed to manage big data and by design this means HDFS is designed to store very large files in a distributed cluster with streaming access to this data. For reference, a typical block in HDFS is 64 MB or 128 MB. Each small file (few MB or less) is stored in a block and multiple small files could be stored in blocks across different nodes of the distributed cluster.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

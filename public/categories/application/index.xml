@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Application on Maloy Manna</title>
+    <link>https://maloymanna.github.io/categories/application/</link>
+    <description>Recent content in Application on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 09 Apr 2023 08:15:22 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/categories/application/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Identity Basics 2 - Permissions, Scopes and Consent</title>
+      <link>https://maloymanna.github.io/2023/04/09/identity-basics-2-permissions-scopes-consent/</link>
+      <pubDate>Sun, 09 Apr 2023 08:15:22 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2023/04/09/identity-basics-2-permissions-scopes-consent/</guid>
+      <description>&lt;p&gt;In my previous post, we saw how app registrations add identity configurations for applications on Azure AD. Just like a user, an application would also require access to resources like Microsoft Graph, which need authorization. The resource owner can grant(consent) or deny this authorization to the application.&#xA;There are mainly 2 &lt;em&gt;access scenarios&lt;/em&gt;:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Delegated access&lt;/strong&gt; - access on behalf of a signed-in user.&#xA;User is signed-into a client application, which access the resource on behalf of the user. This requires &lt;em&gt;delegated permissions&lt;/em&gt; (also referred to as &lt;em&gt;scopes&lt;/em&gt;). All scenarios involving user actions should use delegated access. Also, scopes should be limited using the principle of least-privilege.&lt;br&gt;&#xA;&lt;a href=&#34;https://learn.microsoft.com/en-us/graph/permissions-reference&#34;&gt;See also: the full list of Microsoft Graph permissions&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;App-only access&lt;/strong&gt; - access without a user, as the application&amp;rsquo;s own identity. This scenario is when the application runs as a background service or daemon used for automation or backup, or the data can&amp;rsquo;t be scoped to a single user. The client app needs to be granted appropriate application roles of the resource app it&amp;rsquo;s calling to access the requested data. Application roles granted through consent are called &lt;em&gt;application permissions&lt;/em&gt;.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/access-scenarios.png&#34; alt=&#34;Access Scenarios&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Identity Basics 1 - Application Registrations</title>
+      <link>https://maloymanna.github.io/2023/03/18/identity-basics-1-app-registrations/</link>
+      <pubDate>Sat, 18 Mar 2023 17:04:19 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2023/03/18/identity-basics-1-app-registrations/</guid>
+      <description>&lt;p&gt;For some time now, I&amp;rsquo;ve been working on security risk assessments of web applications. Modern identity management can be complex and often requires diving deep into the authentication flow and registration process to understand risk blocks in order to design appropriate controls and counter-measures. I hope to write a short series of posts to document the components and flows of this process, so that it can be my handy reference.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

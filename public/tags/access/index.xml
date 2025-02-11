@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Access on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/access/</link>
+    <description>Recent content in Access on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 18 Sep 2022 07:43:21 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/access/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure IAM fundamentals</title>
+      <link>https://maloymanna.github.io/2022/09/18/azure-iam-fundamentals/</link>
+      <pubDate>Sun, 18 Sep 2022 07:43:21 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2022/09/18/azure-iam-fundamentals/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;color: blue;&#34;&gt;Identity and Access Management (IAM) &lt;/span&gt; is a framework of policies and technologies to ensure the right people or machines to access the right assets or resources.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Identity:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;In this digital age, an &lt;strong&gt;identity&lt;/strong&gt; can be either a human (user), a software component (application) or a hardware component (computer, mobile or IoT device). Just like any identity document in the real-world, identities serve is a way to authenticate and authorize access to assets and resources.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Histograms on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/histograms/</link>
+    <description>Recent content in Histograms on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 28 Oct 2014 10:41:42 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/histograms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Brief Introduction to Statistics - Part 1</title>
+      <link>https://maloymanna.github.io/2014/10/28/a-brief-introduction-to-statistics-part-1/</link>
+      <pubDate>Tue, 28 Oct 2014 10:41:42 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2014/10/28/a-brief-introduction-to-statistics-part-1/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;What is Statistics?&lt;/strong&gt;&lt;br&gt;&#xA;Collected observations are called &lt;strong&gt;data&lt;/strong&gt;. &lt;strong&gt;Statistics&lt;/strong&gt; is the study of &lt;em&gt;how best to collect, analyze, and draw conclusions from data&lt;/em&gt;. Each observation in data is called a &lt;strong&gt;case&lt;/strong&gt;. Characteristics of the case are called &lt;strong&gt;variables&lt;/strong&gt;. With a matrix/table analogy, a case is a row while a variable is a column.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://maloymanna.github.io/post/correlation.jpg?w=300&#34; alt=&#34;Statistics - Correlation&#34;&gt;&lt;br&gt;&#xA;Statistics - Correlation (Courtesy: xkcd.com)&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Types of variables:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Numerical&lt;/strong&gt; - Can be &lt;strong&gt;discrete&lt;/strong&gt; or &lt;strong&gt;continuous&lt;/strong&gt;, and can take a wide range of numerical values.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

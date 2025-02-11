@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SaaS on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/saas/</link>
+    <description>Recent content in SaaS on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 04 Dec 2014 18:25:38 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/saas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Predictability – Get everything as a service – from IaaS, PaaS and SaaS to XaaS</title>
+      <link>https://maloymanna.github.io/2014/12/04/predictability-get-everything-as-a-service-from-iaas-paas-and-saas-to-xaas/</link>
+      <pubDate>Thu, 04 Dec 2014 18:25:38 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2014/12/04/predictability-get-everything-as-a-service-from-iaas-paas-and-saas-to-xaas/</guid>
+      <description>&lt;p&gt;The outsourcing model which led to the &lt;strong&gt;“on-demand” “as a service”&lt;/strong&gt; model, has taken off with increasing adoption of cloud-computing and mobility. What started out with the SaaS – software as a service model, has now diversified into several other services.&lt;/p&gt;&#xA;&lt;p&gt;Indeed, cloud computing has come to rest on three of these as its core pillars:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;SaaS: Software as a Service&lt;/li&gt;&#xA;&lt;li&gt;PaaS: Platform as a Service&lt;/li&gt;&#xA;&lt;li&gt;IaaS: Infrastructure as a Service&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Differentiating SaaS, PaaS and IaaS:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Review of the BT Summit – Cloud computing, SOA and BI tracks</title>
+      <link>https://maloymanna.github.io/2009/11/13/review-of-the-bt-summit--cloud-computing-soa-and-bi-tracks/</link>
+      <pubDate>Fri, 13 Nov 2009 08:12:30 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2009/11/13/review-of-the-bt-summit--cloud-computing-soa-and-bi-tracks/</guid>
+      <description>&lt;p&gt;I attended the &lt;a href=&#34;http://www.btmarch.com/btsummit/&#34;&gt;Business Technology Summit in Bangalore&lt;/a&gt; last week – 3rd and 4th November. There were 3 tracks on cloud computing, Service Oriented Architecture and Business Intelligence, and I chose a mix of sessions across each.&lt;/p&gt;&#xA;&lt;p&gt;**Overall impression:**The BT Summit was heavily focused on cloud computing with half of second day having a deep dive into Amazon’s EC2 cloud offering, and several keynotes. SOA and web services, REST and similar architectural sessions were interspersed but definitely not a first-class citizen. BI came a poor third with a poor choice of sessions, and more of a rehash of what is out there for everyone, rather than something on the cutting-edge including use of appliances and columnar databases, as also in-memory databases and use of Flash and AJAX for interactive BI front-ends.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SaaS BI - Software as a service model in Business Intelligence</title>
+      <link>https://maloymanna.github.io/2008/03/14/saas-bi-software-as-a-service-model-in-business-intelligence/</link>
+      <pubDate>Fri, 14 Mar 2008 04:29:16 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2008/03/14/saas-bi-software-as-a-service-model-in-business-intelligence/</guid>
+      <description>&lt;p&gt;SaaS has taken off in a big way in the past few years. And BI has not been lagging behind. For leading vendors like &lt;a href=&#34;http://www.businessobjects.com/&#34;&gt;BOBJ&lt;/a&gt; (an SAP company) or &lt;a href=&#34;http://www.cognos.com/&#34;&gt;Cognos&lt;/a&gt; (an IBM company), it&amp;rsquo;s going to be close to 2 years now since they started their SaaS BI.&lt;/p&gt;&#xA;&lt;p&gt;What exactly are the advantages of SaaS over the traditional approach?&lt;/p&gt;&#xA;&lt;p&gt;Benefits are aplenty, from zero costs of purchasing hardware, hiring of key IT personnel like system administrators and DBAs, to minimal implementation and maintenance costs. With CRM being made affordable to SME (small and medium-sized enterprises) by &lt;a href=&#34;http://www.salesforce.com&#34;&gt;salesforce.com&lt;/a&gt; (note the huge success of its &lt;strong&gt;AppExchange&lt;/strong&gt;), and the fact that large enterprise adoption of BI was complete, meant that the only scope for future growth in BI would come from upgrades of platforms (analogous to Microsoft&amp;rsquo;s Windows operating system - think of BOBJ upgrading from 6.5 to XI) or from expansion in the SME space with better offerings.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

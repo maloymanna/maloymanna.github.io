@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Innovation Lab on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/data-innovation-lab/</link>
+    <description>Recent content in Data Innovation Lab on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 19 Jan 2015 16:48:29 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/data-innovation-lab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Designing the future - Data Innovation Labs</title>
+      <link>https://maloymanna.github.io/2015/01/19/designing-the-future-data-innovation-labs/</link>
+      <pubDate>Mon, 19 Jan 2015 16:48:29 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2015/01/19/designing-the-future-data-innovation-labs/</guid>
+      <description>&lt;p&gt;With the ongoing Big data revolution, and the impending Internet of Things revolution, there has been a renewed enthusiasm in &amp;ldquo;innovation&amp;rdquo; around data.  Similar to the Labs concept started by Google (think Gmail Beta based on Ajax, circa 2004), more and more organizations, business communities, governments and countries are setting up Labs to foster innovation in data and analytics technologies. The idea behind these “data innovation labs” is to develop avant-garde data and analytics technologies and products in an agile fashion and move quickly from concept to production. Given the traditional bureaucratic setup in large organizations and governments, these Labs stand a better chance of fostering a culture of innovation, due to their being autonomous entities and their startup-mode culture leveraging agile methodologies.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.141.0">
+
+  <title>Azure IAM fundamentals &middot; Maloy Manna</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+    
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://maloymanna.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  <a class="pure-menu-heading brand" href="/">
+  <img src="/img/logo.png" width="140px">
+</a>
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Tech Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-folder fa-fw'></i>Categories</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/pm/"><i class='fa fa-list fa-fw'></i>Agile PM posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talks/"><i class='fa fa-comments fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone-square fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/itsmaloy" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/maloy" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/maloymanna" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2007 - 2025. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Azure IAM fundamentals</h1>
+</div>
+<div class="content">
+  
+</div>
+
+<div class="content">
+
+  <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2022/09/18</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/azure">Azure</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/security">Security</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/identity">identity</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/azure">azure</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/security">security</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/identity">identity</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/access">access</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p><span style="color: blue;">Identity and Access Management (IAM) </span> is a framework of policies and technologies to ensure the right people or machines to access the right assets or resources.</p>
+<p><strong>Identity:</strong></p>
+<p>In this digital age, an <strong>identity</strong> can be either a human (user), a software component (application) or a hardware component (computer, mobile or IoT device). Just like any identity document in the real-world, identities serve is a way to authenticate and authorize access to assets and resources.</p>
+<p><strong>Authentication</strong> is the process of challenging users, software or devices to verify their identities. Due to the relative ease of spoofing or hacking certain identifiers e.g. email-id, or username/password credentials, additional security measures like multi-factor authentication (MFA) may be required, especially for privileged accounts.
+MFA relies on multiple form factors for identifiers:</p>
+<ol>
+<li>Something you know, e.g. a password</li>
+<li>Something you have, e.g. a software token or one-time-password (OTP) code</li>
+<li>Something you are, e.g. biometrics (fingerprint or face)</li>
+</ol>
+<p><strong>Authorization:</strong> is the process of ensuring that correctly authenticated users, software or devices can access only those assets or resources, for which they have legitimate permissions. It determines what level of access a user, software or device has.</p>
+<p><strong>Identity provider:</strong> creates, stores and manages identity information usually in a centralized manner in order to provide authentication, authorization and auditing services.</p>
+<p>In Azure, the primary IAM solution is the Azure Active Directory.</p>
+<p><strong>How IAM works:</strong> Let&rsquo;s look at how IAM works in the context of Azure, i.e. with Microsoft Identity as the identity provider.</p>
+<ol>
+<li>The user initiates an authentication request on the client application. The client application requests tokens from Microsoft Identity.</li>
+<li>The identity provider or authorization server sends an <strong>ID token</strong> back to the client application, if the credentials are valid. The ID token contains information about the user.</li>
+<li>The identity provider requests and obtains the user consent and grants the client application access to the resource (or allow an API call on behalf of the user). This authorization is sent to the client application in an <strong>access token</strong>. The access token is attached to subsequent requests from the client application.</li>
+<li>The identity provider validates the access token.
+Note that the Microsoft identity platform allows developers to build applications which can sign-in all Microsoft identities, from Enterprise Azure AD (work or school accounts) to personal Microsoft accounts.</li>
+</ol>
+<p>Microsoft Identity platform uses the following protocols:</p>
+<ol>
+<li><strong>OpenID Connect/OAuth</strong> - OpenID Connect is used for authentication, and OAuth for authorization. OAuth is an open-standards identity management protocol. It uses tokens that are encrypted in transit and eliminates the need to share credentials. Uses JSON for describing the tokens and the protocol.</li>
+<li><strong>SAML/OAuth</strong> - SAML is used for authentication, and OAuth for authorization. SAML is an open standard which enables applications provide a <span style="color: blue;">single-sign-on (SSO) </span> experience to their users. SAML uses XML instead of JSON.</li>
+<li><strong>OpenID Connect/SAML</strong> - Both are used for authentication and enable single sign-on.</li>
+</ol>
+<p>At a higher, global level, Microsoft provides the following solutions for IAM:</p>
+<ol>
+<li>Azure Active Directory - provides IAM for cloud and hybrid environments</li>
+<li>Azure Active Directory External Identities - consumer IAM in the cloud</li>
+<li>Azure Active Directory Domain Services - join virtual machines in Azure to a domain without deploying domain controllers.</li>
+</ol>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://maloymanna.github.io/2022/08/24/azure-control-plane-data-plane/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://maloymanna.github.io/2022/08/24/azure-control-plane-data-plane/">Azure Control plane and Data plane</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://maloymanna.github.io/2022/10/02/azure-security-service-endpoint-vs-private-endpoint/">Azure Security - Service endpoint vs Private endpoint</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://maloymanna.github.io/2022/10/02/azure-security-service-endpoint-vs-private-endpoint/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'maloymanna';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://maloymanna.github.io/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

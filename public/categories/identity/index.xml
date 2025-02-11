@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Identity on Maloy Manna</title>
+    <link>https://maloymanna.github.io/categories/identity/</link>
+    <description>Recent content in Identity on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 12 Nov 2022 07:05:09 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/categories/identity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Modern authentication fundamentals</title>
+      <link>https://maloymanna.github.io/2022/11/12/modern-authentication-fundamentals/</link>
+      <pubDate>Sat, 12 Nov 2022 07:05:09 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2022/11/12/modern-authentication-fundamentals/</guid>
+      <description>&lt;p&gt;In my post on &lt;a href=&#34;https://maloymanna.github.io/2022/09/18/azure-iam-fundamentals&#34;&gt;Identity and Access Management (IAM)&lt;/a&gt;, I provided a very high-level view of how modern authentication works on the basis of a centralized Identity provider, like Azure Active Directory.&lt;/p&gt;&#xA;&lt;p&gt;In this post, let&amp;rsquo;s look at a Microsoft Azure video, where Azure AD Program manager &lt;a href=&#34;https://www.linkedin.com/in/stuartkwan/&#34;&gt;Stuart Kwan&lt;/a&gt; presents the basics of modern claims-based authentication in a lucid and eloquent way.&#xA;Clearly if a picture is worth a thousand words, a video is probably worth a million!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Azure IAM fundamentals</title>
+      <link>https://maloymanna.github.io/2022/09/18/azure-iam-fundamentals/</link>
+      <pubDate>Sun, 18 Sep 2022 07:43:21 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2022/09/18/azure-iam-fundamentals/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;color: blue;&#34;&gt;Identity and Access Management (IAM) &lt;/span&gt; is a framework of policies and technologies to ensure the right people or machines to access the right assets or resources.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Identity:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;In this digital age, an &lt;strong&gt;identity&lt;/strong&gt; can be either a human (user), a software component (application) or a hardware component (computer, mobile or IoT device). Just like any identity document in the real-world, identities serve is a way to authenticate and authorize access to assets and resources.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

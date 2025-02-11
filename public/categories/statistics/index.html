@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.141.0">
+
+  <title>Statistics &middot; Maloy Manna</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+    
+  <link rel="alternate" type="application/rss+xml" title="Maloy Manna"
+    href='/categories/statistics/index.xml' />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://maloymanna.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  <a class="pure-menu-heading brand" href="/">
+  <img src="/img/logo.png" width="140px">
+</a>
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Tech Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-folder fa-fw'></i>Categories</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/pm/"><i class='fa fa-list fa-fw'></i>Agile PM posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talks/"><i class='fa fa-comments fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone-square fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href='/categories/statistics/index.xml'><i
+          class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/itsmaloy" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/maloy" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/maloymanna" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2007 - 2025. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Statistics</h1>
+</div>
+
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2015/01/04/a-brief-introduction-to-statistics-part-3-statistical-inference/">A Brief Introduction to Statistics – Part 3 - Statistical Inference</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2015/01/04</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/statistics">Statistics</a>
+    
+  </div>
+  
+  
+
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p><strong>Statistical inference</strong> is concerned primarily with understanding the quality of parameter estimates.</p>
+<p><img src="/post/introduction-to-statistical-inference.jpg?w=300" alt="Statistical Inference"></p>
+<p>The sampling distribution represents the distribution of the point estimates based on <strong><em><code>samples of a ﬁxed size</code></em></strong> from a certain population. It is useful to think of a particular <strong><code>point estimate</code></strong> as being drawn from such a distribution. Understanding the concept of a sampling distribution is central to understanding statistical inference.</p>
+<p>A <strong><code>sample statistic</code></strong> is a point estimate for a population parameter, e.g. the sample mean is used to estimate the population mean. <em><span style="color: blue;">Note that point estimate and sample statistic are synonymous.</span></em> Recognize that point estimates (such as the sample mean) will vary from one sample to another, and define this variability as sampling variability (sometimes also called sampling variation).</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2015/01/04/a-brief-introduction-to-statistics-part-3-statistical-inference/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2014/12/03/a-brief-introduction-to-statistics-part-2-probability-and-distributions/">A Brief Introduction to Statistics - Part 2 - Probability and Distributions</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/12/03</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/statistics">Statistics</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/bayes-theorem">bayes theorem</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/conditional-probability">conditional probability</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/law-of-large-numbers">law of large numbers</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/probability">probability</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/random-variable">random variable</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>Probability concepts form the foundation for statistics.</p>
+<p><img src="/post/odds1.png?w=300" alt="Odds-Probability"></p>
+<p><strong>A formal definition of probability</strong>:</p>
+<p>The probability of an outcome is the proportion of times the outcome would
+occur if we observed the random process an inﬁnite number of times.<br>
+This is a corollary of the law of large numbers:<br>
+As more observations are collected, the proportion of occurrences with a particular outcome converges to the probability of that outcome.</p>
+<p><strong>Disjoint</strong> (mutually exclusive) events as events that cannot both happen at the same time. i.e. If <code>A</code> and <code>B</code> are disjoint, <strong><code>P(A and B) = 0</code></strong><br>
+<strong>Complementary</strong> outcomes as mutually exclusive outcomes of the same random process whose probabilities add up to 1.<br>
+If <code>A</code> and <code>B</code> are complementary, <strong><code>P(A) + P(B) = 1</code></strong></p>
+  </p>
+
+  
+  <footer>
+    <a href="/2014/12/03/a-brief-introduction-to-statistics-part-2-probability-and-distributions/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2014/10/28/a-brief-introduction-to-statistics-part-1/">A Brief Introduction to Statistics - Part 1</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2014/10/28</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/data-science">Data science</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/statistics">Statistics</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/alternative-model">alternative model</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/box-plot">box plot</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/categorical">categorical</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/explanatory-variable">explanatory variable</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/histograms">histograms</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/hypothesis-test">hypothesis test</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/independence-model">independence model</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/numerical">numerical</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/response-variable">response variable</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/sampling">sampling</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/statistical-inference">statistical inference</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/statistics">statistics</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/types-of-variables">types of variables</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p><strong>What is Statistics?</strong><br>
+Collected observations are called <strong>data</strong>. <strong>Statistics</strong> is the study of <em>how best to collect, analyze, and draw conclusions from data</em>. Each observation in data is called a <strong>case</strong>. Characteristics of the case are called <strong>variables</strong>. With a matrix/table analogy, a case is a row while a variable is a column.</p>
+<p><img src="/post/correlation.jpg?w=300" alt="Statistics - Correlation"><br>
+Statistics - Correlation (Courtesy: xkcd.com)</p>
+<p><strong>Types of variables:</strong></p>
+<ul>
+<li>
+<p><strong>Numerical</strong> - Can be <strong>discrete</strong> or <strong>continuous</strong>, and can take a wide range of numerical values.</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2014/10/28/a-brief-introduction-to-statistics-part-1/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
+    <h2><a href="https://maloymanna.github.io/2008/07/08/spc--using-statistics-to-get-insight-from-bi/">SPC – Using statistics to get insight from BI</a></h2>
+
+    <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2008/07/08</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/data-science">Data science</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/statistics">Statistics</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/control-charts">control charts</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/pdca">PDCA</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/spc">SPC</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/statistical-process-control">statistical process control</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  <p>There is a well known adage that if you keep doing the same thing and expect different results, that is a sure sign of idiocy.</p>
+<p>In the BI world too, we come across several instances where people take it for granted that the <em>‘BI tool’</em> will magically generate insight and spur <em>‘intelligence’</em> rather than <em>‘idiocy’</em>. Yet the very practices of reporting the same measures, or of creating reports for metrics just because they are now made available by the tool, without sparing any <em>‘intelligence’</em> into what will generate insight is a major cause  of failures of BI.</p>
+  </p>
+
+  
+  <footer>
+    <a href="/2008/07/08/spc--using-statistics-to-get-insight-from-bi/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+</div>
+
+</div>
+</div>
+<script src="https://maloymanna.github.io/js/ui.js"></script>
+
+
+
+
+</body>
+</html>

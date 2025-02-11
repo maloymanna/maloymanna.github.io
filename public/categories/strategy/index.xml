@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Strategy on Maloy Manna</title>
+    <link>https://maloymanna.github.io/categories/strategy/</link>
+    <description>Recent content in Strategy on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 04 Dec 2014 18:25:38 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/categories/strategy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Predictability – Get everything as a service – from IaaS, PaaS and SaaS to XaaS</title>
+      <link>https://maloymanna.github.io/2014/12/04/predictability-get-everything-as-a-service-from-iaas-paas-and-saas-to-xaas/</link>
+      <pubDate>Thu, 04 Dec 2014 18:25:38 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2014/12/04/predictability-get-everything-as-a-service-from-iaas-paas-and-saas-to-xaas/</guid>
+      <description>&lt;p&gt;The outsourcing model which led to the &lt;strong&gt;“on-demand” “as a service”&lt;/strong&gt; model, has taken off with increasing adoption of cloud-computing and mobility. What started out with the SaaS – software as a service model, has now diversified into several other services.&lt;/p&gt;&#xA;&lt;p&gt;Indeed, cloud computing has come to rest on three of these as its core pillars:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;SaaS: Software as a Service&lt;/li&gt;&#xA;&lt;li&gt;PaaS: Platform as a Service&lt;/li&gt;&#xA;&lt;li&gt;IaaS: Infrastructure as a Service&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Differentiating SaaS, PaaS and IaaS:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>BI maturity models</title>
+      <link>https://maloymanna.github.io/2012/01/08/bi-maturity-models/</link>
+      <pubDate>Sun, 08 Jan 2012 20:20:04 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2012/01/08/bi-maturity-models/</guid>
+      <description>&lt;p&gt;With most companies listing BI within their top agenda, and with the rising costs and confusion around proving the worth of BI and justifying its costs, it makes sense to try and understand the evolution of BI adoption and maturity in organizations. Knowing what is possible with BI and knowing the challenges and pitfalls allows organizations to plan their BI strategy and implementation.&lt;/p&gt;&#xA;&lt;p&gt;There are quite a few schools of thought and available literature on the lifecycle of BI implementation and maturity in organizations, defining the models. Most are proprietary models provided by consultancies, which are primarily based on technical point of view or applies the knowledge management function to BI, following the &lt;strong&gt;Ladder of Business Intelligence (LOBI) model&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Review of the BT Summit – Cloud computing, SOA and BI tracks</title>
+      <link>https://maloymanna.github.io/2009/11/13/review-of-the-bt-summit--cloud-computing-soa-and-bi-tracks/</link>
+      <pubDate>Fri, 13 Nov 2009 08:12:30 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2009/11/13/review-of-the-bt-summit--cloud-computing-soa-and-bi-tracks/</guid>
+      <description>&lt;p&gt;I attended the &lt;a href=&#34;http://www.btmarch.com/btsummit/&#34;&gt;Business Technology Summit in Bangalore&lt;/a&gt; last week – 3rd and 4th November. There were 3 tracks on cloud computing, Service Oriented Architecture and Business Intelligence, and I chose a mix of sessions across each.&lt;/p&gt;&#xA;&lt;p&gt;**Overall impression:**The BT Summit was heavily focused on cloud computing with half of second day having a deep dive into Amazon’s EC2 cloud offering, and several keynotes. SOA and web services, REST and similar architectural sessions were interspersed but definitely not a first-class citizen. BI came a poor third with a poor choice of sessions, and more of a rehash of what is out there for everyone, rather than something on the cutting-edge including use of appliances and columnar databases, as also in-memory databases and use of Flash and AJAX for interactive BI front-ends.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Agile Development for BI</title>
+      <link>https://maloymanna.github.io/2008/04/07/agile-development-for-bi/</link>
+      <pubDate>Mon, 07 Apr 2008 05:43:39 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2008/04/07/agile-development-for-bi/</guid>
+      <description>&lt;p&gt;How can you reduce development costs and improve software reliability and accuracy at the same time? How can you make IT work together with Business while architect-ing your BI applications? If these goals sound contradictory and difficult to achieve, then Agile development may well fit the bill. Indeed in numerous BI projects, one or the other flavor of Agile is used to attain these very goals.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Defining Agile&lt;/strong&gt;&lt;/em&gt;&#xA;There are several Agile development methodologies available:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Acquisitions in BI - End of the best of breed?</title>
+      <link>https://maloymanna.github.io/2007/12/20/acquisitions-in-bi-end-of-the-best-of-breed/</link>
+      <pubDate>Thu, 20 Dec 2007 05:26:41 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2007/12/20/acquisitions-in-bi-end-of-the-best-of-breed/</guid>
+      <description>&lt;p&gt;Last time I talked about the trends in the BI space. Let&amp;rsquo;s look into one of those trends - M&amp;amp;As and how it is shaping BI as we know it.&lt;/p&gt;&#xA;&lt;p&gt;A recent &lt;a href=&#34;http://www.businessweek.com/technology/content/nov2007/tc20071112_678294.htm&#34;&gt;BusinessWeek article&lt;/a&gt; claimed the end of the &lt;strong&gt;best-of-breed&lt;/strong&gt; approach to BI with the demise of the major pure-play BI vendors like &lt;a href=&#34;http://www.businessobjects.com&#34;&gt;BOBJ&lt;/a&gt; now owned by &lt;a href=&#34;http://www.sap.com&#34;&gt;SAP&lt;/a&gt; thanks to a friendly takeover or Hyperion acquired by &lt;a href=&#34;http://www.oracle.com&#34;&gt;Oracle &lt;/a&gt;or the latest - &lt;a href=&#34;http://www.ibm.com&#34;&gt;IBM&lt;/a&gt;&amp;rsquo;s acquisition of &lt;a href=&#34;http://www.cognos.com&#34;&gt;Cognos&lt;/a&gt;. While it is true that some of the major players have been acquired by the bigger businesses, there is no reason as to why the mid-size companies should go out of business.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

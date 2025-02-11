@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scrum on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/scrum/</link>
+    <description>Recent content in Scrum on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 05 Jan 2017 22:02:10 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/scrum/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An introduction to Scrum</title>
+      <link>https://maloymanna.github.io/pm/an-introduction-to-scrum/</link>
+      <pubDate>Thu, 05 Jan 2017 22:02:10 +0000</pubDate>
+      <guid>https://maloymanna.github.io/pm/an-introduction-to-scrum/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Scrum&lt;/strong&gt; is the most popular agile framework out there. It uses 1 to 4 week iterations called sprints to deliver products. Developed by Jeff Sutherland and Ken Schwaber, it has been used since the nineties, i.e. even before the 2001 agile manifesto was written. The word scrum is taken from rugby.&lt;/p&gt;&#xA;&lt;p&gt;Being a framework, scrum needs to be tailored to your situation. A scrum team is supposed to be cross-functional and self-organizing in order to minimize dependencies and wait times while improving collaboration.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Agile Development for BI</title>
+      <link>https://maloymanna.github.io/2008/04/07/agile-development-for-bi/</link>
+      <pubDate>Mon, 07 Apr 2008 05:43:39 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2008/04/07/agile-development-for-bi/</guid>
+      <description>&lt;p&gt;How can you reduce development costs and improve software reliability and accuracy at the same time? How can you make IT work together with Business while architect-ing your BI applications? If these goals sound contradictory and difficult to achieve, then Agile development may well fit the bill. Indeed in numerous BI projects, one or the other flavor of Agile is used to attain these very goals.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Defining Agile&lt;/strong&gt;&lt;/em&gt;&#xA;There are several Agile development methodologies available:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

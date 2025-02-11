@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.141.0">
+
+  <title>Developing a Business Objects security model - BO XI 3.1 &middot; Maloy Manna</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+    
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://maloymanna.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  <a class="pure-menu-heading brand" href="/">
+  <img src="/img/logo.png" width="140px">
+</a>
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Tech Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/categories/"><i class='fa fa-folder fa-fw'></i>Categories</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/pm/"><i class='fa fa-list fa-fw'></i>Agile PM posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talks/"><i class='fa fa-comments fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/contact/"><i class='fa fa-phone-square fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/itsmaloy" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/maloy" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/maloymanna" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2007 - 2025. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Developing a Business Objects security model - BO XI 3.1</h1>
+</div>
+<div class="content">
+  
+</div>
+
+<div class="content">
+
+  <div class="post-meta">
+
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2009/08/28</time>
+  </div>
+
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-category" href="https://maloymanna.github.io/categories/sap-businessobjects">SAP BusinessObjects</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/bobj">BOBJ</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/boxi">boxi</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/business-objects">business objects</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/sap">SAP</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://maloymanna.github.io/tags/security-model">security model</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>While developing a Business Objects security model, you need to focus on the different types of security:</p>
+<ul>
+<li><strong>Functional Security</strong> - this would govern access to specific application features, e.g. editing reports, drilling down, ability to schedule reports etc.</li>
+<li><strong>Data Security</strong> - this governs access to specific data - rows or columns or cells as per authorization</li>
+<li><strong>Infrastructure Security</strong> - governs physical and electronic access to systems</li>
+</ul>
+<p>The infrastructure security is the first to be designed. This typically happens when the architecture is being drawn up. It is important to get as much early visibility into the various ways the system is likely to be used, not only in the present but also in the foreseeable future, so that adjustments and capacity for future planning can be done to the extent possible. This also helps in deciding on the type of data security that would be required initially, though this can change over time.</p>
+<p>The various security considerations for access control include:</p>
+<ul>
+<li><strong>Identification</strong>- whether it is a valid user? Usually taken care of by password management</li>
+<li><strong>Authentication</strong>- whether the user is allowed to use the system? This can be done by BO or externally with a third party tool, including but not limited to LDAP / Active Directory etc.</li>
+<li><strong>Authorization</strong>- governs fine grained entitlements or access - which parts of the application and data can the user access?</li>
+</ul>
+<p>Let us look at the security approaches to authorization. (I will cover the various approaches to authentication and single-sign-on in a separate post).</p>
+<p><strong>Security policies can be held in the BO repository (functional + data security)</strong></p>
+<ul>
+<li>Authentication can be performed by BO or externally</li>
+<li>Incorporates security policies in the BO repository</li>
+<li>Supports row-level and column-level security</li>
+<li>Data security can be controlled at application, connection, universe and report level</li>
+</ul>
+<p><strong>Custom security utilizing security tables, and joins forced in Universe Designer  (functional + data security)</strong></p>
+<ul>
+<li>Includes custom-built security tables to store users, groups, privileges etc. The joins to these are forced in report queries.</li>
+<li>BO users are mapped to data in these tables - the data can be maintained with ETL processes</li>
+<li>The @BOUSER variable can be used to get the user logins and can be used for implementing row/column level security</li>
+<li>Allows both user-centric and object-centric views by querying the security tables</li>
+</ul>
+<p><strong>Table mapping or virtual private views - can be implemented with Oracle VPD and label security</strong></p>
+<ul>
+<li>Allows fine grained access control with airtight cell-level security if required</li>
+<li>Policies setup in Oracle VPD, labels control column access, multiple views for multiple users</li>
+<li>Works for ad-hoc queries also</li>
+<li>Requires thorough testing to prevent sql-injection attacks; can lead to performance problems due to additional predicates</li>
+<li>Can easily become overly complex; however a must-have where airtight security is required</li>
+</ul>
+<p><strong>Third party authorization using SiteMinder or LDAP or Active Directory</strong></p>
+<ul>
+<li>Authorization is based on directory entries in LDAP or Active Directory (people/group/role/IP address or rule)</li>
+<li>Fine grained access control still requires some form of usage of BO or the database for auxiliary authorization.</li>
+</ul>
+<p>What should be the preferred approach? The answer is &ldquo;Well, it depends!&rdquo; &#x1f60f; The approach depends on what is actually required and is feasible at your particular organization. In all cases however (except for VPD), there are a few best practices to be followed, if BO is used and CMC is used to configure security:</p>
+<ul>
+<li>
+<p>Grant rights to groups on folders, rather than individual objects to minimize complexity</p>
+</li>
+<li>
+<p>Use pre-defined rights wherever possible, and Custom Access Levels instead of Advanced Rights</p>
+</li>
+<li>
+<p>Avoid breaking inheritance to minimize complexity and simplify maintenance</p>
+</li>
+<li>
+<p>Add multiple users to the Administrators group, rather than sharing the administrator account, for better traceability</p>
+</li>
+<li>
+<p>Set up an audit policy and periodically review your deployment</p>
+</li>
+<li>
+<p>Document and maintain the security structure outside the <strong>CMC</strong>- a spreadsheet can be a good choice.</p>
+</li>
+<li>
+<p>Use <strong>Permissions Explorer</strong>, **Check Relationships **and <strong>Security Query</strong> to diagnose and correct security issues. These are also useful to verify tasks are completed without issues, while adding/deleting/modifying principals/objects/rights.</p>
+</li>
+<li>
+<p>Allocate time and document the process for the administrators and support staff and prepare for their training on new workflows in CMC in BO XI 3.1</p>
+<p>-Maloy</p>
+</li>
+</ul>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://maloymanna.github.io/2009/07/26/change-the-location-google-desktop-search-indexes-your-data/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://maloymanna.github.io/2009/07/26/change-the-location-google-desktop-search-indexes-your-data/">Change the location Google Desktop Search indexes your data</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://maloymanna.github.io/2009/09/15/evolution-of-the-bo-xi-platform-from-xi-r2-to-xi-3-1-sp2/">Evolution of the BO XI platform - from XI R2 to XI 3.1 SP2</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://maloymanna.github.io/2009/09/15/evolution-of-the-bo-xi-platform-from-xi-r2-to-xi-3-1-sp2/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'maloymanna';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://maloymanna.github.io/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

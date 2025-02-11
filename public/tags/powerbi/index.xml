@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PowerBI on Maloy Manna</title>
+    <link>https://maloymanna.github.io/tags/powerbi/</link>
+    <description>Recent content in PowerBI on Maloy Manna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2007 - 2025. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 08 Jul 2018 07:21:12 +0000</lastBuildDate>
+    <atom:link href="https://maloymanna.github.io/tags/powerbi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Power BI Security - Under the hood</title>
+      <link>https://maloymanna.github.io/2018/07/08/power-bi-security-under-the-hood/</link>
+      <pubDate>Sun, 08 Jul 2018 07:21:12 +0000</pubDate>
+      <guid>https://maloymanna.github.io/2018/07/08/power-bi-security-under-the-hood/</guid>
+      <description>&lt;p&gt;Microsoft has been instrumental in pushing the envelope on managed self-service BI with it&amp;rsquo;s Power BI SaaS platform.&lt;br&gt;&#xA;I wrote about this back in &lt;a href=&#34;https://maloymanna.github.io/2009/11/13/review-of-the-bt-summit-cloud-computing-soa-and-bi-tracks/&#34;&gt;2009&lt;/a&gt; [1], when Microsoft was working on Project Gemini (later PowerPivot) used SQL Server Analysis Services as an in-memory engine, with data compression to really bring BI to the masses, so to speak.&lt;br&gt;&#xA;Since then, Microsoft&amp;rsquo;s vision of self-service BI evolved from providing Excel plug-ins viz. PowerPivot, Data Explorer (later renamed PowerQuery) and sharing bulky Excel files on SharePoint (with Power View [2]) to a manageable managed-self-service BI with the launch of Power BI in 2015.&lt;br&gt;&#xA;Today, Power BI is powered by Azure, and deployed as a SaaS across datacenters in Microsoft regions across the world.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
