@@ -26,16 +26,16 @@ So what exactly is **Big Data**?
 
 The table below shows the growth of data and the new terminology that has been coined to address the growth of data volumes.  
 
-<table style="border-collapse: separate; border-spacing: 6px;">
-<tr><th>Amount of data</th><th>Terminology</th><th>Storage</th><th>Real-world analogy</th></tr>
-<tr><td>10<sup>3</sup> bytes</td><td>Kilobytes (kB)</td><td>1.44 MB High-density floppy disk</td><td>Files, folders</td></tr>
-<tr><td>10<sup>6</sup> bytes</td><td>Megabytes (MB) </td><td>Disks, tape</td><td>Folders, cabinets</td></tr>
-<tr><td>10<sup>9</sup> - 10<sup>12</sup> bytes</td><td>Gigabytes (GB) - Terabytes (TB)</td><td>Disk arrays</td><td>Library</td></tr>
-<tr><td>10<sup>15</sup> bytes</td><td>Petabytes (PB)</td><td>Cloud</td><td>...</td></tr>
-<tr><td>10<sup>18</sup> bytes</td><td>Exabytes (EB)</td><td>Cloud</td><td>...</td></tr>
-<tr><td>10<sup>21</sup> bytes</td><td>Zettabytes (ZB)</td><td>Cloud</td><td>...</td></tr>
-<tr><td>10<sup>24</sup> bytes</td><td>Yottabytes (YB)</td><td>Cloud</td><td>...</td></tr>
-</table>
+ **Amount of data** | **Terminology**                 | **Storage**                      | **Real-world analogy** 
+--------------------|---------------------------------|----------------------------------|------------------------
+ 103 bytes          | Kilobytes (kB)                  | 1.44 MB High-density floppy disk | Files, folders         
+ 106 bytes          | Megabytes (MB)                  | Disks, tape                      | Folders, cabinets      
+ 109 - 1012 bytes   | Gigabytes (GB) - Terabytes (TB) | Disk arrays                      | Library                
+ 1015 bytes         | Petabytes (PB)                  | Cloud                            | ...                    
+ 1018 bytes         | Exabytes (EB)                   | Cloud                            | ...                    
+ 1021 bytes         | Zettabytes (ZB)                 | Cloud                            | ...                    
+ 1024 bytes         | Yottabytes (YB)                 | Cloud                            | ...                    
+
 
 **Volume, Velocity, Variety & Value**
 

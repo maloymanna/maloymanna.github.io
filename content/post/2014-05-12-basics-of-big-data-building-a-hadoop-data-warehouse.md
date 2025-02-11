@@ -47,66 +47,12 @@ _The new Hadoop architecture (courtesy Hortonworks):_
 **Comparing the RDBMS and Hadoop data warehousing stack:**
 
 The heavy-lifting for any data warehouse is the ETL (Extract-Transform-Load) or ELT processing. The processing layers involved in the data warehousing ETL are different across conventional RDBMS and Hadoop.
-<table width="482" style="height:370px;" >
-<tbody >
-<tr >
 
-<td >**Layer**
-</td>
-
-<td >**Conventional RDBMS**
-</td>
-
-<td >**Hadoop**
-</td>
-
-<td >**Advantages of Hadoop over conventional RDBMS**
-</td>
-</tr>
-<tr >
-
-<td >**Storage**
-</td>
-
-<td >Database tables
-</td>
-
-<td >HDFS file system
-</td>
-
-<td >_HDFS is purpose-built for extreme IO speeds_
-</td>
-</tr>
-<tr >
-
-<td >**Metadata**
-</td>
-
-<td >System tables
-</td>
-
-<td >HCatalog
-</td>
-
-<td >_All clients can use HCatalog to read files._
-</td>
-</tr>
-<tr >
-
-<td >**Query**
-</td>
-
-<td >SQL query engine
-</td>
-
-<td >Multiple engines (SQL and non-SQL)
-</td>
-
-<td >_Multiple query engines like Hive or Impala are available._
-</td>
-</tr>
-</tbody>
-</table>  
+| Layer | Conventional RDBMS | Hadoop | Advantages of Hadoop over conventional RDBMS |
+| --- | --- | --- | --- |
+| Storage | Database tables | HDFS file system | HDFS is purpose-built for extreme IO speeds |
+| Metadata | System tables | HCatalog | All clients can use HCatalog to read files. |
+| Query | SQL query engine | Multiple engines (SQL and non-SQL) | Multiple query engines like Hive or Impala are available. |  
 
 **The Hadoop USP: Exploratory analytics**
 
@@ -150,6 +96,6 @@ Due to low storage costs (50 to 100 times less on a per-TB basis), Hadoop is wel
 
 With ELT loads driving up to 80% of database capacity, Hadoop can also be used as a staging area for data preparation and ELT to allow offloading data processing from the EDW
 
-With the big data deluge, and its 3 equally challenging dimensions of <font color="blue">volume, velocity and variety </font> - existing conventional platforms are finding it difficult to meet all of an organization’s data warehousing needs along with ETL processing times and availability SLAs. The balance of power keeps tilting towards Hadoop with newer tools and appliances extending the capabilities of Hadoop and with its superior price/performance ratio, building a data warehouse leveraging Hadoop needs to be given serious consideration.
+With the big data deluge, and its 3 equally challenging dimensions of {{< blue-text >}}volume, velocity and variety {{< /blue-text >}} - existing conventional platforms are finding it difficult to meet all of an organization’s data warehousing needs along with ETL processing times and availability SLAs. The balance of power keeps tilting towards Hadoop with newer tools and appliances extending the capabilities of Hadoop and with its superior price/performance ratio, building a data warehouse leveraging Hadoop needs to be given serious consideration.
 
 Read the series on Big Data: [Part-1 : Basics](https://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/), [Part-2 : Hadoop](https://biguru.wordpress.com/2014/04/13/basics-of-big-data-part-2-hadoop/), [Part-3 : Hadoop data warehouse](https://biguru.wordpress.com/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/) and [Part-4 : NoSQL](https://biguru.wordpress.com/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/)

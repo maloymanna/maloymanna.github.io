@@ -30,7 +30,7 @@ Granting consent can happen in 3 ways:
 1. **User consent** - requested when the user attempts to sign-in to the client application for the first time.  
 ![User consent prompt](/post/user-consent-prompt.png)
 
-2. **Admin consent** - In many cases, an admin may be required to grant consent : either application permissions or high-privilege delegated permissions. Administrators can grant consent for themselves or <span style="color: blue; ">_for the entire organization_</span>. Examples of some admin-restricted permissions (especially in organizations as opposed to individual consumers) could be reading all users' full profiles using User.Read.All, or reading all groups in a tenant with `Groups.Read.All`.  
+2. **Admin consent** - In many cases, an admin may be required to grant consent : either application permissions or high-privilege delegated permissions. Administrators can grant consent for themselves or _{{< blue-text >}}for the entire organization{{< /blue-text >}}_. Examples of some admin-restricted permissions (especially in organizations as opposed to individual consumers) could be reading all users' full profiles using `User.Read.All`, or reading all groups in a tenant with `Groups.Read.All`.  
 ![Admin consent prompt](/post/admin-consent-1.png)
 
 If admins have not granted consent, and the client application requests delegated permissions that require admin consent, the users receivs an error message that says they're unauthorized to consent to the permissions, and are asked to contact their admin for access to the app.  

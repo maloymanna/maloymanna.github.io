@@ -16,7 +16,7 @@ tags:
 - access
 ---
 
-<span style="color: blue; ">Identity and Access Management (IAM) </span> is a framework of policies and technologies to ensure the right people or machines to access the right assets or resources.
+{{< blue-text >}}Identity and Access Management (IAM) {{< /blue-text >}} is a framework of policies and technologies to ensure the right people or machines to access the right assets or resources.
 
 
 **Identity:**  
@@ -45,7 +45,7 @@ Note that the Microsoft identity platform allows developers to build application
 
 Microsoft Identity platform uses the following protocols:
 1. **OpenID Connect/OAuth** - OpenID Connect is used for authentication, and OAuth for authorization. OAuth is an open-standards identity management protocol. It uses tokens that are encrypted in transit and eliminates the need to share credentials. Uses JSON for describing the tokens and the protocol.  
-2. **SAML/OAuth** - SAML is used for authentication, and OAuth for authorization. SAML is an open standard which enables applications provide a <span style="color: blue; ">single-sign-on (SSO) </span> experience to their users. SAML uses XML instead of JSON.  
+2. **SAML/OAuth** - SAML is used for authentication, and OAuth for authorization. SAML is an open standard which enables applications provide a {{< blue-text >}}single-sign-on (SSO) {{< /blue-text >}} experience to their users. SAML uses XML instead of JSON.  
 3. **OpenID Connect/SAML** - Both are used for authentication and enable single sign-on.
 
 At a higher, global level, Microsoft provides the following solutions for IAM:

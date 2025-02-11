@@ -21,7 +21,7 @@ tags:
 
 This is the fourth part of a series of posts on big data. Read the previous posts here: [Part-1](http://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/), [Part-2](http://biguru.wordpress.com/2014/04/13/basics-of-big-data-part-2-hadoop/) and [Part-3](http://biguru.wordpress.com/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/).
 
-With the ongoing data explosion, and the improvement in technologies able to deal with it, businesses are turning to leverage this <font color="blue">big data</font> for mining insights to gain competitive advantage, reinvent business models and create new markets.
+With the ongoing data explosion, and the improvement in technologies able to deal with it, businesses are turning to leverage this {{< blue-text >}}big data{{< /blue-text >}} for mining insights to gain competitive advantage, reinvent business models and create new markets.
 
 A huge amount of this "**big data**" volumes comes from system logs, user generated content on social media like Twitter or Facebook, sensor data and the like. All of these types of data are what we call "unstructured". Businesses which do not leverage the vast amount of unstructured data available to them, risk losing out valuable insights from such data types.
 
@@ -55,12 +55,11 @@ In the data warehousing space as well, as more and more data started getting col
 "**Sharding**" a database, or partitioning it across several server instances is possible with SQL systems, but is complex. Led by Google, Facebook, LinkedIn and Amazon, there started a search for alternative technologies and systems which could scale rapidly for massively interactive internet applications, as well as shift to an **MPP** (massively parallel-processing) paradigm for data warehousing.  
 This led to open source NoSQL projects which were soon followed by commercial companies invested in NoSQL technology.  NoSQL databases usually support "**auto-sharding**", i.e. they natively and automatically spread data across several distributed servers.
 
-Initial NoSQL systems sacrificed **ACID**<sup>+</sup> concepts  as a trade-off for scalability.  Several key-value NoSQL databases used the "**eventual-consistency**" **BASE**<sup>°</sup> model to achieve high-availability. However with advances in technology like in-memory and increasing adoption of shared-nothing architectures, these systems have improved greatly to support ACID concepts, and now offer SQL as one of their main interfaces. These are now being called as NewSQL systems.
+Initial NoSQL systems sacrificed **ACID{{< sup >}}+{{< /sup >}}** concepts  as a trade-off for scalability.  Several key-value NoSQL databases used the "**eventual-consistency**" **BASE{{< sup >}}°{{< /sup >}}** model to achieve high-availability. However with advances in technology like in-memory and increasing adoption of shared-nothing architectures, these systems have improved greatly to support ACID concepts, and now offer SQL as one of their main interfaces. These are now being called as NewSQL systems.
 
-<font color="blue"><sup>+</sup>_ACID concepts - key pillars of relational databases and a must for transactions.  
-A- Atomicity, C - Consistency, I- Isolation, D- Durability_
-
-<sup>°</sup>_BASE : Basically Available, Soft-state, Eventual consistency_</font>
+_{{< blue-text >}}{{< sup >}}+{{< /sup >}}ACID concepts - key pillars of relational databases and a must for transactions.<br>  
+A- Atomicity, C - Consistency, I- Isolation, D- Durability<br><br>
+{{< sup >}}°{{< /sup >}}BASE : Basically Available, Soft-state, Eventual consistency{{< /blue-text >}}_
 
 **NoSQL data models**
 
@@ -91,9 +90,9 @@ The key reasons for the trend to move away from relational systems to the NoSQL 
 
 **The best of both worlds - NewSQL**
 
-Most NoSQL systems initially did not offer any SQL interfaces, rather object-oriented APIs. However, most new systems now are increasingly supporting ACID concepts and hence transactions, as well as provide SQL interfaces. The recent proliferation of SQL-on-Hadoop product offerings in the big-data space is a case in point. These new systems with transaction support and SQL interfaces are labeled **NewSQL<sup>++</sup>** systems.
+Most NoSQL systems initially did not offer any SQL interfaces, rather object-oriented APIs. However, most new systems now are increasingly supporting ACID concepts and hence transactions, as well as provide SQL interfaces. The recent proliferation of SQL-on-Hadoop product offerings in the big-data space is a case in point. These new systems with transaction support and SQL interfaces are labeled **NewSQL {{< sup >}}++{{< /sup >}}** systems.
 
-<font color="blue">_<sup>++</sup>NewSQL - term coined by 451 Group analyst Matthew Aslett in a 2011 research paper_ </font>
+_{{< blue-text >}}{{< sup >}}++{{< /sup >}} NewSQL - term coined by 451 Group analyst Matthew Aslett in a 2011 research paper {{< /blue-text >}}_
 
 While NoSQL systems have been recognized to be better than relational databases for scalability and performance, and have simplified automated sharding of databases, there appear to be higher costs and significant development and refactoring efforts are required for NoSQL systems when compared to SQL systems. Moreover in a NewSQL system - transaction support (consistency) and usability of SQL systems can be combined with the high availability and scalability of NoSQL systems. This provides the best of both worlds. One of the significant NewSQL systems is **F1** - _a system built by Google to support it's ad business - Adwords_, and described in the whitepaper titled[ F1: A Distributed SQL Database that scales](http://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/en/us/pubs/archive/41344.pdf).
 

@@ -31,19 +31,19 @@ With the amount of [information explosion](http://blogs.zdnet.com/Gardner/?p=309
 
 ![Exit_Google_Desktop](/post/exit_google_desktop.png)
 
-2. Open Windows Explorer and navigate to C:\Documents and Settings\<username>Local Settings\Application Data\Google\<google desktop search>
+2. Open Windows Explorer and navigate to `C:\Documents and Settings\<username>Local Settings\Application Data\Google\<google desktop search>`
 
 ![Navigate_To_Google_Desktop_Search_Folder](/post/navigate_to_google_desktop_search_folder.png)
 
 Note: If you’re unable to see “Local Settings” – (it’s a hidden folder) – change your folder options from Tools – View – Show hidden files and folders.
 
-3. Move the <google desktop search> folder to a different drive, e.g. D:\ Google Desktop\<google desktop search>
+3. Move the `<google desktop search>` folder to a different drive, e.g. `D:\ Google Desktop\<google desktop search>`
 
 4. Open the Windows registry editor from Start – Run – typing regedit – Hit Enter.
 
 5. Navigate to HKEY_CURRENT_USER\Software\Google\Google Desktop.
 
-6. Select the “data_dir” key in right pane, double-click to change its value to the new location of the <google desktop search index>
+6. Select the “data_dir” key in right pane, double-click to change its value to the new location of the `<google desktop search index>`
 
 ![Modify_Registry_Google_Desktop_data_dr](/post/modify_registry_google_desktop_data_dr.png)
 

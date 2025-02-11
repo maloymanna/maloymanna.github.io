@@ -19,7 +19,7 @@ tags:
 - vagrant
 ---
 
-With each of the big 3 Hadoop vendors - **Cloudera**, **Hortonworks** and **MapR** each providing their own Hadoop <font color="blue">sandbox</font> **virtual machines** (VMs), trying out Hadoop today has become extremely easy. For a developer, it is extremely useful to download a get started with one of these VMs and try out Hadoop to practice data science right away.
+With each of the big 3 Hadoop vendors - **Cloudera**, **Hortonworks** and **MapR** each providing their own Hadoop {{< blue-text >}}sandbox{{< /blue-text >}} **virtual machines** (VMs), trying out Hadoop today has become extremely easy. For a developer, it is extremely useful to download a get started with one of these VMs and try out Hadoop to practice data science right away.
 
 ![Vagrant Hadoop Spark Cluster](/post/vagrant-hadoop-spark-cluster.png?w=300)
 

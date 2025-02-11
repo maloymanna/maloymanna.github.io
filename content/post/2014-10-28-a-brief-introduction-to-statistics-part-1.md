@@ -63,14 +63,14 @@ In general, _correlation does not imply causation_, and causation can only be in
 
 Randomized experiments are the gold standard for data collection, but they do not ensure an unbiased perspective into the cause and eﬀect relationships in all cases. **Blinding** can help in overcoming _placebo effect_ in human studies.
 
-Distributions of a numerical variable are described by <font color="blue">shape, center and spread</font>. The three most commonly used measures of center and spread are:  
+Distributions of a numerical variable are described by {{< blue-text >}}shape, center and spread{{< /blue-text >}}. The three most commonly used measures of center and spread are:  
 
-center:   
+**center**:   
 - mean (the arithmetic average),  
 - median (the midpoint),  
 - mode (the most frequent observation)  
 
-spread:  
+**spread**:  
 - standard deviation (variability around the mean),  
 - range (max-min),  
 - interquartile range IQR (middle 50% of the distribution)  
@@ -92,9 +92,9 @@ Another useful plotting method uses hollow histograms to compare numerical data 
 
 **Hypothesis test:**  
 
-<font color="blue">H0 **Independence model**</font> - Explanatory variable has no eﬀect on response variable, and we observed a diﬀerence that would only happen rarely.  
+**{{< blue-text >}}H0 Independence model{{< /blue-text >}}** - Explanatory variable has no eﬀect on response variable, and we observed a diﬀerence that would only happen rarely.  
 
-<font color="blue">HA **Alternative model**</font> - Explanatory variable has an eﬀect on response variable, and what we observed was actually due to explanatory variable effect on the response variable explaining the difference.  
+**{{< blue-text >}}HA Alternative model{{< /blue-text >}}** - Explanatory variable has an eﬀect on response variable, and what we observed was actually due to explanatory variable effect on the response variable explaining the difference.  
 
 Based on the simulations, we have two options:  
 
@@ -105,4 +105,4 @@ When we conduct formal studies, usually we reject the notion that we just happen
 
 **Statistical Inference:**  
 
-One ﬁeld of statistics, _statistical inference_, is built on evaluating whether such differences are <font color="blue">_due to chance_</font>. In statistical inference, statisticians evaluate which model is most reasonable given the data. Errors do occur, just like rare events, and we might choose the wrong model. While we do not always choose correctly, statistical inference gives us tools to control and evaluate how often these errors occur.
+One ﬁeld of statistics, _statistical inference_, is built on evaluating whether such differences are _{{< blue-text >}}due to chance{{< /blue-text >}}_. In statistical inference, statisticians evaluate which model is most reasonable given the data. Errors do occur, just like rare events, and we might choose the wrong model. While we do not always choose correctly, statistical inference gives us tools to control and evaluate how often these errors occur.

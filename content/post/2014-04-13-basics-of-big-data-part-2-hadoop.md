@@ -54,26 +54,26 @@ Open-source Hadoop is an [Apache project](http://hadoop.apache.org/). There are 
 **The key components of the Hadoop distribution:**
 
 **1. Distributed file system and storage** - HDFS  
-<font color="blue">HDFS</font> - a Java based file system providing scalable and reliable data storage, designed to span large clusters of commodity servers
+{{< blue-text >}}HDFS{{< /blue-text >}} - a Java based file system providing scalable and reliable data storage, designed to span large clusters of commodity servers
 
 **2. Data integration** - Flume, Sqoop  
-<font color="blue">Flume</font> - service for integrating large amounts of streaming data (e.g. logs) into HDFS  
-<font color="blue">Sqoop</font> - tool for transferring bulk data between Hadoop and structured databases e.g. RDBMSes
+{{< blue-text >}}Flume{{< /blue-text >}} - service for integrating large amounts of streaming data (e.g. logs) into HDFS  
+{{< blue-text >}}Sqoop{{< /blue-text >}} - tool for transferring bulk data between Hadoop and structured databases e.g. RDBMSes
 
 **3. Data access** - HBase, Hive, Pig, Impala (CDH version for interactive SQL query), Storm, MapReduce jobs in Java/Python etc.  
-<font color="blue">HBase</font> - a non-relational (NoSQL) columnar database running on top of HDFS.  
-<font color="blue">Hive</font> - a data warehouse infrastructure built on Hadoop, providing a mechanism to project structure onto the data  and query it using SQL like language - HiveQL  
-<font color="blue">Pig</font> - allows writing complex MapReduce jobs using a scripting language - PigLatin  
-<font color="blue">Impala</font> - SQL query engine running natively in Hadoop, allows querying data in HDFS and HBase. It is part of Cloudera’s CDH distribution.  
-<font color="blue">Storm</font> - provides real-time data processing capabilities to Hadoop which is traditionally batch oriented (based on MapReduce).
+{{< blue-text >}}HBase{{< /blue-text >}} - a non-relational (NoSQL) columnar database running on top of HDFS.  
+{{< blue-text >}}Hive{{< /blue-text >}} - a data warehouse infrastructure built on Hadoop, providing a mechanism to project structure onto the data  and query it using SQL like language - HiveQL  
+{{< blue-text >}}Pig{{< /blue-text >}} - allows writing complex MapReduce jobs using a scripting language - PigLatin  
+{{< blue-text >}}Impala{{< /blue-text >}} - SQL query engine running natively in Hadoop, allows querying data in HDFS and HBase. It is part of Cloudera’s CDH distribution.  
+{{< blue-text >}}Storm{{< /blue-text >}} - provides real-time data processing capabilities to Hadoop which is traditionally batch oriented (based on MapReduce).
 
 **4. Operations**- Oozie, Ambari, ZooKeeper  
-<font color="blue">Oozie</font> - Java web application used to schedule Hadoop jobs  
-<font color="blue">Ambari</font> - Framework and tools to provision, manage and monitor Hadoop clusters  
-<font color="blue">ZooKeeper</font> - provides operational services for Hadoop - e.g. distributed configuration service, named registry, synchronization service etc.
+{{< blue-text >}}Oozie{{< /blue-text >}} - Java web application used to schedule Hadoop jobs  
+{{< blue-text >}}Ambari{{< /blue-text >}} - Framework and tools to provision, manage and monitor Hadoop clusters  
+{{< blue-text >}}ZooKeeper{{< /blue-text >}} - provides operational services for Hadoop - e.g. distributed configuration service, named registry, synchronization service etc.
 
 **5. Resource management** - YARN  
-<font color="blue">YARN</font> - separates the resource management and processing components in Hadoop 2.x which used to be done in MapReduce packages in Hadoop 1.x  
+{{< blue-text >}}YARN{{< /blue-text >}} - separates the resource management and processing components in Hadoop 2.x which used to be done in MapReduce packages in Hadoop 1.x  
 
 A schematic of Cloudera’s Hadoop distribution (CDH) is shown below:
 
@@ -91,7 +91,7 @@ The key advantages of Hadoop as a data processing platform are:
 
 3. **Resilience** - With built-in fault tolerance, e.g. multiple copies of data replicated on cluster nodes, and with high availability HDFS in version 2.0, Hadoop provides cost-effective resilience to faults and data loss.
 
-4. **Flexibility and performance** - Ability to access and store various types of data - both structured and unstructured, with no constraints of schema-on-write, along with the emergence of new ways of accessing and processing data - e.g. <font color="blue">Storm</font> for real-time/streaming data, SQL-like tools including <font color="blue">Impala, Hadapt, Stinger</font> etc.
+4. **Flexibility and performance** - Ability to access and store various types of data - both structured and unstructured, with no constraints of schema-on-write, along with the emergence of new ways of accessing and processing data - e.g. {{< blue-text >}}Storm{{< /blue-text >}} for real-time/streaming data, SQL-like tools including {{< blue-text >}}Impala, Hadapt, Stinger{{< /blue-text >}} etc.
 
 Due to these key advantages, Hadoop lends itself to several data processing use cases. Key use cases are:
 

@@ -1,0 +1,5 @@
+// layouts/partials/console_log.html
+<script>
+  var hugoLog = JSON.parse({{ jsonify . }});
+  console.log('Hugo Debug: ', hugoLog);
+</script>

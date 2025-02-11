@@ -16,7 +16,7 @@ tags:
 - muri
 ---
 
-Lean thinking is based on eliminating waste in order to improve efficiency. Lean project management relies on lean thinking concepts for the elimination of waste. Due to its inception in the quality and productivity improvement processes in Japanese manufacturing, especially the _Toyota Production System_, the three main categories of waste (**3M**) have Japanese names: <font color="blue">muda, mura and muri </font>. 
+Lean thinking is based on eliminating waste in order to improve efficiency. Lean project management relies on lean thinking concepts for the elimination of waste. Due to its inception in the quality and productivity improvement processes in Japanese manufacturing, especially the _Toyota Production System_, the three main categories of waste (**3M**) have Japanese names: {{< blue-text >}}muda, mura and muri {{< /blue-text >}}. 
 
 - **Muda** - any activity that consumes resources but creates no value for the customer
 

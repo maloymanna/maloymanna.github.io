@@ -13,7 +13,7 @@ tags:
 - project management
 ---
 
-**Agile** is an _approach_ to software development. Project management is the application of knowledge, skills and techniques to project activities to meet the project requirements. Agile is not a methodology. What does then <font color="blue"> "agile project management" </font> mean ?
+**Agile** is an _approach_ to software development. Project management is the application of knowledge, skills and techniques to project activities to meet the project requirements. Agile is not a methodology. What does then {{< blue-text >}} "agile project management" {{< /blue-text >}} mean ?
 
 Simply put, _agile project management_ can be defined as the application of agile methods and values to project management. While there are several agile methods (Scrum, Kanban, XP, FDD etc.), all of them share the same core values, inspired from the agile manifesto. These core values are:
 
@@ -45,7 +45,7 @@ In cases where these factors are favorable, adoption of agile methods could cert
 It's important to realize that agile approaches value quickness of delivery more than completeness and these trade-offs could sometimes result in poorer quality or even lower productivity and delays if agile methods are adpoted blindly.  
 It's also important to be aware of the **whys** of selecting an agile approach rather than copying certain ceremonies and hoping for magic (quick results).  
 E.g. having the ability of defering features to subsequent sprint(s) could easily lead to procrastination and delays, unless the team and scrummaster work together to maximize delivering value.  
-Similarly the product owner needs to set the bar for quality correctly with acceptance criteria <font color="blue">(definition of done)</font>. 
+Similarly the product owner needs to set the bar for quality correctly with acceptance criteria {{< blue-text >}}(definition of done){{< /blue-text >}}. 
 
 In the end, the project manager should not be dogmatic about using either one of traditional or agile methods. The project manager needs to use the organizational environmental factors in the best possible way, either by adopting traditional or agile or a combination of both approaches, in order to have the best outcomes for the project. 
 

@@ -30,7 +30,7 @@ Fig. A data pipeline
 
 4. **Data science workspaces** - modern data architectures provide easy to setup-and-use interactive workspaces (e.g. self-service clusters and/ data science notebooks) for data scientists and data engineers to work collaboratively while building data and AI solutions.
 
-5. **Search and discovery** - the corollary to having data lakes is to have tools and processed for search and discovery of data. Some systems may use <font color="blue">ElasticSearch-Logstash-Kibana</font> (**ELK**) stack for search while others could even use AI-assisted search tools for assistance. Similarly business users need help in making sense of all this data with easy to use data discovery tools. These tools often provide data visualization and guided advance analytics.  
+5. **Search and discovery** - the corollary to having data lakes is to have tools and processed for search and discovery of data. Some systems may use {{< blue-text >}}ElasticSearch-Logstash-Kibana{{< /blue-text >}} (**ELK**) stack for search while others could even use AI-assisted search tools for assistance. Similarly business users need help in making sense of all this data with easy to use data discovery tools. These tools often provide data visualization and guided advance analytics.  
 
 6. **Use of AI for data catalog and data quality** - the volume of big data means that while manual processes may be sufficient for the establishing the initial catalog, these won't suffice for managing problems of data quality or even cataloging of data on an ongoing basis. The task of extracting metadata, curating and validating it, resolving data quality issues needs to be automated with complementary human expertise solicited when required but without overwhelming.
 
@@ -47,4 +47,4 @@ _Update: November 2017 - For further details refer to my talk on [designing data
 
 
 
-_Ref: <sup>*</sup>[Intel drops its own Hadoop distribution](https://www.theinquirer.net/inquirer/news/2336750/intel-dropping-its-own-distribution-of-hadoop-big-data-analytics-in-favour-of-cloudera)_
+_Ref: {{< sup >}}*{{< /sup >}}[Intel drops its own Hadoop distribution](https://www.theinquirer.net/inquirer/news/2336750/intel-dropping-its-own-distribution-of-hadoop-big-data-analytics-in-favour-of-cloudera)_

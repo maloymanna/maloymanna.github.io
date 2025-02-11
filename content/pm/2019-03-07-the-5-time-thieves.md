@@ -29,11 +29,11 @@ The **5 time thieves** or categories of problems are:
 
 The book is a good introduction to **Kanban** for beginners because it explains the core issues that kanban tries to solve.
 
-Most people appreciate concepts **visually**, and the simple fact of making things visual using a kanban board helps teams and managers appreciate the amount of work already launched but not completed. Having a good grounding in these "time thieves" helps identifying all "invisible" work on the kanban board as a very important first step. 
+Most people appreciate concepts **visually**, and the simple fact of making things visual using a kanban board helps teams and managers appreciate the amount of work already launched but not completed. Having a good grounding in these {{< blue-text >}}"time thieves"{{< /blue-text >}} helps identifying all {{< blue-text >}}"invisible"{{< /blue-text >}} work on the kanban board as a very important first step. 
 
 ![A Kanban board](/pm/kanban.png)
 
-All work including invisible WIP has an associated cost, so the corporation needs to make it <font color="blue">visible</font>. A kanban system with too much WIP could cause bottleneck, which ultimately leads to delays in delivering value. This therefore has immediate takeaway in actions to limit the WIP, usually at the demand management level.
+All work including invisible WIP has an associated cost, so the corporation needs to make it {{< blue-text >}}visible{{< /blue-text >}}. A kanban system with too much WIP could cause bottleneck, which ultimately leads to delays in delivering value. This therefore has immediate takeaway in actions to limit the WIP, usually at the demand management level.
 
 A next step which helps is to then identify the impediments preventing the team from completing these activities. The corporation needs to find ways to minimize interruptions, including unplanned work and unnecessary meetings which do not add value. Using a visibility grid helps categorize the value of visible and invisible work - whether it is positive or negative. 
 
@@ -41,11 +41,11 @@ A next step which helps is to then identify the impediments preventing the team 
 
 This should not however impact daily stand-up / scrum meetings used as inspect events which themselves help to uncover invisible work. Remember the team members are encouraged to talk about anything which may impact the team, including impediments, which then are resolved with the help of the scrum master and/ managers.
 
-A good way to measure and improve is to monitor <font color="blue">flow metrics</font>. Two useful metrics are:
+A good way to measure and improve is to monitor {{< blue-text >}}flow metrics{{< /blue-text >}}. Two useful metrics are:
 
 1. **Lead time** - total time it takes for the work to deliver value from start of work to completion of work. This includes time spent in the process e.g. waiting.
 
-2. **Cycle time** - time spent by a work item in the "in progress" stage. The more the WIP, the more the cycle time. A theory by MIT professor John Little, called <font color="blue"> "Little's Law" </font> provides this relation as: 
+2. **Cycle time** - time spent by a work item in the "in progress" stage. The more the WIP, the more the cycle time. A theory by MIT professor John Little, called {{< blue-text >}} "Little's Law" {{< /blue-text >}} provides this relation as: 
 
    **Cycle Time = Work in progress (WIP) / Throughput**
 

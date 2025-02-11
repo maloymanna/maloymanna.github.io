@@ -20,7 +20,7 @@ tags:
 
 Sometime back I presented a webinar on BrightTalk. The slides for the talk have now been uploaded on [Slideshare](http://www.slideshare.net/itsmaloy/bi-in-the-digital-era). The talk focused more on changes in digital technology disrupting businesses, the effect of Big Data, the FOMO (Fear of missing out) effect on big business - and what it meant for changes to the way we do business intelligence in the digital era.
 
-{{< slideshare id="5lk8abamQrtcTf" >}}
+{{< slideshare key="5lk8abamQrtcTf" width="595" height="485" >}}
 
 **Key themes:**  
 

@@ -8,15 +8,9 @@ slug: contact
 title: Contact
 ---
 
-For business enquiries, please contact me by email or LinkedIn:
-<a href="https://linkedin.com/in/maloy" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i>@maloy</a> 
+Have a question about data engineering, Lean-Kanban, Agile PM or cybersecurity ?  
 
-For non-business info, contact me on: 
-<ul class="fa-ul">
-  <li>
-    <a href="https://twitter.com/itsmaloy" target="_blank"><i class="fa fa-twitter-square fa-lg"></i>@itsmaloy</a>
-  </li>
-  <li>
-    <a href="https://github.com/maloymanna" target="_blank"><i class="fa fa-github-square fa-lg"></i>@maloymanna</a>
-  </li>
-</ul>
+Contact me for consulting or business enquiries by email or LinkedIn:
+{{< newTabLink href="https://linkedin.com/in/maloy" text="maloy@LinkedIn" >}}
+
+For non-business purposes, you can reach me at: {{< newTabLink href="https://x.com/itsmaloy" text="maloymanna@X" >}} or {{< newTabLink href="https://github.com/maloymanna" text="maloymanna@Github" >}}  

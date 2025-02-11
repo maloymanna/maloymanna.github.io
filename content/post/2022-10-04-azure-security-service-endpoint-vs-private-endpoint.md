@@ -16,7 +16,7 @@ tags:
 - private endpoint
 ---
 
-<span style="color: blue; ">Endpoints </span> are a critical aspect of securing your resources in the cloud. When using Azure PaaS services, it is important to understand the differences between two types of endpoint available in Azure: service endpoint and private endpoint.
+{{< blue-text >}}Endpoints {{< /blue-text >}} are a critical aspect of securing your resources in the cloud. When using Azure PaaS services, it is important to understand the differences between two types of endpoint available in Azure: service endpoint and private endpoint.
 
 
 **Service endpoint:**  

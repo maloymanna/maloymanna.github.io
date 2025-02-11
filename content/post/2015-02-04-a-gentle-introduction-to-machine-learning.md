@@ -18,7 +18,7 @@ tags:
 - supervised learning
 ---
 
-<font color="blue">Machine Learning</font> is a big part of big data and data science. A subset of artificial intelligence - a branch of science notorious for requiring advanced knowledge of mathematics. In practice though, most data scientists don't try to build a [Chappie](http://youtu.be/l6bmTNadhJE)  and there are simpler, practical ways to get started with machine learning.
+{{< blue-text >}}Machine Learning{{< /blue-text >}} is a big part of big data and data science. A subset of artificial intelligence - a branch of science notorious for requiring advanced knowledge of mathematics. In practice though, most data scientists don't try to build a [Chappie](http://youtu.be/l6bmTNadhJE)  and there are simpler, practical ways to get started with machine learning.
 
 ![Gmail Priority Inbox](/post/selection_002.png?w=300)
 
@@ -47,6 +47,6 @@ Many algorithms are different, but the steps to use one are similar:
 
 **Collect data > Prepare data > Analyze input data > Clean data/verify data quality > Train the algorithm > Test the algorithm > Iterate/Deploy**. (See also my earlier post on the [data science project lifecycle](https://biguru.wordpress.com/2014/12/22/the-data-science-project-lifecycle/))
 
-As with many other aspects (data wrangling) of data science, both R and Python are very popular languages for using machine learning techniques. There are also start-ups like [BigML](http://bigml.com/features) providing <font color="blue">MLaaS or Machine Learning as a Service</font>.
+As with many other aspects (data wrangling) of data science, both R and Python are very popular languages for using machine learning techniques. There are also start-ups like [BigML](http://bigml.com/features) providing {{< blue-text >}}MLaaS or Machine Learning as a Service{{< /blue-text >}}.
 
 In conclusion of this post, a few points to remember: **garbage in - garbage out**:- data quality matters as much if not more than algorithms, quantity of data or complexity of algorithm are not substitutes for quality, and of course as with all predictions, machine learning can be [wrong](http://fivethirtyeight.com/datalab/how-meteorologists-botched-the-blizzard-of-2015/) as well.
