@@ -46,7 +46,7 @@ publishDir = "public"
     identifier = "about"
     url = "/about/"
   [[menu.main]]
-    name = "Tech Posts"
+    name = "Tech posts"
     pre = "<i class='fa fa-list fa-fw'></i>"
     weight = 3
     identifier = "post"

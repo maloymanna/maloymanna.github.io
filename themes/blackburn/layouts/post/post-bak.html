@@ -1,8 +1,7 @@
 {{ partial "header.html" . }}
 
 <div class="header">
-  <h1> Tech posts</h1>
-	<h2> Data, Tech & Cloud Security </h2>
+  <h1>Tech {{ .Title }}</h1>
 </div>
 <div class="content">
   {{ range .Data.Pages.GroupByDate "2006" }}
@@ -22,7 +21,7 @@
   {{ partial "post_meta.html" . }}
 
   {{ .Content }}
-
+bubul
   {{ partial "prev_next_post.html" . }}
 
   {{ partial "disqus.html" . }}
