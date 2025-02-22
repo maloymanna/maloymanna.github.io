@@ -4,9 +4,11 @@
   <h1>{{ .Title }}</h1>
 </div>
 
+<p>
+
 <div class="content">
   {{ range .Data.Pages }}
-    {{ .Render "summary"}}
+    <li>{{ .Date.Format "2006/01/02" }} - <a href="{{ .Permalink }}">{{ .Title }}</a></li>
   {{ end }}
 </div>
 
