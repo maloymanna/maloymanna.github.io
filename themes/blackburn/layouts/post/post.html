@@ -1,0 +1,40 @@
+{{ partial "header.html" . }}
+
+{{ if .IsSection }}
+	<div class="header">
+	  <h1> Tech posts</h1>
+		<h2> Data, Tech & Cloud Security </h2>
+	</div>
+{{ else if .IsPage }}
+	<div class="header">
+	  <h1> {{ .Title }}</h1>
+	  <h2> {{ .Description }}</h2>
+	</div>
+{{ end }}
+
+{{ if .IsSection }}
+	<div class="content">
+	  {{ range .Data.Pages.GroupByDate "2006" }}
+		  <h2>{{ .Key }}</h2>
+		  <ul>
+			  {{ range .Pages }}
+			  	<li>{{ .Date.Format "2006/01/02" }} - <a href="{{ .Permalink }}">{{ .Title }}</a>
+			  	</li>
+			  {{ end }}
+		  </ul>
+	  {{ end }}
+	</div>
+{{ else if .IsPage }}
+	<div class="content">
+		{{/* <h1> {{ .Title }}</h1> */}}
+	  {{ partial "post_meta.html" . }}
+
+	  {{ .Content }}
+
+	  {{ partial "prev_next_post.html" . }}
+
+	  {{ partial "disqus.html" . }}
+
+	</div>
+	{{ partial "footer.html" . }}
+{{ end }}
