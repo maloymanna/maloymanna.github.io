@@ -31,7 +31,7 @@ As early as mid-January, Chinese startup DeekSeek launched its free AI assistant
 **Protectionist US tries to hobble China**  
 Since ChatGPT went viral and triggered the GenAI race, the demand for Nvidia GPU chips, which was already in short-supply, skyrocketed. Prices went up, as did Nvidia's market cap. 
 
-- In addition, the US government passed its [CHIPS Act in 2022](https://en.wikipedia.org/wiki/CHIPS_and_Science_Act), providing massive funding to expact semiconductor fabs and chip production domestically, while prohibiting recipients from expanding semiconductor manufacturing in China and countries deemed to be security threats to the US.
+- In addition, the US government passed its [CHIPS Act in 2022](https://en.wikipedia.org/wiki/CHIPS_and_Science_Act), providing massive funding to expand semiconductor fabs and chip production domestically, while prohibiting recipients from expanding semiconductor manufacturing in China and countries deemed to be security threats to the US.
 - New export controls specifically targeting China were implemented, targeted to restrict China's ability to obtain advanced computing chips
 - As early as 2025, the US further [tightened controls](https://www.reuters.com/technology/artificial-intelligence/us-tightens-its-grip-ai-chip-flows-across-globe-2025-01-13) on the global AI supply chain^.  
 
@@ -49,7 +49,7 @@ China's AI ecosystem has given rise to a group of standout startups known as the
 
 1. {{< blue-text >}}Stepfun{{< /blue-text >}}, founded by former Microsoft senior vice president Jiang Daxin, has quickly become a contender with its portfolio of foundational models.  
 2. {{< blue-text >}}Zhipu AI{{< /blue-text >}}, incubated by Tsinghua University in 2019, debuted China's first self-developed pre-trained large language model (LLM) in August 2022. It's also China's biggest AI startup by number of employees (~800). 
-3. {{< blue-text >}}Minimax{{< /blue-text >}} was setup by Yan Junjie, who previously led deep learning toolchain and algorithm development at SenseTimehas. It has found success with its AI platform Glow and its overseas app Talkie. 
+3. {{< blue-text >}}Minimax{{< /blue-text >}} was setup by Yan Junjie, who previously led deep learning toolchain and algorithm development at SenseTime. It has found success with its AI platform Glow and its overseas app Talkie. 
 4. {{< blue-text >}}Moonshot AI{{< /blue-text >}}, founded by Yang Zhilin is a well-known figure in the field of natural language processing (NLP). He previously worked at Google AI and was involved in the development of some of the leading language models. 
 5. {{< blue-text >}}01.AI{{< /blue-text >}}, a newcomer was founded in 2023 by Kai-Fu Lee, an AI expert and prominent investor who helped Google and Microsoft get established in China. It had a $200 million funding from Alibaba and others. Lee, in his provocative 2018 book `AI Superpowers`, had argued that Chinese AI labs and companies would soon rival those in the US thanks to the country’s abundance of talent, data, and users. This is exactly how it seems to be unfolding.  
 6. {{< blue-text >}}Baichuan AI{{< /blue-text >}} was setup by Wang Xiaochuan, a well-known figure in the Chinese tech industry, formerly the CEO of Sogou, a search engine and internet services company. are also making significant strides, focusing on different aspects of AI applications and development. The company is backed by Alibaba, Xiaomi, Tencent, and Chinese state-backed AI funds.
