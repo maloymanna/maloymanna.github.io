@@ -17,11 +17,22 @@
     {{ range $k, $v := .Params.categories }}
       <a class="post-taxonomy-category" href="{{ $baseUrl }}categories/{{ . | urlize }}">{{ . }}</a>{{ if lt $k (sub $count 1) }}&nbsp;&#47;{{ end }}
     {{ end }}
+
+      {{ if isset .Params "tags" }}
+      {{ $count := len .Params.tags }}
+      {{ if gt $count 0 }}
+        <i class="fa fa-tags fa-fw"></i>
+        {{ range $k, $v := .Params.tags }}
+          <a class="post-taxonomy-tag" href="{{ $baseUrl }}tags/{{ . | urlize }}">{{ . }}</a>{{ if lt $k (sub $count 1) }}&nbsp;&#47;{{ end }}
+        {{ end }}
+      {{ end }}
+      {{ end }}
+
   </div>
   {{ end }}
   {{ end }}
 
-  {{ if isset .Params "tags" }}
+<!--   {{ if isset .Params "tags" }}
   {{ $count := len .Params.tags }}
   {{ if gt $count 0 }}
   <div>
@@ -31,6 +42,7 @@
     {{ end }}
   </div>
   {{ end }}
-  {{ end }}
+  {{ end }} -->
+  <i class="fa fa-clock-o fa-fw"></i> Reading time: {{ .ReadingTime }} minute{{ if ne .ReadingTime 1 }}s{{ end }}
 
 </div>
