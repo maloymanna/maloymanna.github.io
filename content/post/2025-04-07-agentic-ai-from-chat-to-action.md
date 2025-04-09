@@ -17,15 +17,15 @@ In a recent article, Techcrunch claimed [no one knows what the hell an AI agent 
 *So what exactly is an AI agent ?*  
 Simply speaking,  {{< blue-text >}}an AI agent is a system (computer program) that can perform certain tasks with a certain degree of autonomy, using language models to adapt to dynamic contexts{{< /blue-text >}}. Each vendor, of course has its own definition of agents, viz.
 - **OpenAI** defines agents as systems that independently accomplish tasks on behalf of users.
-- **LangChain** defines an agent as a system that uses an LLM to decide the control flow of an application
+- **LangChain** defines an agent as a system that uses an [LLM](https://maloymanna.fr.eu.org/2025/01/19/ai-is-all-you-need/) to decide the control flow of an application
 - **Microsoft** defines agents as apps of the AI era, specialized AI tools built to handle specific processes or solve business challenges.  
 
 ![Agentic AI - Giving AI wings!](/images/ai-agent-wings2.png)  
 
 What is clear though, is that AI agents have at least these traits:
-1. **Autonomy** - While the degree of autonomy can vary, AI agents can autonomously perform tasks based on user prompts or derived technical prompts. e.g. Replit agent can spin up and deploy an app based on user prompt, whereas an autogen implementation could deploy multiple agents to play a chess game.
-2. **Tools** - AI agents can access various external tools, e.g. Amazon's "Buy me" button can access payment gateways, whereas Opera's "Browser Operator" could search and buy socks for you.
-3. **Memory** or **State** - AI agents retain context or state of the request/task in memory and can recall it as required, e.g. Copilot for Teams can recap the meeting and list action items.  
+1. **Autonomy** - While the degree of autonomy can vary, AI agents can autonomously perform tasks based on user prompts or derived technical prompts. e.g. [Replit agent](https://docs.replit.com/replitai/agent) can spin up and deploy an app based on user prompt, whereas an autogen implementation could deploy multiple agents to play a chess game.
+2. **Tools** - AI agents can access various external tools, e.g. [Amazon's "Buy for me" button](https://www.aboutamazon.com/news/retail/amazon-shopping-app-buy-for-me-brands) can access payment gateways, whereas [Opera's "Browser Operator"](https://blogs.opera.com/news/2025/03/opera-browser-operator-ai-agentics/) could search and buy socks for you.
+3. **Memory** or **State** - AI agents retain context or state of the request/task in memory and can recall it as required, e.g. [Copilot for Teams](https://support.microsoft.com/en-us/office/use-copilot-in-microsoft-teams-chat-and-channels-cccccca2-9dc8-49a9-ab76-b1a8ee21486c) can recap the meeting and list action items.  
 
 **Bots vs Agents**  
 Still there could be confusion about **bots** (*short for robots*). Bots are typically automated scripts (e.g. flowchart based) which follow predefined rules. AI agents however, use machine learning and language models (usually LLMs) to adapt to dynamic environments.  
