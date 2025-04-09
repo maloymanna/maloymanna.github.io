@@ -73,20 +73,20 @@ This is just the tip of the iceberg, and practical applications keep mushrooming
 **Security Risks and Challenges**  
 The complexity of AI agents' inherent language models and its interactions with data, memory and tools give rise to numerous security risks. Some of these risks can be classified as:
 - **Prompt injection**: Adversarial prompts could trick AI agents to perform malicious actions, leak or modify system prompts or security rules. Indirect prompt injection could be done from external data, tools or APIs.
-- **Memory and data poisoning**: Adversarial test-time training with false or harmful data, manipulating memory storage could alter AI behavior.
+- **Memory and data poisoning**: Adversarial inference-time inputs with false or harmful data, manipulating memory storage could alter AI behavior.
 - **Autonomous propagation (worms)**: Hijacked AI agents could be modified to self-replicate and spread malware or spam with external tools and APIs.
 - **Adversarial attacks and Jailbreaking**: Attackers could introduce malicious inputs to manipulate instructions or hijack control of the AI. Jailbreaking is a technique which causes failure of AI guardrails or safety mechanisms. Due to its token generation technique, generative AI is inherently susceptible to adversarial attacks like jailbreaking and need to be protected.
 - **Social engineering**: Identity spoofing, or social engineering strategies with false legal/judicial/administrative instruction could trick AI agents into losing control and performing harmful actions unknowingly
 - **Privacy and data breaches**: Integration of AI agents with sensitive databases, and memory storage of personal information increase the attack surface area. Shadow AI increases risks of privacy and data leakage.  
 
 **Preventing adversarial attacks on AI agents**:  
-Preventing and mitigating against these risks requires strong security measures at training-time, test-time as well as run-time. Apart from usual security measures like encryption, least-privilege access, input validation and sanitization, memory integrity checks, logging and incident response, additional counter-measures are required.
+Preventing and mitigating against these risks requires strong security measures at training-time, test-time as well as inference-time. Apart from usual security measures like encryption, least-privilege access, input validation and sanitization, memory integrity checks, logging and incident response, additional counter-measures are required.
 Some examples are:
 - **Guardrails** with invariable security policies, memory sandboxing and anonymization, filtering of prompts, secure token handling
 - **Offline auditing** (pre/post-training) and proactive testing
 - **A/B testing** (~5% traffic) to get real-world distribution, during deployment
 - **Parallel generation of tokens** 
-- **Human-in-the-loop (Layer 3) controls** and auditing at both test-time and operations
+- **Human-in-the-loop (Layer 3) controls** and auditing at both test-time and inference-time (production operations)
 
 Agentic AI goes beyond passive AI chatbots or recommendation engines, providing autonomy to language models to accomplish tasks. With connections to multimodal tools and APIs, AI agents hold the promise of increased versatility and automation. Significant hurdles still remain in securing such agents against adversarial attacks and security breaches. Adoption and success of AI agents will remain contingent on the ability to install security and privacy guardrails to protect misuse and breakdown of AI agents.
 
