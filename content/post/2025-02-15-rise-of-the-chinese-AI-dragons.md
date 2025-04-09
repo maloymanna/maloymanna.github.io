@@ -35,8 +35,8 @@ Since ChatGPT went viral and triggered the GenAI race, the demand for Nvidia GPU
 - New export controls specifically targeting China were implemented, targeted to restrict China's ability to obtain advanced computing chips
 - As early as 2025, the US further [tightened controls](https://www.reuters.com/technology/artificial-intelligence/us-tightens-its-grip-ai-chip-flows-across-globe-2025-01-13) on the global AI supply chain^.  
 
-Paradoxically, such sanctions seem only to have spurred China to [supercharge its chip industry](https://time.com/6189341/us-sanctions-china-chips-semiconductors/), growing faster than anywhere else in the world.
-
+Paradoxically, such sanctions seem only to have spurred China to [supercharge its chip industry](https://time.com/6189341/us-sanctions-china-chips-semiconductors/), growing faster than anywhere else in the world.  
+![Rise of the Chinese AI dragons](/images/chinese-ai-dragons2.png)  
 **DeepSeek upheaval**  
 DeepSeek made headlines with its highly cost-efficient AI model, which sent shockwaves through the market. DeepSeek's model, built at _{{< blue-text >}}a fraction of the cost{{< /blue-text >}}_ of leading U.S. models, signals the potential for a new price war in AI.  
 
@@ -60,16 +60,16 @@ Here's a summary table of the notable AI leaders of China:
 
 | **Company** | **Focus** | **LLMs and Products** |
 | ------- | ----- | ----------------- |
-| {{< blue-text >}}01.AI{{< /blue-text >}}   | "AI-first" apps for productivity, creativity, social media  | Yi-34B, Yi-VL-34B |
-| {{< blue-text >}}Alibaba{{< /blue-text >}} | Multimodal AI & LLMs | Qwen series (0.5B to 72B parameters), Qwen2.5-Max |
-| {{< blue-text >}}Baichuan.AI{{< /blue-text >}} | LLMs | Baichuan-13B, Baichuan2-13B | 
-| {{< blue-text >}}DeepSeek{{< /blue-text >}} | LLMs | DeepSeek-R1, DeepSeek-V3, DeepSeek Coder |	
-| {{< blue-text >}}Infinigence{{< /blue-text >}} | on-device multimodal LLMs, AI infra | Megrez-3B-Omni |
-| {{< blue-text >}}Minimax{{< /blue-text >}} | Multimodal AI for Gaming and interactive experiences | MiniMax-01 series, Talkie,Hailuo AI|	
-| {{< blue-text >}}ModelBest{{< /blue-text >}} | SLMs & LLMs | MiniCPM 3.0 |
-| {{< blue-text >}}Moonshot.ai{{< /blue-text >}} | Multimodal AI & LLMs | Kimi AI 1.5, Mooncake|
-| {{< blue-text >}}Stepfun{{< /blue-text >}} | AGI & LLMs | Step-2 (trillion-parameter MoE model)|
-| {{< blue-text >}}Zhipu.ai{{< /blue-text >}} | LLMs to handle both Chinese and English | GLM Series, GLM-130B, ChatGLM, GLM-4-Voice, Ying |  
+| {{< blue-text >}}01.AI{{< /blue-text >}}   | &nbsp;&nbsp;"AI-first" apps for productivity, creativity, social media  | Yi-34B, Yi-VL-34B |
+| {{< blue-text >}}Alibaba{{< /blue-text >}} | &nbsp;&nbsp;Multimodal AI & LLMs | Qwen series (0.5B to 72B parameters), Qwen2.5-Max |
+| {{< blue-text >}}Baichuan.AI{{< /blue-text >}} | &nbsp;&nbsp;LLMs | Baichuan-13B, Baichuan2-13B | 
+| {{< blue-text >}}DeepSeek{{< /blue-text >}} | &nbsp;&nbsp;LLMs | DeepSeek-R1, DeepSeek-V3, DeepSeek Coder |	
+| {{< blue-text >}}Infinigence{{< /blue-text >}} | &nbsp;&nbsp;on-device multimodal LLMs, AI infra | Megrez-3B-Omni |
+| {{< blue-text >}}Minimax{{< /blue-text >}} | &nbsp;&nbsp;Multimodal AI for gaming and interactive experiences | MiniMax-01 series, Talkie,Hailuo AI|	
+| {{< blue-text >}}ModelBest{{< /blue-text >}} | &nbsp;&nbsp;SLMs & LLMs | MiniCPM 3.0 |
+| {{< blue-text >}}Moonshot.ai{{< /blue-text >}} | &nbsp;&nbsp;Multimodal AI & LLMs | Kimi AI 1.5, Mooncake|
+| {{< blue-text >}}Stepfun{{< /blue-text >}} | &nbsp;&nbsp;AGI & LLMs | Step-2 (trillion-parameter MoE model)|
+| {{< blue-text >}}Zhipu.ai{{< /blue-text >}} | &nbsp;&nbsp;LLMs to handle both Chinese and English | GLM Series, GLM-130B, ChatGLM, GLM-4-Voice, Ying |  
 
 
 China's rapid progress in AI is reshaping the global technological landscape.  
