@@ -57,7 +57,8 @@ Figure: MCP architecture (source:modelcontextprotocol.io)
 As seen above, AI agents need to access external tools like APIs, databases, payment gateways etc. to perform tasks like shopping or executing python programs. Due to the variety of interfaces and vendors, this would require custom code for each service.  
 {{< blue-text >}}Model Context Protocol (MCP){{< /blue-text >}}, an open source protocol from Anthropic, acts as a universal "plug-and-play" (similar to a USB-C port) allowing agents to connect to different APIs without manual coding.
 MCP follows a client-server architecture where a host (AI agent) with client can connect to multiple servers (APIs). The MCP servers can securely connect to local data sources, and can connect to remote services using web APIs.  
-A key point to note is that MCP is _not an agent framework_ as it does not allow building or orchestrating agents, whereas MCP is a communication protocol for standardizing interactions between AI clients like LLMs and external tools.
+A key point to note is that MCP is _not an agent framework_ as it does not allow building or orchestrating agents, whereas MCP is a communication protocol for standardizing interactions between AI clients like LLMs and external tools.  
+It's still early days for the standard, but [OpenAI surprisingly has adopted this protocol](https://x.com/sama/status/1904957253456941061) from its rival Anthropic.  
 
 
 **Use Cases**  
