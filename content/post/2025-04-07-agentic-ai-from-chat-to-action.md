@@ -60,10 +60,10 @@ MCP follows a client-server architecture where a host (AI agent) with client can
 A key point to note is that MCP is _not an agent framework_ as it does not allow building or orchestrating agents, whereas MCP is a communication protocol for standardizing interactions between AI clients like LLMs and external tools.  
 It's still early days for the standard, but [OpenAI surprisingly has adopted this protocol](https://x.com/sama/status/1904957253456941061) from its rival Anthropic.  
 
-**May8, 2025 - Update**
-**Agent2Agent A2A protocol**: Google launched last month the [A2A open protocol](https://github.com/google/A2A_, which provides a standard way for agents to collaborate with each other, irrespective of their regardless of their underlying frameworks or vendors. 
-The A2A protocol supports communication between a "client" agent and a “remote” agent, and uses a JSON format as an `agent card` - public metadata about an agent's capabilities, endpoint URL and authentication requirements. Client agents would use this agent card for discovery.  
-As of May 7,2025, [Microsoft announced supporting the A2A protocol](https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/05/07/empowering-multi-agent-apps-with-the-open-agent2agent-a2a-protocol/), and will include it in Azure AI Foundry and Copilot Studio.
+**May8, 2025 update**  
+- **Agent2Agent A2A protocol**: Google launched last month the [A2A open protocol](https://github.com/google/A2A), which provides a standard way for agents to collaborate with each other, irrespective of their regardless of their underlying frameworks or vendors. 
+The A2A protocol supports communication between a "client" agent and a “remote” agent, and uses a JSON format as an {{< blue-text >}}agent card{{< /blue-text >}} - public metadata about an agent's capabilities, endpoint URL and authentication requirements. Client agents would use this agent card for discovery.  
+- As of May 7,2025, [Microsoft announced supporting the A2A protocol](https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/05/07/empowering-multi-agent-apps-with-the-open-agent2agent-a2a-protocol/), and will include it in Azure AI Foundry and Copilot Studio.  
 
 
 **Use Cases**  
