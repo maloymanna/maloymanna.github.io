@@ -43,7 +43,7 @@ The {{< blue-text >}}Delta Lake{{< /blue-text >}} is an ACID table storage layer
 
 **The Lakehouse**
 These features of the Delta Lake have popularized the concept of the `lakehouse`, something with combines some of the best features of data lakes and data warehouses.
-In essence, the Delta Lake sits in between data lakes and data warehouses.
+In essence, the Delta Lake **Lakehouse** sits in between data lakes and data warehouses.
 | Parameter | Data warehouse   | Lakehouse | Data Lake |
 | --- | ------------| --- | --- |
 | Type of data | Structured data only | Both structured and unstructured data | Both structured and unstructured data |

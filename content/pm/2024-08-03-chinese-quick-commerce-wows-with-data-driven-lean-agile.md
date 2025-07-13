@@ -43,7 +43,7 @@ Let's look at the Chinese quick-commerce corporations which have leveraged lean 
 {{< blue-text >}}Shein{{< /blue-text >}}, the fast-fashion e-commerce giant, exemplifies the power of lean and agile in quick commerce. The company's business model is heavily centered around real-time data capture and analysis, allowing for rapid adaptation to consumer demands and optimization of production processes. Data-driven approach is a core principle of lean and agile methodologies, and using these demand signals enables Shein to reduce inventory to a minimum or pivot and scale rapidly when needed.  
 - **Rapid Prototyping**: Shein produces small batches of new designs and tests them in the market, allowing for quick iteration based on customer feedback.
 - **Just-in-Time Production**: Closely aligning production with demand, JIT allows minimizing inventory waste and responding to market trends quickly.
-3. **Continuous Feedback Loop**: Shein's digital platform captures real-time data on customer preferences, enabling constant refinement of product offerings. 
+- **Continuous Feedback Loop**: Shein's digital platform captures real-time data on customer preferences, enabling constant refinement of product offerings. 
 
 {{< blue-text >}}AliExpress{{< /blue-text >}}, part of the Alibaba Group, has leveraged lean and agile principles to create a global marketplace connecting consumers with manufacturers. The platform's success is built on its ability to match consumer demand with factory output, effectively bringing Chinese production capabilities to a global audience.
 - **Streamlined Supply Chain**: By connecting consumers directly with manufacturers, AliExpress eliminates intermediaries, reducing costs and improving efficiency.
@@ -70,7 +70,7 @@ With the AI revolution underway, Generative AI tools have the potential to signi
 
 **Enhancing Creativity and Innovation**
 
-One of the most exciting prospects of Gen AI in product management is its ability to enhance creativity and innovation. By analyzing vast amounts of market data and customer feedback, AI can generate insights and ideas that might not be immediately apparent through traditional methods. This capability aligns perfectly with lean principles, which emphasize maximizing customer value and minimizing waste. Gen AI tools could 
+One of the most exciting prospects of Gen AI in product management is its ability to enhance creativity and innovation. By analyzing vast amounts of market data and customer feedback, AI can generate insights and ideas that might not be immediately apparent through traditional methods. This capability aligns perfectly with lean principles, which emphasize maximizing customer value and minimizing waste. Gen AI tools could:   
 - propose novel product features or entirely new product concepts based on changing market trends and customer preferences.
 - suggest improvements or optimize design and enable rapid experimentation with automated A/B testing at scale
 - AI-driven personalization at scale can help tailor experiences to individual user preferences, enhancing customer satisfaction and loyalty. This seems only natural given what Tiktok has already been able to achieve.  
