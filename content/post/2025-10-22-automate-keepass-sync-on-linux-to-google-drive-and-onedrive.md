@@ -22,9 +22,10 @@ Examples of some alternatives Linux clients:
 While the setup of these tools is straightforward, using unauthenticated github repositories comes with its own security risks e.g. malware or data exfiltration.
 For discerning users, one particular interesting case is the backup of password files to cloud drives. Such users have already discounted options like:  
 | Option | Risk / Disadvantage |
-|--------|---------------------|
+|--------|:---------------------|
 | Online password managers | Privacy and security aren't as reliable as Big Tech, hack stories abound  |
-| Browser's in-built password manager | High possibility of leakage during multi-tasking, at risk from rogue extensions |
+| Browser's in-built password manager | High possibility of leakage during multi-tasking, at risk from rogue extensions |  
+
 One of the safer options is to use a trusted offline password manager like KeePass. That still leaves the problem of having access to it across your devices like mobiles and computers, with the latest updated passwords. And hence the required backup to cloud drives.
 
 **Scripting the solution**
