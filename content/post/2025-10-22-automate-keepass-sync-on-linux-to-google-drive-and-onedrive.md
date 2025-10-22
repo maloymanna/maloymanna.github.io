@@ -50,7 +50,7 @@ sudo apt install inotify-tools rclone -y
 - Follow OAuth steps in browser to authenticate
 - Select Advanced Options to scope rclone access with least privilege. e.g. to restrict rclone to a specific folder hierarchy, set the `root_folder_id`. So if the folder you want rclone to use has a URL which looks like `https://drive.google.com/drive/folders/1XyfxxxxxxxxxxxxxxxxxxxxxxxxxKHCh` in the browser, then you use `1XyfxxxxxxxxxxxxxxxxxxxxxxxxxKHCh` as the `root_folder_id` in the config.
 
-***OneDrive***
+***OneDrive***  
 While testing I found the same process failed for OneDrive, when using rclone version < 1.62.
 The process works differently for OneDrive because Microsoft uses different authentication scopes for read vs write operations. I also found that rclone doesn't have fine-grained scopes for OneDrive.
 - Force a clean flow using `rclone authorize "onedrive"`
@@ -62,8 +62,8 @@ The process works differently for OneDrive because Microsoft uses different auth
 - When prompted to paste the result of `rclone authorize "onedrive"`, paste the JSON access token from the previous step
 - This would ensure the right scopes are applied for rclone to authenticate for the file sync (Step 3 script).
 
-**Step 3**
-- See sample bash script
+**Step 3 - Bash script to bring it altogether**
+- See sample [bash script](/sync-keepass.sh)
 - Make the script executable `chmod +x ~/sync-keepass.sh`
 - Add the script to `~/.bashrc` or `~/.profile` and/or add to Autostart/ systemd user service.
 - Each update and save to the KeePass file triggers a [close_write](https://linux.die.net/man/1/inotifywait) event, and the script uses rclone to upload it to both cloud drives.
