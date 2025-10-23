@@ -13,20 +13,20 @@ tags:
 - linux, security, productivity
 ---
 Neither Google nor Microsoft provide native Linux clients for their popular online storage systmes: Google Drive and OneDrive. This is expected as Linux is not mainstream in the consumer space, even though it's huge in the server space on both Google Cloud Platform or Azure Cloud, as well as Amazon Web Services.  
-The Linux world is not short of alternatives, and several unofficial clients are available on the internet/ Github to be used to setup synchronization and backup to these cloud drives. 
+The Linux world is not short of alternatives, and several unofficial clients are available on the internet/ Github to be used to setup synchronization and backup to these cloud drives.  
 Examples of some alternatives Linux clients: 
 - Google Drive: [KIO GDrive](https://community.kde.org/KIO_GDrive), [Drive](https://github.com/odeke-em/drive)  
 - OneDrive:  [A client](https://github.com/abraunegg/onedrive), [A GUI](https://github.com/bpozdena/OneDriveGUI)  
 
-**Why KeePass?**
+**Why KeePass?**  
 While the setup of these tools is straightforward, using unauthenticated github repositories comes with its own security risks e.g. malware or data exfiltration.
 For discerning users, one particular interesting case is the backup of password files to cloud drives. Such users have already discounted options like:  
 | Option | Risk / Disadvantage |
 |--------|:---------------------|
-| Online password managers | Privacy and security aren't as reliable as Big Tech, hack stories abound  |
-| Browser's in-built password manager | High possibility of leakage during multi-tasking, at risk from rogue extensions |  
+| Online password managers | Privacy and security aren't as reliable as Big Tech, hack stories abound e.g. [LastPass data breach](https://blog.lastpass.com/posts/notice-of-recent-security-incident) |
+| Browser's in-built password manager | High possibility of leakage during multi-tasking, at risk from rogue extensions or malware e.g. RedLine Stealer |  
 
-One of the safer options is to use a trusted offline password manager like KeePass. That still leaves the problem of having access to it across your devices like mobiles and computers, with the latest updated passwords. And hence the required backup to cloud drives.
+One of the safer options is to use a trusted offline password manager like [KeePass](https://keepass.info). That still leaves the problem of having access to it across your devices like mobiles and computers, with the latest updated passwords. And hence the required backup to cloud drives.
 
 **Scripting the solution**
 A simple solution to automate the sync involves 3 steps:
@@ -63,9 +63,42 @@ The process works differently for OneDrive because Microsoft uses different auth
 - This would ensure the right scopes are applied for rclone to authenticate for the file sync (Step 3 script).
 
 **Step 3 - Bash script to bring it altogether**
-- See sample [bash script](/sync-keepass.sh)
+- See bash script below ([also linked](/sync-keepass.sh))
+```
+#!/bin/bash
+
+# Configuration
+LOCAL_FILE="$HOME/Documents/KeePass.kdbx"   # <-- KeePass path
+GOOGLEDRIVE_REMOTE="googledrive:KeePass/"   # Folder in Google Drive
+ONEDRIVE_REMOTE="onedrive:KeePass/"         # Folder in OneDrive
+
+# Ensure destination folders exist (optional but safe)
+rclone mkdir "$GOOGLEDRIVE_REMOTE"
+rclone mkdir "$ONEDRIVE_REMOTE"
+
+# Function to sync file
+sync_file() {
+    echo "$(date): File changed. Syncing to cloud..."
+    
+    # Upload to Google Drive
+    rclone copy "$LOCAL_FILE" "$GOOGLEDRIVE_REMOTE" --progress
+    if [ $? -eq 0 ]; then
+        echo "$(date): ✅ Sync to Google Drive successful."
+    else
+        echo "$(date): ❌ Failed to sync to Google Drive."
+    fi
+
+    # Upload to OneDrive
+    rclone copy "$LOCAL_FILE" "$ONEDRIVE_REMOTE" --progress
+    if [ $? -eq 0 ]; then
+        echo "$(date): ✅ Sync to OneDrive successful."
+    else
+        echo "$(date): ❌ Failed to sync to OneDrive."
+    fi
+}
+
+```
 - Make the script executable `chmod +x ~/sync-keepass.sh`
 - Add the script to `~/.bashrc` or `~/.profile` and/or add to Autostart/ systemd user service.
-- Each update and save to the KeePass file triggers a [close_write](https://linux.die.net/man/1/inotifywait) event, and the script uses rclone to upload it to both cloud drives.
--
+- Each update and save to the KeePass file triggers a [close_write](https://linux.die.net/man/1/inotifywait) event, and the script uses rclone to upload it to both cloud drives.  
 
