@@ -6,14 +6,14 @@ layout: post
 slug: automate-keepass-sync-on-linux-to-google-drive-and-onedrive
 title: "Automate KeePass sync on Linux to Google Drive and OneDrive"
 layout: post
-description: "Automate KeePass sync on Linux to Google Drive and OneDrive"
+description: "Automate KeePass backup from Linux to Google Drive and OneDrive"
 categories:
 - linux, security
 tags:
 - linux, security, productivity
 ---
-Neither Google nor Microsoft provide native Linux clients for their popular online storage systmes: Google Drive and OneDrive. This is expected as Linux is not mainstream in the consumer space, even though it's huge in the server space on both Google Cloud Platform or Azure Cloud, as well as Amazon Web Services.  
-The Linux world is not short of alternatives, and several unofficial clients are available on the internet/ Github to be used to setup synchronization and backup to these cloud drives.  
+Neither Google nor Microsoft provide native Linux clients for their popular online storage systems: Google Drive and OneDrive. This is expected as Linux is not mainstream in the consumer space, even though it's huge in the server space on both Google Cloud Platform or Azure Cloud, as well as on Amazon Web Services.  
+The Linux ecosystem though is not short of alternatives, and several unofficial clients are available on the internet/ Github to be used to setup synchronization and backup to these cloud drives.  
 Examples of some alternatives Linux clients: 
 - Google Drive: [KIO GDrive](https://community.kde.org/KIO_GDrive), [Drive](https://github.com/odeke-em/drive)  
 - OneDrive:  [A client](https://github.com/abraunegg/onedrive), [A GUI](https://github.com/bpozdena/OneDriveGUI)  
@@ -97,6 +97,18 @@ sync_file() {
     fi
 }
 
+# Optional initial sync
+echo "Starting watcher for: $LOCAL_FILE"
+sync_file
+# echo "Exiting" # Uncomment if using in a one-shot manner
+
+# Watch for modifications - comment out this section if not scheduled
+inotifywait -m -e close_write --format '%w%f' "$LOCAL_FILE" | while read FILE
+do
+    if [ "$FILE" = "$LOCAL_FILE" ]; then
+        sync_file
+    fi
+done
 ```
 - Make the script executable `chmod +x ~/sync-keepass.sh`
 - Add the script to `~/.bashrc` or `~/.profile` and/or add to Autostart/ systemd user service.
