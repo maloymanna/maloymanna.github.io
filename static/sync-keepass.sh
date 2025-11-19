@@ -33,8 +33,9 @@ sync_file() {
 # Optional initial sync
 echo "Starting watcher for: $LOCAL_FILE"
 sync_file
+# echo "Exiting" # Uncomment if using in a one-shot manner
 
-# Watch for modifications
+# Watch for modifications - comment out this section if not scheduled
 inotifywait -m -e close_write --format '%w%f' "$LOCAL_FILE" | while read FILE
 do
     if [ "$FILE" = "$LOCAL_FILE" ]; then
