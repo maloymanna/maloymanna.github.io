@@ -14,7 +14,7 @@ Hi, I'm Maloy! :wave:
 I'm a data hacker, and also a project manager! I work at the confluence of data, analytics, IT engineering, cloud security and agile project management. 
 
 Over the years, I've worked on application development, data warehousing, BI / analytics, big data as well as project management and line management. I've traveled and worked across the UK, US, India and Europe, and picked up languages, not only programming! :sweat_smile:  
-Nowadays I work as an agile PM on cloud security for data, analytics and AI products built on Azure and Office 365  clouds.
+Nowadays I work as an agile PM on cloud security for data, analytics and AI products built on Databricks, Azure and Microsoft 365.
 
 I love technology and data, as well as agile and lean. Big data and AI, which respects privacy and ethics, and is designed ground-up with security, have tremendous potential to create a better, beautiful world. Agile project management and lean principles of flow applied to modern IT engineering with `DevOps`, (and _Security_ too with `DevSecOps`!) can help us achieve these enormous opportunities.
 
