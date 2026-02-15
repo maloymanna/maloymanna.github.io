@@ -29,6 +29,8 @@
 		{{/* <h1> {{ .Title }}</h1> */}}
 	  {{ partial "post_meta.html" . }}
 
+	  {{ partial "text-to-speech.html" . }}
+
 	  {{ .Content }}
 
 	  {{ partial "prev_next_post.html" . }}

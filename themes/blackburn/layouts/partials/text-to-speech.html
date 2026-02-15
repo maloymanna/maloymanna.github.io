@@ -1,0 +1,249 @@
+<div class="tts-container" style="padding-bottom: 2em; margin-bottom: 2em; border-bottom: 1px solid #eee;">
+  <div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
+    <button id="tts-button" class="pure-button tts-button" style="display: flex; align-items: center; gap: 8px; font-family: inherit; font-weight: 600; background: #1f8dd6; color: white; border-radius: 4px; padding: 0.5em 1.5em;">
+      <span id="tts-icon">🔊</span>
+      <span id="tts-text">Listen to this article</span>
+    </button>
+    <div id="tts-status" style="font-size: 0.9em; color: #777; font-style: italic;">Ready</div>
+  </div>
+</div>
+
+<script>
+(function() {
+  // --- Configuration & State ---
+  const config = { speed: 1.0, pitch: 1.0, volume: 1.0 };
+  let isPaused = false;
+  let isPlaying = false;
+  let allVoices = [];
+  let selectedVoice = null;
+  let textChunks = [];
+  let currentChunkIndex = 0;
+  
+  // Prevent Garbage Collection in Chrome by keeping a global reference
+  window._ttsUtterance = null;
+
+  let button, buttonIcon, buttonText, statusDiv;
+
+  // --- UI Helpers ---
+  function setStatus(msg, isErr = false) {
+    if (statusDiv) {
+      statusDiv.textContent = msg;
+      statusDiv.style.color = isErr ? "#b91d47" : "#777";
+    }
+  }
+
+  function updateUI(state) {
+    if (!button) return;
+    if (state === 'playing') {
+      buttonIcon.textContent = '⏸️';
+      buttonText.textContent = 'Pause'; 
+      button.style.background = '#e91e63'; // Blackburn-ish accent for pause
+    } else if (state === 'paused') {
+      buttonIcon.textContent = '▶️';
+      buttonText.textContent = 'Resume'; 
+      button.style.background = '#1f8dd6';
+    } else {
+      buttonIcon.textContent = '🔊';
+      buttonText.textContent = 'Listen to this article'; 
+      button.style.background = '#1f8dd6';
+    }
+  }
+
+  // --- Voice Selection (Edge Natural Priority) ---
+  function loadVoices() {
+    return new Promise((resolve) => {
+      const synth = window.speechSynthesis;
+      const trySelect = () => {
+        allVoices = synth.getVoices();
+        if (allVoices.length > 0) {
+          // Priority: Edge Natural -> Chrome Google -> Safari -> Fallback
+          const voiceTiers = [
+            ['Microsoft Jenny', 'Microsoft Aria', 'Microsoft Emma', 'Microsoft Ryan'],
+            ['Google UK English Female', 'Google UK English Male', 'Google US English'],
+            ['Samantha', 'Alex', 'Victoria'],
+            ['Microsoft', 'Google']
+          ];
+
+          for (const tier of voiceTiers) {
+            for (const name of tier) {
+              let match = allVoices.find(v => v.name.toLowerCase().includes(name.toLowerCase()));
+              if (match) {
+                selectedVoice = match;
+                resolve();
+                return;
+              }
+            }
+          }
+          selectedVoice = allVoices.find(v => v.lang.startsWith('en')) || allVoices[0];
+          resolve();
+        }
+      };
+
+      if (synth.onvoiceschanged !== undefined) {
+        synth.onvoiceschanged = trySelect;
+      }
+      trySelect();
+    });
+  }
+
+  // --- Content Extraction ---
+  function getCleanArticleText() {
+    // Precise selectors to avoid sidemenus/nav
+    const selectors = ['article', '.post-content', '.content', 'main', '#content', '.entry-content'];
+    let content = null;
+    
+    for (const selector of selectors) {
+      const el = document.querySelector(selector);
+      if (el) { content = el; break; }
+    }
+
+    if (!content) content = document.body;
+
+    const clone = content.cloneNode(true);
+    
+    // Remove non-article noise
+    const exclude = [
+      'script', 'style', 'nav', 'header', 'footer', '.post-meta','.tts-container', 
+      'button', 'aside', '.sidebar', '#comments', '.social-share', 
+      '.menu', '.nav-menu', '.table-of-contents'
+    ];
+    exclude.forEach(s => clone.querySelectorAll(s).forEach(el => el.remove()));
+    
+    return (clone.innerText || clone.textContent).replace(/\s+/g, ' ').trim();
+  }
+
+  function getArticleChunks() {
+    console.log(document.querySelector(".header"))
+    const fullText = document.querySelector(".header h1").textContent + "." + getCleanArticleText();
+    // Chunking avoids the 15-second "silent timeout" in Chrome Linux
+    const chunks = fullText.match(/[^\.!\?]+[\.!\?]+/g) || [fullText];
+    return chunks.map(c => c.trim()).filter(c => c.length > 0);
+  }
+
+  // --- Speech Control ---
+  function speakChunk() {
+    if (currentChunkIndex >= textChunks.length) {
+      isPlaying = false;
+      updateUI('default');
+      setStatus('Finished');
+      return;
+    }
+
+    const synth = window.speechSynthesis;
+    
+    // Global reference to prevent GC mid-sentence
+    window._ttsUtterance = new SpeechSynthesisUtterance(textChunks[currentChunkIndex]);
+    window._ttsUtterance.voice = selectedVoice;
+    window._ttsUtterance.rate = config.speed;
+    window._ttsUtterance.pitch = config.pitch;
+    window._ttsUtterance.volume = config.volume;
+
+    window._ttsUtterance.onstart = () => {
+      isPlaying = true;
+      updateUI('playing');
+      setStatus('Reading...');
+    };
+
+    window._ttsUtterance.onend = () => {
+      if (!isPaused) {
+        currentChunkIndex++;
+        speakChunk();
+      }
+    };
+
+    window._ttsUtterance.onerror = (e) => {
+      console.error('TTS Error:', e);
+      isPlaying = false;
+      updateUI('default');
+      setStatus('Error');
+    };
+
+    synth.speak(window._ttsUtterance);
+    
+    // Essential for Linux Chrome: ensure the synth isn't stuck "pending"
+    if (synth.paused) synth.resume();
+  }
+
+  async function toggleSpeech() {
+    const synth = window.speechSynthesis;
+
+    if (isPlaying && !isPaused) {
+      synth.pause();
+      isPaused = true;
+      updateUI('paused');
+      setStatus('Paused');
+      return;
+    }
+
+    if (isPaused) {
+      isPaused = false;
+      synth.resume();
+      updateUI('playing');
+      setStatus('Reading...');
+      return;
+    }
+
+    // New Session
+    synth.cancel();
+    
+    setTimeout(async () => {
+      await loadVoices();
+      textChunks = getArticleChunks();
+      currentChunkIndex = 0;
+      isPaused = false;
+
+      if (textChunks.length === 0) {
+        setStatus('No text found', true);
+        return;
+      }
+      
+      speakChunk();
+    }, 150);
+  }
+
+  // --- Initialization ---
+  function init() {
+    button = document.getElementById('tts-button');
+    buttonIcon = document.getElementById('tts-icon');
+    buttonText = document.getElementById('tts-text');
+    statusDiv = document.getElementById('tts-status');
+
+    if (button) button.addEventListener('click', toggleSpeech);
+
+    if ('speechSynthesis' in window) {
+      loadVoices().then(() => setStatus('Ready'));
+    } else {
+      setStatus('Unsupported', true);
+      if (button) button.disabled = true;
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+  // Clean up resources on leave
+  window.addEventListener('beforeunload', () => window.speechSynthesis.cancel());
+})();
+</script>
+
+<style>
+/* Mimic Pure CSS transitions */
+.tts-button { 
+  transition: background 0.2s ease, transform 0.1s ease;
+  border: none;
+}
+.tts-button:hover { 
+  filter: brightness(110%);
+}
+.tts-button:active { 
+  transform: translateY(1px); 
+}
+
+@media (prefers-color-scheme: dark) {
+  .tts-container { border-bottom-color: #333 !important; }
+  #tts-status { color: #999 !important; }
+}
+</style>
