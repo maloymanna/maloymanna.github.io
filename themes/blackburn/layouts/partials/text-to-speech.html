@@ -10,7 +10,7 @@
 
   <div id="tts-debug-panel" style="display: none; margin-top: 15px; padding: 10px; background: #222; color: #0f0; font-family: monospace; font-size: 11px; border-radius: 4px; max-height: 200px; overflow-y: auto;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
-      <span>DEBUG LOG</span>
+      <span>DEBUG LOG (Android Fix Active)</span>
       <button id="tts-debug-clear" style="background: #444; color: #fff; border: none; cursor: pointer;">Clear</button>
     </div>
     <div id="tts-debug-content"></div>
@@ -27,10 +27,11 @@
   let textChunks = [];
   let currentChunkIndex = 0;
   
-  // Chrome Android state tracking
-  window._ttsUtterance = null;
-  let resumeTimeout = null;
+  // Detection for the Android Resume bug
+  const isAndroid = /Android/i.test(navigator.userAgent);
+  const isChrome = /Chrome/i.test(navigator.userAgent);
 
+  window._ttsUtterance = null;
   let button, buttonIcon, buttonText, statusDiv, debugContent, debugPanel;
 
   function debugLog(msg) {
@@ -109,14 +110,17 @@
     }
 
     const synth = window.speechSynthesis;
+    // Always create a fresh utterance instance
     window._ttsUtterance = new SpeechSynthesisUtterance(textChunks[currentChunkIndex]);
     window._ttsUtterance.voice = selectedVoice;
     window._ttsUtterance.rate = config.speed;
     
     window._ttsUtterance.onstart = () => {
       debugLog(`Started chunk ${currentChunkIndex}`);
-      isPlaying = true; updateUI('playing'); setStatus('Reading...');
-      if (resumeTimeout) clearTimeout(resumeTimeout);
+      isPlaying = true; 
+      isPaused = false;
+      updateUI('playing'); 
+      setStatus('Reading...');
     };
 
     window._ttsUtterance.onend = () => {
@@ -127,9 +131,18 @@
       }
     };
 
-    window._ttsUtterance.onerror = (e) => debugLog(`Error: ${e.error}`);
+    window._ttsUtterance.onerror = (e) => {
+      debugLog(`Error in chunk ${currentChunkIndex}: ${e.error}`);
+      // If error is 'interrupted' on Android, it usually means we called cancel()
+      if (e.error !== 'interrupted') {
+        isPlaying = false;
+        updateUI('default');
+      }
+    };
 
     synth.speak(window._ttsUtterance);
+    
+    // Essential for Linux/Android Chrome: ensure engine isn't in 'pending'
     if (synth.paused) synth.resume();
   }
 
@@ -147,19 +160,29 @@
 
     if (isPaused) {
       debugLog("Action: Resume requested");
-      isPaused = false;
-      synth.resume();
       
-      // Chrome Android Fix: "Hard Resume"
-      // If the engine doesn't actually start speaking after 250ms, re-trigger the speak call.
-      resumeTimeout = setTimeout(() => {
-        if (!synth.speaking || synth.paused) {
-          debugLog("Soft resume failed, performing Hard Resume...");
-          synth.cancel();
+      if (isAndroid && isChrome) {
+        debugLog("Android Chrome detected: Using 'Re-speak' Resume strategy");
+        // Android fix: Resume often stalls. 
+        // We cancel the "paused" state and restart the current chunk from the beginning.
+        synth.cancel();
+        setTimeout(() => {
           speakChunk();
-        }
-      }, 250);
-
+        }, 50);
+      } else {
+        // Standard resume for Linux/Edge/iOS
+        isPaused = false;
+        synth.resume();
+        // Fallback: If standard resume fails to report speaking after 400ms
+        setTimeout(() => {
+          if (isPaused === false && (!synth.speaking || synth.paused)) {
+            debugLog("Standard resume stalled, forcing re-speak...");
+            synth.cancel();
+            speakChunk();
+          }
+        }, 400);
+      }
+      
       updateUI('playing');
       setStatus('Reading...');
       return;
@@ -169,7 +192,11 @@
     synth.cancel();
     setTimeout(async () => {
       await loadVoices();
-      textChunks = getCleanArticleText().match(/[^\.!\?]+[\.!\?]+/g) || [getCleanArticleText()];
+      const rawText = getCleanArticleText();
+      // Improved chunking: split by punctuation but filter empty strings
+      textChunks = rawText.match(/[^\.!\?]+[\.!\?]+/g) || [rawText];
+      textChunks = textChunks.map(t => t.trim()).filter(t => t.length > 0);
+      
       currentChunkIndex = 0;
       isPaused = false;
       if (textChunks.length > 0) speakChunk();
@@ -184,6 +211,8 @@
     statusDiv = document.getElementById('tts-status');
     debugPanel = document.getElementById('tts-debug-panel');
     debugContent = document.getElementById('tts-debug-content');
+
+    if (!button) return;
 
     button.addEventListener('click', toggleSpeech);
     document.getElementById('tts-debug-toggle').addEventListener('click', () => {
@@ -200,6 +229,7 @@
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
+  
   window.addEventListener('beforeunload', () => window.speechSynthesis.cancel());
 })();
 </script>
