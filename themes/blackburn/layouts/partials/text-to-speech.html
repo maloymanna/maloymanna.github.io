@@ -10,7 +10,7 @@
 
   <div id="tts-debug-panel" style="display: none; margin-top: 15px; padding: 10px; background: #222; color: #0f0; font-family: monospace; font-size: 11px; border-radius: 4px; max-height: 200px; overflow-y: auto;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
-      <span>DEBUG LOG (Word-Level Resume Active)</span>
+      <span>DEBUG LOG (Android Ticker Active)</span>
       <button id="tts-debug-clear" style="background: #444; color: #fff; border: none; cursor: pointer;">Clear</button>
     </div>
     <div id="tts-debug-content"></div>
@@ -27,8 +27,11 @@
   let textChunks = [];
   let currentChunkIndex = 0;
   
-  // Word tracking for Android Resume Fix
-  let lastWordOffset = 0; 
+  // Tracking progress for the Android Resume bug
+  let lastKnownCharIndex = 0;
+  let tickerInterval = null;
+  const ESTIMATED_CHARS_PER_SEC = 15; // Average speed for Android OS voices
+
   const isAndroid = /Android/i.test(navigator.userAgent);
   const isChrome = /Chrome/i.test(navigator.userAgent);
 
@@ -69,16 +72,17 @@
       const trySelect = () => {
         allVoices = synth.getVoices();
         if (allVoices.length > 0) {
+          // Tiered priority: Edge (if present) -> Chrome/Google -> System default
           const voiceTiers = [
-            ['Microsoft Jenny', 'Microsoft Aria', 'Microsoft Emma'],
-            ['Google UK English Female', 'Google US English'],
-            ['Samantha', 'Alex'],
-            ['Microsoft', 'Google']
+            ['Microsoft Jenny', 'Microsoft Aria'],
+            ['Google UK English', 'Google US English', 'Google English'],
+            ['en-US', 'en-GB'],
+            ['default']
           ];
           for (const tier of voiceTiers) {
             for (const name of tier) {
-              let match = allVoices.find(v => v.name.toLowerCase().includes(name.toLowerCase()));
-              if (match) { selectedVoice = match; debugLog(`Voice: ${match.name}`); resolve(); return; }
+              let match = allVoices.find(v => v.name.includes(name) || v.lang.includes(name));
+              if (match) { selectedVoice = match; debugLog(`Voice Selected: ${match.name}`); resolve(); return; }
             }
           }
           selectedVoice = allVoices[0];
@@ -104,42 +108,55 @@
     return (clone.innerText || clone.textContent).replace(/\s+/g, ' ').trim();
   }
 
+  function startTicker() {
+    if (tickerInterval) clearInterval(tickerInterval);
+    // Every 200ms, estimate how many characters have been read
+    tickerInterval = setInterval(() => {
+      if (!window.speechSynthesis.paused && isPlaying) {
+        lastKnownCharIndex += (ESTIMATED_CHARS_PER_SEC * config.speed) * 0.2;
+      }
+    }, 200);
+  }
+
+  function stopTicker() {
+    if (tickerInterval) clearInterval(tickerInterval);
+  }
+
   function speakChunk(offset = 0) {
     if (currentChunkIndex >= textChunks.length) {
       isPlaying = false; updateUI('default'); setStatus('Finished');
+      stopTicker();
       return;
     }
 
     const synth = window.speechSynthesis;
-    // For Android resume, we slice the text to start from the last known word index
     const fullText = textChunks[currentChunkIndex];
-    const textToSpeak = offset > 0 ? fullText.substring(offset) : fullText;
+    // Start from the estimated character position
+    const textToSpeak = fullText.substring(Math.floor(offset));
 
     window._ttsUtterance = new SpeechSynthesisUtterance(textToSpeak);
     window._ttsUtterance.voice = selectedVoice;
     window._ttsUtterance.rate = config.speed;
-    
-    // TRACKING WORD BOUNDARY
+
+    // Use onboundary if it works (Edge/Linux), but our ticker handles Android
     window._ttsUtterance.onboundary = (event) => {
       if (event.name === 'word') {
-        // Store the global offset within the original sentence
-        lastWordOffset = offset + event.charIndex;
+        lastKnownCharIndex = offset + event.charIndex;
       }
     };
 
     window._ttsUtterance.onstart = () => {
-      debugLog(`Started chunk ${currentChunkIndex} from char ${offset}`);
-      isPlaying = true; 
-      isPaused = false;
-      updateUI('playing'); 
-      setStatus('Reading...');
+      debugLog(`Started chunk ${currentChunkIndex} at char ${Math.floor(offset)}`);
+      isPlaying = true; isPaused = false;
+      updateUI('playing'); setStatus('Reading...');
+      startTicker();
     };
 
     window._ttsUtterance.onend = () => {
-      debugLog(`Ended chunk ${currentChunkIndex}`);
       if (!isPaused) {
+        debugLog(`Finished chunk ${currentChunkIndex}`);
         currentChunkIndex++;
-        lastWordOffset = 0; // Reset offset for the next new sentence
+        lastKnownCharIndex = 0;
         speakChunk();
       }
     };
@@ -147,8 +164,7 @@
     window._ttsUtterance.onerror = (e) => {
       if (e.error !== 'interrupted') {
         debugLog(`Error: ${e.error}`);
-        isPlaying = false;
-        updateUI('default');
+        isPlaying = false; updateUI('default');
       }
     };
 
@@ -160,9 +176,10 @@
     const synth = window.speechSynthesis;
 
     if (isPlaying && !isPaused) {
-      debugLog(`Action: Pause at offset ${lastWordOffset}`);
+      debugLog(`Action: Pause at estimated index ${Math.floor(lastKnownCharIndex)}`);
       synth.pause();
       isPaused = true;
+      stopTicker();
       updateUI('paused');
       setStatus('Paused');
       return;
@@ -171,22 +188,22 @@
     if (isPaused) {
       debugLog("Action: Resume requested");
       
+      // Android Chrome OS Voice Fix: 
+      // Forcefully cancel and restart from our tracked index because resume() is broken
       if (isAndroid && isChrome) {
-        debugLog(`Android Fix: Re-speaking from index ${lastWordOffset}`);
+        debugLog(`Android Fix: Re-starting from index ${Math.floor(lastKnownCharIndex)}`);
         synth.cancel();
-        setTimeout(() => {
-          // Pass the saved word offset back to the speech function
-          speakChunk(lastWordOffset);
-        }, 60);
+        setTimeout(() => speakChunk(lastKnownCharIndex), 60);
       } else {
         isPaused = false;
         synth.resume();
-        // Fallback for stalled native resume
+        startTicker();
+        // Native Resume Guard
         setTimeout(() => {
           if (isPaused === false && (!synth.speaking || synth.paused)) {
-            debugLog("Stalled resume, forcing re-speak...");
+            debugLog("Resume stalled, forcing re-speak...");
             synth.cancel();
-            speakChunk(lastWordOffset);
+            speakChunk(lastKnownCharIndex);
           }
         }, 400);
       }
@@ -205,7 +222,7 @@
       textChunks = textChunks.map(t => t.trim()).filter(t => t.length > 0);
       
       currentChunkIndex = 0;
-      lastWordOffset = 0;
+      lastKnownCharIndex = 0;
       isPaused = false;
       if (textChunks.length > 0) speakChunk();
       else setStatus('No text found', true);
@@ -238,19 +255,17 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
   
-  window.addEventListener('beforeunload', () => window.speechSynthesis.cancel());
+  window.addEventListener('beforeunload', () => {
+    stopTicker();
+    window.speechSynthesis.cancel();
+  });
 })();
 </script>
 
 <style>
-/* Blackburn Theme Styling */
-.tts-button { 
-  transition: background 0.2s ease, transform 0.1s ease; 
-  border: none; 
-}
+.tts-button { transition: background 0.2s ease, transform 0.1s ease; border: none; outline: none; }
 .tts-button:hover { filter: brightness(110%); }
 .tts-button:active { transform: translateY(1px); }
-
 @media (prefers-color-scheme: dark) {
   .tts-container { border-bottom-color: #333 !important; }
   #tts-status { color: #999 !important; }
