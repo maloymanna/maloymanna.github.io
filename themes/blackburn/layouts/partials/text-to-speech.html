@@ -4,13 +4,21 @@
       <span id="tts-icon">🔊</span>
       <span id="tts-text">Listen to this article</span>
     </button>
+    <button id="tts-debug-toggle" class="pure-button" style="padding: 4px 8px; font-size: 0.7em; background: #666; color: white;">🐛 Debug</button>
     <div id="tts-status" style="font-size: 0.9em; color: #777; font-style: italic;">Ready</div>
+  </div>
+
+  <div id="tts-debug-panel" style="display: none; margin-top: 15px; padding: 10px; background: #222; color: #0f0; font-family: monospace; font-size: 11px; border-radius: 4px; max-height: 200px; overflow-y: auto;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+      <span>DEBUG LOG</span>
+      <button id="tts-debug-clear" style="background: #444; color: #fff; border: none; cursor: pointer;">Clear</button>
+    </div>
+    <div id="tts-debug-content"></div>
   </div>
 </div>
 
 <script>
 (function() {
-  // --- Configuration & State ---
   const config = { speed: 1.0, pitch: 1.0, volume: 1.0 };
   let isPaused = false;
   let isPlaying = false;
@@ -19,12 +27,22 @@
   let textChunks = [];
   let currentChunkIndex = 0;
   
-  // Prevent Garbage Collection in Chrome by keeping a global reference
+  // Chrome Android state tracking
   window._ttsUtterance = null;
+  let resumeTimeout = null;
 
-  let button, buttonIcon, buttonText, statusDiv;
+  let button, buttonIcon, buttonText, statusDiv, debugContent, debugPanel;
 
-  // --- UI Helpers ---
+  function debugLog(msg) {
+    console.log("[TTS DEBUG]", msg);
+    if (debugContent) {
+      const entry = document.createElement('div');
+      entry.textContent = `> ${new Date().toLocaleTimeString()}: ${msg}`;
+      debugContent.appendChild(entry);
+      debugContent.scrollTop = debugContent.scrollHeight;
+    }
+  }
+
   function setStatus(msg, isErr = false) {
     if (statusDiv) {
       statusDiv.textContent = msg;
@@ -35,132 +53,83 @@
   function updateUI(state) {
     if (!button) return;
     if (state === 'playing') {
-      buttonIcon.textContent = '⏸️';
-      buttonText.textContent = 'Pause'; 
-      button.style.background = '#e91e63'; // Blackburn-ish accent for pause
+      buttonIcon.textContent = '⏸️'; buttonText.textContent = 'Pause'; button.style.background = '#e91e63';
     } else if (state === 'paused') {
-      buttonIcon.textContent = '▶️';
-      buttonText.textContent = 'Resume'; 
-      button.style.background = '#1f8dd6';
+      buttonIcon.textContent = '▶️'; buttonText.textContent = 'Resume'; button.style.background = '#1f8dd6';
     } else {
-      buttonIcon.textContent = '🔊';
-      buttonText.textContent = 'Listen to this article'; 
-      button.style.background = '#1f8dd6';
+      buttonIcon.textContent = '🔊'; buttonText.textContent = 'Listen to this article'; button.style.background = '#1f8dd6';
     }
   }
 
-  // --- Voice Selection (Edge Natural Priority) ---
   function loadVoices() {
     return new Promise((resolve) => {
       const synth = window.speechSynthesis;
       const trySelect = () => {
         allVoices = synth.getVoices();
         if (allVoices.length > 0) {
-          // Priority: Edge Natural -> Chrome Google -> Safari -> Fallback
           const voiceTiers = [
-            ['Microsoft Jenny', 'Microsoft Aria', 'Microsoft Emma', 'Microsoft Ryan'],
-            ['Google UK English Female', 'Google UK English Male', 'Google US English'],
-            ['Samantha', 'Alex', 'Victoria'],
+            ['Microsoft Jenny', 'Microsoft Aria', 'Microsoft Emma'],
+            ['Google UK English Female', 'Google US English'],
+            ['Samantha', 'Alex'],
             ['Microsoft', 'Google']
           ];
-
           for (const tier of voiceTiers) {
             for (const name of tier) {
               let match = allVoices.find(v => v.name.toLowerCase().includes(name.toLowerCase()));
-              if (match) {
-                selectedVoice = match;
-                resolve();
-                return;
-              }
+              if (match) { selectedVoice = match; debugLog(`Voice: ${match.name}`); resolve(); return; }
             }
           }
-          selectedVoice = allVoices.find(v => v.lang.startsWith('en')) || allVoices[0];
+          selectedVoice = allVoices[0];
           resolve();
         }
       };
-
-      if (synth.onvoiceschanged !== undefined) {
-        synth.onvoiceschanged = trySelect;
-      }
+      if (synth.onvoiceschanged !== undefined) synth.onvoiceschanged = trySelect;
       trySelect();
     });
   }
 
-  // --- Content Extraction ---
   function getCleanArticleText() {
-    // Precise selectors to avoid sidemenus/nav
-    const selectors = ['article', '.post-content', '.content', 'main', '#content', '.entry-content'];
+    const selectors = ['.post-content', '.content', '#main', 'article'];
     let content = null;
-    
-    for (const selector of selectors) {
-      const el = document.querySelector(selector);
+    for (const s of selectors) {
+      const el = document.querySelector(s);
       if (el) { content = el; break; }
     }
-
     if (!content) content = document.body;
-
     const clone = content.cloneNode(true);
-    
-    // Remove non-article noise
-    const exclude = [
-      'script', 'style', 'nav', 'header', 'footer', '.post-meta','.tts-container', 
-      'button', 'aside', '.sidebar', '#comments', '.social-share', 
-      '.menu', '.nav-menu', '.table-of-contents'
-    ];
+    const exclude = ['script', 'style', 'nav', 'header', 'footer', '.tts-container', 'aside', '.sidebar', '#menu'];
     exclude.forEach(s => clone.querySelectorAll(s).forEach(el => el.remove()));
-    
     return (clone.innerText || clone.textContent).replace(/\s+/g, ' ').trim();
   }
 
-  function getArticleChunks() {
-    console.log(document.querySelector(".header"))
-    const fullText = document.querySelector(".header h1").textContent + "." + getCleanArticleText();
-    // Chunking avoids the 15-second "silent timeout" in Chrome Linux
-    const chunks = fullText.match(/[^\.!\?]+[\.!\?]+/g) || [fullText];
-    return chunks.map(c => c.trim()).filter(c => c.length > 0);
-  }
-
-  // --- Speech Control ---
   function speakChunk() {
     if (currentChunkIndex >= textChunks.length) {
-      isPlaying = false;
-      updateUI('default');
-      setStatus('Finished');
+      isPlaying = false; updateUI('default'); setStatus('Finished');
       return;
     }
 
     const synth = window.speechSynthesis;
-    
-    // Global reference to prevent GC mid-sentence
     window._ttsUtterance = new SpeechSynthesisUtterance(textChunks[currentChunkIndex]);
     window._ttsUtterance.voice = selectedVoice;
     window._ttsUtterance.rate = config.speed;
-    window._ttsUtterance.pitch = config.pitch;
-    window._ttsUtterance.volume = config.volume;
-
+    
     window._ttsUtterance.onstart = () => {
-      isPlaying = true;
-      updateUI('playing');
-      setStatus('Reading...');
+      debugLog(`Started chunk ${currentChunkIndex}`);
+      isPlaying = true; updateUI('playing'); setStatus('Reading...');
+      if (resumeTimeout) clearTimeout(resumeTimeout);
     };
 
     window._ttsUtterance.onend = () => {
+      debugLog(`Ended chunk ${currentChunkIndex}`);
       if (!isPaused) {
         currentChunkIndex++;
         speakChunk();
       }
     };
 
-    window._ttsUtterance.onerror = (e) => {
-      console.error('TTS Error:', e);
-      isPlaying = false;
-      updateUI('default');
-      setStatus('Error');
-    };
+    window._ttsUtterance.onerror = (e) => debugLog(`Error: ${e.error}`);
 
     synth.speak(window._ttsUtterance);
-    
-    // Essential for Linux Chrome: ensure the synth isn't stuck "pending"
     if (synth.paused) synth.resume();
   }
 
@@ -168,6 +137,7 @@
     const synth = window.speechSynthesis;
 
     if (isPlaying && !isPaused) {
+      debugLog("Action: Pause");
       synth.pause();
       isPaused = true;
       updateUI('paused');
@@ -176,72 +146,68 @@
     }
 
     if (isPaused) {
+      debugLog("Action: Resume requested");
       isPaused = false;
       synth.resume();
+      
+      // Chrome Android Fix: "Hard Resume"
+      // If the engine doesn't actually start speaking after 250ms, re-trigger the speak call.
+      resumeTimeout = setTimeout(() => {
+        if (!synth.speaking || synth.paused) {
+          debugLog("Soft resume failed, performing Hard Resume...");
+          synth.cancel();
+          speakChunk();
+        }
+      }, 250);
+
       updateUI('playing');
       setStatus('Reading...');
       return;
     }
 
-    // New Session
+    debugLog("Action: New Session");
     synth.cancel();
-    
     setTimeout(async () => {
       await loadVoices();
-      textChunks = getArticleChunks();
+      textChunks = getCleanArticleText().match(/[^\.!\?]+[\.!\?]+/g) || [getCleanArticleText()];
       currentChunkIndex = 0;
       isPaused = false;
-
-      if (textChunks.length === 0) {
-        setStatus('No text found', true);
-        return;
-      }
-      
-      speakChunk();
+      if (textChunks.length > 0) speakChunk();
+      else setStatus('No text found', true);
     }, 150);
   }
 
-  // --- Initialization ---
   function init() {
     button = document.getElementById('tts-button');
     buttonIcon = document.getElementById('tts-icon');
     buttonText = document.getElementById('tts-text');
     statusDiv = document.getElementById('tts-status');
+    debugPanel = document.getElementById('tts-debug-panel');
+    debugContent = document.getElementById('tts-debug-content');
 
-    if (button) button.addEventListener('click', toggleSpeech);
+    button.addEventListener('click', toggleSpeech);
+    document.getElementById('tts-debug-toggle').addEventListener('click', () => {
+      debugPanel.style.display = debugPanel.style.display === 'none' ? 'block' : 'none';
+    });
+    document.getElementById('tts-debug-clear').addEventListener('click', () => { debugContent.innerHTML = ''; });
 
     if ('speechSynthesis' in window) {
       loadVoices().then(() => setStatus('Ready'));
     } else {
-      setStatus('Unsupported', true);
-      if (button) button.disabled = true;
+      setStatus('Not supported', true);
     }
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
-
-  // Clean up resources on leave
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
   window.addEventListener('beforeunload', () => window.speechSynthesis.cancel());
 })();
 </script>
 
 <style>
-/* Mimic Pure CSS transitions */
-.tts-button { 
-  transition: background 0.2s ease, transform 0.1s ease;
-  border: none;
-}
-.tts-button:hover { 
-  filter: brightness(110%);
-}
-.tts-button:active { 
-  transform: translateY(1px); 
-}
-
+.tts-button { transition: background 0.2s ease, transform 0.1s ease; border: none; }
+.tts-button:hover { filter: brightness(110%); }
+.tts-button:active { transform: translateY(1px); }
 @media (prefers-color-scheme: dark) {
   .tts-container { border-bottom-color: #333 !important; }
   #tts-status { color: #999 !important; }
