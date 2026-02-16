@@ -10,7 +10,7 @@
 
   <div id="tts-debug-panel" style="display: none; margin-top: 15px; padding: 10px; background: #222; color: #0f0; font-family: monospace; font-size: 11px; border-radius: 4px; max-height: 200px; overflow-y: auto;">
     <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
-      <span>DEBUG LOG (Android Fix Active)</span>
+      <span>DEBUG LOG (Word-Level Resume Active)</span>
       <button id="tts-debug-clear" style="background: #444; color: #fff; border: none; cursor: pointer;">Clear</button>
     </div>
     <div id="tts-debug-content"></div>
@@ -27,7 +27,8 @@
   let textChunks = [];
   let currentChunkIndex = 0;
   
-  // Detection for the Android Resume bug
+  // Word tracking for Android Resume Fix
+  let lastWordOffset = 0; 
   const isAndroid = /Android/i.test(navigator.userAgent);
   const isChrome = /Chrome/i.test(navigator.userAgent);
 
@@ -103,20 +104,31 @@
     return (clone.innerText || clone.textContent).replace(/\s+/g, ' ').trim();
   }
 
-  function speakChunk() {
+  function speakChunk(offset = 0) {
     if (currentChunkIndex >= textChunks.length) {
       isPlaying = false; updateUI('default'); setStatus('Finished');
       return;
     }
 
     const synth = window.speechSynthesis;
-    // Always create a fresh utterance instance
-    window._ttsUtterance = new SpeechSynthesisUtterance(textChunks[currentChunkIndex]);
+    // For Android resume, we slice the text to start from the last known word index
+    const fullText = textChunks[currentChunkIndex];
+    const textToSpeak = offset > 0 ? fullText.substring(offset) : fullText;
+
+    window._ttsUtterance = new SpeechSynthesisUtterance(textToSpeak);
     window._ttsUtterance.voice = selectedVoice;
     window._ttsUtterance.rate = config.speed;
     
+    // TRACKING WORD BOUNDARY
+    window._ttsUtterance.onboundary = (event) => {
+      if (event.name === 'word') {
+        // Store the global offset within the original sentence
+        lastWordOffset = offset + event.charIndex;
+      }
+    };
+
     window._ttsUtterance.onstart = () => {
-      debugLog(`Started chunk ${currentChunkIndex}`);
+      debugLog(`Started chunk ${currentChunkIndex} from char ${offset}`);
       isPlaying = true; 
       isPaused = false;
       updateUI('playing'); 
@@ -127,22 +139,20 @@
       debugLog(`Ended chunk ${currentChunkIndex}`);
       if (!isPaused) {
         currentChunkIndex++;
+        lastWordOffset = 0; // Reset offset for the next new sentence
         speakChunk();
       }
     };
 
     window._ttsUtterance.onerror = (e) => {
-      debugLog(`Error in chunk ${currentChunkIndex}: ${e.error}`);
-      // If error is 'interrupted' on Android, it usually means we called cancel()
       if (e.error !== 'interrupted') {
+        debugLog(`Error: ${e.error}`);
         isPlaying = false;
         updateUI('default');
       }
     };
 
     synth.speak(window._ttsUtterance);
-    
-    // Essential for Linux/Android Chrome: ensure engine isn't in 'pending'
     if (synth.paused) synth.resume();
   }
 
@@ -150,7 +160,7 @@
     const synth = window.speechSynthesis;
 
     if (isPlaying && !isPaused) {
-      debugLog("Action: Pause");
+      debugLog(`Action: Pause at offset ${lastWordOffset}`);
       synth.pause();
       isPaused = true;
       updateUI('paused');
@@ -162,23 +172,21 @@
       debugLog("Action: Resume requested");
       
       if (isAndroid && isChrome) {
-        debugLog("Android Chrome detected: Using 'Re-speak' Resume strategy");
-        // Android fix: Resume often stalls. 
-        // We cancel the "paused" state and restart the current chunk from the beginning.
+        debugLog(`Android Fix: Re-speaking from index ${lastWordOffset}`);
         synth.cancel();
         setTimeout(() => {
-          speakChunk();
-        }, 50);
+          // Pass the saved word offset back to the speech function
+          speakChunk(lastWordOffset);
+        }, 60);
       } else {
-        // Standard resume for Linux/Edge/iOS
         isPaused = false;
         synth.resume();
-        // Fallback: If standard resume fails to report speaking after 400ms
+        // Fallback for stalled native resume
         setTimeout(() => {
           if (isPaused === false && (!synth.speaking || synth.paused)) {
-            debugLog("Standard resume stalled, forcing re-speak...");
+            debugLog("Stalled resume, forcing re-speak...");
             synth.cancel();
-            speakChunk();
+            speakChunk(lastWordOffset);
           }
         }, 400);
       }
@@ -193,11 +201,11 @@
     setTimeout(async () => {
       await loadVoices();
       const rawText = getCleanArticleText();
-      // Improved chunking: split by punctuation but filter empty strings
       textChunks = rawText.match(/[^\.!\?]+[\.!\?]+/g) || [rawText];
       textChunks = textChunks.map(t => t.trim()).filter(t => t.length > 0);
       
       currentChunkIndex = 0;
+      lastWordOffset = 0;
       isPaused = false;
       if (textChunks.length > 0) speakChunk();
       else setStatus('No text found', true);
@@ -235,9 +243,14 @@
 </script>
 
 <style>
-.tts-button { transition: background 0.2s ease, transform 0.1s ease; border: none; }
+/* Blackburn Theme Styling */
+.tts-button { 
+  transition: background 0.2s ease, transform 0.1s ease; 
+  border: none; 
+}
 .tts-button:hover { filter: brightness(110%); }
 .tts-button:active { transform: translateY(1px); }
+
 @media (prefers-color-scheme: dark) {
   .tts-container { border-bottom-color: #333 !important; }
   #tts-status { color: #999 !important; }
