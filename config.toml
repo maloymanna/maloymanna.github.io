@@ -30,6 +30,8 @@ publishDir = "public"
   # Include any custom CSS and/or JS files
   # (relative to /static folder)
   # custom_css = ["css/capsule.min.css"]
+  custom_css = ["css/theme-toggle.css"]
+  custom_js  = ["js/theme-toggle.js"]
 
 [menu]
   # Shown in the side menu.

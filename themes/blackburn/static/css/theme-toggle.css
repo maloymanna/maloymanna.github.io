@@ -1,0 +1,133 @@
+/* =============================================
+   Theme Toggle Button Styles
+   ============================================= */
+
+#theme-toggle-wrap {
+  padding: 1em 1em 0.5em 1em;
+  text-align: center;
+}
+
+#theme-toggle {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.85em;
+  padding: 6px 14px;
+  transition: background 0.2s, border-color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* =============================================
+   Light Theme Variables (class on <html>)
+   ============================================= */
+
+html.light-theme {
+  --bg:            #f9f9f9;
+  --text:          #222222;
+  --heading:       #111111;
+  --link:          #1a73e8;
+  --link-hover:    #0d5bba;
+  --code-bg:       #f0f0f0;
+  --border:        #dddddd;
+  --post-meta:     #666666;
+}
+
+/* =============================================
+   Dark Theme Variables (default / class on <html>)
+   ============================================= */
+
+html.dark-theme {
+  --bg:            #1a1a1a;
+  --text:          #d4d4d4;
+  --heading:       #ffffff;
+  --link:          #7eb8f7;
+  --link-hover:    #a8d0ff;
+  --code-bg:       #2a2a2a;
+  --border:        #333333;
+  --post-meta:     #999999;
+}
+
+/* =============================================
+   Apply variables to page elements
+   ============================================= */
+
+html.light-theme body,
+html.dark-theme body {
+  background-color: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+html.light-theme .content-wrapper,
+html.dark-theme .content-wrapper {
+  background-color: var(--bg) !important;
+}
+
+html.light-theme h1,
+html.light-theme h2,
+html.light-theme h3,
+html.light-theme h4,
+html.light-theme h5,
+html.light-theme h6,
+html.dark-theme h1,
+html.dark-theme h2,
+html.dark-theme h3,
+html.dark-theme h4,
+html.dark-theme h5,
+html.dark-theme h6 {
+  color: var(--heading) !important;
+}
+
+html.light-theme a,
+html.dark-theme a {
+  color: var(--link) !important;
+}
+
+html.light-theme a:hover,
+html.dark-theme a:hover {
+  color: var(--link-hover) !important;
+}
+
+html.light-theme code,
+html.light-theme pre,
+html.dark-theme code,
+html.dark-theme pre {
+  background-color: var(--code-bg) !important;
+  color: var(--text) !important;
+}
+
+html.light-theme .post-meta,
+html.dark-theme .post-meta {
+  color: var(--post-meta) !important;
+}
+
+html.light-theme hr,
+html.dark-theme hr {
+  border-color: var(--border) !important;
+}
+
+/* Post list items */
+html.light-theme .pure-u-1 .post-list-item,
+html.dark-theme .pure-u-1 .post-list-item {
+  border-bottom-color: var(--border) !important;
+}
+
+/* Table of contents / blockquote */
+html.light-theme blockquote,
+html.dark-theme blockquote {
+  border-left-color: var(--link) !important;
+  color: var(--post-meta) !important;
+}
+
+/* Smooth transition for all theme changes */
+body, h1, h2, h3, h4, h5, h6, a, code, pre, .post-meta, blockquote {
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
