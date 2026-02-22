@@ -29,7 +29,7 @@ defaults:
 jobs:
 
   # Test job
-    lint-markdown:
+  lint-markdown:
     name: Lint Markdown
     runs-on: ubuntu-latest
     steps:
