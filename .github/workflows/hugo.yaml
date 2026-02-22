@@ -1,3 +1,4 @@
+# Workflow for testing, building and deploying a Hugo site to GitHub Pages
 name: 'Test, Build, Deploy Hugo site to Pages'
 
 on:
@@ -29,7 +30,6 @@ defaults:
 jobs:
 
   # Test job
-  # ------------------------------
     lint-markdown:
     name: Lint Markdown
     runs-on: ubuntu-latest
@@ -42,7 +42,6 @@ jobs:
           globs: 'content/**/*.md'
 
   # Build job
-  # ------------------------------
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -88,7 +87,7 @@ jobs:
           path: ./public
 
   # Deployment job
-  # ------------------------------
+
   deploy:
     name: Deploy
     environment:
