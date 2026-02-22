@@ -4,6 +4,13 @@ This website uses the following third-party software:
 
 ------------------------------------------------------------
 
+markdownlint-cli2
+Copyright (c) David Anson
+License: MIT
+Source: https://github.com/DavidAnson/markdownlint-cli2
+
+------------------------------------------------------------
+
 Blackburn - Hugo Theme
 Copyright (c) Yoshiharu Yamashita
 License: MIT
