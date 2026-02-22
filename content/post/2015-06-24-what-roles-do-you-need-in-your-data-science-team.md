@@ -18,14 +18,12 @@ tags:
 ---
 
 Over the past few weeks, we've had several conversations in our data lab regarding data engineering problems and day to day problems we face with unsupervised data scientists who find it difficult to deploy their code into production.
-
 ![Data scientist](/post/datascience3.jpg?w=300)
 
 The opinions from business seemed to cluster around a tacit definition of data scientists as researchers, primarily from statistics or mathematics backgrounds, who are experienced in machine learning algorithms and often in some domain areas specific to our business, (e.g. actuaries in insurance), but not necessarily having skills of writing production-ready code.
 The key driver behind the somewhat opposing strain of thought came from the developers and data engineers who often quoted Cloudera's Director of Data Science - [Josh Wills](https://twitter.com/josh_wills) - famous for his "definition of a data scientist tweet":
-"Data Scientist (n.): Person who is better at statistics than any software engineer and better at software engineering than any statistician."
-
-![Josh Wills' definition of data scientist](/post/josh-wills.png?w=300)
+"Data Scientist (n.): Person who is better at statistics than any software engineer and better at software engineering than any statistician."  
+![Josh Wills' definition of data scientist](/post/josh-wills.png?w=300)  
 
 Wills' quote reflects the practical issues in finding "**unicorn**" data scientists and having to do with the best of what's on offer for a **multi-disciplinary** area like data science. It's also perhaps based on his work in startups like Cloudera and web giants like Google, where adopting agile practices like DevOps allow data scientists closer interaction with engineers and therfore substantial experience in deploying to production. Unfortunately, that's always a challenge due to bureaucracy, mindset, lack of informed opinion and cultural barriers in larger or old-world organizations with legacy systems and practices.
 
@@ -49,36 +47,22 @@ _Dream data science team? Einstein, Fisher, Tufte, Jobs_
 **The roles in a data science team**
 
 So what roles would a data science team have? Depending upon the organizations' objectives, the team could either focus on service-oriented consulting gigs, or focus on building reusable assets or data products.
-	
-  * **Data scientist** - this role would be primarily of someone who can work on large datasets (usually on Hadoop/Spark) with machine learning algorithms, develop predictive models, understand the "theory" - maths and stats behind the models and can interpret and explain model behavior in jargon-free language. Typically this role requires good knowledge of SQL and familiarity with at least one programming language for predictive data analysis e.g. R and/ Python.
 
-
+- **Data scientist** - this role would be primarily of someone who can work on large datasets (usually on Hadoop/Spark) with machine learning algorithms, develop predictive models, understand the "theory" - maths and stats behind the models and can interpret and explain model behavior in jargon-free language. Typically this role requires good knowledge of SQL and familiarity with at least one programming language for predictive data analysis e.g. R and/ Python.
 ![Netflix requirements for data scientist role](/post/data-scientist-role.png?w=300)  
-_Netflix requirements for data scientist role_
-	
-  * **Data engineer / Data software developer** - this role is for someone who has good understanding of distributed programming, including insfrastructure and architecture. Typically this person is comfortable with installation of distributed programming frameworks like Hadoop MapReduce/Spark clusters, can code in more than one programming languages like Scala/Python/Java, and knows Unix scripting and SQL. Based on range and depth of experience, this role can evolve into one of the two specialized roles - that of the data solutions architect and the data platform administrator.
-
+_Netflix requirements for data scientist role_  
+- **Data engineer / Data software developer** - this role is for someone who has good understanding of distributed programming, including insfrastructure and architecture. Typically this person is comfortable with installation of distributed programming frameworks like Hadoop MapReduce/Spark clusters, can code in more than one programming languages like Scala/Python/Java, and knows Unix scripting and SQL. Based on range and depth of experience, this role can evolve into one of the two specialized roles - that of the data solutions architect and the data platform administrator.
 ![Netflix requirements for data engineer role](/post/data-engineer.png?w=300)  
-_Netflix requirements for data engineer role_
-	
-  * **Data solutions architect** - A data engineer with a range of deep experience across several distributed technologies, and who also has good understanding of service-oriented architecture concepts and web applications (SOA concepts and REST frameworks) in addition to the developer skillsets.
-
-  * **Data platform administrator** - A data engineer who has extensive experience across distributed technologies, especially managing clusters including production envionments and good knowledge of cloud computing architectures (public clouds like AWS if using public cloud or OpenStack and Linux sysadmin experience if using private/hybrid clouds)
-
-  * **Full-stack developer** - This is an optional role - only required for teams which are focused on building data products with web interfaces. The full-stack developer is ideally an experienced web developer with experience in both backend and front-end e.g. a [MEAN](http://mean.io) developer with experience on MongoDB, Express, AngularJS and NodeJS.
-
-  * **Designer** - this role demands an expert who has deep knowledge of user experience (UX) and interface design, primarily for web/mobile applications depending on target form factors of the data product as well as data visualization and desirably some UI coding expertise. Building quick mockups and wireframes design is often required during product definition, and the designer needs to be able to work with business as well as developers in a collaborative fashion. Sometimes this role is played by front-end UI developers as good designers don't come cheap.
-
+_Netflix requirements for data engineer role_  
+- **Data solutions architect** - A data engineer with a range of deep experience across several distributed technologies, and who also has good understanding of service-oriented architecture concepts and web applications (SOA concepts and REST frameworks) in addition to the developer skillsets.
+- **Data platform administrator** - A data engineer who has extensive experience across distributed technologies, especially managing clusters including production envionments and good knowledge of cloud computing architectures (public clouds like AWS if using public cloud or OpenStack and Linux sysadmin experience if using private/hybrid clouds)
+- **Full-stack developer** - This is an optional role - only required for teams which are focused on building data products with web interfaces. The full-stack developer is ideally an experienced web developer with experience in both backend and front-end e.g. a [MEAN](http://mean.io) developer with experience on MongoDB, Express, AngularJS and NodeJS.
+- **Designer** - this role demands an expert who has deep knowledge of user experience (UX) and interface design, primarily for web/mobile applications depending on target form factors of the data product as well as data visualization and desirably some UI coding expertise. Building quick mockups and wireframes design is often required during product definition, and the designer needs to be able to work with business as well as developers in a collaborative fashion. Sometimes this role is played by front-end UI developers as good designers don't come cheap.  
 ![Netflix requirements for UX designer](/post/ux-designer-role.png?w=300)  
 _Netflix requirements for UX designer_
-
-	
-  * **Product manager** - This is an optional role - only required (but the key one) for teams focused on building data products. Defining the product vision, translating business problems into user stories, and focusing on getting the development team to build data products based on the user stories, aligning product releases and overall roadmap to business requirements and expectations is a key requirement from this role. Having product management experience along with relevant technical expertise is critical for this role due to differences in life-cycles of products and IT projects, as also the ability to present the voice of the customer and balance long-term vision with short-term needs. Back-filling this role with data scientists/developers who do not have product vision/business acumen is dangerous due to lures of [gold-plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering)) and lack of project management skills.
-
-
+- **Product manager** - This is an optional role - only required (but the key one) for teams focused on building data products. Defining the product vision, translating business problems into user stories, and focusing on getting the development team to build data products based on the user stories, aligning product releases and overall roadmap to business requirements and expectations is a key requirement from this role. Having product management experience along with relevant technical expertise is critical for this role due to differences in life-cycles of products and IT projects, as also the ability to present the voice of the customer and balance long-term vision with short-term needs. Back-filling this role with data scientists/developers who do not have product vision/business acumen is dangerous due to lures of [gold-plating](https://en.wikipedia.org/wiki/Gold_plating_(software_engineering)) and lack of project management skills.  
 ![Google product manager role](/post/google-pdt-manager-role.png?w=300)  
-_Google requirements for product manager_
-	
-  * **Project manager** role may also be optionally required when the team is low on experience. In most successful cases of performance, managers set the objectives and expectations and facilitate to build self-governing teams following agile practices.
+_Google requirements for product manager_
+- **Project manager** role may also be optionally required when the team is low on experience. In most successful cases of performance, managers set the objectives and expectations and facilitate to build self-governing teams following agile practices.  
 
 Irrespective of whether the data science teams focus on consulting services in one-off projects or build data products which are reused, in both cases, the team would still require a **minimum foundation** to build on - in terms of processes or _shared understanding_, and _tools and platforms_ to perform the actual work. We'll review the **data engineering** requirements for such tools and platforms in the next post.

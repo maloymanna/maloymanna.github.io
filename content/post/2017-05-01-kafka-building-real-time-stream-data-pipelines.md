@@ -21,9 +21,10 @@ The motivation of its founders to build Kafka came from the lack of a modern arc
 
 Kafka may look similar to traditional message queue systems, but unlike older MQ systems, it has built-in partitioning, fault-tolerance, better throughput and is massively scalable. Let's look at how Kafka is built.
 
-#### Core architecture: ####
+**Core architecture**
 
-- **message** - the unit of data in Kafka (similar to a row in an RDBMS). It's basically an array of bytes, and can also have optional metadata in a *key*.  A *batch* is a collection of messages. For efficiency, messages are written into Kafka in typically compressed batches.  
+- **message** - the unit of data in Kafka (similar to a row in an RDBMS). It's basically an array of bytes, and can also have optional metadata in a *key*.  
+- A *batch* is a collection of messages. For efficiency, messages are written into Kafka in typically compressed batches.  
 - **schema** - this provides a structure so that the message content can be understood. Avro is most commonly used due to its compact serialization format, strong data typing and support for schema evolution, but other formats like JSON and XML can also be used.
 
 ![Kafka topics](/post/kafka-topics.png)
@@ -36,17 +37,13 @@ Kafka may look similar to traditional message queue systems, but unlike older MQ
 
 - **Zookeeper** - Kafka uses Apache Zookeeper to store the metadata for the brokers or the cluster, as well as consumer client details. Consumers have the configurable choice to use either Zookeeper or Kafka for committing offsets, though the latter is preferred to remove dependency on Zookeeper.
 
-  
-
 Confluent drives the development of open-core additions to the Kafka ecosystem. The major additions are:
 
 - **Cross cluster replication with MirrorMaker** - this is a tool for mirroring data between two data centers. It uses a collection of consumers to consume selected topics (which are to be replicated) from the source cluster and send the messages to a target cluster using a producer.
 
-  ![MirrorMaker](/post/mirrormaker.png)  
+![MirrorMaker](/post/mirrormaker.png)  
 
 - **Kafka Connect / with connectors (version 0.9 onwards)** - a framework to move data between Kafka and other external systems e.g. databases, search indexes, file systems etc. As the Kafka connect architecture involves its own cluster, worker processes, connectors, source and sink tasks, I'll review it in a later post.
-
-  
 
 **Data pipelines**
 
@@ -62,5 +59,4 @@ The continuous, low latency data processing allows Kafka to complement Hadoop an
 - Customer profiling e.g. in insurance
 - Operational monitoring of server and network infrastructure 
 
-The open-source community has continually added new features to Kafka. Confluent provides its open-source distribution with additional components including Kafka connect, Kafka streams and schema registry. However, improvements are still required in multi-tenancy and monitoring (admin UI like the Confluent control center) aspects. 
-
+The open-source community has continually added new features to Kafka. Confluent provides its open-source distribution with additional components including Kafka connect, Kafka streams and schema registry. However, improvements are still required in multi-tenancy and monitoring (admin UI like the Confluent control center) aspects.  

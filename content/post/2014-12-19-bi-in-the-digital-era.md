@@ -34,4 +34,3 @@ Sometime back I presented a webinar on BrightTalk. The slides for the talk have 
 * Dangers of data science - over-fitting, interpretation
 * Managing big data projects
 * Data Science MOOCs (massive open online courses), tools and resources  
-

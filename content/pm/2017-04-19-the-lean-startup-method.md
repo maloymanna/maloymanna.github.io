@@ -29,13 +29,10 @@ Lean startup has five principles:
 Lean thinking permeates the lean-startup methods:
 
 - Entrepreneurs summarize their untested hypotheses in a business model canvas.
-- They use a "**get out of the building**" approach to test these hypotheses with feedback from users / potential customers. The focus remains on being nimble. This is the "**customer development**" which allows testing all elements of the business model: product features, pricing, customer acquisition strategies etc. 
-- Agile development is another pillar of the lean-startup. Iterative and incremental agile approaches allow testing "minimum viable products" and respond to change, including pivots. The process starts again with a pivot, and innovation accounting helps measure if the new experiments are more productive. 
+- They use a "**get out of the building**" approach to test these hypotheses with feedback from users / potential customers. The focus remains on being nimble. This is the "**customer development**" which allows testing all elements of the business model: product features, pricing, customer acquisition strategies etc.  
+- Agile development is another pillar of the lean-startup. Iterative and incremental agile approaches allow testing "minimum viable products" and respond to change, including pivots. The process starts again with a pivot, and innovation accounting helps measure if the new experiments are more productive.  
 
 It's close to a decade now since the 2008 financial crisis, and capital is not scarce anymore. Since then we've had huge public offerings like those of Facebook or Alibaba and staid corporates have joined the innovation ecosystem contributing seed capital. Some of these innovation efforts still follow the lean-startup, while others couldn't care less. But that - {{< blue-text >}}corporate innovation theatre{{< /blue-text >}} -  is another story/post.  
-  
-
-
 
 Ref: {{< sup >}}*{{< /sup >}} `LAMP: Web service stack based on Linux, Apache, Mysql and Php`  
-`MEAN: Javascript stack for web applications based on Mongodb, Express.js, Angularjs and Node.js`
+`MEAN: Javascript stack for web applications based on Mongodb, Express.js, Angularjs and Node.js`  

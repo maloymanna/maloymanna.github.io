@@ -28,5 +28,4 @@ A limitation is that it can't be real-time. However with much of Hadoop being ba
 
 Using HAR (Hadoop archive) files is to be generally avoided as maps cannot operate over the HAR filesystem layer and needs to seek each small file. With 2 index file reads and 1 data file read, this could be slower than accessing small files.
 
-Here's an example of such a file compaction script: https://github.com/edwardcapriolo/filecrush
-
+Here's an example of such a file compaction script: https://github.com/edwardcapriolo/filecrush  

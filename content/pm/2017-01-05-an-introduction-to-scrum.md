@@ -14,16 +14,16 @@ tags:
 - project management
 ---
 
-**Scrum** is the most popular agile framework out there. It uses 1 to 4 week iterations called sprints to deliver products. Developed by Jeff Sutherland and Ken Schwaber, it has been used since the nineties, i.e. even before the 2001 agile manifesto was written. The word scrum is taken from rugby. 
+**Scrum** is the most popular agile framework out there. It uses 1 to 4 week iterations called sprints to deliver products. Developed by Jeff Sutherland and Ken Schwaber, it has been used since the nineties, i.e. even before the 2001 agile manifesto was written. The word scrum is taken from rugby.  
 
-Being a framework, scrum needs to be tailored to your situation. A scrum team is supposed to be cross-functional and self-organizing in order to minimize dependencies and wait times while improving collaboration. 
+Being a framework, scrum needs to be tailored to your situation. A scrum team is supposed to be cross-functional and self-organizing in order to minimize dependencies and wait times while improving collaboration.  
 
 In a project using scrum:
 
 - the business requirements are ranked into a **product backlog**
 - the product owner (PO) is the only person responsible for managing and prioritizing the product backlog. This role is performed by one person and not a committee. The PO needs to be knowledgeable, engaged and be able to define acceptance criteria for the backlog items.
 
-- a cross-functional team works on the backlog to create an increment. The optimal team size varies from 3-9 people to balance productivity and coordination needs. 
+- a cross-functional team works on the backlog to create an increment. The optimal team size varies from 3-9 people to balance productivity and coordination needs.  
 - a scrum master works to facilitate the process, coaching the team and removing impediments. The scrum master needs to be knowledgeable in agile and scrum, and embody servant leadership qualities as opposed to command-and-control.
 - stakeholders are interested in the outcome e.g.users, management and sponsor
 
@@ -39,18 +39,18 @@ Scrum delivery happen in time-boxed iterations (between 1 to 4 weeks) called **s
 
     The daily scrum is a key inspect-and-adapt meeting. The scrum master supports the team in removing the obstacles.
 
-- the development work 
+- the development work  
 
-- **Sprint Review** - a time-boxed event (1-4 hours) to show the increment to the stakeholders and elicit feedback and collaborate on the next things to be done to optimize value. It also includes a review of the timeline and budget for the next releases. 
+- **Sprint Review** - a time-boxed event (1-4 hours) to show the increment to the stakeholders and elicit feedback and collaborate on the next things to be done to optimize value. It also includes a review of the timeline and budget for the next releases.  
 
 - **Sprint Retrospective** - this time-boxed (45 minutes -3 hours) inspect-and-adapt event is to review what worked well and what did not, to have a plan for improvements to be implemented in the next sprint.
 
 The product backlog is a ranked list of all features, requirements, enhancements and fixes. The product owner collaborates with stakeholders / users and the team to refine the backlog (grooming the backlog) with updated requirements, detail, estimates and ranking. I'll cover the role of the product owner and the backlog grooming in a separate post.
 
-#### Scrum values 
+**Scrum values**  
 
-Scrum is based on _empiricism_: that knowledge comes from experience and making decisions based on what is known. The three underlying principles behind scrum are: transparency, inspection and adaptation. These principles are built into each event and scrum activity. 
+Scrum is based on _empiricism_: that knowledge comes from experience and making decisions based on what is known. The three underlying principles behind scrum are: transparency, inspection and adaptation. These principles are built into each event and scrum activity.  
 
-The key critique of scrum is with respect to its approach to the organization. It doesn't contain anything to allow scaling across the enterprise except organic evangelism by the scrummaster. This is to be expected due to scrum being one of the oldest agile frameworks. Some have tried to extend it with scrum of scrums, but this detracts from the simple approach of scrum with added complexity and is difficult to adapt in the enterprise. 
+The key critique of scrum is with respect to its approach to the organization. It doesn't contain anything to allow scaling across the enterprise except organic evangelism by the scrummaster. This is to be expected due to scrum being one of the oldest agile frameworks. Some have tried to extend it with scrum of scrums, but this detracts from the simple approach of scrum with added complexity and is difficult to adapt in the enterprise.  
 
-Nevertheless, the simplicity of scrum remains the key factor for its popularity and while other lean agile approaches like kanban become more popular, there are also adaptations like scrumban (scrum+kanban) which tries to get the best of both worlds. As evidenced in surveys, scrum remains the most popular / practiced agile framework in the world.
+Nevertheless, the simplicity of scrum remains the key factor for its popularity and while other lean agile approaches like kanban become more popular, there are also adaptations like scrumban (scrum+kanban) which tries to get the best of both worlds. As evidenced in surveys, scrum remains the most popular / practiced agile framework in the world.  

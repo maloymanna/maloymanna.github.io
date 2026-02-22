@@ -41,29 +41,34 @@ Lean Kanban paired with agile product iterations (e.g. Scrum sprints) have been 
 Let's look at the Chinese quick-commerce corporations which have leveraged lean agile to scale:  
 
 {{< blue-text >}}Shein{{< /blue-text >}}, the fast-fashion e-commerce giant, exemplifies the power of lean and agile in quick commerce. The company's business model is heavily centered around real-time data capture and analysis, allowing for rapid adaptation to consumer demands and optimization of production processes. Data-driven approach is a core principle of lean and agile methodologies, and using these demand signals enables Shein to reduce inventory to a minimum or pivot and scale rapidly when needed.  
+
 - **Rapid Prototyping**: Shein produces small batches of new designs and tests them in the market, allowing for quick iteration based on customer feedback.
 - **Just-in-Time Production**: Closely aligning production with demand, JIT allows minimizing inventory waste and responding to market trends quickly.
-- **Continuous Feedback Loop**: Shein's digital platform captures real-time data on customer preferences, enabling constant refinement of product offerings. 
+- **Continuous Feedback Loop**: Shein's digital platform captures real-time data on customer preferences, enabling constant refinement of product offerings.  
 
-{{< blue-text >}}AliExpress{{< /blue-text >}}, part of the Alibaba Group, has leveraged lean and agile principles to create a global marketplace connecting consumers with manufacturers. The platform's success is built on its ability to match consumer demand with factory output, effectively bringing Chinese production capabilities to a global audience.
-- **Streamlined Supply Chain**: By connecting consumers directly with manufacturers, AliExpress eliminates intermediaries, reducing costs and improving efficiency.
-- **Flexible Pricing**: The platform allows for dynamic pricing, enabling sellers to quickly adjust to market conditions and demand.
-- **Continuous Improvement**: AliExpress regularly updates its platform based on user feedback and market trends, embodying the agile principle of iterative development.
+{{< blue-text >}}AliExpress{{< /blue-text >}}, part of the Alibaba Group, has leveraged lean and agile principles to create a global marketplace connecting consumers with manufacturers. The platform's success is built on its ability to match consumer demand with factory output, effectively bringing Chinese production capabilities to a global audience.  
 
-{{< blue-text >}}Temu{{< /blue-text >}}, a newer entrant in the quick commerce space, has rapidly gained market share by employing aggressive digital marketing strategies and a customer-centric approach. The company's agile methodology is reflected in its ability/agility to quickly capture and respond to consumer preferences.
+- **Streamlined Supply Chain**: By connecting consumers directly with manufacturers, AliExpress eliminates intermediaries, reducing costs and improving efficiency.  
+- **Flexible Pricing**: The platform allows for dynamic pricing, enabling sellers to quickly adjust to market conditions and demand.  
+- **Continuous Improvement**: AliExpress regularly updates its platform based on user feedback and market trends, embodying the agile principle of iterative development.  
+
+{{< blue-text >}}Temu{{< /blue-text >}}, a newer entrant in the quick commerce space, has rapidly gained market share by employing aggressive digital marketing strategies and a customer-centric approach. The company's agile methodology is reflected in its ability/agility to quickly capture and respond to consumer preferences.  
+
 - **Data-Driven Decision Making**: Like its competitors, Temu leverages data analytics to inform product selection and marketing strategies.
 - **Rapid Experimentation**: The platform frequently tests new features and promotions, quickly iterating based on performance metrics.
-**Customer-Centric Design**: Temu's user interface and experience are continuously refined based on user feedback and behavior analysis.
+**Customer-Centric Design**: Temu's user interface and experience are continuously refined based on user feedback and behavior analysis.  
 
-{{< blue-text >}}Tiktok{{< /blue-text >}}, the hugely popular short-video social media app has been in the news due to the US-China rivalry. It's success lies in leveraging machine learning and data science to transform every customer interaction into valuable insight. Every swipe, like, share, or comment is a data point that feeds complex algorithms, continuously recalibrating the **`For You`** feed to suit each individual’s tastes. The platform doesn’t just rely on static rules; it constantly learns from user behavior, and tests hyptheses proactively, ensuring that its feed does not stagnate.
-- **Iterative learning** - Instead of perfecting and algorithm, TikTok operates like a live experiment where hypotheses are rapidly tested and refined iteratively.
-- **Lean concept** - Data scientists in the product teams perpetually fine-tune models and experiment to keep the feed fresh and engaging, adapting rapidly to changing tastes and preferences for each of its individual users.
+{{< blue-text >}}Tiktok{{< /blue-text >}}, the hugely popular short-video social media app has been in the news due to the US-China rivalry. It's success lies in leveraging machine learning and data science to transform every customer interaction into valuable insight. Every swipe, like, share, or comment is a data point that feeds complex algorithms, continuously recalibrating the **`For You`** feed to suit each individual’s tastes. The platform doesn’t just rely on static rules; it constantly learns from user behavior, and tests hyptheses proactively, ensuring that its feed does not stagnate.  
 
-The success of Shein, AliExpress, Temu and Tiktok demonstrate how to build systems that are both data-driven and agile. Applying data-driven decision-making, rapid iteration, and customer-centric design allow them to move nimbly like startups but also scale massively, with their highly responsive and efficient systems for product development and delivery.
+- **Iterative learning** - Instead of perfecting and algorithm, TikTok operates like a live experiment where hypotheses are rapidly tested and refined iteratively.  
+- **Lean concept** - Data scientists in the product teams perpetually fine-tune models and experiment to keep the feed fresh and engaging, adapting rapidly to changing tastes and preferences for each of its individual users.  
+
+The success of Shein, AliExpress, Temu and Tiktok demonstrate how to build systems that are both data-driven and agile. Applying data-driven decision-making, rapid iteration, and customer-centric design allow them to move nimbly like startups but also scale massively, with their highly responsive and efficient systems for product development and delivery.  
 
 **The Future of Product Delivery**  
 
-With the AI revolution underway, Generative AI tools have the potential to significantly compress product development timelines even further by automating various stages of the product lifecycle. With automated coding, even the product development cycle could be automated with the complete automation of real-time data capture and analysis of various signals. 
+With the AI revolution underway, Generative AI tools have the potential to significantly compress product development timelines even further by automating various stages of the product lifecycle. With automated coding, even the product development cycle could be automated with the complete automation of real-time data capture and analysis of various signals.   
+
 1. **Automated Prototyping**: Gen AI can quickly generate prototypes or simulations based on initial requirements and feedback, allowing teams to visualize product concepts and functionalities in a shorter time frame.
 2. **Predictive Analytics for Planning**: AI-driven predictive analytics can forecast project timelines and resource needs, reducing uncertainty and risk associated with agile projects.
 3. **Streamlined Testing and Iteration**: Gen AI tools can automate aspects of testing and quality assurance, enabling faster iteration cycles and more frequent product releases.
@@ -71,6 +76,7 @@ With the AI revolution underway, Generative AI tools have the potential to signi
 **Enhancing Creativity and Innovation**
 
 One of the most exciting prospects of Gen AI in product management is its ability to enhance creativity and innovation. By analyzing vast amounts of market data and customer feedback, AI can generate insights and ideas that might not be immediately apparent through traditional methods. This capability aligns perfectly with lean principles, which emphasize maximizing customer value and minimizing waste. Gen AI tools could:   
+
 - propose novel product features or entirely new product concepts based on changing market trends and customer preferences.
 - suggest improvements or optimize design and enable rapid experimentation with automated A/B testing at scale
 - AI-driven personalization at scale can help tailor experiences to individual user preferences, enhancing customer satisfaction and loyalty. This seems only natural given what Tiktok has already been able to achieve.  
@@ -80,4 +86,3 @@ References:
 - {{< sup >}}^{{< /sup >}}[Product mode / products over projects](https://martinfowler.com/articles/products-over-projects.html)  
 - [Software is eating the world](https://a16z.com/why-software-is-eating-the-world/)
 - [Shein's business model](https://www.sheingroup.com/our-business/our-business-model/)
-

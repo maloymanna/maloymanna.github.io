@@ -27,16 +27,14 @@ tags:
 ---
 
 **What is Statistics?**  
-Collected observations are called **data**. **Statistics** is the study of _how best to collect, analyze, and draw conclusions from data_. Each observation in data is called a **case**. Characteristics of the case are called **variables**. With a matrix/table analogy, a case is a row while a variable is a column.
-
+Collected observations are called **data**. **Statistics** is the study of _how best to collect, analyze, and draw conclusions from data_. Each observation in data is called a **case**. Characteristics of the case are called **variables**. With a matrix/table analogy, a case is a row while a variable is a column.  
 ![Statistics - Correlation](/post/correlation.jpg?w=300)  
-Statistics - Correlation (Courtesy: xkcd.com)
+Statistics - Correlation (Courtesy: xkcd.com)
 
 **Types of variables:**  
 
 - **Numerical** - Can be **discrete** or **continuous**, and can take a wide range of numerical values.
-- **Categorical** - Specific or limited range of values, usually called **levels**. Variables with natural ordering of levels are called **ordinal** categorical variables.  
-
+- **Categorical** - Specific or limited range of values, usually called **levels**. Variables with natural ordering of levels are called **ordinal** categorical variables.
 - A pair of variables are either related in some way (**associated**) or not (**independent**). No pair of variables is both associated and independent.
 - Data collected in haphazard fashion are called **anecdotal evidence**. Such evidence may be true and veriﬁable, but it may only represent extraordinary cases.
 
@@ -65,12 +63,14 @@ Randomized experiments are the gold standard for data collection, but they do no
 
 Distributions of a numerical variable are described by {{< blue-text >}}shape, center and spread{{< /blue-text >}}. The three most commonly used measures of center and spread are:  
 
-**center**:   
+**center**:
+
 - mean (the arithmetic average),  
 - median (the midpoint),  
 - mode (the most frequent observation)  
 
-**spread**:  
+**spread**:
+
 - standard deviation (variability around the mean),  
 - range (max-min),  
 - interquartile range IQR (middle 50% of the distribution)  
@@ -79,11 +79,13 @@ An **outlier** is an observation that appears extreme relative to the rest of th
 A **robust statistic** (e.g. median, IQR) is a statistic that is not heavily affected by skewness and extreme outliers.
 
 **Comparing categorical data:**  
-A table that summarizes data for two categorical variables in this way is called a **contingency table**.  
-A table for a single variable is called a **frequency table**.  
-A bar plot is a common way to display a single categorical variable.  
-A segmented bar plot is a graphical display of contingency table information.  
-A mosaic plot is a graphical display of contingency table information that is similar to a bar plot for one variable or a segmented bar plot when using two variables.  
+
+- A table that summarizes data for two categorical variables in this way is called a **contingency table**.  
+- A table for a single variable is called a **frequency table**.  
+- A bar plot is a common way to display a single categorical variable.
+- A segmented bar plot is a graphical display of contingency table information.
+- A mosaic plot is a graphical display of contingency table information that is similar to a bar plot for one variable or a segmented bar plot when using two variables.  
+
 While pie charts are well known, they are not typically as useful as other charts in a data analysis.
 
 **Comparing numerical data:**  
@@ -92,9 +94,9 @@ Another useful plotting method uses hollow histograms to compare numerical data 
 
 **Hypothesis test:**  
 
-**{{< blue-text >}}H0 Independence model{{< /blue-text >}}** - Explanatory variable has no eﬀect on response variable, and we observed a diﬀerence that would only happen rarely.  
+**{{< blue-text >}}H0 Independence model{{< /blue-text >}}** - Explanatory variable has no eﬀect on response variable, and we observed a diﬀerence that would only happen rarely.  
 
-**{{< blue-text >}}HA Alternative model{{< /blue-text >}}** - Explanatory variable has an eﬀect on response variable, and what we observed was actually due to explanatory variable effect on the response variable explaining the difference.  
+**{{< blue-text >}}HA Alternative model{{< /blue-text >}}** - Explanatory variable has an eﬀect on response variable, and what we observed was actually due to explanatory variable effect on the response variable explaining the difference.  
 
 Based on the simulations, we have two options:  
 

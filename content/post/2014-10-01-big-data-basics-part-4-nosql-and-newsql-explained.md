@@ -38,24 +38,19 @@ It is this class of databases which are referred to as NoSQL or NewSQL, with the
 
 What is the motivation behind these new database systems - NoSQL and NewSQL? Why do we need to even consider shifting away from relational database systems? After all, RDBMSes have a proven track record in being able to be used for a variety of applications, supporting concurrent users and transactions as well as analytic workloads on data marts and data warehouses.
 
-Well, there's nothing wrong _per se_ with relational database systems. However, like any other system, they have their limits of usefulness and performance and there may be different systems which are better for certain use cases or workloads.  Note the following limitations of RDBMSes:
-	
-  * Most relational databases use  a table-row-column storage with normalization for transactional systems (remember the star-schema or denormalization designs of data marts and data warehouses were workarounds for the query retrieval performance issues with multi-joins in relational DB implementations).
+Well, there's nothing wrong _per se_ with relational database systems. However, like any other system, they have their limits of usefulness and performance and there may be different systems which are better for certain use cases or workloads. Note the following limitations of RDBMSes:
 
-	
-  * **CRUD** (Create, Read, Update, Delete) operations in transactional relational systems lead to loss of  version history (similar to **SCD**-slowly changing dimension-  modeling for data warehouses), which may not be desired in a big-data age, due to plummeting storage costs.
+- Most relational databases use a table-row-column storage with normalization for transactional systems (remember the star-schema or denormalization designs of data marts and data warehouses were workarounds for the query retrieval performance issues with multi-joins in relational DB implementations).
+- **CRUD** (Create, Read, Update, Delete) operations in transactional relational systems lead to loss of version history (similar to **SCD**-slowly changing dimension- modeling for data warehouses), which may not be desired in a big-data age, due to plummeting storage costs.
+- **SMP** (**symmetric multi-processing**) shared-everything architectures of relational systems don't scale out, rather scale-up (vertically).
 
-	
-  * **SMP** (**symmetric multi-processing**)  shared-everything architectures of relational systems don't scale out, rather scale-up (vertically).
-
-
-Over the past decade, we've seen the rise in rich interactive web applications  (think Google, Facebook, Twitter, Amazon etc.) with massive scale in terms of the number of concurrent users, the data collected and processed and the amount of semi-structured or unstructured data managed.  
+Over the past decade, we've seen the rise in rich interactive web applications  (think Google, Facebook, Twitter, Amazon etc.) with massive scale in terms of the number of concurrent users, the data collected and processed and the amount of semi-structured or unstructured data managed.  
 In the data warehousing space as well, as more and more data started getting collected, organizations started to hit the limits of the traditional **SMP** (symmetric multi-processing) database architecture.  
 
-"**Sharding**" a database, or partitioning it across several server instances is possible with SQL systems, but is complex. Led by Google, Facebook, LinkedIn and Amazon, there started a search for alternative technologies and systems which could scale rapidly for massively interactive internet applications, as well as shift to an **MPP** (massively parallel-processing) paradigm for data warehousing.  
-This led to open source NoSQL projects which were soon followed by commercial companies invested in NoSQL technology.  NoSQL databases usually support "**auto-sharding**", i.e. they natively and automatically spread data across several distributed servers.
+"**Sharding**" a database, or partitioning it across several server instances is possible with SQL systems, but is complex. Led by Google, Facebook, LinkedIn and Amazon, there started a search for alternative technologies and systems which could scale rapidly for massively interactive internet applications, as well as shift to an **MPP** (massively parallel-processing) paradigm for data warehousing.  
+This led to open source NoSQL projects which were soon followed by commercial companies invested in NoSQL technology.  NoSQL databases usually support "**auto-sharding**", i.e. they natively and automatically spread data across several distributed servers.
 
-Initial NoSQL systems sacrificed **ACID{{< sup >}}+{{< /sup >}}** concepts  as a trade-off for scalability.  Several key-value NoSQL databases used the "**eventual-consistency**" **BASE{{< sup >}}°{{< /sup >}}** model to achieve high-availability. However with advances in technology like in-memory and increasing adoption of shared-nothing architectures, these systems have improved greatly to support ACID concepts, and now offer SQL as one of their main interfaces. These are now being called as NewSQL systems.
+Initial NoSQL systems sacrificed **ACID{{< sup >}}+{{< /sup >}}** concepts  as a trade-off for scalability.  Several key-value NoSQL databases used the "**eventual-consistency**" **BASE{{< sup >}}°{{< /sup >}}** model to achieve high-availability. However with advances in technology like in-memory and increasing adoption of shared-nothing architectures, these systems have improved greatly to support ACID concepts, and now offer SQL as one of their main interfaces. These are now being called as NewSQL systems.
 
 _{{< blue-text >}}{{< sup >}}+{{< /sup >}}ACID concepts - key pillars of relational databases and a must for transactions.<br>  
 A- Atomicity, C - Consistency, I- Isolation, D- Durability<br><br>
@@ -63,50 +58,44 @@ A- Atomicity, C - Consistency, I- Isolation, D- Durability<br><br>
 
 **NoSQL data models**
 
-With a relational database system, you must define a schema before you can load data into your database. Any record added needs to adhere strictly to this schema with fixed columns and data types.  Changing schemas has proved to be difficult with most commercially available relational database systems (mostly through implementation though), and this is especially a problem when dealing with a partitioned database spread across many machines (sharding). Projects where requirements are fast evolving, need an agile iterative approach, and the rigid schemas of relational systems become a bottleneck in such cases.
-
+With a relational database system, you must define a schema before you can load data into your database. Any record added needs to adhere strictly to this schema with fixed columns and data types.  Changing schemas has proved to be difficult with most commercially available relational database systems (mostly through implementation though), and this is especially a problem when dealing with a partitioned database spread across many machines (sharding). Projects where requirements are fast evolving, need an agile iterative approach, and the rigid schemas of relational systems become a bottleneck in such cases.
 ![NoSQL Data Model](/post/nosqldatamodel.png?w=300)
 
-NoSQL databases have different data models and allow insertion of data without a predefined schema, thereby making it easier to manage evolving data capture and management needs, as well as rapid iterative approaches. The data models used by most NoSQL databases can be categorized as:
-	
-  * **Key-value store** - one of the simplest and most efficient models. Every item in the database is stored as an attribute (key) with its value. Inefficiencies arise in cases where part of the value needs to be queried or updated. Examples: Riak, Voldemort, Amazon SimpleDB.
+NoSQL databases have different data models and allow insertion of data without a predefined schema, thereby making it easier to manage evolving data capture and management needs, as well as rapid iterative approaches. The data models used by most NoSQL databases can be categorized as:
 
-	
-  * **Column-family database / wide-column stores** - similar to key-value stores, except the keys point to multiple columns instead of rows, arranged by column family. Examples: Cassandra, HBase
+- **Key-value store** - one of the simplest and most efficient models. Every item in the database is stored as an attribute (key) with its value. Inefficiencies arise in cases where part of the value needs to be queried or updated. Examples: Riak, Voldemort, Amazon SimpleDB.
+- **Column-family database / wide-column stores** - similar to key-value stores, except the keys point to multiple columns instead of rows, arranged by column family. Examples: Cassandra, HBase
+- **Document store** - pair each key with a complex data structure (usually in JSON or XML format) known as a document. These are essentially nested key-value stores, with keys being associated with nested values. Documents may contain key-value pairs, key-array pairs or even nested documents. Examples: MongoDB, CouchDB
+- **Graph database** - these use a flexible graph model to store information about networks, useful for social connections. Examples: Neo4J, InfoGrid  
 
-	
-  * **Document store** - pair each key with a complex data structure (usually in JSON or XML format) known as a document. These are essentially nested key-value stores, with keys being associated with nested values. Documents may contain key-value pairs, key-array pairs or even nested documents. Examples: MongoDB, CouchDB
+The key reasons for the trend to move away from relational systems to the NoSQL and NewSQL systems are therefore:  
 
-	
-  * **Graph database** - these use a flexible graph model to store information about networks, useful for social connections. Examples: Neo4J, InfoGrid
+1. Ability to scale dynamically to support more users and data
+2. Improved performance for highly responsive internet applications
+3. Flexible data models to allow storage and query of semi-structured and unstructured data  
 
-
-The key reasons for the trend to move away from relational systems to the NoSQL and NewSQL systems are therefore:
-
-  1. Ability to scale dynamically to support more users and data
-  2. Improved performance for highly responsive internet applications
-  3. Flexible data models to allow storage and query of semi-structured and unstructured data
-
-
-**The best of both worlds - NewSQL**
+**The best of both worlds- NewSQL**  
 
 Most NoSQL systems initially did not offer any SQL interfaces, rather object-oriented APIs. However, most new systems now are increasingly supporting ACID concepts and hence transactions, as well as provide SQL interfaces. The recent proliferation of SQL-on-Hadoop product offerings in the big-data space is a case in point. These new systems with transaction support and SQL interfaces are labeled **NewSQL {{< sup >}}++{{< /sup >}}** systems.
 
 _{{< blue-text >}}{{< sup >}}++{{< /sup >}} NewSQL - term coined by 451 Group analyst Matthew Aslett in a 2011 research paper {{< /blue-text >}}_
 
-While NoSQL systems have been recognized to be better than relational databases for scalability and performance, and have simplified automated sharding of databases, there appear to be higher costs and significant development and refactoring efforts are required for NoSQL systems when compared to SQL systems. Moreover in a NewSQL system - transaction support (consistency) and usability of SQL systems can be combined with the high availability and scalability of NoSQL systems. This provides the best of both worlds. One of the significant NewSQL systems is **F1** - _a system built by Google to support it's ad business - Adwords_, and described in the whitepaper titled[ F1: A Distributed SQL Database that scales](http://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/en/us/pubs/archive/41344.pdf).
+While NoSQL systems have been recognized to be better than relational databases for scalability and performance, and have simplified automated sharding of databases, there appear to be higher costs and significant development and refactoring efforts are required for NoSQL systems when compared to SQL systems. Moreover in a NewSQL system - transaction support (consistency) and usability of SQL systems can be combined with the high availability and scalability of NoSQL systems. This provides the best of both worlds. One of the significant NewSQL systems is **F1** - _a system built by Google to support it's ad business - Adwords_, and described in the whitepaper titled[F1: A Distributed SQL Database that scales](http://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/en/us/pubs/archive/41344.pdf).
 
 There are no uniform architectures of NewSQL systems, but common features are:
 
-  * Support for relational data model (tables-rows-columns). Most support additional NoSQL models like JSON documents.
-  * Provide SQL as a primary interface to these systems
-  * Transaction support (Consistency in ACID)
+- Support for relational data model (tables-rows-columns). Most support additional NoSQL models like JSON documents.
+- Provide SQL as a primary interface to these systems
+- Transaction support (Consistency in ACID)
 
+Several NewSQL systems use **in-memory technology** and have been designed from the ground-up with a distributed architecture. Some use a middleware layer to provide automated sharding. The strong consistency comes at the cost of higher latency for writes, which is offset by in-memory technology as well as use of newer storage options like solid-state devices (SSD/Flash storage). NewSQL systems promise to provide the  scalability, availability, transparent sharding, and cost beneﬁts of NoSQL systems with the usability, familiarity, and transactional guarantees expected from RDBMSes.
 
-Several NewSQL systems use **in-memory technology** and have been designed from the ground-up with a distributed architecture. Some use a middleware layer to provide automated sharding. The strong consistency comes at the cost of higher latency for writes, which is offset by in-memory technology as well as use of newer storage options like solid-state devices (SSD/Flash storage). NewSQL systems promise to provide the  scalability, availability, transparent sharding, and cost beneﬁts of NoSQL systems with the usability, familiarity, and transactional guarantees expected from RDBMSes.
-
-Finally - a tongue-in-cheek look at the NoSQL boom from [Geek&Poke](http://geek-and-poke.com/) :smile:
-
+Finally - a tongue-in-cheek look at the NoSQL boom from [Geek&Poke](http://geek-and-poke.com/) :smile:  
 ![Geek&Poke NoSQL cartoon](/post/nosqlcartoon.png?w=300)
 
-Read the series on Big Data: [Part-1 : Basics](https://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/), [Part-2 : Hadoop](https://biguru.wordpress.com/2014/04/13/basics-of-big-data-part-2-hadoop/), [Part-3 : Hadoop data warehouse](https://biguru.wordpress.com/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/) and [Part-4 : NoSQL](https://biguru.wordpress.com/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/)
+Read the series on Big Data:  
+
+- [Part-1 : Basics](https://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/), 
+- [Part-2 : Hadoop](https://biguru.wordpress.com/2014/04/13/basics-of-big-data-part-2-hadoop/), 
+- [Part-3 : Hadoop data warehouse](https://biguru.wordpress.com/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/) and 
+- [Part-4 : NoSQL](https://biguru.wordpress.com/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/)  

@@ -21,8 +21,7 @@ Recently I worked on an assignment where the Business Objects universe was desig
 We encountered incorrect results primarily due to two reasons:  
 
 1. Mixing of grains in fact tables by not using proper contexts or the aggregate navigator
-
-2. Unresolved chasm traps   
+2. Unresolved chasm traps
 
 It was obvious that the business analyst was not trained in data modeling, nor did the universe go through a proper QA cycle where it is reviewed for data modeling errors.
 
@@ -46,7 +45,6 @@ Apart from **_chasm traps_** and the very familiar **_loops_**, there is another
 A Fan Trap is a join between 3 tables where a one-to-many join links the first table to the second and another one-to-many join links the second table to the third. Inflated results are obtained when fields from all 3 tables are included in the query.  
 Below is an example:  
 ![Fan Trap](/post/fan1.jpg?w=300)  
-
 
 **How does a fan trap inflate results?**    
 

@@ -22,10 +22,11 @@ The pivotal moment came in 2017 yet again from Google (a pioneer in [big data/Ma
 
 **ChatGPT**  
 AI fully burst into the hype cycle with the [announcement of ChatGPT](https://openai.com/index/chatgpt/), by the end of 2022, developed by OpenAI.
-For the first time in human history, an AI model was able to generate **coherent**, human-like text, engaging in useful conversations and even _creating_ art/literature/music on-demand from simple text-based prompts. The full-form of ChatGPT is **Chat Generative Pre-trained Transformer**, it being trained from a vast corpus of publicly available text, images and other media (audio, video) across the internet, including but not limited to the wikipedia, books, public social media. The phenomenon of ChatGPT highlighted the potential and importance of AI as a key technology differentiator not only in business but also across countries e.g. US vs China.  
+For the first time in human history, an AI model was able to generate **coherent**, human-like text, engaging in useful conversations and even *creating* art/literature/music on-demand from simple text-based prompts. The full-form of ChatGPT is **Chat Generative Pre-trained Transformer**, it being trained from a vast corpus of publicly available text, images and other media (audio, video) across the internet, including but not limited to the wikipedia, books, public social media. The phenomenon of ChatGPT highlighted the potential and importance of AI as a key technology differentiator not only in business but also across countries e.g. US vs China.  
 
 **The (Generative) AI race**  
-It can definitively be said that ChatGPT spurred the AI race (Generative AI and more), similar to how the iPhone circa 2007 led to the development of the smartphone/touchscreen technologies. More advanced language representation models (encoders as well as decoders) continue to be developed. e.g. [BERT in 2018](https://arxiv.org/abs/1810.04805), [Modern BERT in 2024](https://huggingface.co/blog/modernbert). All the key big tech players have jumped onto the bandwagon, as well as notable startups: 
+It can definitively be said that ChatGPT spurred the AI race (Generative AI and more), similar to how the iPhone circa 2007 led to the development of the smartphone/touchscreen technologies. More advanced language representation models (encoders as well as decoders) continue to be developed. e.g. [BERT in 2018](https://arxiv.org/abs/1810.04805), [Modern BERT in 2024](https://huggingface.co/blog/modernbert). All the key big tech players have jumped onto the bandwagon, as well as notable startups:
+
 - {{< blue-text >}}OpenAI{{< /blue-text >}}: The stable which provided **ChatGPT** has been consistently setting benchmarks with newer models like GPT-4/o/mini. Has a working partnership with Microsoft.
 - {{< blue-text >}}Microsoft{{< /blue-text >}}: Has been a fast and nimble mover in the AI space, bringing its **CoPilot** suite of products into its Office, M365, Azure platforms in record time-to-market.
 - {{< blue-text >}}Google{{< /blue-text >}}: From the behemoth, **Google Gemini** quickly reversed the gaffes of its predecessor *Bard*  and is developing multi-modal AI.
@@ -44,6 +45,7 @@ Whether it can or not, Google surely has a trick up its sleeve with DeepMind. As
 
 **Charismatic leaders or not**  
 The following leaders, charismatic or not, are key to look out for in the AI race:
+
 - [Demis Hassabis](https://x.com/demishassabis)
 - [Sam Altman](https://x.com/sama)
 - [Satya Nadella](https://www.linkedin.com/in/satyanadella/)
@@ -55,6 +57,7 @@ We need to also look out for the AI tigers or dragons of China which is rapidly 
 While the definition of **AGI**(artificial general intelligence) still remains fuzzy, for many (including Hassabis), we're on the cusp of developing proto-AGI in the AI race. Discounting for AI model hallucinations, which should progressively become rare as models and engineering improve even further, and internet search plugged in, it would be a wonder if the AI models of today won't be able to pass the Turing test at least. Whether we attain AGI in the next few years or not, it's certain that the AI race will certainly have massive and far-fetching impacts not only on the tech and business worlds but also societal and economic implications, with key questions about productivity, jobs, pensions, meaning which need to be answered. 
 
 References:
+
 - [The breakthrough Transformer paper: Attention is all you need](https://arxiv.org/html/1706.03762v7)
 - [Announcement of ChatGPT](https://openai.com/index/chatgpt/)
 - [BERT Encoder model paper](https://arxiv.org/abs/1810.04805) 

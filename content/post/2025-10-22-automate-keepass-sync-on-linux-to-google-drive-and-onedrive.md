@@ -15,12 +15,14 @@ tags:
 Neither Google nor Microsoft provide native Linux clients for their popular online storage systems: Google Drive and OneDrive. This is expected as Linux is not mainstream in the consumer space, even though it's huge in the server space on both Google Cloud Platform or Azure Cloud, as well as on Amazon Web Services.  
 The Linux ecosystem though is not short of alternatives, and several unofficial clients are available on the internet/ Github to be used to setup synchronization and backup to these cloud drives.  
 Examples of some alternatives Linux clients: 
+
 - Google Drive: [KIO GDrive](https://community.kde.org/KIO_GDrive), [Drive](https://github.com/odeke-em/drive)  
 - OneDrive:  [A client](https://github.com/abraunegg/onedrive), [A GUI](https://github.com/bpozdena/OneDriveGUI)  
 
 **Why KeePass?**  
 While the setup of these tools is straightforward, using unauthenticated github repositories comes with its own security risks e.g. malware or data exfiltration.
-For discerning users, one particular interesting case is the backup of password files to cloud drives. Such users have already discounted options like:  
+For discerning users, one particular interesting case is the backup of password files to cloud drives. Such users have already discounted options like:
+
 | Option | Risk / Disadvantage |
 |--------|:---------------------|
 | Online password managers | Privacy and security aren't as reliable as Big Tech, hack stories abound e.g. [LastPass data breach](https://blog.lastpass.com/posts/notice-of-recent-security-incident) |
@@ -30,19 +32,22 @@ One of the safer options is to use a trusted offline password manager like [KeeP
 
 **Scripting the solution**
 A simple solution to automate the sync involves 3 steps:
+
 1. Use `inotifywait` to watch for KeePass file changes/updates (e.g. new password creation/updates/renewals)
 2. Use [`rclone`](https://rclone.org/) to sync to cloud drives
 3. A simple bash script to tie it all together
 
 **Step 1 - install the tools**
-On a Ubuntu based distro, I used:
-```
+On a Ubuntu based distro, I used: 
+
+```bash
 sudo apt update
 sudo apt install inotify-tools rclone -y
 ```
 
 **Step 2 - configure rclone for Google Drive and OneDrive**
 ***Google Drive***
+
 - Run `rclone config`
 - Select `n` for new remote
 - Give a name `googledrive`
@@ -53,6 +58,7 @@ sudo apt install inotify-tools rclone -y
 ***OneDrive***  
 While testing I found the same process failed for OneDrive, when using rclone version < 1.62.
 The process works differently for OneDrive because Microsoft uses different authentication scopes for read vs write operations. I also found that rclone doesn't have fine-grained scopes for OneDrive.
+
 - Force a clean flow using `rclone authorize "onedrive"`
 - This prints a message to check redirect URL is set correctly to `http://localhost:53682` and `Waiting for code...`
 - The browser is opened to Microsoft login and consent page: `https://account.live.com/Consent/Update...`
@@ -63,8 +69,10 @@ The process works differently for OneDrive because Microsoft uses different auth
 - This would ensure the right scopes are applied for rclone to authenticate for the file sync (Step 3 script).
 
 **Step 3 - Bash script to bring it altogether**
+
 - See bash script below ([also linked](/sync-keepass.sh))
-```
+
+```bash
 #!/bin/bash
 
 # Configuration
@@ -110,7 +118,7 @@ do
     fi
 done
 ```
+
 - Make the script executable `chmod +x ~/sync-keepass.sh`
 - Add the script to `~/.bashrc` or `~/.profile` and/or add to Autostart/ systemd user service.
 - Each update and save to the KeePass file triggers a [close_write](https://linux.die.net/man/1/inotifywait) event, and the script uses rclone to upload it to both cloud drives.  
-

@@ -37,7 +37,7 @@ A plausible range of values for the population parameter is called a **conﬁden
 If the point estimate follows the normal model with standard error `SE`, then a conﬁdence interval for the population parameter is:  
 **point estimate ± `z* SE`**  
 where `z*` corresponds to the conﬁdence level selected.  
-In a conﬁdence interval, **`z* SE*`* is called the **margin of error** (corresponds to half the width of the confidence interval).
+In a conﬁdence interval, **`z* SE*`** is called the **margin of error** (corresponds to half the width of the confidence interval).
 
 **Central Limit Theorem**  
 If a sample consists of at least 30 independent observations and the data are not strongly skewed, then the distribution of the sample mean is well approximated by a normal model.
@@ -50,11 +50,13 @@ Conditions for ![\bar{x}](http://upload.wikimedia.org/math/8/4/7/84790e2b15a305
 The larger the sample size (n), the less important the shape of the distribution becomes, i.e. when n is very large the sampling distribution will be nearly normal regardless of the shape of the population distribution.
 
 **Hypothesis Testing Framework**  
+
 - The null hypothesis **(H{{< sup >}}0{{< /sup >}})** often represents either a skeptical perspective or a claim to be tested.  
 - The alternative hypothesis **(H{{< sup >}}A{{< /sup >}})** represents an alternative claim under consideration and is often represented by a range of possible parameter values.  
 
 **Double negatives:**  
 In many statistical explanations, we use double negatives. For instance, we might say that the null hypothesis is not implausible or we failed to reject the null hypothesis. Double negatives are used to communicate that while we are not rejecting a position, we are also not saying it is correct.  
+
 - Always construct hypotheses about population parameters (e.g. population mean, μ) and not the sample statistics (e.g. sample mean, x').  
 Note that the population parameter is unknown while the sample statistic is measured using the observed data and hence there is no point in hypothesizing about it.  
 - Define the null value as: the value the parameter is set to equal in the null hypothesis.  
@@ -62,6 +64,7 @@ Note that the alternative hypothesis might be one-sided (μ the null value) or t
 
 **p-value:**  
 A conditional probability to quantify the strength of the evidence against the null hypothesis and in favor of the alternative.  
+ 
 - The p-value is the probability of _observing data at least as favorable to the alternative hypothesis_ as our current data set, if the null hypothesis is true.  
 **p-value = P(observed or more extreme sample statistic | (H{{< sup >}}0{{< /sup >}}) true)**  
 - The p-value quantiﬁes how strongly the data favors H{{< sup >}}A{{< /sup >}} over H{{< sup >}}0{{< /sup >}} .  

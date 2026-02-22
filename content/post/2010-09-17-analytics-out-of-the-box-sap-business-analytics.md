@@ -21,7 +21,7 @@ tags:
 - xcelsius
 ---
 
-SAP finally [announced ](http://www.sap.com/about/newsroom/press.epx?pressid=13894)on September 14, 2010 that it was getting onto the pre-packaged analytics bandwagon.  SAP announced ten applications in this first release for six industries (Consumer Products, Healthcare, Financial Services, Public Sector, Retail and Telecommunications) in its BusinessObjects  offering.
+SAP finally [announced](http://www.sap.com/about/newsroom/press.epx?pressid=13894)on September 14, 2010 that it was getting onto the pre-packaged analytics bandwagon. SAP announced ten applications in this first release for six industries (Consumer Products, Healthcare, Financial Services, Public Sector, Retail and Telecommunications) in its BusinessObjects offering.
 
 Building on the [rapid-marts](http://www.sap.com/solutions/sapbusinessobjects/large/eim/rapidmarts/index.epx) offering that the then BOBJ used to have and leveraging SAP’s industry and line of business expertise, these new applications are based on the SAP Business Objects XI platform – WebIntelligence, Crystal Reports and Dashboards (formerly Xcelsius). Bill McDermott, the joint CEO of SAP, described it as “**complete and ready-to-go**” and claimed the applications can be deployed in _as less as eight weeks_.
 
@@ -29,9 +29,9 @@ You may remember the [brouhaha created by SAS last year](http://www.networkworld
 
 **Under the hood:**
 
-The pre-packaged analytic applications are based on the BusinessObjects XI platform – with the universe as the semantic layer or metadata model. It can be based on both SAP and non-SAP data, OLTP and data warehouse, relational and unstructured.  SAP would work with its partners HP and Teradata to optimize the analytic solutions on their hosting and data warehousing solutions.
+The pre-packaged analytic applications are based on the BusinessObjects XI platform – with the universe as the semantic layer or metadata model. It can be based on both SAP and non-SAP data, OLTP and data warehouse, relational and unstructured. SAP would work with its partners HP and Teradata to optimize the analytic solutions on their hosting and data warehousing solutions.
 
-Business Analytics dashboards are **Xcelsius flash files** which can be used with web services/QAWS to deliver real-time analytics. It may also be possible to use these with[ SAP Business Objects Explorer](http://www.sap.com/solutions/sapbusinessobjects/large/business-intelligence/search-navigation/explorer/explorer-accelerated/index.epx) (formerly Polestar) and/or SAP BW Accelerator or the SAP high-performance analytic appliance ([HANA](http://h30507.www3.hp.com/t5/Reality-Check-Server-Insights/HANA-An-HP-and-SAP-collaborative-unique-end-to-end-technology/ba-p/81270)).
+Business Analytics dashboards are **Xcelsius flash files** which can be used with web services/QAWS to deliver real-time analytics. It may also be possible to use these with [SAP Business Objects Explorer](http://www.sap.com/solutions/sapbusinessobjects/large/business-intelligence/search-navigation/explorer/explorer-accelerated/index.epx) (formerly Polestar) and/or SAP BW Accelerator or the SAP high-performance analytic appliance ([HANA](http://h30507.www3.hp.com/t5/Reality-Check-Server-Insights/HANA-An-HP-and-SAP-collaborative-unique-end-to-end-technology/ba-p/81270)).
 
 **Business Analytics vs. Business Intelligence - Revisiting the controversy:**
 

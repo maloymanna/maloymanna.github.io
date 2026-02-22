@@ -38,10 +38,9 @@ Disjoint (mutually exclusive) events are always dependent since if one event occ
 
 A **probability distribution** is a list of the possible outcomes with corresponding probabilities that satisfies three rules:
 
-  1. The outcomes listed must be disjoint.
-  2. Each probability must be between 0 and 1.
-  3. The probabilities must total 1.
-
+1. The outcomes listed must be disjoint.
+2. Each probability must be between 0 and 1.
+3. The probabilities must total 1.
 
 Using the **general addition rule**, the probability of union of events can be calculated.  
 If `A` and `B` are _not mutually exclusive_:  
@@ -86,10 +85,10 @@ An often-used thumb rule is the **`68-95-99.5 rule`**, i.e. about 68%, 95%, and 
 observations fall within 1, 2, and 3, standard deviations of the mean in the normal distribution, respectively.
 
 A Bernoulli random variable has exactly two possible outcomes, usually labeled success(1) and failure(0).  
-If `X` is a random variable that takes value `1` with probability of success `p` and `0` with probability `1 − p`, then `X` is a Bernoulli random variable with:
+If `X` is a random variable that takes value `1` with probability of success `p` and `0` with probability `1 − p`, then `X` is a Bernoulli random variable with:  
 
-  * mean `µ = p`	
-  * and standard deviation `σ = sqrt(p(1 − p))`
+- mean `µ = p`
+- and standard deviation `σ = sqrt(p(1 − p))`  
 
 The binomial distribution describes the probability of having exactly `k`
 successes in `n` independent Bernoulli trials with probability of a success `p`.  
@@ -102,11 +101,11 @@ Additionally, the mean, variance, and standard deviation of the number of observ
 **`µ = np, σ{{< sup >}}2{{< /sup >}} = np(1 − p), σ = sqrt(np(1-p))`**  
 
 To check if a random variable is binomial, use the following four conditions:  
-	
-  1. The trials are independent.
-  2. The number of trials, `n`, is fixed.
-  3. Each trial outcome can be classified as a success or failure.
-  4. The probability of a success, `p`, is the same for each trial.  
+
+1. The trials are independent.
+2. The number of trials, `n`, is fixed.
+3. Each trial outcome can be classified as a success or failure.
+4. The probability of a success, `p`, is the same for each trial.  
 
 The binomial formula is cumbersome when the sample size (n) is large, particularly when we consider a range of observations. In some cases we may use the normal distribution as an easier and faster way to estimate binomial probabilities.  
 A thumb rule to use in such cases is to check the conditions:  
@@ -119,5 +118,4 @@ The Poisson distribution is often useful for estimating the number of rare event
 **`P(observe k rare events) = λ{{< sup >}}k{{< /sup >}} e{{< sup >}}-λ{{< /sup >}} / k!`**  
 where `k` may take a value 0, 1, 2, and so on. e≈2.718, the base of natural logarithm.  
 A random variable may follow a Poisson distribution if the event being considered is **rare**, the population is large, and the events occur independently of each other.  
-
-![ProbabilityStudies](/post/probability.jpg?w=300)
+![ProbabilityStudies](/post/probability.jpg?w=300)  

@@ -19,7 +19,6 @@ China has been at the forefront of adopting and advancing transformer technology
 
 The race for AI supremacy has intensified in recent years as nations realized its strategic importance. AI has the potential to transform entire industries, shortening product development cycles, and automating knowledge work at scale. The United States, China, and other leading economies are investing heavily in AI research and development, aiming to secure a dominant position in this rapidly evolving field.  
 
-
 **Big Tech to Big AI**  
 Most of technology in the non-China world is led by BigTech (The Magnificent Seven)- western technology behemoths from Google to Microsoft to Nvidia. Other dominant players have also evolved, notably OpenAI which led the breakthrough with its ubiquitous **ChatGPT**.  
 OpenAI, backed by Microsoft, continues to set new benchmarks with newer large-language-models (LLMs). 
@@ -37,6 +36,7 @@ Since ChatGPT went viral and triggered the GenAI race, the demand for Nvidia GPU
 
 Paradoxically, such sanctions seem only to have spurred China to [supercharge its chip industry](https://time.com/6189341/us-sanctions-china-chips-semiconductors/), growing faster than anywhere else in the world.  
 ![Rise of the Chinese AI dragons](/images/chinese-ai-dragons2.png)  
+
 **DeepSeek upheaval**  
 DeepSeek made headlines with its highly cost-efficient AI model, which sent shockwaves through the market. DeepSeek's model, built at _{{< blue-text >}}a fraction of the cost{{< /blue-text >}}_ of leading U.S. models, signals the potential for a new price war in AI.  
 
@@ -62,23 +62,23 @@ Here's a summary table of the notable AI leaders of China:
 | ------- | ----- | ----------------- |
 | {{< blue-text >}}01.AI{{< /blue-text >}}   | &nbsp;&nbsp;"AI-first" apps for productivity, creativity, social media  | Yi-34B, Yi-VL-34B |
 | {{< blue-text >}}Alibaba{{< /blue-text >}} | &nbsp;&nbsp;Multimodal AI & LLMs | Qwen series (0.5B to 72B parameters), Qwen2.5-Max |
-| {{< blue-text >}}Baichuan.AI{{< /blue-text >}} | &nbsp;&nbsp;LLMs | Baichuan-13B, Baichuan2-13B | 
-| {{< blue-text >}}DeepSeek{{< /blue-text >}} | &nbsp;&nbsp;LLMs | DeepSeek-R1, DeepSeek-V3, DeepSeek Coder |	
+| {{< blue-text >}}Baichuan.AI{{< /blue-text >}} | &nbsp;&nbsp;LLMs | Baichuan-13B, Baichuan2-13B |
+| {{< blue-text >}}DeepSeek{{< /blue-text >}} | &nbsp;&nbsp;LLMs | DeepSeek-R1, DeepSeek-V3, DeepSeek Coder |
 | {{< blue-text >}}Infinigence{{< /blue-text >}} | &nbsp;&nbsp;on-device multimodal LLMs, AI infra | Megrez-3B-Omni |
-| {{< blue-text >}}Minimax{{< /blue-text >}} | &nbsp;&nbsp;Multimodal AI for gaming and interactive experiences | MiniMax-01 series, Talkie,Hailuo AI|	
+| {{< blue-text >}}Minimax{{< /blue-text >}} | &nbsp;&nbsp;Multimodal AI for gaming and interactive experiences | MiniMax-01 series, Talkie,Hailuo AI|
 | {{< blue-text >}}ModelBest{{< /blue-text >}} | &nbsp;&nbsp;SLMs & LLMs | MiniCPM 3.0 |
 | {{< blue-text >}}Moonshot.ai{{< /blue-text >}} | &nbsp;&nbsp;Multimodal AI & LLMs | Kimi AI 1.5, Mooncake|
 | {{< blue-text >}}Stepfun{{< /blue-text >}} | &nbsp;&nbsp;AGI & LLMs | Step-2 (trillion-parameter MoE model)|
-| {{< blue-text >}}Zhipu.ai{{< /blue-text >}} | &nbsp;&nbsp;LLMs to handle both Chinese and English | GLM Series, GLM-130B, ChatGLM, GLM-4-Voice, Ying |  
-
+| {{< blue-text >}}Zhipu.ai{{< /blue-text >}} | &nbsp;&nbsp;LLMs to handle both Chinese and English | GLM Series, GLM-130B, ChatGLM, GLM-4-Voice, Ying |
 
 China's rapid progress in AI is reshaping the global technological landscape.  
 The country's focus on developing low-cost, powerful AI models is not only driving innovation but also making AI more accessible to a broader range of users. The rise of startups like **DeepSeek** and the **Six AI Tigers** demonstrates China's commitment to achieving AI leadership. With increasing geopolitical tensions, the race for AI supremacy is only going to get closer than ever. China's deep talent pool of researchers and scientists as well as strengths in scaling low-cost industrial production will make sure that it playsa pivotal role in shaping the future of this transformative technology.
 
-References:
+References:  
+
 - [US export controls on chips manufacturing items to China](https://www.bis.doc.gov/index.php/documents/about-bis/newsroom/press-releases/3158-2022-10-07-bis-press-release-advanced-computing-and-semiconductor-manufacturing-controls-final/file)
 - [^US controls on global AI chip flows](https://www.reuters.com/technology/artificial-intelligence/us-tightens-its-grip-ai-chip-flows-across-globe-2025-01-13)
 - [Alibaba QwenLM](https://www.alibabacloud.com/en/solutions/generative-ai/qwen) |  [Qwen Chat](https://chat.qwenlm.ai/)  
--  [DeepSeek R1 reasoning model](https://github.com/deepseek-ai/DeepSeek-R1) | [DeepSeek chat](https://chat.deepseek.com/)
+- [DeepSeek R1 reasoning model](https://github.com/deepseek-ai/DeepSeek-R1) | [DeepSeek chat](https://chat.deepseek.com/)
 - [Moonshot.ai Kimi chatbot](https://kimi.moonshot.cn/)
-- [Wired profile on O1.ai ](https://www.wired.com/story/chinese-startup-01-ai-is-winning-the-open-source-ai-race/)
+- [Wired profile on O1.ai](https://www.wired.com/story/chinese-startup-01-ai-is-winning-the-open-source-ai-race/)

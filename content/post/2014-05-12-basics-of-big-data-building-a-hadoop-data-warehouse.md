@@ -32,16 +32,15 @@ tags:
 
 This is the 3rd part of a series of posts on Big Data. Read [Part-1](http://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/) (What is Big Data) and [Part-2 (Hadoop)](http://biguru.wordpress.com/2014/04/13/basics-of-big-data-part-2-hadoop/).
 
-Traditionally data warehouses have been built with relational databases as backbone. With the new challenges ([3Vs](http://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/)) of Big Data, relational databases have been falling short of the requirements of handling
-	
-  * New data types (unstructured data)
-  * Extended analytic processing
-  * Throughput (TB/hour loading) with immediate query access
+Traditionally data warehouses have been built with relational databases as backbone. With the new challenges ([3Vs](http://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/)) of Big Data, relational databases have been falling short of the requirements of handling  
+
+- New data types (unstructured data)
+- Extended analytic processing
+- Throughput (TB/hour loading) with immediate query access
 
 The industry has turned to Hadoop as a disruptive solution for these very challenges.
 
 _The new Hadoop architecture (courtesy Hortonworks):_
-
 ![Hadoop 2.0 with YARN](/post/yarn.png?w=300)
 
 **Comparing the RDBMS and Hadoop data warehousing stack:**
@@ -60,7 +59,7 @@ All 3 layers in a conventional RDBMS are glued together into a proprietary bundl
 
 _The data-load-to-query in one step involves:_
 
-1. Copy data into _HDFS_ with ETL tool (e.g. Informatica), _Sqoop_ or _Flume _into standard _HDFS _files (write once). This registers the metadata with _HCatalog_.
+1. Copy data into _HDFS_ with ETL tool (e.g. Informatica), _Sqoop_ or _Flume_ into standard _HDFS_ files (write once). This registers the metadata with _HCatalog_.
 
 2. Declare the query schema in _Hive_ or _Impala,_ which doesn't require data copying or re-loading, due to the **schema-on-read** _advantage_ of Hadoop compared with **schema-on-write** _constraint_ in RDBMS.  
 
@@ -74,13 +73,13 @@ The [_Parquet_](http://parquet.io/) file format has a columnar storage layout wi
 
 **2. Platform for transforming data or ETL:**
 
-The (extract-transform-load) ETL or ELT (extract-load-transform) use case for Hadoop is well established. The reasons why Hadoop is a popular ETL platform are:
-	
-  * Hadoop itself is a general-purpose massively parallel processing (MPP) platform.
-  * Hadoop’s NoSQL database - it’s flexible _schema-on-read_ offers a relaxed alternative to the rigid strongly-typed _schema-on-write_ model of a relational data warehouse.
-  * Hadoop is highly cost-effective (up to 50 to 100 times cheaper) compared to conventional relational data warehouse on a per-Terabyte basis, due to its commodity hardware distributed architecture (low-cost scale-out) compared to the relatively high-end infrastructure required for conventional systems (high-cost scale-up).
-  * Higher performance on a per-core basis (CPU processing power) allows Hadoop to beat most conventional ETL systems.
-  * Most ETL vendors already market versions of their software which leverage Hadoop, whether this is through using Hadoop connectors (e.g. Oracle Data Integrator) or ETL-optimized libraries for MapReduce (e.g. Syncsort [DMX-h](http://www.syncsort.com/en/Products/DMX-h/DMX-h-Overview)).
+The (extract-transform-load) ETL or ELT (extract-load-transform) use case for Hadoop is well established. The reasons why Hadoop is a popular ETL platform are:  
+
+- Hadoop itself is a general-purpose massively parallel processing (MPP) platform.
+- Hadoop’s NoSQL database - it’s flexible _schema-on-read_ offers a relaxed alternative to the rigid strongly-typed _schema-on-write_ model of a relational data warehouse.
+- Hadoop is highly cost-effective (up to 50 to 100 times cheaper) compared to conventional relational data warehouse on a per-Terabyte basis, due to its commodity hardware distributed architecture (low-cost scale-out) compared to the relatively high-end infrastructure required for conventional systems (high-cost scale-up).
+- Higher performance on a per-core basis (CPU processing power) allows Hadoop to beat most conventional ETL systems.
+- Most ETL vendors already market versions of their software which leverage Hadoop, whether this is through using Hadoop connectors (e.g. Oracle Data Integrator) or ETL-optimized libraries for MapReduce (e.g. Syncsort [DMX-h](http://www.syncsort.com/en/Products/DMX-h/DMX-h-Overview)).
 
 Most such ETL tools allows existing developers to build Hadoop ETL without having to code or script in MapReduce with Java or Pig. Several vendors also provide ETL-on-Hadoop automation, and a rich user experience (UX) with drag-and-drop design of jobs or workflows, and even native integration taking advantage of (Yet Another Resource Negotiator) **_YARN_** in Hadoop v2.0
 
@@ -98,4 +97,9 @@ With ELT loads driving up to 80% of database capacity, Hadoop can also be used a
 
 With the big data deluge, and its 3 equally challenging dimensions of {{< blue-text >}}volume, velocity and variety {{< /blue-text >}} - existing conventional platforms are finding it difficult to meet all of an organization’s data warehousing needs along with ETL processing times and availability SLAs. The balance of power keeps tilting towards Hadoop with newer tools and appliances extending the capabilities of Hadoop and with its superior price/performance ratio, building a data warehouse leveraging Hadoop needs to be given serious consideration.
 
-Read the series on Big Data: [Part-1 : Basics](https://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/), [Part-2 : Hadoop](https://biguru.wordpress.com/2014/04/13/basics-of-big-data-part-2-hadoop/), [Part-3 : Hadoop data warehouse](https://biguru.wordpress.com/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/) and [Part-4 : NoSQL](https://biguru.wordpress.com/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/)
+Read the series on Big Data:  
+
+- [Part-1 : Basics](https://biguru.wordpress.com/2013/08/21/basics-of-big-data-part-1/), 
+- [Part-2 : Hadoop](https://biguru.wordpress.com/2014/04/13/basics-of-big-data-part-2-hadoop/), 
+- [Part-3 : Hadoop data warehouse](https://biguru.wordpress.com/2014/05/12/basics-of-big-data-building-a-hadoop-data-warehouse/) and 
+- [Part-4 : NoSQL](https://biguru.wordpress.com/2014/10/01/big-data-basics-part-4-nosql-and-newsql-explained/)  

@@ -16,10 +16,8 @@ How does the typical data science project life-cycle look like?
 
 This post looks at practical aspects of implementing data science projects. It also assumes a certain level of maturity in big data (more on big data maturity models in the next post) and data science management within the organization. Therefore the life cycle presented here differs, sometimes significantly from purist definitions of 'science' which emphasize the hypothesis-testing approach. In practice, the typical data science project life-cycle resembles more of an engineering view imposed due to constraints of resources (budget, data and skills availability) and time-to-market considerations.
 
-The **CRISP-DM** model (CRoss Industry Standard Process for Data Mining) has traditionally defined six steps in the data mining life-cycle. Data science is similar to data mining in several aspects, hence there's some similarity with these steps.
-
+The **CRISP-DM** model (CRoss Industry Standard Process for Data Mining) has traditionally defined six steps in the data mining life-cycle. Data science is similar to data mining in several aspects, hence there's some similarity with these steps.  
 ![CRISP-DM lifecycle](/post/crisp-dm1.png?w=300)  
-
 
 The CRISP model steps are:  
 
@@ -48,10 +46,9 @@ The data science life-cycle thus looks somewhat like:
 4. Evaluation and Interpretation
 5. Deployment
 6. Operations
-7. Optimization
+7. Optimization  
 
 ![Data Science Project Life-cycle](/post/ds-lifecycle.png?w=300)  
-
 
 **Data Acquisition** - may involve acquiring data from both internal and external sources, including social media or web scraping. In a steady state, data extraction and transfer routines would be in place, and new sources, once identified would be acquired following the established processes.  
 

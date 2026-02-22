@@ -37,4 +37,3 @@ In tech, where agile methods are used, planning is still done, but it looks a lo
 6. **Team** - daily stand-up meeting to help the team self-organize, discover issues and work collaboratively, this could be followed by detailed sessions between team members working in pairs or in groups to. While not explicit, this helps plan the day of the team.
 
 ![Agile planning at strategy level](/pm/agile-plan-product-level.png)
-

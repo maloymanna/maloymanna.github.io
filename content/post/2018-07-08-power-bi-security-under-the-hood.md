@@ -21,6 +21,7 @@ Today, Power BI is powered by Azure, and deployed as a SaaS across datacenters i
 **Architecture**  
 ![Power BI architecture](/post/powerbi-architecture.png)  
 Each Power BI deployment contains two clusters:
+
 1. A Web Front End (WFE) cluster - contains an ASP.Net website running in an App Service Environment
 2. A Back End cluster - which provides the main functionality using microservices running on different virtual machines and stateful resources like service bus, cache, SQL database and blob storage.
 
@@ -28,6 +29,7 @@ Each Power BI deployment contains two clusters:
 
 So what exactly does happen under the hood when a user tries to access a Power BI report ?  
 Here's a look at the steps:  
+
 1. The user types in the Power BI url in the browser or clicks on a link to a report to send a request to the Power BI service.
 2. Power BI uses Azure Traffic Manager, a global DNS service, to route the request to the nearest Power BI Front-end server.
 3. The Front-end server authenticates the user's identity using Azure AD and checks the user's permissions to view the requested report.
@@ -43,10 +45,12 @@ Data in process is managed differently depending on whether the data is accessed
 Queries that do not use _DirectQuery_ do not store credentials for the underlying data.
 
 **Data storage**
+
 - Push data (push datasets) is stored encrypted in Azure blob storage using server-side encryption (Azure SSE). 
 - Metadata (tables, columns, calculations, connection strings etc.) are stored encrypted in Azure SQL. - Power BI reports are stored encrypted in Azure SQL database
 
 **Data encryption**  
+
 - Data at rest is encrypted. Encryption keys for Azure blobs are stored in Azure Key vault while those for the Azure SQL Database is managed by Azure SQL itself.
 - Data in transit is also encrypted. TLS 1.2 is supported. 
 - Data being processed in memory is not encrypted.
@@ -60,6 +64,6 @@ Power BI provides several levers to manage security as we have seen above.
 It's important to look under the hood and understand what options are available and which features should be limited or turned off to minimize risks without impacting normal usage.  
 I'll look at the security best practices to secure Power BI in a later post.
 
-
+Ref:
 [1] - [Self-service analysis and the future of Business Intelligence by Vinod Kumar](https://biguru.wordpress.com/2009/11/13/review-of-the-bt-summit-%e2%80%93-cloud-computing-soa-and-bi-tracks/)   
 [2] - Power View was based on Microsoft Silverlight, a browser-based framework similar to Adobe Flash.

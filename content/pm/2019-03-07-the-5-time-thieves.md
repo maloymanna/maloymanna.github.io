@@ -58,5 +58,3 @@ In conclusion, the three key principles to manage invisible work and improve del
 - visualize all work on a kanban board
 - limit WIP (either per item type, per swim lane, per column or per person)
 - protect the team from interruptions 
-
-   

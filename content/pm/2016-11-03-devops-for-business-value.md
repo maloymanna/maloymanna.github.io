@@ -26,4 +26,4 @@ How does this work in practice ? Most commonly this involves a set of practices 
   - use of a distributed version control system as source code repository e.g. Git
   - automated continuous integration pipeline that tests, packages and delivers releases
 
-As with agile retrospectives, DevOps too includes an element of continuous experimentation and learning. As with agile values, adopting DevOps is not just a set of methods but a culture and mindset. DevOps developed to reduce the friction between the dev and Ops teams, and it is exactly by building high-trust collaborative teams which fosters learning and innovation and reduces finger-pointing/blame-games that we get the most out of it.
+As with agile retrospectives, DevOps too includes an element of continuous experimentation and learning. As with agile values, adopting DevOps is not just a set of methods but a culture and mindset. DevOps developed to reduce the friction between the dev and Ops teams, and it is exactly by building high-trust collaborative teams which fosters learning and innovation and reduces finger-pointing/blame-games that we get the most out of it.  
