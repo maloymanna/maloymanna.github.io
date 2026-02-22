@@ -1,6 +1,6 @@
 (function () {
   var STORAGE_KEY = 'blackburn-theme';
-  var DEFAULT_THEME = 'dark'; // dark is Blackburn's natural look
+  var DEFAULT_THEME = 'light';
 
   function getPreferred() {
     var stored = localStorage.getItem(STORAGE_KEY);
@@ -30,10 +30,10 @@
     if (!icon || !label) return;
     if (theme === 'light') {
       icon.className  = 'fa fa-sun-o fa-fw';
-      label.textContent = 'Light Mode';
+      label.textContent = 'Light';
     } else {
       icon.className  = 'fa fa-moon-o fa-fw';
-      label.textContent = 'Dark Mode';
+      label.textContent = 'Dark';
     }
   }
 

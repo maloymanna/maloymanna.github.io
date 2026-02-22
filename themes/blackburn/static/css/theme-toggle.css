@@ -1,6 +1,4 @@
-/* =============================================
-   Theme Toggle Button Styles
-   ============================================= */
+/* Theme toggle button */
 
 #theme-toggle-wrap {
   padding: 1em 1em 0.5em 1em;
@@ -8,126 +6,122 @@
 }
 
 #theme-toggle {
-  background: rgba(255, 255, 255, 0.1);
+  background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 20px;
   color: #fff;
   cursor: pointer;
   font-size: 0.85em;
   padding: 6px 14px;
-  transition: background 0.2s, border-color 0.2s;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 6px;
 }
 
-#theme-toggle:hover {
-  background: rgba(255, 255, 255, 0.2);
+#theme-toggle:hover,
+#theme-toggle:focus {
+  background: #333;
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-/* =============================================
-   Light Theme Variables (class on <html>)
-   ============================================= */
+/* Light theme (default) */
 
-html.light-theme {
-  --bg:            #f9f9f9;
-  --text:          #222222;
-  --heading:       #111111;
-  --link:          #1a73e8;
-  --link-hover:    #0d5bba;
-  --code-bg:       #f0f0f0;
-  --border:        #dddddd;
-  --post-meta:     #666666;
+html.light-theme body {
+  color: #777;
+  background-color: #fff;
 }
 
-/* =============================================
-   Dark Theme Variables (default / class on <html>)
-   ============================================= */
-
-html.dark-theme {
-  --bg:            #1a1a1a;
-  --text:          #d4d4d4;
-  --heading:       #ffffff;
-  --link:          #7eb8f7;
-  --link-hover:    #a8d0ff;
-  --code-bg:       #2a2a2a;
-  --border:        #333333;
-  --post-meta:     #999999;
+html.light-theme .header {
+  color: #333;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
 }
 
-/* =============================================
-   Apply variables to page elements
-   ============================================= */
+html.light-theme .header h2 {
+  color: #777;
+}
 
-html.light-theme body,
+html.light-theme a         { color: #1f8dd6; } /* #1f8dd6 or #3b8bba */
+html.light-theme a:visited { color: #265778; }
+
+html.light-theme .prev-next-post {
+  border-top-color: #eee;
+  border-bottom-color: #eee;
+}
+
+/* Dark theme */
+
 html.dark-theme body {
-  background-color: var(--bg) !important;
-  color: var(--text) !important;
+  color: #d4d4d4;
+  background-color: #1a1a1a;
 }
 
-html.light-theme .content-wrapper,
-html.dark-theme .content-wrapper {
-  background-color: var(--bg) !important;
+html.dark-theme .header {
+  color: #d4d4d4;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #333;
 }
 
-html.light-theme h1,
-html.light-theme h2,
-html.light-theme h3,
-html.light-theme h4,
-html.light-theme h5,
-html.light-theme h6,
+html.dark-theme .header h2 {
+  color: #888;
+}
+
 html.dark-theme h1,
 html.dark-theme h2,
 html.dark-theme h3,
 html.dark-theme h4,
 html.dark-theme h5,
 html.dark-theme h6 {
-  color: var(--heading) !important;
+  color: #e8e8e8;
 }
 
-html.light-theme a,
-html.dark-theme a {
-  color: var(--link) !important;
-}
+html.dark-theme a         { color: #7eb8f7; }
+html.dark-theme a:hover,
+html.dark-theme a:focus   { color: #a8d0ff; }
+html.dark-theme a:visited { color: #5a9fd4; }
 
-html.light-theme a:hover,
-html.dark-theme a:hover {
-  color: var(--link-hover) !important;
-}
-
-html.light-theme code,
-html.light-theme pre,
 html.dark-theme code,
 html.dark-theme pre {
-  background-color: var(--code-bg) !important;
-  color: var(--text) !important;
+  background-color: #2a2a2a;
+  color: #d4d4d4;
 }
 
-html.light-theme .post-meta,
-html.dark-theme .post-meta {
-  color: var(--post-meta) !important;
+html.dark-theme .hljs-keyword, 
+html.dark-theme .hljs-built_in,
+html.dark-theme .hljs-type,
+html.dark-theme .hljs-literal,
+html.dark-theme .hljs-number,
+html.dark-theme .hljs-operator { /* Fix for bold code visibility */
+color: #7eb8f7;           
+  font-weight: 700;
 }
 
-html.light-theme hr,
-html.dark-theme hr {
-  border-color: var(--border) !important;
-}
-
-/* Post list items */
-html.light-theme .pure-u-1 .post-list-item,
-html.dark-theme .pure-u-1 .post-list-item {
-  border-bottom-color: var(--border) !important;
-}
-
-/* Table of contents / blockquote */
-html.light-theme blockquote,
 html.dark-theme blockquote {
-  border-left-color: var(--link) !important;
-  color: var(--post-meta) !important;
+  border-left-color: #7eb8f7;
+  color: #aaa;
 }
 
-/* Smooth transition for all theme changes */
-body, h1, h2, h3, h4, h5, h6, a, code, pre, .post-meta, blockquote {
+html.dark-theme .prev-next-post {
+  border-top-color: #333;
+  border-bottom-color: #333;
+}
+
+html.dark-theme .pagination a {
+  color: #7eb8f7;
+}
+
+/* Sidebar - dark in BOTH themes */
+
+html.light-theme #menu { background: #191818; }
+html.light-theme #menu a { color: #999; }
+html.light-theme #menu .pure-menu-heading { color: #fff; }
+html.light-theme #menu .pure-menu-selected { background: #1f8dd6; }
+html.light-theme #menu .pure-menu-selected a { color: #fff; }
+html.light-theme #menu .pure-menu li a:hover,
+html.light-theme #menu .pure-menu li a:focus { background: #333; }
+
+/* Transition - content only, not sidebar */
+
+body, .header, .content, a, h1, h2, h3, h4, h5, h6, code, pre, blockquote {
   transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
