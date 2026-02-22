@@ -30,4 +30,4 @@ As with many other industrial/manufacturing approaches adapted in an IT environm
 _References_:  
 
 1. Taiichi Ohno, the Toyota executive identified the first seven types of _"muda"_ or waste/inefficiency.  
-2. The five principles of _"lean"_ as an antidote to "muda" were published in a book "Lean Thinking: Banish Waste and Create Wealth in Your Corporation" by management analysts James P. Womack and Daniel T. Jones. 
+2. The five principles of _"lean"_ as an antidote to "muda" were published in a book "Lean Thinking: Banish Waste and Create Wealth in Your Corporation" by management analysts James P. Womack and Daniel T. Jones.  
