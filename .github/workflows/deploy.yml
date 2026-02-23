@@ -33,10 +33,15 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           path: ./pages-artifact
 
+      - name: Extract artifact tar
+        run: |
+          mkdir ./extracted
+          tar -xf ./pages-artifact/artifact.tar -C ./extracted
+
       - name: Re-upload as Pages artifact in this workflow run
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./pages-artifact
+          path: ./extracted
 
       - name: Deploy to GitHub Pages
         id: deployment
