@@ -64,6 +64,15 @@ jobs:
           mkdir artifact
           unzip artifact.zip -d artifact
 
+      - name: check existing files in public
+        run: |
+          echo "Listing files in ./public before uploading to Pages:"
+          if [ -d "./public" ]; then
+            find ./public -type f
+          else
+            echo "./public does not exist!"
+          fi
+
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
         with:
