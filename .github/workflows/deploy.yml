@@ -62,7 +62,7 @@ jobs:
             -o artifact.zip
 
           mkdir artifact
-          unzip artifact.zip -d artifact
+          unzip artifact.zip -d public
 
       - name: check existing files in public
         run: |
