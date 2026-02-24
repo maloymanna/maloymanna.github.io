@@ -4,6 +4,13 @@ This website uses the following third-party software:
 
 ------------------------------------------------------------
 
+actions-hugo@v3
+Copyright (c) 2019 Shohei Ueda (peaceiris)
+License: MIT
+Source: https://github.com/peaceiris/actions-hugo
+
+------------------------------------------------------------
+
 markdownlint-cli2
 Copyright (c) David Anson
 License: MIT
