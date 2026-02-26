@@ -36,16 +36,17 @@ jobs:
       - name: Extract artifact tar
         run: |
           mkdir ./extracted
+          echo "📁 Verifying extracted artifact..."
+          ls -lh ./extracted
           tar -xf ./pages-artifact/artifact.tar -C ./extracted
+          test -f ./extracted/
 
       - name: Verify artifact contents
         run: |
-          echo "📁 Verifying downloaded artifact..."
+          echo "📁 Verifying artifact contents..."
           test -f ./extracted/public/pagefind/pagefind.js || \
             (echo "ERROR: public/pagefind/pagefind.js missing in downloaded artifact" && exit 1)
           echo "✓ Pagefind index exists in artifact"
-          mkdir ./extracted
-          tar -xf ./pages-artifact/artifact.tar -C ./extracted
 
       - name: Re-upload as Pages artifact in this workflow run
         uses: actions/upload-pages-artifact@v4
