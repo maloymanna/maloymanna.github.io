@@ -34,7 +34,36 @@ jobs:
       - name: Build
         run: hugo --minify
 
+      - name: Install Pagefind 1.4.0
+        run: |
+          echo "⬇️ Downloading Pagefind 1.4.0..."
+          wget -q https://github.com/Pagefind/pagefind/releases/download/v1.4.0/pagefind-v1.4.0-x86_64-unknown-linux-musl.tar.gz -O /tmp/pagefind.tar.gz
+          tar -xzf /tmp/pagefind.tar.gz -C /usr/local/bin pagefind
+          chmod +x /usr/local/bin/pagefind
+          echo "✓ Pagefind installed"
+          pagefind --version
+
+      - name: Build Pagefind search index
+        run: |
+          echo "🔍 Generating Pagefind index..."
+          pagefind --site public --output-path public/pagefind
+          echo "✓ Pagefind index generated"
+
+      - name: Verify Pagefind index was created
+        run: |
+          echo "📁 Verifying index files..."
+          ls -lh public/pagefind/
+          test -f public/pagefind/pagefind.js || \
+            (echo "ERROR: public/pagefind/pagefind.js not found — indexing failed" && exit 1)
+          test -f public/pagefind/pagefind-entry.json || \
+            (echo "ERROR: public/pagefind/pagefind-entry.json not found — indexing failed" && exit 1)
+          test -f public/pagefind/wasm.en.pagefind || \
+            (echo "ERROR: public/pagefind/wasm.en.pagefind not found — indexing failed" && exit 1)
+          echo "✓ All Pagefind files present"
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
+          retention-days: 1
+          if-no-files-found: error

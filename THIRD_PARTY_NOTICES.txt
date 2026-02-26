@@ -4,6 +4,13 @@ This website uses the following third-party software:
 
 ------------------------------------------------------------
 
+pagefind
+Copyright 2022 Pagefind
+License: MIT
+Source: https://github.com/Pagefind/pagefind
+
+------------------------------------------------------------
+
 actions-hugo@v3
 Copyright (c) 2019 Shohei Ueda (peaceiris)
 License: MIT

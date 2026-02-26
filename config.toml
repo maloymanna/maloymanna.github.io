@@ -91,3 +91,8 @@ publishDir = "public"
   twitter = "itsmaloy"
   github = "maloymanna"
   
+  # Add at the end of hugo.toml
+[minify]
+  disableHTML = true
+  disableJS = true
+  disableCSS = true

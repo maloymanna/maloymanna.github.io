@@ -1,0 +1,206 @@
+.search-trigger-wrapper {
+  padding: 1em 1em 0.5em 1em;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-trigger-btn {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.85em;
+  padding: 4px 10px;
+  gap: 0.5em;
+  font-family: inherit;
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+
+.search-trigger-btn:hover,
+.search-trigger-btn:focus {
+  background: #333;
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
+.search-trigger-btn span {
+  flex: 1;
+  text-align: left;
+}
+
+.search-trigger-btn i {
+  flex-shrink: 0;
+  opacity: 0.8;
+  font-size: 1em;
+}
+
+/* Search Modal Overlay */
+.search-modal-overlay-pf {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 15vh;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.search-modal-overlay-pf.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Search Modal Content - Smaller size */
+.search-modal-content-pf {
+  background: #fff;
+  width: 85%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 70vh;
+}
+
+.search-modal-header-pf {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-input-pf {
+  flex: 1;
+  border: none;
+  font-size: 0.95rem;
+  outline: none;
+  background: transparent;
+  color: #333;
+  min-width: 0;
+  height: 24px;
+  line-height: 24px;
+}
+
+.search-close-btn-pf {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #999;
+  padding: 0;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.search-results-list-pf {
+  overflow-y: auto;
+  padding: 0.5rem;
+  flex: 1;
+}
+
+.search-result-item-pf {
+  padding: 0.6rem 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 0.4rem;
+  text-decoration: none;
+  display: block;
+  border: 1px solid transparent;
+  color: inherit;
+}
+
+.search-result-item-pf:hover {
+  background: #f0f0f0;
+  border-color: #ddd;
+}
+
+.search-result-title-pf {
+  font-weight: bold;
+  color: #222;
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+}
+
+.search-result-summary-pf {
+  font-size: 0.8rem;
+  color: #666;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.search-status-pf {
+  padding: 0.4rem 1rem;
+  font-size: 0.75rem;
+  color: #888;
+  text-align: right;
+  border-top: 1px solid #eee;
+}
+
+/* Dark mode - Match theme colors from theme-toggle.css */
+html.dark-theme .search-modal-content-pf {
+  background: #1a1a1a;
+}
+
+html.dark-theme .search-modal-header-pf {
+  border-bottom-color: #333;
+}
+
+html.dark-theme .search-input-pf {
+  color: #d4d4d4;
+}
+
+html.dark-theme .search-result-item-pf:hover {
+  background: #333;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+html.dark-theme .search-result-title-pf {
+  color: #e8e8e8;
+}
+
+html.dark-theme .search-result-summary-pf {
+  color: #aaa;
+}
+
+html.dark-theme .search-status-pf {
+  border-top-color: #333;
+  color: #888;
+}
+
+/* Search trigger in dark mode - Match theme toggle */
+html.dark-theme .search-trigger-btn {
+  color: #999;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+html.dark-theme .search-trigger-btn:hover,
+html.dark-theme .search-trigger-btn:focus {
+  background: #333;
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
+/* Prevent scrollbars */
+.search-trigger-wrapper,
+.search-trigger-btn {
+  max-width: 90%;
+  overflow: hidden;
+}

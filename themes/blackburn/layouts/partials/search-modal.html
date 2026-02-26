@@ -1,0 +1,15 @@
+{{/* layouts/partials/search-modal.html */}}
+<div id="search-modal" class="search-modal-overlay-pf" aria-hidden="true">
+  <div class="search-modal-content-pf">
+    <div class="search-modal-header-pf">
+      <input type="text" id="search-input" class="search-input-pf" placeholder="Search..." autocomplete="off" aria-label="Search">
+      <button id="search-close" type="button" class="search-close-btn-pf" aria-label="Close">&times;</button>
+    </div>
+    <div id="search-results" class="search-results-list-pf"></div>
+    <div id="search-status" class="search-status-pf"></div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="{{ "css/search.css" | relURL }}">
+<script type="module" src="{{ "js/search-module.js" | relURL }}"></script>
+<script src="{{ "js/search-init.js" | relURL }}"></script>
