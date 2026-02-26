@@ -25,6 +25,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}    
     steps:
+      # After adding pagefind, artifact is zip not tar
       - name: Download Pages artifact from Build workflow
         uses: actions/download-artifact@v4
         with:
@@ -35,17 +36,18 @@ jobs:
 
       - name: Extract artifact tar
         run: |
+          echo "📁 Contents of downloaded artifact..."
+          ls -lh ./pages-artifact
           mkdir ./extracted
-          echo "📁 Verifying extracted artifact..."
-          ls -lh ./extracted
           tar -xf ./pages-artifact/artifact.tar -C ./extracted
-          test -f ./extracted/
+          echo "📁 Contents after extraction..."
+          ls -lh ./extracted/
 
       - name: Verify artifact contents
         run: |
           echo "📁 Verifying artifact contents..."
-          test -f ./extracted/public/pagefind/pagefind.js || \
-            (echo "ERROR: public/pagefind/pagefind.js missing in downloaded artifact" && exit 1)
+          test -f ./extracted/pagefind/pagefind.js || \
+            (echo "ERROR: pagefind/pagefind.js missing in extracted artifact" && exit 1)
           echo "✓ Pagefind index exists in artifact"
 
       - name: Re-upload as Pages artifact in this workflow run
