@@ -3,6 +3,8 @@
 *.foo
 *.bak
 *.lock
+# Ignore local test script after adding pagefind
+server.py
 # Ignore directories
 public/
 
