@@ -24,6 +24,7 @@ As the AI juggernaut gathers momentum and new AI tools and agents keep encroachi
 How did we arrive here?
 
 ### Agentic AI momentum
+
 With billions pouring into deals in the AI space, and reinforcement learning continuing to deliver model improvements, AI performance has continued to improve throughout 2025.  
 When Manus launched as the first general AI agent on March 5, 2025, with an [X post from its co-founder and chief scientist Yichao 'Peak' Ji](https://x.com/ManusAI/status/1897294098945728752), it was hailed as a second DeepSeek moment.  
 Unlike the ubiquitous chatbots spawned by ChatGPT, this new multi-agent system could not only perform research or analyze data, but could autonomously, and asynchronously perform complex tasks, including writing and deploying code.  
@@ -37,6 +38,7 @@ There was plenty of [acquisition drama](https://www.theverge.com/openai/705999/g
 OpenAI's $3 billion bid for Windsurf(maker of the eponymous AI-assisted IDE) fell through (reportedly due to Microsoft blocking it), while Google managed a $2.4 billion deal licensing Windsurf's technology and hiring its CEO, and Cognition (maker of Devin agentic coding) [acquired the product and the rest of the team](https://x.com/windsurf/status/1944819613050790056). OpenAI was left empty-handed but came back strong with a reimagined Codex.
 
 ### Agents building Agents
+
 By November 2025, developer Mario Zechner had developed the open-source [pi - a minimal coding agent](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent#readme).  
 Pi is a terminal coding harness, which has a pared-down system prompt, and only four essential tools: Read, Write, Edit and Bash execute. Pi provides extensibility through `composable extensions`: typescript modules that extend pi with custom tools, commands, keyboard shortcuts, event handlers, and UI components. Like Manus, Pi uses the filesystem to persist and manage context and follows the Agent Skills standard to give new capabilities to the agent, on-demand.  
 
@@ -47,6 +49,7 @@ OpenClaw and its [marketplace of unregulated° skills](https://snyk.io/blog/toxi
 By mid-February, Sam Altman had managed to get [Steinberger join OpenAI](https://x.com/sama/status/2023150230905159801).  
 
 ### Enterprise AI Agents
+
 The improved Agentic AI technology has now prompted the leading model providers to come out with Enterprise AI Agent platforms, targeting business software in the enterprise, and knowledge work in general. This agentic AI management layer is the next AI battleground, and a looming threat to enterprise software.
 OpenAI Frontier: acts as a layer integrating AI directly into enterprise workflows. With IAM, observability (monitoring and logs), multi-vendor agent orchestration.
 Claude Enterprise Agents: brings Claude, Claude Code and Claude CoWork in the organizational context. Extensible with plugins, codefree automation, connectors to Microsoft 365 and enterprise tools, it adds SSO, audit logs, data retention policies and a compliance API to really target the enterprise space.
@@ -78,6 +81,7 @@ A "thought-exercise" from [Citrini Reasearch rattled investors further painting 
 While panned later, it showed the "SaaSpocalypse" scare was real on Wall Street, and was supported by several AI-related layoff announcements ([16000 Amazon layoffs](https://www.aboutamazon.com/news/company-news/amazon-layoffs-corporate-jan-2026),[40% Block layoffs](https://x.com/jack/status/2027129697092731343), [30% WiseTech layoffs](https://www.bloomberg.com/news/articles/2026-02-24/wisetech-to-cut-2-000-jobs-as-ai-ends-era-of-manual-coding) - Source: [layoffs.fyi](https://layoffs.fyi))  
 
 ### AgentOps
+
 As enterprises adapt agentic AI and build or integrate these AI agents in business workflow automation,ensuring the AI agents perform as intended becomes the key challenge. AgentOps (short for Agent Operations) is the emerging set of practices, building on existing precepts of DevOps and MLOps.
 Enterprises would need to adapt or redesign their business processes and organization around this new agentic ecosystem where humans and AI agents coexist. Enterprise grade security, traceability and intepretability remain challenges due to the inherently non-deterministic/probabilistic nature of AI models, however even AI will surely [improve cybersecurity for AI](https://www.anthropic.com/news/claude-code-security). A future where humans manage multiple [agent teams](https://code.claude.com/docs/en/agent-teams) using agentops frameworks, tools and standards, seems closer to reality than imagination now. A future where we hope our unique human traits would be crucial for governance, and value-driven decision making.  
 
