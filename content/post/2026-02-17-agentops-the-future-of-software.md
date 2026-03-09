@@ -27,6 +27,7 @@ How did we arrive here?
 
 With billions pouring into deals in the AI space, and reinforcement learning continuing to deliver model improvements, AI performance has continued to improve throughout 2025.  
 When Manus launched as the first general AI agent on March 5, 2025, with an [X post from its co-founder and chief scientist Yichao 'Peak' Ji](https://x.com/ManusAI/status/1897294098945728752), it was hailed as a second DeepSeek moment.  
+{{< x user="ManusAI" id="1897294098945728752" >}}  
 Unlike the ubiquitous chatbots spawned by ChatGPT, this new multi-agent system could not only perform research or analyze data, but could autonomously, and asynchronously perform complex tasks, including writing and deploying code.  
 By December 2025, [Manus had been snapped up by Meta](https://www.cnbc.com/2025/12/30/meta-acquires-singapore-ai-agent-firm-manus-china-butterfly-effect-monicai.html), with deal terms undisclosed, but valued at an estimated USD 2-3 billion.  
 
@@ -39,7 +40,8 @@ OpenAI's $3 billion bid for Windsurf(maker of the eponymous AI-assisted IDE) fel
 
 ### Agents building Agents
 
-By November 2025, developer Mario Zechner had developed the open-source [pi - a minimal coding agent](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent#readme).  
+Mid-July 2025: Open-source developer Geoffrey Huntley, frustrated by the human-in-the-loop bottleneck, developed a simple brute-force agent-loop([Ralph loop](https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum)), essentially a Bash loop with an agent.  
+By November 2025, developer Mario Zechner had developed the open-source [pi - a minimal coding agent](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent#readme) leveraging the Ralph loop.  
 Pi is a terminal coding harness, which has a pared-down system prompt, and only four essential tools: Read, Write, Edit and Bash execute. Pi provides extensibility through `composable extensions`: typescript modules that extend pi with custom tools, commands, keyboard shortcuts, event handlers, and UI components. Like Manus, Pi uses the filesystem to persist and manage context and follows the Agent Skills standard to give new capabilities to the agent, on-demand.  
 
 November 2025 was when developer Peter Steinberger used pi to build his open-source AI agent Clawdbot by giving it a gateway to connect to messaging tools like WhatsApp and Telegram. Under pressure from Anthropic due to perceived similarities with Claude, Peter had to subsequently rename it to Moltbot, and then OpenClaw.  
@@ -86,13 +88,16 @@ As enterprises adapt agentic AI and build or integrate these AI agents in busine
 Enterprises would need to adapt or redesign their business processes and organization around this new agentic ecosystem where humans and AI agents coexist. Enterprise grade security, traceability and intepretability remain challenges due to the inherently non-deterministic/probabilistic nature of AI models, however even AI will surely [improve cybersecurity for AI](https://www.anthropic.com/news/claude-code-security). A future where humans manage multiple [agent teams](https://code.claude.com/docs/en/agent-teams) using agentops frameworks, tools and standards, seems closer to reality than imagination now. A future where we hope our unique human traits would be crucial for governance, and value-driven decision making.  
   
 Since you made it this far, here's a vid, on a lighter note:  
-{{< tweet user="KaiLentit" id="2021282230421651456" >}}  
+{{< x user="KaiLentit" id="2021282230421651456" >}}  
 
 *This post has been updated based on events till end-Feb'2026.*
 
 Ref:
 
 - [Context engineering for AI agents - Lessons from building Manus](https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus)
+- [The 'Ralph' agent loop technique - Geoffrey Huntley ](https://ghuntley.com/ralph/)
+- [Ralph loop - Venturebeat](https://venturebeat.com/technology/how-ralph-wiggum-went-from-the-simpsons-to-the-biggest-name-in-ai-right-now?ref=ghuntley.com)
+- [Pi - a minimal coding agent](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent#readme)
 - [Pi, the minimal agent within OpenClaw - Armin Ronacher](https://lucumr.pocoo.org/2026/1/31/pi/)
 - [OpenAI Frontier](https://openai.com/index/introducing-openai-frontier/)
 - [Claude CoWork plugins](https://claude.com/blog/cowork-plugins)
