@@ -84,6 +84,9 @@ While panned later, it showed the "SaaSpocalypse" scare was real on Wall Street,
 
 As enterprises adapt agentic AI and build or integrate these AI agents in business workflow automation,ensuring the AI agents perform as intended becomes the key challenge. AgentOps (short for Agent Operations) is the emerging set of practices, building on existing precepts of DevOps and MLOps.
 Enterprises would need to adapt or redesign their business processes and organization around this new agentic ecosystem where humans and AI agents coexist. Enterprise grade security, traceability and intepretability remain challenges due to the inherently non-deterministic/probabilistic nature of AI models, however even AI will surely [improve cybersecurity for AI](https://www.anthropic.com/news/claude-code-security). A future where humans manage multiple [agent teams](https://code.claude.com/docs/en/agent-teams) using agentops frameworks, tools and standards, seems closer to reality than imagination now. A future where we hope our unique human traits would be crucial for governance, and value-driven decision making.  
+  
+Since you made it this far, here's a vid, on a lighter note:  
+{{< tweet user="KaiLentit" id="2021282230421651456" >}}  
 
 *This post has been updated based on events till end-Feb'2026.*
 
