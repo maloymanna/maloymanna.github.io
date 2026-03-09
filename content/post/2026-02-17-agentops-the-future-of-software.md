@@ -95,7 +95,7 @@ Since you made it this far, here's a vid, on a lighter note:
 Ref:
 
 - [Context engineering for AI agents - Lessons from building Manus](https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus)
-- [The 'Ralph' agent loop technique - Geoffrey Huntley ](https://ghuntley.com/ralph/)
+- [The 'Ralph' agent loop technique - Geoffrey Huntley](https://ghuntley.com/ralph/)
 - [Ralph loop - Venturebeat](https://venturebeat.com/technology/how-ralph-wiggum-went-from-the-simpsons-to-the-biggest-name-in-ai-right-now?ref=ghuntley.com)
 - [Pi - a minimal coding agent](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent#readme)
 - [Pi, the minimal agent within OpenClaw - Armin Ronacher](https://lucumr.pocoo.org/2026/1/31/pi/)
