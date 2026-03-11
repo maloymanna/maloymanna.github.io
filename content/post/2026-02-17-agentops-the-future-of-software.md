@@ -10,7 +10,7 @@ description: "AgentOps - The future of software?"
 categories:
 - AI, software
 tags:
-- AI, software, productivity
+- AI, agent, software, productivity
 ---
 The Agentic AI revolution is on. Meta has acquired Manus, OpenAI Codex and Anthropic Opus coding agents are churning out code faster than ever, and OpenClaw has taken agent orchestration to a new level! Software stocks sell-off continue in the AI-scare trade. Is AgentOps the future of software?  
 
@@ -42,11 +42,11 @@ OpenAI's $3 billion bid for Windsurf(maker of the eponymous AI-assisted IDE) fel
 
 Mid-July 2025: Open-source developer Geoffrey Huntley, frustrated by the human-in-the-loop bottleneck, developed a simple brute-force agent-loop([Ralph loop](https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum)), essentially a Bash loop with an agent.  
 By November 2025, developer Mario Zechner had developed the open-source [pi - a minimal coding agent](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent#readme) leveraging the Ralph loop.  
-Pi is a terminal coding harness, which has a pared-down system prompt, and only four essential tools: Read, Write, Edit and Bash execute. Pi provides extensibility through `composable extensions`: typescript modules that extend pi with custom tools, commands, keyboard shortcuts, event handlers, and UI components. Like Manus, Pi uses the filesystem to persist and manage context and follows the Agent Skills standard to give new capabilities to the agent, on-demand.  
+Pi is a terminal coding harness, which has a pared-down system prompt, and only four essential tools: Read, Write, Edit and Bash execute. Pi provides extensibility through **composable extensions**: typescript modules that extend pi with custom tools, commands, keyboard shortcuts, event handlers, and UI components. Like Manus, Pi uses the filesystem to persist and manage context and follows the [Agent Skills standard](https://agentskills.io) to give new capabilities to the agent, on-demand.  
 
 November 2025 was when developer Peter Steinberger used pi to build his open-source AI agent Clawdbot by giving it a gateway to connect to messaging tools like WhatsApp and Telegram. Under pressure from Anthropic due to perceived similarities with Claude, Peter had to subsequently rename it to Moltbot, and then OpenClaw.  
   
-By late January, [OpenClaw](https://github.com/openclaw/openclaw) became went viral as people discovered its usage as a personal AI assistant running locally while leveraging cloud LLMs.
+By late January, [OpenClaw](https://github.com/openclaw/openclaw) went viral as people discovered its usage as a personal AI assistant running locally while leveraging cloud LLMs.
 OpenClaw and its [marketplace of unregulated° skills](https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/) require careful security precautions and hardening, and increase the risks of shadow AI in the enterprise. That said, both OpenClaw and its underlying pi agent highlight the coming of age of the autonomous AI coding agent. With the agent-loop, it is now possible to let your agent build agents and use tools and perform complex work with task-decomposition and even hot-reloading of the agent with its newly built extension! It seems almost the holy grail - the self-modifying software.  
 By mid-February, Sam Altman had managed to get [Steinberger join OpenAI](https://x.com/sama/status/2023150230905159801).  
 
@@ -87,7 +87,7 @@ While panned later, it showed the "SaaSpocalypse" scare was real on Wall Street,
 As enterprises adapt agentic AI and build or integrate these AI agents in business workflow automation,ensuring the AI agents perform as intended becomes the key challenge. AgentOps (short for Agent Operations) is the emerging set of practices, building on existing precepts of DevOps and MLOps.
 Enterprises would need to adapt or redesign their business processes and organization around this new agentic ecosystem where humans and AI agents coexist. Enterprise grade security, traceability and intepretability remain challenges due to the inherently non-deterministic/probabilistic nature of AI models, however even AI will surely [improve cybersecurity for AI](https://www.anthropic.com/news/claude-code-security). A future where humans manage multiple [agent teams](https://code.claude.com/docs/en/agent-teams) using agentops frameworks, tools and standards, seems closer to reality than imagination now. A future where we hope our unique human traits would be crucial for governance, and value-driven decision making.  
   
-Since you made it this far, here's a vid, on a lighter note:  
+Since you made it this far, here's a vid, on a lighter note :wink:  
 {{< x user="KaiLentit" id="2021282230421651456" >}}  
 
 *This post has been updated based on events till end-Feb'2026.*
