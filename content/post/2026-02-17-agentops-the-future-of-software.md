@@ -14,7 +14,7 @@ tags:
 ---
 The Agentic AI revolution is on. Meta has acquired Manus, OpenAI Codex and Anthropic Opus coding agents are churning out code faster than ever, and OpenClaw has taken agent orchestration to a new level! Software stocks sell-off continue in the AI-scare trade. Is AgentOps the future of software?  
 
-## AI is eating software
+### AI is eating software
 
 In 2011, venture capitalist Marc Andreessen declared that ["Software is eating the world."](https://a16z.com/why-software-is-eating-the-world/)  
 In 2017, NVIDIA CEO Jensen Huang added ["... but AI is going to eat software."](https://www.technologyreview.com/2017/05/12/151722/nvidia-ceo-software-is-eating-the-world-but-ai-is-going-to-eat-software/)  
@@ -52,15 +52,17 @@ By mid-February, Sam Altman had managed to get [Steinberger join OpenAI](https:/
 
 ### Enterprise AI Agents
 
-The improved Agentic AI technology has now prompted the leading model providers to come out with Enterprise AI Agent platforms, targeting business software in the enterprise, and knowledge work in general. This agentic AI management layer is the next AI battleground, and a looming threat to enterprise software.
-OpenAI Frontier: acts as a layer integrating AI directly into enterprise workflows. With IAM, observability (monitoring and logs), multi-vendor agent orchestration.
-Claude Enterprise Agents: brings Claude, Claude Code and Claude CoWork in the organizational context. Extensible with plugins, codefree automation, connectors to Microsoft 365 and enterprise tools, it adds SSO, audit logs, data retention policies and a compliance API to really target the enterprise space.
+The improved Agentic AI technology has now prompted the leading model providers to come out with Enterprise AI Agent platforms, targeting business software in the enterprise, and knowledge work in general. This agentic AI management layer is the next AI battleground, and a looming threat to enterprise software.  
+
+**OpenAI Frontier**: acts as a layer integrating AI directly into enterprise workflows. With IAM, observability (monitoring and logs), multi-vendor agent orchestration.  
+
+**Claude Enterprise Agents**: brings Claude, Claude Code and Claude CoWork in the organizational context. Extensible with plugins, codefree automation, connectors to Microsoft 365 and enterprise tools, it adds SSO, audit logs, data retention policies and a compliance API to really target the enterprise space.
 {{< youtube UAmKyyZ-b9E >}}
 
 **Something big is happening - AI is coming (to|for) a knowledge-work job**  
 
-It may feel like the usual AI hype, but METR research shows a [significant jump in frontier-AI models capabilities](https://metr.org/time-horizons/) as measured by task-completion time horizons (measures success of AI agents in completing tasks reliably).  
-By early February 2026, [Claude CoWork added support for plugins](https://claude.com/blog/cowork-plugins) - which allow bundling skills, connectors, sub-agents together thus tailoring the AI to specific job functions like sales, legal, and financial analysis.  
+It may feel like the usual AI hype, but {{< blue-text >}}METR research{{< /blue-text >}} shows a [significant jump in frontier-AI models capabilities](https://metr.org/time-horizons/) as measured by task-completion time horizons (measures success of AI agents in completing tasks reliably).  
+By early February 2026, [Claude CoWork had added support for plugins](https://claude.com/blog/cowork-plugins) - which allow bundling skills, connectors, sub-agents together thus tailoring the AI to specific job functions like sales, legal, and financial analysis.  
 **11 plugins** across functions were [open-sourced](https://github.com/anthropics/knowledge-work-plugins):
 
 1. Productivity
@@ -79,13 +81,15 @@ These wide ranging enterprise capabilities spooked the markets, and setoff sharp
 Ironically, Huang now seems to think differently and [pushed back on fears that AI agents will cannibalize the enterprise software industry](https://www.cnbc.com/2026/02/26/nvidia-jensen-huang-gpu-ai-threat-software-companies-saas-earnings-chips.html).  
 
 ***End-Feb'2026 Update***:  
-A "thought-exercise" from [Citrini Reasearch rattled investors further painting a near-future scenario](https://www.citriniresearch.com/p/2028gic) how autonomous AI agents gut software companies, cause widespread job losses and upend the world economy in a downward spiral.  
+A {{< blue-text >}}"thought-exercise"{{< /blue-text >}} from [Citrini Reasearch rattled investors further painting a near-future scenario](https://www.citriniresearch.com/p/2028gic) how autonomous AI agents gut software companies, cause widespread job losses and upend the world economy in a downward spiral.  
 While panned later, it showed the "SaaSpocalypse" scare was real on Wall Street, and was supported by several AI-related layoff announcements ([16000 Amazon layoffs](https://www.aboutamazon.com/news/company-news/amazon-layoffs-corporate-jan-2026),[40% Block layoffs](https://x.com/jack/status/2027129697092731343), [30% WiseTech layoffs](https://www.bloomberg.com/news/articles/2026-02-24/wisetech-to-cut-2-000-jobs-as-ai-ends-era-of-manual-coding) - Source: [layoffs.fyi](https://layoffs.fyi))  
 
 ### AgentOps
 
-As enterprises adapt agentic AI and build or integrate these AI agents in business workflow automation,ensuring the AI agents perform as intended becomes the key challenge. AgentOps (short for Agent Operations) is the emerging set of practices, building on existing precepts of DevOps and MLOps.
-Enterprises would need to adapt or redesign their business processes and organization around this new agentic ecosystem where humans and AI agents coexist. Enterprise grade security, traceability and intepretability remain challenges due to the inherently non-deterministic/probabilistic nature of AI models, however even AI will surely [improve cybersecurity for AI](https://www.anthropic.com/news/claude-code-security). A future where humans manage multiple [agent teams](https://code.claude.com/docs/en/agent-teams) using agentops frameworks, tools and standards, seems closer to reality than imagination now. A future where we hope our unique human traits would be crucial for governance, and value-driven decision making.  
+As enterprises adapt agentic AI and build or integrate these AI agents in business workflow automation,ensuring the AI agents perform as intended becomes the key challenge.  
+AgentOps (short for Agent Operations) is the emerging set of practices, building on existing precepts of DevOps and MLOps.  
+Enterprises would need to adapt or redesign their business processes and organization around this new agentic ecosystem where humans and AI agents coexist. Enterprise grade security, traceability and intepretability remain challenges due to the inherently non-deterministic/probabilistic nature of AI models, however even AI will surely [improve cybersecurity for AI](https://www.anthropic.com/news/claude-code-security).  
+A future where humans manage multiple [agent teams](https://code.claude.com/docs/en/agent-teams) using agentops frameworks, tools and standards, seems closer to reality than imagination now. A future where we hope our unique human traits would be crucial for governance, and value-driven decision making.  
   
 Since you made it this far, here's a vid, on a lighter note :wink:  
 {{< x user="KaiLentit" id="2021282230421651456" >}}  
