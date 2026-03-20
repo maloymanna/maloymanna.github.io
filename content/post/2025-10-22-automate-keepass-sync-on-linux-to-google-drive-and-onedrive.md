@@ -70,7 +70,7 @@ The process works differently for OneDrive because Microsoft uses different auth
 
 **Step 3 - Bash script to bring it altogether**
 
-- See bash script below ([also linked](/nixscripts/blob/main/sync-keepass.sh))
+- See bash script below ([also linked](https://github.com/maloymanna/nixscripts/blob/main/sync-keepass.sh))
 
 ```bash
 #!/bin/bash
