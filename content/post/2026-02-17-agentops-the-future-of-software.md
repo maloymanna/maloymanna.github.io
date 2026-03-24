@@ -41,10 +41,10 @@ OpenAI's $3 billion bid for Windsurf(maker of the eponymous AI-assisted IDE) fel
 ### Agents building Agents
 
 Mid-July 2025: Open-source developer Geoffrey Huntley, frustrated by the human-in-the-loop bottleneck, developed a simple brute-force agent-loop([Ralph loop](https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum)), essentially a Bash loop with an agent.  
-By November 2025, developer Mario Zechner had developed the open-source [pi - a minimal coding agent](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent#readme) leveraging the Ralph loop.  
+By November 2025, developer [Mario Zechner](https://github.com/badlogic) had developed the open-source [pi - a minimal coding agent](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent#readme) leveraging the Ralph loop.  
 Pi is a terminal coding harness, which has a pared-down system prompt, and only four essential tools: Read, Write, Edit and Bash execute. Pi provides extensibility through **composable extensions**: typescript modules that extend pi with custom tools, commands, keyboard shortcuts, event handlers, and UI components. Like Manus, Pi uses the filesystem to persist and manage context and follows the [Agent Skills standard](https://agentskills.io) to give new capabilities to the agent, on-demand.  
 
-November 2025 was when developer Peter Steinberger used pi to build his open-source AI agent Clawdbot by giving it a gateway to connect to messaging tools like WhatsApp and Telegram. Under pressure from Anthropic due to perceived similarities with Claude, Peter had to subsequently rename it to Moltbot, and then OpenClaw.  
+November 2025 was when developer [Peter Steinberger](https://github.com/steipete) used pi to build his open-source AI agent Clawdbot by giving it a gateway to connect to messaging tools like WhatsApp and Telegram. Under pressure from Anthropic due to perceived similarities with Claude, Peter had to subsequently rename it to Moltbot, and then OpenClaw.  
   
 By late January, [OpenClaw](https://github.com/openclaw/openclaw) went viral as people discovered its usage as a personal AI assistant running locally while leveraging cloud LLMs.
 OpenClaw and its [marketplace of unregulated° skills](https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/) require careful security precautions and hardening, and increase the risks of shadow AI in the enterprise. That said, both OpenClaw and its underlying pi agent highlight the coming of age of the autonomous AI coding agent. With the agent-loop, it is now possible to let your agent build agents and use tools and perform complex work with task-decomposition and even hot-reloading of the agent with its newly built extension! It seems almost the holy grail - the self-modifying software.  
@@ -106,6 +106,7 @@ Ref:
 - [OpenAI Frontier](https://openai.com/index/introducing-openai-frontier/)
 - [Claude CoWork plugins](https://claude.com/blog/cowork-plugins)
 - [Anthropic Briefing - Enterprise Agents](https://www.youtube.com/watch?v=YZVpUeEvGxs)
-- [Something big is happening - Matth Shumer](https://shumer.dev/something-big-is-happening)
+- [Viral essay: Something big is happening - Matt Shumer](https://shumer.dev/something-big-is-happening)
+- [METR note on limitations of time horizon](https://metr.org/notes/2026-01-22-time-horizon-limitations/)
   
 °*OpenClaw has since announced a [partnership with VirusTotal](https://openclaw.ai/blog/virustotal-partnership) to add security scanning to its skill marketplace*
