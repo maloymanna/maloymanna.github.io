@@ -35,7 +35,6 @@ Prompt engineering aimed to design structured prompts to improve LLM outputs. Se
 {{<blue-text>}}Create{{</blue-text>}}: A 3 minute spoken script with a strong hook and clear call to action.  
 {{<blue-text>}}Intent{{</blue-text>}}: I need to secure funding for production rollout.  
   
-
 **CREATE**: A mnemonic for Character, Request, Examples, Adjustment, Type of output, Extras.  
 
 {{<blue-text>}}Character{{</blue-text>}}: Act as a visionary software developer and startup founder who builds eco-friendly tech.  
@@ -61,14 +60,14 @@ In the retrieval and generation phase, the user query is turned to a vector, and
 
 The key architectural shift in this phase was that knowledge preparation became an engineering concern, independent of the LLM. All the engineering steps are as important as the model in determining response quality.
 
-
 **Phase 3: Agentic Reasoning with ReAct and Tool use**
 
 The next significant evolution introduced Reasoning combined with Action (ReAct), and ushered in agentic AI. LLMs were given `agency` by providing them with tools, and the reasoning loop allowed the model to iteratively refine its approach. 
 ![Phase 3: Agentic Reasoning and Tool use](/images/agentic1-900.png)
 
 This evolution was driven primarily by context limitaions. For example, coding agents started using the Ralph loop, a while-do loop to brute-force around context limitations. Ralph was a minimalist, transparent loop emphasizing one tool/action at a time with frequent replanning.
-Due to limitations of Ralph, coding agents quickly had to engineer a runtime (usually called the harness) to execute the loop. The harness infrastructure performs classic software engineering in addition to the classic chatbot REPL(read-eval-print-loop):
+Due to limitations of Ralph, coding agents quickly had to engineer a runtime (usually called the harness) to execute the loop. The harness infrastructure performs classic software engineering in addition to the classic chatbot REPL(read-eval-print-loop):  
+
 - inject prompts
 - manage tool registry and tool execution
 - manage state by storing memory
@@ -127,14 +126,16 @@ Nodes are steps.
 Edges are dependencies.
 The graph srtucture also models interconneced knowledge better enabling relationship-centric queries and path traversal. 
 
-Graphs help with:
+Graphs help with:  
+
 - Parallelism (compared to sequential loops)
 - Branching and merging dynamically
 - Resilience with retries/rerouting on some nodes without affecing the whole workflowv
 - Modularity can simplify architecture making them composable (loops may seem monolithic)
 - Performance can leverage specialized technologies (like graph storage engines, graph embedding techniques or graph query & traversal languages).
 
-In the vibe-coding world of AI hype and tokenmaxxing, graph engineering may seem like the silver bullet, but they are not the correct choice in all cases: 
+In the vibe-coding world of AI hype and tokenmaxxing, graph engineering may seem like the silver bullet, but they are not the correct choice in all cases:  
+
 - not suitable for low-complexity use-cases
 - more engineering overhead 
 - higher token usage for simple cases due to multiple nodes/LLM calls
@@ -145,9 +146,11 @@ In the vibe-coding world of AI hype and tokenmaxxing, graph engineering may seem
 LLMs have continued improving throughout 2026, and most frontier models now have large context and memory improvements improving model performance by orders of magnitude from previous generations. This led rise to "coding is free" approaches allowing vibe-coders and developers to advance from functioning prototypes to rapidly build reasonably complete applications. A lot of non-trivial use-cases can now be one-shotted or few-shotted using frontier models to build reasonably complete applications. 
 The flip side of this is token-usage has exploded due to the token-guzzling frontier models, and AI costs have ballooned:
 e.g. [Uber exhausted its annual AI budget in just 4 months](https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/) and both [Microsoft](https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/) and [Meta](https://mlq.ai/news/meta-caps-internal-ai-token-spending-after-costs-approach-billions-in-2026/) have put the brakes on mushrooming AI token spending
-Such rapid development also come with significant risks:
+Such rapid development also come with significant risks:  
+
 - lack of code review due to limited human attention and shrunk development cycles causing decay of developer discipline
 - massive cybersecurity risks posed by the latest frontier models like Mythos, GPT-5.6 Sol, GLM-5.2, Tulongfeng and Yitianzhen
+
 The ballooning token costs problem has driven a key realization that not everything requires an LLM. 
 Corollary: if a task has a deterministic algorithm, spending tokens to accomplish it is wasteful.
 This realization has led to multiple building blocks being replaced by deterministic code and reusable tools instead of spending tokens repeatedly to solve such actions on-the-fly.  
@@ -180,12 +183,14 @@ Due to this broad action space, policy-engine invocations are typically bounded 
 Here's a Mermaid diagram showing this architetcure visually:  
 ![Determinisic Orchestration Workflow Architecture](/images/wfdo-800.png)  
 
-Some responsibilities of the Policy Engine:
+Some responsibilities of the Policy Engine:  
+
 - Gating: decide if an action is permitted (rules or allowlist-based e.g. call LLM, auto-deploy patch etc.)  
 - Data leakage protection: redaction or masking of sensitive information (e.g. API calls to DLP tools)
 - Risk thresholds and approval rules: map risk scores to automation level(allow,require human review,block)
 - Cost limits: enforce token/cost budgets and quotas
 - Audit metadata: log metadata evidence and reasons behind decisions for compliance and fine-tuning. 
+
 The policy engine may have integrations with existing enterprise systems to enforce security, risk data protection and such organization policies.
 
 Note that even this `deterministic` workflow still has provision for `human-in-the-loop`(increasingly with collaboration/work-management tool integration e.g. in Slack/Linear).
@@ -203,7 +208,8 @@ Tokens are spent only where probabilistic reasoning adds value while determinist
 
 In the next posts, we'll look at multi-agent implementations/sub-agents/agent-swarms and some reference architecture implementations in the enterprise as well as implications of model provider monopolistic practices on open-source AI and cybersecurity.
 
-Ref:
+Ref:  
+
 - AI Glossary - https://github.com/maloymanna/ai-concepts-glossary 
 - AI Harness Engineering (2026) — https://arxiv.org/abs/2605.13357
 - ReAct: Synergizing Reasoning and Acting in Language Models — https://arxiv.org/abs/2210.03629
