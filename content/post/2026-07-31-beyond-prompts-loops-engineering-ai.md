@@ -12,6 +12,8 @@ categories:
 tags:
 - AI, agent, software, productivity
 ---
+**TLDR**: _Agentic AI architectures are evolving in the enerprise beyond prompts, loops & harnesses and incorporating LLMs as part of a deterministic architecture for greater predictability and token efficiency engineering._  
+
 The rise of agentic AI and specifically AI coding agents has led to rapid evolution in AI engineering. In the early days of ChatGPT, we were being asked to learn prompt engineering - how to structure prompts to get better results on different tasks with Large Language Models (LLMs). As models improved capabilities with improved context and memory, AI applications became more sophisticated, shifting towards agentic workflows, ralph loops and tool calling. However, as enterprises adopt AI, and pilots move into production, rising token costs are driving a shift towards deterministic architectures beyond the agent harness and loops.
 
 Enterprise AI systems in production can no longer rely on designing clever prompts or infinite recursive loops. Exploding token usage and the need to have greater control and repeatability are forcing AI systems to combine non-deterministic LLM reasoning with deterministic software engineering principles and domain-specific policies to develop into distributed systems with a layered architecture.
@@ -196,12 +198,15 @@ The policy engine may have integrations with existing enterprise systems to enfo
 Note that even this `deterministic` workflow still has provision for `human-in-the-loop`(increasingly with collaboration/work-management tool integration e.g. in Slack/Linear).
 While fully automated AI pipelines are possible and used already for low-risk/safe and repetitive tasks (e.g. internal chatbots/knowledge management/spam-filtering/invoice-classification), the `human-in-the-loop` checkpoint/action hub is standard in production for important business processes, especially those with impact on customers and must for regulatory compliance. 
 
+Coupled with this is the support for repair and recoverability as well as support for long-duration runs (long-running agent loops). The evolving stack is built with technologies like Cloudflare durable objects / Temporal / LangGraph, to support such long-running workflows, control and state.  
+
 ---
 
 Agentic AI is evolving rapidly and the LLM is no longer _the_ application.  
-**Tokenmaxxing** is not sustainable, being limited by the finite attention of humans.  
-Frequent pricing changes, alleged [**nerfing**](https://x.com/badlogicgames/status/2045150968094851170) and changing token usage between models illustrate that provider interests are not always aligned with optimizing {{<blue-text>}}token-efficiency{{</blue-text>}}.  
-Cyber capabilities of frontier models underscore further the need to derisk producion deployments with clearly bounded LLM cognitive abilities.  
+[**Tokenmaxxing**](https://github.com/maloymanna/ai-concepts-glossary#tokenmaxxing) is not sustainable, being limited by the finite attention of humans.  
+Frequent pricing changes, alleged [**nerfing**](https://github.com/maloymanna/ai-concepts-glossary#nerfing) and changing token usage between models illustrate that provider interests are not always aligned with optimizing {{<blue-text>}}token-efficiency{{</blue-text>}}. 
+
+[Cyber capabilities of frontier models](https://www.aisi.gov.uk/blog/how-fast-is-autonomous-ai-cyber-capability-advancing) underscore further the need to derisk producion deployments with clearly bounded LLM cognitive abilities.  
 
 In such scenarios, enterprises need to ensure predicability, audiability, compliance as well as control costs and security risks. The evolving deterministic orchestration workflows allow benefiting from LLMs' intelligence, but within a narrowly-scoped, bounded action space for enterprise-grade solutions.
 Tokens are spent only where probabilistic reasoning adds value while deterministic work is delegated to software.  
@@ -213,7 +218,9 @@ Ref:
 - AI Glossary - https://github.com/maloymanna/ai-concepts-glossary 
 - AI Harness Engineering (2026) — https://arxiv.org/abs/2605.13357
 - ReAct: Synergizing Reasoning and Acting in Language Models — https://arxiv.org/abs/2210.03629
-- Conductor: Deterministic orchestration for multi-agent AI workflows - Microsoft - https://opensource.microsoft.com/blog/2026/05/14/conductor-deterministic-orchestration-for-multi-agent-ai-workflows
+- Context Engineering (Anthropic) - https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+- Conductor: Deterministic orchestration for multi-agent AI workflows (Microsoft) - https://opensource.microsoft.com/blog/2026/05/14/conductor-deterministic-orchestration-for-multi-agent-ai-workflows
 - Minions: Stripe’s one-shot, end-to-end coding agents—Part 2 - https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2
-- Code is free (aka Tokenmaxxing in Harness Engineering) - Ryan Lopopolo - https://www.youtube.com/watch?v=c8bE0cj7vHY
-- The session you cannot take with you - Earendil Engineering - https://earendil.com/posts/session-portability
+- Code is free (aka Tokenmaxxing in Harness Engineering) - (Ryan Lopopolo, OpenAI) - https://www.youtube.com/watch?v=c8bE0cj7vHY
+- The session you cannot take with you (Earendil Engineering) - https://earendil.com/posts/session-portability
+- Autonomous AI cyber capability - (AI Security Institute, UK) - https://www.aisi.gov.uk/blog/how-fast-is-autonomous-ai-cyber-capability-advancing
