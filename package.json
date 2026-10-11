@@ -1,0 +1,29 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "![Tests](https://github.com/maloymanna/maloymanna.github.io/actions/workflows/tests.yml/badge.svg) ![Build](https://github.com/maloymanna/maloymanna.github.io/actions/workflows/build.yml/badge.svg) ![Deploy](https://github.com/maloymanna/maloymanna.github.io/actions/workflows/deploy.yml/badge.svg)",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf public/",
+    "build": "hugo --minify",
+    "index": "pagefind --site public --output-path public/pagefind --verbose",
+    "serve": "python3 -m http.server -d public 8000",
+    "build:full": "npm run clean && npm run build && npm run index && npm run serve",
+    "lint": "markdownlint-cli2 'content/**/*.md'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maloymanna/maloymanna.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maloymanna/maloymanna.github.io/issues"
+  },
+  "homepage": "https://github.com/maloymanna/maloymanna.github.io#readme",
+  "devDependencies": {
+    "markdownlint-cli2": "^0.23.2",
+    "pagefind": "^1.4.0"
+  }
+}
