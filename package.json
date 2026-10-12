@@ -25,5 +25,8 @@
   "devDependencies": {
     "markdownlint-cli2": "^0.23.2",
     "pagefind": "^1.4.0"
+  },
+  "overrides": {
+    "smol-toml": ">=1.9.0"
   }
 }
