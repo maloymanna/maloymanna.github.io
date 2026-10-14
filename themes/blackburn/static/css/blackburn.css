@@ -77,3 +77,197 @@ i {
 .pagination a {
   color: #265778;
 }
+/* =================== CALLOUTS =================== */
+
+.callout {
+  border-radius: 6px;
+  padding: 1em 1.2em;
+  margin: 1.5em 0;
+  border-left: 4px solid;
+}
+
+.callout-title {
+  font-weight: 700;
+  margin-bottom: 0.4em;
+  line-height: 1.3;
+}
+
+.callout-content > :first-child { margin-top: 0; }
+.callout-content > :last-child  { margin-bottom: 0; }
+
+/* Light theme callouts */
+html.light-theme .callout-info {
+  background-color: #e7f3ff;
+  border-left-color: #1f8dd6;
+  color: #052;
+}
+html.light-theme .callout-info .callout-title {
+  color: #004a99;
+}
+
+html.light-theme .callout-warning {
+  background-color: #fff8e1;
+  border-left-color: #ff8f00;
+  color: #332200;
+}
+html.light-theme .callout-warning .callout-title {
+  color: #e65100;
+}
+
+html.light-theme .callout-danger {
+  background-color: #ffebee;
+  border-left-color: #c62828;
+  color: #330000;
+}
+html.light-theme .callout-danger .callout-title {
+  color: #b71c1c;
+}
+
+/* Dark theme callouts */
+html.dark-theme .callout-info {
+  background-color: #102a40;
+  border-left-color: #7eb8f7;
+  color: #d0e6f7;
+}
+html.dark-theme .callout-info .callout-title {
+  color: #a8d0ff;
+}
+
+html.dark-theme .callout-warning {
+  background-color: #3a2e10;
+  border-left-color: #ffcc66;
+  color: #f2e6c4;
+}
+html.dark-theme .callout-warning .callout-title {
+  color: #ffe082;
+}
+
+html.dark-theme .callout-danger {
+  background-color: #3a1010;
+  border-left-color: #ef9a9a;
+  color: #f2d0d0;
+}
+html.dark-theme .callout-danger .callout-title {
+  color: #ffcdd2;
+}
+
+/* Smooth transition for callouts when toggling themes */
+.callout,
+.callout-title {
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+/* =================== TABLES =================== */
+
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.content th,
+.content td {
+  padding: 0.6em 0.8em;
+  border: 1px solid;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Light theme tables */
+html.light-theme .content thead {
+  background-color: #f2f2f2;
+}
+
+html.light-theme .content th,
+html.light-theme .content td {
+  border-color: #ddd;
+}
+
+html.light-theme .content th {
+  color: #333;
+  font-weight: 600;
+}
+
+html.light-theme .content tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Dark theme tables */
+html.dark-theme .content thead {
+  background-color: #2a2a2a;
+}
+
+html.dark-theme .content th,
+html.dark-theme .content td {
+  border-color: #444;
+}
+
+html.dark-theme .content th {
+  color: #e8e8e8;
+  font-weight: 600;
+}
+
+html.dark-theme .content tbody tr:nth-child(even) {
+  background-color: #242424;
+}
+
+/* Hover effect for both themes */
+html.light-theme .content tbody tr:hover,
+html.dark-theme .content tbody tr:hover {
+  background-color: rgba(31, 141, 214, 0.07);
+}
+
+/* Smooth transition when toggling themes */
+.content table,
+.content thead,
+.content th,
+.content td,
+.content tr {
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+/* =================== BLUE-TEXT =================== */
+html.light-theme .blue-text {
+  color: #1f8dd6;
+}
+
+html.dark-theme .blue-text {
+  color: #7eb8f7;
+}
+
+/* =================== HIGHLIGHT BADGE =================== */
+html.light-theme .callout-content code {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 0.2em 0.45em;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+
+html.dark-theme .callout-content code {
+  background-color: #4a4000;
+  color: #a5d6a7;
+  padding: 0.2em 0.45em;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+/* ==========================================
+   Optional badge shortcode (normal paragraphs)
+   ========================================== */
+
+html.light-theme code.badge {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 0.2em 0.45em;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+
+html.dark-theme code.badge {
+  background-color: #4a4000;
+  color: #a5d6a7;
+  padding: 0.2em 0.45em;
+  border-radius: 4px;
+  font-size: 0.92em;
+}

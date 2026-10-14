@@ -27,7 +27,7 @@ The {{< blue-text >}}Program Predictability Measure (PPM){{< /blue-text >}} give
 **But**, this is a fixed-point lagging indicator providing less situational awareness to the CFO. 
 2. **Compliance in regulated industries**  
 Defense, Banking or Insurance may need audit trails from identified risks to controls where SAFe artifacts (PI Objectives, Program Board, Inspect & Adapt reports, Business Value scores, risk registers) may be useful as evidence.  
-**But**, dedicated [regulatory software](https://www.regnology.net/en/) usually provide these artifacts, and while documentation is mandatory for many regulations ([DORA](https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en), [EU AI Act](https://artificialintelligenceact.eu/) etc.), they're framework-neutral and SAFe is not required. 
+**But**, dedicated [regulatory software](https://www.regnology.net/en/) usually provide these artifacts, and while documentation is mandatory for many regulations ([DORA Act](https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en), [EU AI Act](https://artificialintelligenceact.eu/) etc.), they're framework-neutral and SAFe is not required. 
 3. **On-ramp to agile**  
 For enterprise companies steeped in waterfall-mode working over years, SAFe provides a less-disruptive path to agile, preserving existing roles, governance and documentation.  
 **But**, more than 25 years since the [Agile Manifesto](https://agilemanifesto.org/), it's hard to imagine enterprises using pure waterfall and not a bit of Agile. Besides the long 12-week cycle of SAFe is something to think about, as we'll see below.
@@ -54,14 +54,14 @@ Compare the cost of change if a change in priority arrives mid-cyle:
 
 The PI commitment model has no mid-cycle re-scoring mechanism.  
 The only workaround is to use the last iteration - the Innovation and Planning (IP) iteration buffer, and that can only work for small changes that fit in 2 weeks.
+{{< callout type="info" title="Aside" >}}
 
----
 ### Implications for the AI era
 
 The 12-week PI of SAFe assumes the smallest shippable unit is a feature (weeks of work).  
 In the AI age, the smallest shippable unit is a prompt or agent behaviour (minutes of work).  
 Even if 50% of the work of an AI-enabled team is prompt engineering , agent orchestration or RAG updates, it's batchable in hours, not weeks.  
-{{< blue-text >}}The PI is the wrong granularity.{{< /blue-text >}}  
+`The PI is the wrong granularity.`  
 The right batch size for fast AI work units is **daily or continuous (Kanban pull)**. Only infrastructure/platform work needs longer horizon, but even that with Infrastructure as Code (IaC) and DevSecOps CI/CD pipelines still fit a 2-week sprint.  
 
 ### But SAFe lets teams use Scrum/Kanban at their task level - so where's the issue ?
@@ -71,21 +71,19 @@ With fast AI work, any external changes e.g. embedding quality changes of a mode
 However, **there will be impacts** to the committed PI objectives, which **are not surfaced** till the next PI.  
 Any dependency slippages are **invisible** until too late.  
 Teams may be penalized (for missing PI objectives) even if they respond to most valuable work - adapting to breaking changes.  
-None of their agile response to change is however reflected in the coordination layer or surfaced due to the {{< blue-text >}}frozen{{< /blue-text >}} plan.  
-
----
+None of their agile response to change is however reflected in the coordination layer or surfaced due to the `frozen` plan.{{< /callout >}}
 3. **Surfacing Technical Debt**  
 Similar to the above case, if an external dependency from a team outside the ART (e.g. network or security teams outside scope of shared authority where ART and SAFe is implemented) materializes into an issue, the architecture runway doesn't get extended till the next PI.
 The issue is identified in the next System Demo, but not fixed.  
 In the I&A at the end of the PI, depending on the type of issue and enabler may be created, or it may remain as a {{< blue-text >}}ROAM (Resolve/Own/Accept/Mitigate){{< /blue-text >}} risk with an acceptance/exception.
 The runway is extended only after the next PI planning if the enabler feature is in the program backlog.
 In some cases e.g. security rules even the acceptance/exception may require additional mitigation work to be planned.  
-This latency in getting to a fix is a structural issue with SAFe. In a DevSecOps + Scrum/Kanban model, the runway is the system and automated contract testing, PO to PO commitment, using the CI/CD pipeline as the real-time dependency tracker allow the teams to surface and work throught it at a far lower latency.
+This latency in getting to a fix is a structural issue with SAFe. In a DevSecOps + Scrum/Kanban model, the runway is the system and automated contract testing, PO to PO commitment, using the CI/CD pipeline as the real-time dependency tracker allow the teams to surface and work throught it at a far lower latency.  
 4. **Lack of throughput metrics**  
 DevOps has [DORA metrics](https://dora.dev/quickcheck/?v=2025): deploy frequency, lead time for change, change failure rate, mean time to recovery - operational metrics that measure how fast you can ship, how reliably, and how fast you recover.  
 [Value-stream mapping](https://dora.dev/guides/value-stream-management/), integrated with DORA help improve software delivery performance, operational efficiency and make work processes visible and transparent.
 SAFe has no equivalent, and its own metrics (PPM, Flow Distribution, PI Objective Achievement) measure plan reliability, not system throughput.  
-These are backward looking indicators, and do not help in preparing the team to improve their DORA maturity.
+These are backward looking indicators, and do not help in preparing the team to improve their DORA maturity.  
 5. **Possibility of gaming and sandbagging**  
 SAFe success is measured by PI objective achievement scores. It's a planning - predictability metric. An ART which hits high predictability scores maybe 100% regularly may well be [sandbagging](https://www.investopedia.com/terms/s/sandbag.asp#toc-what-does-sandbagging-mean-today).  
 In cases where there's collusion, the IT manager sets low PI objectives, and the Business Owner scores them generously and PPM hits 100%. Consequently the company loses believing everything is fine.  

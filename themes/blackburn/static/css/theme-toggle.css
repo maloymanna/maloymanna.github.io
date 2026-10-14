@@ -125,3 +125,20 @@ html.light-theme #menu .pure-menu li a:focus { background: #333; }
 body, .header, .content, a, h1, h2, h3, h4, h5, h6, code, pre, blockquote {
   transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
+
+/* =================== HIGHLIGHT BADGE =================== */
+html.light-theme .callout-content code {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 0.2em 0.45em;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+
+html.dark-theme .callout-content code {
+  background-color: #4a4000;
+  color: #a5d6a7;
+  padding: 0.2em 0.45em;
+  border-radius: 4px;
+  font-size: 0.92em;
+}

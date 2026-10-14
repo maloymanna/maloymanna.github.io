@@ -46,6 +46,7 @@ If admins have not granted consent, and the client application requests delegate
 | &nbsp;              |                                                |                              |
 | **Also called**     | &nbsp;&nbsp;- Scopes                           | &nbsp;- App roles            |
 |                     | &nbsp;&nbsp;- OAuth2 permission scopes         | &nbsp;- App-only permissions |
+
 **Admin consent for Multi-tenant applications**:   
-By default, web API/app registrations are single-tenant upon creation, unless supported account types are changed during the app registration. For a multi-tenant application, its app registration exists only in the tenant where it was created, and so permissions can't be configured in the local tenant. In such cases where admin consent is required, the administrators need to log in to the application themselves, which triggers the admin consent sign-in experience. 
+By default, web API/app registrations are single-tenant upon creation, unless supported account types are changed during the app registration. For a multi-tenant application, its app registration exists only in the tenant where it was created, and so permissions can't be configured in the local tenant. In such cases where admin consent is required, the administrators need to log in to the application themselves, which triggers the admin consent sign-in experience.  
 I will explore the application sign-in process in later posts.  
