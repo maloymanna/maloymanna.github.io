@@ -48,12 +48,14 @@ Scrum has 2 week sprints. In SAFe however, we have a 12 week PI, and PI objectiv
 Compare the cost of change if a change in priority arrives mid-cyle:
 
 |       Framework       |  Cost of change (avg)   |  Cost of change (worst case) |
-|:----------------------|:-----------------------:|:----------------------------:|
+|:---------------------:|:-----------------------:|:----------------------------:|
 | Scrum (2-week sprint) |        ~ 1 week         |            2 weeks           |
 |   SAFe (12-week PI)   |       ~ 5-8 weeks       |            12 weeks          |
 
-The PI commitment model has no mid-cycle re-scoring mechanism. The only workaround is to use the last iteration - the Innovation and Planning (IP) iteration buffer, and that can only work for small changes that fit in 2 weeks.
+The PI commitment model has no mid-cycle re-scoring mechanism.  
+The only workaround is to use the last iteration - the Innovation and Planning (IP) iteration buffer, and that can only work for small changes that fit in 2 weeks.
 
+---
 ### Implications for the AI era
 
 The 12-week PI of SAFe assumes the smallest shippable unit is a feature (weeks of work).  
@@ -71,18 +73,23 @@ Any dependency slippages are **invisible** until too late.
 Teams may be penalized (for missing PI objectives) even if they respond to most valuable work - adapting to breaking changes.  
 None of their agile response to change is however reflected in the coordination layer or surfaced due to the {{< blue-text >}}frozen{{< /blue-text >}} plan.  
 
+---
 3. **Surfacing Technical Debt**  
 Similar to the above case, if an external dependency from a team outside the ART (e.g. network or security teams outside scope of shared authority where ART and SAFe is implemented) materializes into an issue, the architecture runway doesn't get extended till the next PI.
-The issue is identified in the next System Demo, but not fixed.
+The issue is identified in the next System Demo, but not fixed.  
 In the I&A at the end of the PI, depending on the type of issue and enabler may be created, or it may remain as a {{< blue-text >}}ROAM (Resolve/Own/Accept/Mitigate){{< /blue-text >}} risk with an acceptance/exception.
 The runway is extended only after the next PI planning if the enabler feature is in the program backlog.
-In some cases e.g. security rules even the acceptance/exception may require additional mitigation work to be planned.
+In some cases e.g. security rules even the acceptance/exception may require additional mitigation work to be planned.  
 This latency in getting to a fix is a structural issue with SAFe. In a DevSecOps + Scrum/Kanban model, the runway is the system and automated contract testing, PO to PO commitment, using the CI/CD pipeline as the real-time dependency tracker allow the teams to surface and work throught it at a far lower latency.
 4. **Lack of throughput metrics**  
-DevOps has [DORA metrics](https://dora.dev/quickcheck/?v=2025): deploy frequency, lead time for change, change failure rate, mean time to recovery - operational metrics that measure how fast you can ship, how reliably, and how fast you recover. [Value-stream mapping](https://dora.dev/guides/value-stream-management/), integrated with DORA help improve software delivery performance, operational efficiency and make work processes visible and transparent.
-SAFe has no equivalent, and its own metrics (PPM, Flow Distribution, PI Objective Achievement) measure plan reliability, not system throughput. These are backward looking indicators, and do not help in preparing the team to improve their DORA maturity.
+DevOps has [DORA metrics](https://dora.dev/quickcheck/?v=2025): deploy frequency, lead time for change, change failure rate, mean time to recovery - operational metrics that measure how fast you can ship, how reliably, and how fast you recover.  
+[Value-stream mapping](https://dora.dev/guides/value-stream-management/), integrated with DORA help improve software delivery performance, operational efficiency and make work processes visible and transparent.
+SAFe has no equivalent, and its own metrics (PPM, Flow Distribution, PI Objective Achievement) measure plan reliability, not system throughput.  
+These are backward looking indicators, and do not help in preparing the team to improve their DORA maturity.
 5. **Possibility of gaming and sandbagging**  
-SAFe success is measured by PI objective achievement scores. It's a planning - predictability metric. An ART which hits high predictability scores maybe 100% regularly may well be [sandbagging](https://www.investopedia.com/terms/s/sandbag.asp#toc-what-does-sandbagging-mean-today). In cases whre there's collusion, the IT manager sets low PI objectives, and the Business Owner scores them generously and PPM hits 100%. Consequently the company loses believing everything is fine. Teams do real work, but the PI Planning events become performance theater.
+SAFe success is measured by PI objective achievement scores. It's a planning - predictability metric. An ART which hits high predictability scores maybe 100% regularly may well be [sandbagging](https://www.investopedia.com/terms/s/sandbag.asp#toc-what-does-sandbagging-mean-today).  
+In cases where there's collusion, the IT manager sets low PI objectives, and the Business Owner scores them generously and PPM hits 100%. Consequently the company loses believing everything is fine.  
+Teams still do real work, but the PI Planning events become performance theater.
 
 SAFe also introduces unnecessary jargon to complicate learning for executives instead of using intuitive easier-to-understand agile and lean/flow concepts. 
 
