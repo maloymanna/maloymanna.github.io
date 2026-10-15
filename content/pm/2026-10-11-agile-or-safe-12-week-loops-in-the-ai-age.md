@@ -35,6 +35,8 @@ For enterprise companies steeped in waterfall-mode working over years, SAFe prov
 When done correctly, the PI planning even is a great synchronization even across the teams involved. It brings together people from across functions and makes IT work visible probably the first time for managers and executives far removed from it. Both IT and business get more visibility into the other side and have a better understanding of the complexity and the dependency of the work.  
 **But**, this depends on how engaged everyone is in the 2-day PI planning event. When business executives and managers have day-jobs to attend to, the PI planning event may remain a ceremony with cursory or partial participation, and a tick-the-box exercise.  
 
+![12-week SAFe in the AI age (inspired by xkcd)](/images/xkcd-agile-safe-ai.png)  
+
 ## What is {{< blue-text >}}worse{{< /blue-text >}} in SAFe
 
 1. **Alignment**  
